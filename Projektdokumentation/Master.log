@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  7 MAR 2014 10:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  7 MAR 2014 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1804,22 +1804,26 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 13.
  [5]
-No file Master.bbl.
+\openout2 = `filer/accepttest.aux'.
+
+
+No file filer/accepttest.tex.
 \tf@toc=\write5
 \openout5 = `Master.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
-(./Master.aux (./filer/problemformulering.aux) (./filer/kravspec.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
+(./Master.aux (./filer/problemformulering.aux) (./filer/kravspec.aux)
+(./filer/accepttest.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
 Package rerunfilecheck Info: File `Master.out' has not changed.
 (rerunfilecheck)             Checksum: 4B64CE77F6CC5E33A2622EE9A46D0C86;105.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
  ) 
 Here is how much of TeX's memory you used:
- 24441 strings out of 493315
- 432606 string characters out of 6137905
+ 24443 strings out of 493315
+ 432654 string characters out of 6137904
  739409 words of memory out of 5000000
  27491 multiletter control sequences out of 15000+600000
  15140 words of font info for 48 fonts, out of 8000000 for 9000
