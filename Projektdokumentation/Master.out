@@ -1,4 +1,12 @@
 \BOOKMARK [0][-]{chapter.1}{Indledning}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Kravspecifikation}{}% 2
-\BOOKMARK [0][-]{chapter.3}{Forunders\370gelse}{}% 3
-\BOOKMARK [0][-]{chapter.4}{Accepttestspecifikation}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Akt\370rer}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Bruger}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{Barn}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.3}{SMS Bruger}{section.2.1}% 6
+\BOOKMARK [1][-]{section.2.2}{Usecases}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{Use Case 1}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Use Case 2}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.3}{Use Case 7}{section.2.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Forunders\370gelse}{}% 11
+\BOOKMARK [0][-]{chapter.4}{Accepttestspecifikation}{}% 12

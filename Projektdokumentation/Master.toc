@@ -2,5 +2,13 @@
 \select@language {danish}
 \contentsline {chapter}{\chapternumberline {1}Indledning}{3}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Kravspecifikation}{5}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}Forunders\IeC {\o }gelse}{7}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Accepttestspecifikation}{9}{chapter.4}
+\contentsline {section}{\numberline {2.1}Akt\IeC {\o }rer}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Bruger}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Barn}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}SMS Bruger}{5}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Usecases}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Use Case 1}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Use Case 2}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Use Case 7}{5}{subsection.2.2.3}
+\contentsline {chapter}{\chapternumberline {3}Forunders\IeC {\o }gelse}{9}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Accepttestspecifikation}{11}{chapter.4}
