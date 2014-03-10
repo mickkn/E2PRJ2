@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  10 MAR 2014 19:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  10 MAR 2014 20:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1816,36 +1816,52 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 38.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 167.
-)
+(babel)             in language  on input line 95.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 95.
  [5]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 116.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 135.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 135.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 153.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 153.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 153.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 153.
  [6]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 154.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 154.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 173.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 173.
+)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining danish shorthand "~
@@ -1878,13 +1894,13 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 )
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 17.
  [9]
 \openout2 = `filer/accepttest.aux'.
 
@@ -1908,79 +1924,57 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 )
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
  [11]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 21.
 
 [12]
 \tf@toc=\write5
 \openout5 = `Master.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
  (./Master.aux (./filer/indledning.aux) (./filer/kravspec.aux)
 (./filer/forundersoegelse.aux) (./filer/accepttest.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
-
-
-Package rerunfilecheck Warning: File `Master.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Master.out':
-(rerunfilecheck)             Before: 0C81146A96425B39819905EBB5DF5D79;945
-(rerunfilecheck)             After:  2F930EE1A20DBCFF3272598E6E5FF86F;689.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+Package rerunfilecheck Info: File `Master.out' has not changed.
+(rerunfilecheck)             Checksum: 0C81146A96425B39819905EBB5DF5D79;945.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 24530 strings out of 493315
- 433820 string characters out of 6137904
+ 24531 strings out of 493315
+ 433829 string characters out of 6137904
  756409 words of memory out of 5000000
- 27541 multiletter control sequences out of 15000+600000
+ 27542 multiletter control sequences out of 15000+600000
  18564 words of font info for 53 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 44i,12n,78p,360b,751s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.2.2.7} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
-usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/u
-sr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (12 pages, 126122 bytes).
+ 44i,12n,78p,360b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
+/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/urw/bookman/ubkl8a.pfb>
+Output written on Master.pdf (12 pages, 126978 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams
