@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  10 MAR 2014 20:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  10 MAR 2014 21:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1804,63 +1804,63 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 27.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 38.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 40.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 99.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 99.
  [5]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 101.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 101.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 139.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 139.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 157.
  [6]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 173.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 173.
+(babel)             in language  on input line 177.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
@@ -1956,10 +1956,10 @@ Package rerunfilecheck Info: File `Master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 24531 strings out of 493315
- 433829 string characters out of 6137904
+ 24538 strings out of 493315
+ 433919 string characters out of 6137904
  756409 words of memory out of 5000000
- 27542 multiletter control sequences out of 15000+600000
+ 27549 multiletter control sequences out of 15000+600000
  18564 words of font info for 53 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
  44i,12n,78p,360b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1974,7 +1974,7 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (12 pages, 126978 bytes).
+Output written on Master.pdf (12 pages, 128597 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams
