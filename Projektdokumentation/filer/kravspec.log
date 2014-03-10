@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  10 MAR 2014 15:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  10 MAR 2014 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -188,8 +188,155 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Environment tabularx undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{tabularx}
+                     {\textwidth}{|l| p{5cm} | } % l for left, c for center,...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.23 \begin{tabularx}{\textwidth}
+                                 {|l| p{5cm} | } % l for left, c for center,...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.23 \begin{tabularx}{\textwidth}
+                                 {|l| p{5cm} | } % l for left, c for center,...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no | in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no | in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no | in font nullfont!
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.24 	\hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--24
+ [] 
+ []
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.25 ...{2}{|l|}{\textbf{UC2: Deaktiver CSS unit}}
+                                                   \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \span.
+\sp@n ->\span 
+              \omit \advance \@multicnt \m@ne 
+l.25 ...{2}{|l|}{\textbf{UC2: Deaktiver CSS unit}}
+                                                   \\\hline
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\sp@n ->\span \omit 
+                    \advance \@multicnt \m@ne 
+l.25 ...{2}{|l|}{\textbf{UC2: Deaktiver CSS unit}}
+                                                   \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.25 ...{2}{|l|}{\textbf{UC2: Deaktiver CSS unit}}
+                                                   \\\hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.25 ...{2}{|l|}{\textbf{UC2: Deaktiver CSS unit}}
+                                                   \\\hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...{2}{|l|}{\textbf{UC2: Deaktiver CSS unit}}
+                                                   \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.25 ...\textbf{UC2: Deaktiver CSS unit}} \\\hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \textbf{M√•l}
+                  				&Denne usecase beskriver deaktivering  \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no √ in font cmbx10!
 Missing character: There is no • in font cmbx10!
+! Misplaced alignment tab character &.
+l.26 \textbf{M√•l}				&
+                       Denne usecase beskriver deaktivering  \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no D in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -223,79 +370,411 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
+
+Overfull \hbox (14.11104pt too wide) in paragraph at lines 26--26
+ []\OT1/cmr/bx/n/10 Ml 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.26 ...e usecase beskriver deaktivering  \\\hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \textbf{Initialisering}
+                            					&Test \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.27 \textbf{Initialisering}					&
+                                  Test \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+
+Overfull \hbox (63.62604pt too wide) in paragraph at lines 27--27
+ []\OT1/cmr/bx/n/10 Initialisering 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.27 \textbf{Initialisering}					&Test \\\hline
+                                               
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \textbf{Akt√∏rer og Stakeholders}
+                                      			&Test \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no √ in font cmbx10!
 Missing character: There is no ∏ in font cmbx10!
+! Misplaced alignment tab character &.
+l.28 \textbf{Akt√∏rer og Stakeholders}			&
+                                          Test \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+
+Overfull \hbox (33.97902pt too wide) in paragraph at lines 28--28
+ []\OT1/cmr/bx/n/10 Aktrer 
+ []
+
+
+Overfull \hbox (11.49994pt too wide) in paragraph at lines 28--28
+ \OT1/cmr/bx/n/10 og 
+ []
+
+
+Overfull \hbox (31.30537pt too wide) in paragraph at lines 28--28
+ \OT1/cmr/bx/n/10 Stake- 
+ []
+
+
+Overfull \hbox (25.55542pt too wide) in paragraph at lines 28--28
+ \OT1/cmr/bx/n/10 hold- 
+ []
+
+
+Overfull \hbox (14.54298pt too wide) in paragraph at lines 28--28
+ \OT1/cmr/bx/n/10 ers 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.28 ...Akt√∏rer og Stakeholders}			&Test \\\hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \textbf{Referencer}
+                        						&Test \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.29 \textbf{Referencer}						&
+                               Test \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+
+Overfull \hbox (54.19421pt too wide) in paragraph at lines 29--29
+ []\OT1/cmr/bx/n/10 Referencer 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.29 \textbf{Referencer}						&Test \\\hline
+                                            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \textbf{Antal af samtidige h√¶ndelser}
+                                           	&Test \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no √ in font cmbx10!
 Missing character: There is no ¶ in font cmbx10!
+! Misplaced alignment tab character &.
+l.30 \textbf{Antal af samtidige h√¶ndelser}	&
+                                             Test \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+
+Overfull \hbox (28.02066pt too wide) in paragraph at lines 30--30
+ []\OT1/cmr/bx/n/10 Antal 
+ []
+
+
+Overfull \hbox (9.1041pt too wide) in paragraph at lines 30--30
+ \OT1/cmr/bx/n/10 af 
+ []
+
+
+Overfull \hbox (23.5429pt too wide) in paragraph at lines 30--30
+ \OT1/cmr/bx/n/10 sam- 
+ []
+
+
+Overfull \hbox (28.27069pt too wide) in paragraph at lines 30--30
+ \OT1/cmr/bx/n/10 tidige 
+ []
+
+
+Overfull \hbox (16.61102pt too wide) in paragraph at lines 30--30
+ \OT1/cmr/bx/n/10 hn- 
+ []
+
+
+Overfull \hbox (29.39708pt too wide) in paragraph at lines 30--30
+ \OT1/cmr/bx/n/10 delser 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.30 ...al af samtidige h√¶ndelser}	&Test \\\hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \textbf{Foruds√¶tning}
+                           					&Test \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no √ in font cmbx10!
 Missing character: There is no ¶ in font cmbx10!
+! Misplaced alignment tab character &.
+l.31 \textbf{Foruds√¶tning}					&
+                                 Test \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+
+Overfull \hbox (60.43163pt too wide) in paragraph at lines 31--31
+ []\OT1/cmr/bx/n/10 Forudstning 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.31 \textbf{Foruds√¶tning}					&Test \\\hline
+                                              
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \textbf{Efterf√∏lgende tilstand}
+                                     			&Test \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no √ in font cmbx10!
 Missing character: There is no ∏ in font cmbx10!
+! Misplaced alignment tab character &.
+l.32 \textbf{Efterf√∏lgende tilstand}			&
+                                         Test \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+
+Overfull \hbox (61.3261pt too wide) in paragraph at lines 32--32
+ []\OT1/cmr/bx/n/10 Efterflgende 
+ []
+
+
+Overfull \hbox (14.69437pt too wide) in paragraph at lines 32--32
+ \OT1/cmr/bx/n/10 til- 
+ []
+
+
+Overfull \hbox (27.3762pt too wide) in paragraph at lines 32--32
+ \OT1/cmr/bx/n/10 stand 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.32 ...{Efterf√∏lgende tilstand}			&Test \\\hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \textbf{Hovedforl√∏b}
+                          						&Test \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no √ in font cmbx10!
 Missing character: There is no ∏ in font cmbx10!
+! Misplaced alignment tab character &.
+l.33 \textbf{Hovedforl√∏b}						&
+                                 Test \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+
+Overfull \hbox (55.42334pt too wide) in paragraph at lines 33--33
+ []\OT1/cmr/bx/n/10 Hovedforlb 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.33 \textbf{Hovedforl√∏b}						&Test \\\hline
+                                              
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \textbf{Tilf√∏jelser}
+                          						&Test \\\hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no √ in font cmbx10!
 Missing character: There is no ∏ in font cmbx10!
+! Misplaced alignment tab character &.
+l.34 \textbf{Tilf√∏jelser}						&
+                                 Test \\\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+
+Overfull \hbox (44.42477pt too wide) in paragraph at lines 34--34
+ []\OT1/cmr/bx/n/10 Tilfjelser 
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.34 \textbf{Tilf√∏jelser}						&Test \\\hline
+                                              
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: \begin{document} ended by \end{tabularx}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 	\end{tabularx}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 
 ! LaTeX Error: \begin{document} ended by \end{table}.
 
@@ -303,21 +782,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40 \end{table}
+l.39 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 22--41
-[]
- []
-
-
-Overfull \hbox (138.46034pt too wide) in paragraph at lines 22--41
-[]
- []
 
 
 ! LaTeX Error: Environment table undefined.
@@ -326,7 +795,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 \begin{table}
+l.41 \begin{table}
                   [htbp] \centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -339,7 +808,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 \begin{table}[
+l.41 \begin{table}[
                    htbp] \centering
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -409,19 +878,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \end{table}
+l.58 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 42--60
+Overfull \hbox (20.0pt too wide) in paragraph at lines 41--59
 []
  []
 
 
-Overfull \hbox (138.46034pt too wide) in paragraph at lines 42--60
+Overfull \hbox (138.46034pt too wide) in paragraph at lines 41--59
 []
  []
 
@@ -432,7 +901,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 \begin{table}
+l.60 \begin{table}
                   [htbp] \centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -445,7 +914,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 \begin{table}[
+l.60 \begin{table}[
                    htbp] \centering
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -513,19 +982,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 \end{table}
+l.77 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 61--79
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--78
 []
  []
 
 
-Overfull \hbox (138.46034pt too wide) in paragraph at lines 61--79
+Overfull \hbox (138.46034pt too wide) in paragraph at lines 60--78
 []
  []
 
@@ -536,7 +1005,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \begin{table}
+l.79 \begin{table}
                   [htbp] \centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -549,7 +1018,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \begin{table}[
+l.79 \begin{table}[
                    htbp] \centering
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -617,19 +1086,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 \end{table}
+l.96 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 80--98
+Overfull \hbox (20.0pt too wide) in paragraph at lines 79--97
 []
  []
 
 
-Overfull \hbox (138.46034pt too wide) in paragraph at lines 80--98
+Overfull \hbox (138.46034pt too wide) in paragraph at lines 79--97
 []
  []
 
@@ -640,7 +1109,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.99 \begin{table}
+l.98 \begin{table}
                   [htbp] \centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -653,7 +1122,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.99 \begin{table}[
+l.98 \begin{table}[
                    htbp] \centering
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -721,19 +1190,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 \end{table}
+l.115 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 99--117
+Overfull \hbox (20.0pt too wide) in paragraph at lines 98--116
 []
  []
 
 
-Overfull \hbox (138.46034pt too wide) in paragraph at lines 99--117
+Overfull \hbox (138.46034pt too wide) in paragraph at lines 98--116
 []
  []
 
@@ -744,7 +1213,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 \begin{table}
+l.117 \begin{table}
                    [htbp] \centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -757,7 +1226,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 \begin{table}[
+l.117 \begin{table}[
                     htbp] \centering
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -827,7 +1296,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 \end{table}
+l.134 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -841,11 +1310,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 12 strings out of 493315
- 196 string characters out of 6137904
- 65158 words of memory out of 5000000
- 3563 multiletter control sequences out of 15000+600000
+ 14 strings out of 493315
+ 215 string characters out of 6137904
+ 64158 words of memory out of 5000000
+ 3565 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 19i,7n,13p,95b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,7n,13p,107b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
