@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  7 MAR 2014 11:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  10 MAR 2014 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1628,7 +1628,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 85.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ))
-(./Master.aux (./filer/problemformulering.aux) (./filer/kravspec.aux))
+(./Master.aux (./filer/indledning.aux) (./filer/kravspec.aux)
+(./filer/accepttest.aux))
 \openout1 = `Master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1744,10 +1745,10 @@ Package babel Info: Redefining danish shorthand "~
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `filer/problemformulering.aux'.
+\openout2 = `filer/indledning.aux'.
 
 
-(./filer/problemformulering.tex
+(./filer/indledning.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1804,41 +1805,80 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 13.
  [5]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+ [6]
 \openout2 = `filer/accepttest.aux'.
 
 
-No file filer/accepttest.tex.
+(./filer/accepttest.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 14.
+ [7
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 14.
+ [8]
 \tf@toc=\write5
 \openout5 = `Master.toc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
-(./Master.aux (./filer/problemformulering.aux) (./filer/kravspec.aux)
-(./filer/accepttest.aux))
+ (./Master.aux (./filer/indledning.aux)
+(./filer/kravspec.aux) (./filer/accepttest.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: 4B64CE77F6CC5E33A2622EE9A46D0C86;105.
+(rerunfilecheck)             Checksum: C24FC6B14985E6F5186DAE86785C3C3D;155.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
  ) 
 Here is how much of TeX's memory you used:
- 24443 strings out of 493315
- 432654 string characters out of 6137904
- 739409 words of memory out of 5000000
- 27491 multiletter control sequences out of 15000+600000
- 15140 words of font info for 48 fonts, out of 8000000 for 9000
+ 24480 strings out of 493315
+ 432997 string characters out of 6137904
+ 756409 words of memory out of 5000000
+ 27519 multiletter control sequences out of 15000+600000
+ 15481 words of font info for 49 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 44i,12n,78p,360b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
-exlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (5 pages, 50386 bytes).
+ 44i,12n,78p,360b,753s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/te
+xlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/urw/bookman/ubkl8a.pfb>
+Output written on Master.pdf (8 pages, 91470 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

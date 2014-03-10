@@ -153,8 +153,8 @@
 
 % ¤¤ Sidehoved ¤¤ %
 
-\makepagestyle{AAU}							% Definerer sidehoved og sidefod udseende frem til ...
-\makepsmarks{AAU}{%
+\makepagestyle{IHA}							% Definerer sidehoved og sidefod udseende frem til ...
+\makepsmarks{IHA}{%
 	\createmark{chapter}{left}{shownumber}{}{. \ }
 	\createmark{section}{right}{shownumber}{}{. \ }
 	\createplainmark{toc}{both}{\contentsname}
@@ -166,21 +166,21 @@
 }
 \nouppercaseheads											% Ingen Caps oenskes
 
-\makeevenhead{AAU}{Gruppe B130}{}{\leftmark}				% Definerer lige siders sidehoved (\makeevenhead{Navn}{Venstre}{Center}{Hoejre})
-\makeoddhead{AAU}{\rightmark}{}{Aalborg Universitet}		% Definerer ulige siders sidehoved (\makeoddhead{Navn}{Venstre}{Center}{Hoejre})
-\makeevenfoot{AAU}{\thepage}{}{}							% Definerer lige siders sidefod (\makeevenfoot{Navn}{Venstre}{Center}{Hoejre})
-\makeoddfoot{AAU}{}{}{\thepage}								% Definerer ulige siders sidefod (\makeoddfoot{Navn}{Venstre}{Center}{Hoejre})
-\makeheadrule{AAU}{\textwidth}{0.5pt}						% Tilfoejer en streg under sidehovedets indhold
-\makefootrule{AAU}{\textwidth}{0.5pt}{1mm}					% Tilfoejer en streg under sidefodens indhold
+\makeevenhead{IHA}{Gruppe 1}{}{\leftmark}				% Definerer lige siders sidehoved (\makeevenhead{Navn}{Venstre}{Center}{Hoejre})
+\makeoddhead{IHA}{\rightmark}{}{IHA - Aarhus Universitet}		% Definerer ulige siders sidehoved (\makeoddhead{Navn}{Venstre}{Center}{Hoejre})
+\makeevenfoot{IHA}{\thepage}{}{}							% Definerer lige siders sidefod (\makeevenfoot{Navn}{Venstre}{Center}{Hoejre})
+\makeoddfoot{IHA}{}{}{\thepage}								% Definerer ulige siders sidefod (\makeoddfoot{Navn}{Venstre}{Center}{Hoejre})
+\makeheadrule{IHA}{\textwidth}{0.5pt}						% Tilfoejer en streg under sidehovedets indhold
+\makefootrule{IHA}{\textwidth}{0.5pt}{1mm}					% Tilfoejer en streg under sidefodens indhold
 
-\copypagestyle{AAUchap}{AAU}								% Sidehoved for kapitelsider defineres som standardsider, men med blank sidehoved
-\makeoddhead{AAUchap}{}{}{}
-\makeevenhead{AAUchap}{}{}{}
-\makeheadrule{AAUchap}{\textwidth}{0pt}
-\aliaspagestyle{chapter}{AAUchap}							% Den ny style vaelges til at gaelde for chapters
+\copypagestyle{IHAchap}{IHA}								% Sidehoved for kapitelsider defineres som standardsider, men med blank sidehoved
+\makeoddhead{IHAchap}{}{}{}
+\makeevenhead{IHAchap}{}{}{}
+\makeheadrule{IHAchap}{\textwidth}{0pt}
+\aliaspagestyle{chapter}{IHAchap}							% Den ny style vaelges til at gaelde for chapters
 															% ... her
 															
-\pagestyle{AAU}												% Valg af sidehoved og sidefod
+\pagestyle{IHA}												% Valg af sidehoved og sidefod
 
 
 %%%% CUSTOM COMMANDS %%%%
