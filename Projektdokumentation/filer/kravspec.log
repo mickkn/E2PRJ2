@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  11 MAR 2014 08:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  11 MAR 2014 08:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1409,6 +1409,37 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no Ã in font cmbx10!
+Missing character: There is no ¥ in font cmbx10!
+Missing character: There is no T in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no Ã in font cmbx10!
 Missing character: There is no ¸ in font cmbx10!
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -1455,24 +1486,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 \end{table}
+l.139 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 120--138
+Overfull \hbox (20.0pt too wide) in paragraph at lines 120--140
 []
  []
 
 
-Overfull \hbox (398.33856pt too wide) in paragraph at lines 120--138
+Overfull \hbox (398.33856pt too wide) in paragraph at lines 120--140
 []
  []
 
 ! Undefined control sequence.
-l.139 \subsection
+l.141 \subsection
                  {Use Case 5}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1487,7 +1518,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \subsection{U
+l.141 \subsection{U
                    se Case 5}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1507,7 +1538,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \begin{table}
+l.142 \begin{table}
                    [H] \centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1573,24 +1604,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \end{table}
+l.158 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 139--157
+Overfull \hbox (20.0pt too wide) in paragraph at lines 141--159
 []
  []
 
 
-Overfull \hbox (398.33856pt too wide) in paragraph at lines 139--157
+Overfull \hbox (398.33856pt too wide) in paragraph at lines 141--159
 []
  []
 
 ! Undefined control sequence.
-l.158 \subsection
+l.160 \subsection
                  {Use Case 6}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1605,7 +1636,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 \subsection{U
+l.160 \subsection{U
                    se Case 6}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1625,7 +1656,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 \begin{table}
+l.161 \begin{table}
                    [H] \centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1691,24 +1722,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175 \end{table}
+l.177 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 158--176
+Overfull \hbox (20.0pt too wide) in paragraph at lines 160--178
 []
  []
 
 
-Overfull \hbox (398.33856pt too wide) in paragraph at lines 158--176
+Overfull \hbox (398.33856pt too wide) in paragraph at lines 160--178
 []
  []
 
 ! Undefined control sequence.
-l.177 \subsection
+l.179 \subsection
                  {Use Case 7}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1723,7 +1754,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.177 \subsection{U
+l.179 \subsection{U
                    se Case 7}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1743,7 +1774,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.178 \begin{table}
+l.180 \begin{table}
                    [H] \centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1811,7 +1842,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 \end{table}
+l.196 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1827,7 +1858,7 @@ or  <return>  to continue without it.
 Here is how much of TeX's memory you used:
  12 strings out of 493315
  196 string characters out of 6137904
- 74158 words of memory out of 5000000
+ 75158 words of memory out of 5000000
  3563 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191

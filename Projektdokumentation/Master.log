@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  11 MAR 2014 08:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  11 MAR 2014 08:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1841,26 +1841,26 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 120.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 159.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 159.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 159.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 159.
  [6]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 179.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
@@ -1974,7 +1974,7 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (12 pages, 128599 bytes).
+Output written on Master.pdf (12 pages, 128704 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams
