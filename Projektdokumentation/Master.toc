@@ -12,7 +12,11 @@
 \contentsline {subsection}{\numberline {2.2.3}Use Case 3}{6}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Use Case 4}{7}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Use Case 5}{7}{subsection.2.2.5}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {2.2.6}Use Case 6}{8}{subsection.2.2.6}
+=======
+\contentsline {subsection}{\numberline {2.2.6}Use Case 6}{7}{subsection.2.2.6}
+>>>>>>> FETCH_HEAD
 \contentsline {subsection}{\numberline {2.2.7}Use Case 7}{8}{subsection.2.2.7}
 \contentsline {chapter}{\chapternumberline {3}Forunders\IeC {\o }gelse}{9}{chapter.3}
 \contentsline {chapter}{\chapternumberline {4}Accepttestspecifikation}{11}{chapter.4}
