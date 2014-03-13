@@ -2,15 +2,37 @@
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
 \multicolumn{2}{|l|}{\textbf{UC1: Ændre SMS bruger}} \\\hline
-\textbf{Mål}								&Test \\\hline
-\textbf{Initialisering}					&Test \\\hline
-\textbf{Aktører og Stakeholders}			&Test \\\hline
-\textbf{Referencer}						&Test \\\hline
-\textbf{Antal af samtidige hændelser}	&Test \\\hline
-\textbf{Forudsætning}					&Test \\\hline
-\textbf{Efterfølgende tilstand}			&Test \\\hline
-\textbf{Hovedforløb}						&Test \\\hline
-\textbf{Tilføjelser}						&Test \\\hline
+\textbf{Mål}								&
+At brugeren(primær) kan ændre SMS-brugerens(sekundær) adviserings oplysninger i systemet.
+ \\\hline
+\textbf{Initialisering}					&
+Initialisering sker via PC interface. Når brugeren(primær) vælger "Ændre SMS bruger" i menuen, bliver denne præsenteret for hvilket oplysninger der skal ændres ved SMS-brugeren(sekundær).
+ \\\hline
+\textbf{Aktører og Stakeholders}			&
+Brugeren go SMS-brugeren
+ \\\hline
+\textbf{Referencer}						&
+Ingen
+ \\\hline
+\textbf{Antal af samtidige hændelser}	&
+Der kan fortages en hændelse af gangen.
+ \\\hline
+\textbf{Forudsætning}					&
+At PC interfacet er aktivet og der er indtastet en adgangskode.
+ \\\hline
+\textbf{Efterfølgende tilstand}			&
+Efter ændring af SMS-bruger, sendes brugeren tilbage til menuen i PC interfacet.
+ \\\hline
+\textbf{Hovedforløb}						&
+\begin{enumerate}
+\item Brugeren logger ind i systemet via PC interfacet.
+\item Brugeren vælger "Ændre SMS-bruger" i menuen
+\item Brugeren indtaster ændringer til SMS-brugeren og bekræfter.
+\item Brugeren sendes tilbage til menuen.
+\end{enumerate}
+ \\\hline
+\textbf{Tilføjelser}						&
+Det vil kun være muligt at anvende danske mobilnummere \\\hline
 %\textbf{Datavariationsliste}			&Test \\\hline
 	\end{tabular}
 	\label{UC7} 
