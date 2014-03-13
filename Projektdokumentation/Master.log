@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  12 MAR 2014 20:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.13)  13 MAR 2014 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1822,6 +1822,15 @@ Package babel Info: Redefining danish shorthand "~
 
 (./filer/kravspec/uc1.tex)
 Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 44.
+ [5]
+Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 45.
@@ -1834,7 +1843,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 47.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 47.
- [5]
+ [6]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 48.
 Package babel Info: Redefining danish shorthand "~
@@ -1854,7 +1863,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 53.
- [6]
+ [7]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining danish shorthand "~
@@ -1884,7 +1893,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 59.
- [7]
+ [8]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 60.
 Package babel Info: Redefining danish shorthand "~
@@ -1898,32 +1907,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 13.
- [8]
+ [9]
 \openout2 = `filer/forundersoegelse.aux'.
 
 
 (./filer/forundersoegelse.tex
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-)
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
- [9
-
-
-
-]
-\openout2 = `filer/accepttest.aux'.
-
- (./filer/accepttest.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1941,34 +1929,69 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+ [11]
+\openout2 = `filer/accepttest.aux'.
 
-(./filer/accepttest/atuc1.tex) (./filer/accepttest/atuc2.tex
-Underfull \hbox (badness 1412) in paragraph at lines 8--8
+ (./filer/accepttest.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+ [12
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+
+(./filer/accepttest/atuc1.tex
+Overfull \hbox (666.13414pt too wide) in paragraph at lines 2--32
+ [][] 
+ []
+
+) (./filer/accepttest/atuc2.tex
+Underfull \hbox (badness 1412) in paragraph at lines 9--9
 []|\T1/cmr/m/n/10.95 Alle units bli-ver
  []
 
 
-Underfull \hbox (badness 5787) in paragraph at lines 8--8
+Underfull \hbox (badness 5787) in paragraph at lines 9--9
 \T1/cmr/m/n/10.95 de-ak-ti-ve-ret und-
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 8--8
+Underfull \hbox (badness 1478) in paragraph at lines 9--9
 \T1/cmr/m/n/10.95 ta-gen Bran-da-lar-
  []
 
 
-Overfull \hbox (2.00519pt too wide) in paragraph at lines 17--17
+Overfull \hbox (2.00519pt too wide) in paragraph at lines 18--18
 \T1/cmr/m/n/10.95 babyalarm(er)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
 []|\T1/cmr/m/n/10.95 Babyalarm(er)
  []
 
 
-Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--24
+Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--25
  [][] 
  []
 
@@ -1987,7 +2010,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
- [11]
+ [13]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
@@ -1996,7 +2019,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
- [12]
+ [14]
 \tf@toc=\write5
 \openout5 = `Master.toc'.
 
@@ -2012,10 +2035,10 @@ Package rerunfilecheck Info: File `Master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 24610 strings out of 493315
- 435435 string characters out of 6137904
- 756409 words of memory out of 5000000
- 27577 multiletter control sequences out of 15000+600000
+ 24637 strings out of 493315
+ 435767 string characters out of 6137904
+ 758409 words of memory out of 5000000
+ 27593 multiletter control sequences out of 15000+600000
  18564 words of font info for 53 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
  44i,12n,78p,360b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2030,10 +2053,10 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (12 pages, 131207 bytes).
+Output written on Master.pdf (14 pages, 133812 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
