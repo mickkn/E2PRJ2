@@ -2,26 +2,23 @@
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
 \multicolumn{2}{|l|}{\textbf{UC5: Detekter barn}} \\\hline
-\textbf{Mål}								&At detekter om barnet bevæger sig \\\hline
-\textbf{Initialisering}					&Iniatisering af at barnet bevæger sig \\\hline
+\textbf{Mål}								&At detektere om barnet bevæger sig eller græder \\\hline
+\textbf{Initialisering}					&Barnet bevæger sig eller græder\\\hline
 \textbf{Aktører og Stakeholders}			&Bruger(Primær): Ønsker at kunne detektere barnet. SMS Bruger(Sekundær): 																	Ønsker at modtage en SMS, hvis barnet er detekteret. Barn(Sekundær): Barnet aktivere detektionen 				 \\\hline
-\textbf{Referencer}						&N/A \\\hline
-\textbf{Antal af samtidige hændelser}	&1 detektion af barn \\\hline
+\textbf{Referencer}						&Advisering \\\hline
+\textbf{Antal af samtidige hændelser}	&1 \\\hline
 \textbf{Forudsætning}					&At CSS er aktiveret \\\hline
-\textbf{Efterfølgende tilstand}			&SMS-Brugeren har modtaget de nødvendige informationer \\\hline
-\textbf{Hovedforløb}					&\begin{enumerate}
+\textbf{Efterfølgende tilstand}			&Sensor stadig aktiv \\\hline
+\textbf{Hovedforløb}						&\begin{enumerate}
 	
 				\item Systemet er aktiveret
-										
-				\item Barnet bevæger sig.
 												
-				\item Systemet opfanger bevægelse.
+				\item Systemet opfanger bevægelse eller gråd
 												
-				\item Systemet sender information til SMS-brugeren
-					
-												
+				\item Systemet kalder advisering
+								
 			\end{enumerate}\\\hline1.
-\textbf{Tilføjelser}					&N/A \\\hline
+\textbf{Tilføjelser}					&Ingen \\\hline
 %\textbf{Datavariationsliste}			&Test \\\hline
 	\end{tabular}
 	\label{UC5} 
