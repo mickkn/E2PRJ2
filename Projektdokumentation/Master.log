@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  14 MAR 2014 12:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  14 MAR 2014 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1877,8 +1877,13 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 54.
  (./filer/kravspec/uc5.tex
-Underfull \hbox (badness 3219) in paragraph at lines 7--7
-[]|\T1/cmr/m/n/10.95 Bruger(Primær): Øn-sker at kun-ne de-tek-te-
+Underfull \hbox (badness 2409) in paragraph at lines 7--7
+[]|\T1/cmr/m/n/10.95 Bruger(Primær): Ønsker at kunne overvåge
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 7--7
+\T1/cmr/m/n/10.95 ved gråd eller bevægelser. Barn(Sekundær):
  []
 
 )
@@ -1918,6 +1923,16 @@ Package babel Info: Redefining danish shorthand "~
  (./filer/kravspec/uc8.tex
 Underfull \hbox (badness 2680) in paragraph at lines 34--35
 []\T1/cmr/m/n/10.95 Systemet va-li-de-rer bru-ger-navn og ad-
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 49--49
+[]\T1/cmr/m/n/10.95 Brugernavn eller adgangskode ikke indtastet
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 49--49
+\T1/cmr/m/n/10.95 korret. Brugernavn og adganskode indtastes
  []
 
 ))
@@ -2252,22 +2267,37 @@ Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--24
  []
 
 ) (./filer/accepttest/atuc5.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
+Underfull \hbox (badness 6300) in paragraph at lines 6--6
+[]|\T1/cmr/m/n/10.95 Bruger ak-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
 []|\T1/cmr/m/n/10.95 Efterligner
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
-\T1/cmr/m/n/10.95 be-væ-gel-se
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+\T1/cmr/m/n/10.95 be-væ-gel-ser
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 6--6
-\T1/cmr/m/n/10.95 som de-tek-to-
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]|\T1/cmr/m/n/10.95 SMS-bruger
  []
 
 
-Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--15
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\T1/cmr/m/n/10.95 mod-ta-ger
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 8--8
+[]|\T1/cmr/m/n/10.95 Korrekt in-for-ma-
+ []
+
+
+Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--12
  [][] 
  []
 
@@ -2352,57 +2382,37 @@ Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--19
  []
 
 ) (./filer/accepttest/atuc8.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
-[]|\T1/cmr/m/n/10.95 Der log-ges
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
-\T1/cmr/m/n/10.95 ind i PC
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 7--7
-[]|\T1/cmr/m/n/10.95 Der væl-
+\T1/cmr/m/n/10.95 bru-ger-navn
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
-\T1/cmr/m/n/10.95 ges "Æn-dre
+Underfull \hbox (badness 3078) in paragraph at lines 7--7
+[]|\T1/cmr/m/n/10.95 brugernavn vi-ses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
-[]|\T1/cmr/m/n/10.95 Blive vi-der-sendt
+Underfull \hbox (badness 3713) in paragraph at lines 8--8
+[]|\T1/cmr/m/n/10.95 Indtastede in-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
-\T1/cmr/m/n/10.95 til for-mu-la-ren
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]|\T1/cmr/m/n/10.95 Bruger får
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
-\T1/cmr/m/n/10.95 for æn-dring af
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+\T1/cmr/m/n/10.95 ad-gang til
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--8
-[]|\T1/cmr/m/n/10.95 Ændringer
+Underfull \hbox (badness 1226) in paragraph at lines 9--9
+[]|\T1/cmr/m/n/10.95 Hovedmenu vises
  []
 
 
-Underfull \hbox (badness 6641) in paragraph at lines 8--8
-\T1/cmr/m/n/10.95 gers i sy-ste-met
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 8--8
-\T1/cmr/m/n/10.95 og bru-ge-ren bli-
- []
-
-
-Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--12
+Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--13
  [][] 
  []
 
@@ -2460,10 +2470,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 24671 strings out of 493315
- 436207 string characters out of 6137905
+ 24672 strings out of 493315
+ 436221 string characters out of 6137905
  769409 words of memory out of 5000000
- 27605 multiletter control sequences out of 15000+600000
+ 27606 multiletter control sequences out of 15000+600000
  18564 words of font info for 53 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
  44i,12n,78p,360b,751s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2478,7 +2488,7 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (16 pages, 139807 bytes).
+Output written on Master.pdf (16 pages, 140562 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  213 compressed objects within 3 object streams
