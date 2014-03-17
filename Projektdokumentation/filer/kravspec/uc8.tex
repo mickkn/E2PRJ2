@@ -29,24 +29,25 @@
 
 \item Bruger vælger login i interface
 
-\item Bruger indtaster personlig brugernavn og adgangskode [Undtagelse 1: Bruger vælger Annuller]
+\item \label{UC8und1}Bruger indtaster personlig brugernavn og adgangskode [Undtagelse 1: Bruger vælger Annuller]
 
-\item Systemet validerer brugernavn og adgangskode [Undtagelse 2: Ikke valideret]
+\item \label{UC8und2} Systemet validerer brugernavn og adgangskode [Undtagelse 2: Ikke valideret]
 
 \item Bruger får adgang til hovedmenu
  
 \end{enumerate}
 \\\hline
 
-\textbf{Undtagelser}						&
+\textbf{Undtagelser}						
+&\begin{enumerate}[label= \ref{UC8und1}a.]
+			\item Bruger vælger annuller og kommer tilbage til startskærm
+		\end{enumerate}
+											
+		\begin{enumerate}[label= \ref{UC8und2}a.]
+			\item Brugernavn eller adgangskode ikke indtastet korret. Brugernavn og adganskode indtastes igen.
+		\end{enumerate} \\\hline
 
-Extension 1:
 
-Bruger vælger annuller og kommer tilbage til startskærm
-
-Extension 2: 
-
-Brugernavn eller adgangskode ikke indtastet korret. Brugernavn og adganskode indtastes igen. \\\hline
 %\textbf{Datavariationsliste}			&Test \\\hline
 	\end{tabular}
 	\label{UC8} 
