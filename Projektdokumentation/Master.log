@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  17 MAR 2014 13:55
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  17 MAR 2014 13:56
+>>>>>>> FETCH_HEAD
 =======
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  17 MAR 2014 13:56
 >>>>>>> FETCH_HEAD
@@ -1823,7 +1827,11 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <billeder/Kontekst_Diagram.png, id=118, 267.1581pt x 122.6181pt>
+=======
+<billeder/Kontekst_Diagram.png, id=118, 254.3904pt x 115.8729pt>
+>>>>>>> FETCH_HEAD
 =======
 <billeder/Kontekst_Diagram.png, id=118, 254.3904pt x 115.8729pt>
 >>>>>>> FETCH_HEAD
@@ -1832,7 +1840,11 @@ File: billeder/Kontekst_Diagram.png Graphic file (type png)
 <use billeder/Kontekst_Diagram.png>
 Package pdftex.def Info: billeder/Kontekst_Diagram.png used on input line 6.
 <<<<<<< HEAD
+<<<<<<< HEAD
 (pdftex.def)             Requested size: 255.6026pt x 117.31349pt.
+=======
+(pdftex.def)             Requested size: 255.6026pt x 116.4313pt.
+>>>>>>> FETCH_HEAD
 =======
 (pdftex.def)             Requested size: 255.6026pt x 116.4313pt.
 >>>>>>> FETCH_HEAD
@@ -1863,7 +1875,11 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 48.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <billeder/Usecase_Diagram.png, id=128, 559.3698pt x 502.9992pt>
+=======
+<billeder/Usecase_Diagram.png, id=128, 563.9469pt x 459.8781pt>
+>>>>>>> FETCH_HEAD
 =======
 <billeder/Usecase_Diagram.png, id=128, 563.9469pt x 459.8781pt>
 >>>>>>> FETCH_HEAD
@@ -1872,7 +1888,11 @@ File: billeder/Usecase_Diagram.png Graphic file (type png)
 <use billeder/Usecase_Diagram.png>
 Package pdftex.def Info: billeder/Usecase_Diagram.png used on input line 52.
 <<<<<<< HEAD
+<<<<<<< HEAD
 (pdftex.def)             Requested size: 426.0pt x 383.08157pt.
+=======
+(pdftex.def)             Requested size: 426.0pt x 347.3918pt.
+>>>>>>> FETCH_HEAD
 =======
 (pdftex.def)             Requested size: 426.0pt x 347.3918pt.
 >>>>>>> FETCH_HEAD
@@ -2567,8 +2587,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
 <<<<<<< HEAD
+<<<<<<< HEAD
  24805 strings out of 493315
  438134 string characters out of 6137904
+=======
+ 24802 strings out of 493315
+ 438011 string characters out of 6137905
+>>>>>>> FETCH_HEAD
 =======
  24802 strings out of 493315
  438011 string characters out of 6137905
@@ -2592,7 +2617,11 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf
 ist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/bookman/ubkl8a.pfb>
 <<<<<<< HEAD
+<<<<<<< HEAD
 Output written on Master.pdf (18 pages, 348848 bytes).
+=======
+Output written on Master.pdf (18 pages, 320526 bytes).
+>>>>>>> FETCH_HEAD
 =======
 Output written on Master.pdf (18 pages, 320526 bytes).
 >>>>>>> FETCH_HEAD
