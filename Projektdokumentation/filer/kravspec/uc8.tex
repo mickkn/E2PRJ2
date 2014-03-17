@@ -1,52 +1,41 @@
 \begin{table}[H] \centering
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
-\multicolumn{2}{|l|}{\textbf{UC8: Login}} \\\hline
+\multicolumn{2}{|l|}{\textbf{UC8: Advisering}} \\\hline
 \textbf{Mål}								
-&At tilmeldt bruger af systemet kan logge ind ved brug af personlig brugernavn og password
+&At brugeren kan opsætte/ændre systemets adviserings indstillinger
  \\\hline
 \textbf{Initialisering}					
-&Bruger vælger login i interface
+&Bruger vælger Advisering i interface
  \\\hline
 \textbf{Aktører og Stakeholders}			
 &Primær: Bruger
  \\\hline
 \textbf{Referencer}						
-&Ingen
+&Login
  \\\hline
 \textbf{Antal af samtidige hændelser}	
-&Der kan fortages ét login ad gangen (sådan skal det formuleres!)
+&Der kan fortages en ændring ad gangen
  \\\hline
 \textbf{Forudsætning}					
 &At interface er online
  \\\hline
 \textbf{Efterfølgende tilstand}			
-&At bruger er logget ind og hovedmenu vises på skærmen. Hele systmet er klar til brug
+&Hovedmenu vises på skærmen.
  \\\hline
 \textbf{Hovedforløb}						
 & 
 \begin{enumerate}
 
-\item Bruger vælger login i interface
+\item Bruger vælger advisering i interface
 
-\item Bruger indtaster personlig brugernavn og adgangskode [Extension 1: Bruger vælger Annuller]
+\item Brugeren har mulighed for at ændre adviserings indstillinger
 
-\item Systemet validerer brugernavn og adgangskode [Extension 2: Ikke valideret]
-
-\item Bruger får adgang til hovedmenu
+\item Brugeren godkender
  
 \end{enumerate}
-\\\hline
+ \\\hline
 
-\textbf{Tilføjelser}						&
-
-Extension 1:
-
-Bruger vælger annuller og kommer tilbage til startskærm
-
-Extension 2: 
-
-Brugernavn eller adgangskode ikke indtastet korret. Brugernavn og adganskode indtastes igen. \\\hline
 %\textbf{Datavariationsliste}			&Test \\\hline
 	\end{tabular}
 	\label{UC8} 
