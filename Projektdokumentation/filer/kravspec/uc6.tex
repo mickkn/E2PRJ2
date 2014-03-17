@@ -3,36 +3,34 @@
 	\hline
 \multicolumn{2}{|l|}{\textbf{UC6: Detekter klima}} \\\hline
 \textbf{Mål} &
-Et system overvåger klimaet i et givet rum, og giver information hvis grænseværdier bliver overskredet  \\\hline
+Et system overvåger klimaet i et rum, og sender information til CCS Systemet  \\\hline
 
 \textbf{Initialisering} &
- En grænseværdi overskrides og detekteres af systemet \\\hline
+Sender information til CSS Systemet \\\hline
  
 \textbf{Aktører og Stakeholders} &
-Bruger(primær). SMS-bruger(sekundær) \\\hline
+Ingen \\\hline
 
 \textbf{Referencer} &
-N/A \\\hline
+Vis Status \\\hline
 
 \textbf{Antal af samtidige hændelser} &
-Systemet kan overvåge på flere rum samtidig \\\hline
+1 \\\hline
 
 \textbf{Forudsætning} &
 Systemet skal være tændt og aktivt. \\\hline
 
 \textbf{Efterfølgende tilstand} &
-Information er korret leveret videre til bruger og evt. SMS-bruger. \\\hline
+Fortsætter med at sende information kontinuerligt \\\hline
 
 \textbf{Hovedforløb} &
-1. Systmet er aktivt
+\begin{enumerate}
 
-2. Overskridelse af grænseværdi
-
-3. Overvågningen detekter overskridelsen 
-
-4. Information sendes til bruger og evt. SMS-bruger
-  \\\hline
-
+\item Aflæs værdier
+\item Send data
+\end{enumerate}   
+ \\\hline
+ 
 \textbf{Tilføjelser} &
 N/A \\\hline
 %\textbf{Datavariationsliste}			&Test \\\hline

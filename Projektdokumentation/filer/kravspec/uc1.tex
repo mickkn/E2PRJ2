@@ -1,39 +1,41 @@
 \begin{table}[H] \centering
 	\begin{tabular} {|p{6cm}|p{8cm}|}
 	\hline
-		\multicolumn{2}{|l|}{\textbf{UC1: Aktiver CSS unit}} \\\hline
+		\multicolumn{2}{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}} \\\hline
 		
-		\textbf{Mål}							&At brugeren kan aktiver enkelte eller alle Units, i systemet.	\\\hline
-		\textbf{Initialisering}				&Bruger trykker på "Aktiver"-knap 								\\\hline
-		\textbf{Aktører og Stakeholders}		&Bruger og SMS bruger er primær aktøre 							\\\hline
-		\textbf{Referencer}					& N/A															\\\hline
+		\textbf{Mål}							&At brugeren kan aktivere enkelte eller alle enheder, i systemet.	\\\hline
+		\textbf{Initialisering}				&Bruger vælger "Aktiver". 								\\\hline
+		\textbf{Aktører og Stakeholders}		&Bruger er primær aktører 							\\\hline
+		\textbf{Referencer}					&Login														\\\hline
 		\textbf{Antal af samtidige hændelser}&1 																\\\hline
-		\textbf{Forudsætning}				&Ingen 															\\\hline
-		\textbf{Efterfølgende tilstand}		&De valgte enheder er aktiverede 								\\\hline
+		\textbf{Forudsætning}				&Ingen														\\\hline
+		\textbf{Efterfølgende tilstand}		&Hovedmenu vises 								\\\hline
 		\textbf{Hovedforløb}					
 			&\begin{enumerate}
 	
 				\item Bruger trykker på "Aktiver" knap
+				
+				\item Bruger logger ind med kode.
 										
-				\item Interface viser mulige units samt "Vælg alle"-, "Aktiver"- og "Tilbage"-knapper
+				\item Interface viser mulige enheder samt "Vælg alle", "Aktiver" og "Tilbage"-knapper
 												
-				\item \label{uc1select} Bruger markerer ønskede units til aktivering
+				\item \label{uc1select} Bruger markerer ønskede enheder til aktivering
 												
 				\item \label{uc1ex1} Bruger trykker "Aktiver"\newline
 					\textbf{[Tilføjelse \ref{uc1ex1}a]} Bruger trykker "Tilbage"
 												
-				\item \label{uc1ex2} Systemet aktiverer valgte units\newline
-					\textbf{[Tilføjelse \ref{uc1ex2}a]} Ingen valgte units
+				\item \label{uc1ex2} Systemet aktiverer valgte enheder\newline
+					\textbf{[Tilføjelse \ref{uc1ex2}a]} Ingen valgte enheder
 				
-				\item Brugerinterface viser besked om at units er aktiverede
+				\item Brugerinterface viser besked om at enheder, er aktiverede
 																	
-				\item Interface returnerer til standard skærm 
+				\item Interface returnerer til hovedmenu
 												
 			\end{enumerate}\\\hline
 		
 		\textbf{Tilføjelser}					
 		&\begin{enumerate}[label= \ref{uc1ex1}a.]
-			\item Brugerinterface returenerer til standardskærm og UC1 afbrydes
+			\item Brugerinterface returnerer til standardskærm og UC1 afbrydes
 		\end{enumerate}
 											
 		\begin{enumerate}[label= \ref{uc1ex2}a.]

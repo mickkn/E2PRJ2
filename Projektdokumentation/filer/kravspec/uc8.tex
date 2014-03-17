@@ -1,0 +1,53 @@
+\begin{table}[H] \centering
+\begin{tabular}{|p{6cm}|p{8cm}|}
+	\hline
+\multicolumn{2}{|l|}{\textbf{UC8: Login}} \\\hline
+\textbf{Mål}								
+&At tilmeldt bruger af systemet kan logge ind ved brug af personlig brugernavn og password
+ \\\hline
+\textbf{Initialisering}					
+&Bruger vælger login i interface
+ \\\hline
+\textbf{Aktører og Stakeholders}			
+&Primær: Bruger
+ \\\hline
+\textbf{Referencer}						
+&Ingen
+ \\\hline
+\textbf{Antal af samtidige hændelser}	
+&Der kan fortages ét login ad gangen (sådan skal det formuleres!)
+ \\\hline
+\textbf{Forudsætning}					
+&At interface er online
+ \\\hline
+\textbf{Efterfølgende tilstand}			
+&At bruger er logget ind og hovedmenu vises på skærmen. Hele systmet er klar til brug
+ \\\hline
+\textbf{Hovedforløb}						
+& 
+\begin{enumerate}
+
+\item Bruger vælger login i interface
+
+\item Bruger indtaster personlig brugernavn og adgangskode [Extension 1: Bruger vælger Annuller]
+
+\item Systemet validerer brugernavn og adgangskode [Extension 2: Ikke valideret]
+
+\item Bruger får adgang til hovedmenu
+ 
+\end{enumerate}
+\\\hline
+
+\textbf{Tilføjelser}						&
+
+Extension 1:
+
+Bruger vælger annuller og kommer tilbage til startskærm
+
+Extension 2: 
+
+Brugernavn eller adgangskode ikke indtastet korret. Brugernavn og adganskode indtastes igen. \\\hline
+%\textbf{Datavariationsliste}			&Test \\\hline
+	\end{tabular}
+	\label{UC8} 
+\end{table}
