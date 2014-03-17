@@ -1,19 +1,24 @@
 \begin{table}[H] \centering
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
-\multicolumn{2}{|l|}{\textbf{UC4: Detekter brand}} \\\hline
-\textbf{Mål}								&At detektere en opstået brand og eller røgudvikling \\\hline
+\multicolumn{2}{|l|}{\textbf{UC4: Detekter røg}} \\\hline
+\textbf{Mål}								&At detektere røg og en evt. brand \\\hline
 \textbf{Initialisering}					&For højt røg niveau\\\hline
-\textbf{Aktører og Stakeholders}			&Primær: Bruger ønsker at få besked om brand \\\hline
+\textbf{Aktører og Stakeholders}			&Bruger (primær) ønsker advisering om røg \\\hline
 \textbf{Referencer}						&Advisering \\\hline
 \textbf{Antal af samtidige hændelser}	&1 \\\hline
 \textbf{Forudsætning}					&CSS enhed aktiveret  \\\hline
 \textbf{Efterfølgende tilstand}			&CSS enhed aktiveret \\\hline
-\textbf{Hovedforløb}						&   
-1. CSS sensor detekterer røg \newline 
-2. CSS sensor udløser alarm (alarm tilstand) \newline 
-3. Bruger tvinger CSS sensor ud af alarm tilstand\\\hline
-\textbf{Tilføjelser}						&Det er muligt at teste sensoren, ved at trykke på en knap og herved "illustrere" en brand  \\\hline
+\textbf{Hovedforløb}						&\begin{enumerate}
+\item CSS sensor detekterer røg 
+
+\item CSS sensor udløser alarm (alarm tilstand)
+
+\item Bruger tvinger CSS sensor ud af alarm tilstand
+
+\end{enumerate}\\\hline
+
+\textbf{Tilføjelser}						&Det skal være mulig at teste alarmeringen og adviseringen uden at røg detektoren udsættes for røg.\\\hline
 %\textbf{Datavariationsliste}			&Test \\\hline
 	\end{tabular}
 	\label{UC4} 
