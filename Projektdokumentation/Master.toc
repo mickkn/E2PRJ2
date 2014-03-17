@@ -15,6 +15,7 @@
 \contentsline {subsection}{\numberline {2.2.6}Usecase 6}{10}{subsection.2.2.6}
 \contentsline {subsection}{\numberline {2.2.7}Usecase 7}{10}{subsection.2.2.7}
 \contentsline {subsection}{\numberline {2.2.8}Usecase 8}{11}{subsection.2.2.8}
-\contentsline {subsection}{\numberline {2.2.9}Usecase 9}{12}{subsection.2.2.9}
+\contentsline {section}{\numberline {2.3}Ikke-funktionelle krav}{11}{section.2.3}
+\contentsline {section}{\numberline {2.4}Begr\IeC {\ae }nsninger}{12}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}Forunders\IeC {\o }gelse}{13}{chapter.3}
 \contentsline {chapter}{\chapternumberline {4}Accepttestspecifikation}{15}{chapter.4}

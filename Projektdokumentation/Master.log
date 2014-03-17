@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.4)  16 MAR 2014 21:55
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  17 MAR 2014 13:55
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  17 MAR 2014 13:56
+>>>>>>> FETCH_HEAD
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  17 MAR 2014 13:56
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1818,12 +1830,28 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
-<billeder/Kontekst_Diagram.jpg, id=118, 1113.15875pt x 510.90875pt>
-File: billeder/Kontekst_Diagram.jpg Graphic file (type jpg)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<billeder/Kontekst_Diagram.png, id=118, 267.1581pt x 122.6181pt>
+=======
+<billeder/Kontekst_Diagram.png, id=118, 254.3904pt x 115.8729pt>
+>>>>>>> FETCH_HEAD
+=======
+<billeder/Kontekst_Diagram.png, id=118, 254.3904pt x 115.8729pt>
+>>>>>>> FETCH_HEAD
+File: billeder/Kontekst_Diagram.png Graphic file (type png)
 
-<use billeder/Kontekst_Diagram.jpg>
-Package pdftex.def Info: billeder/Kontekst_Diagram.jpg used on input line 6.
-(pdftex.def)             Requested size: 255.6026pt x 117.31165pt.
+<use billeder/Kontekst_Diagram.png>
+Package pdftex.def Info: billeder/Kontekst_Diagram.png used on input line 6.
+<<<<<<< HEAD
+<<<<<<< HEAD
+(pdftex.def)             Requested size: 255.6026pt x 117.31349pt.
+=======
+(pdftex.def)             Requested size: 255.6026pt x 116.4313pt.
+>>>>>>> FETCH_HEAD
+=======
+(pdftex.def)             Requested size: 255.6026pt x 116.4313pt.
+>>>>>>> FETCH_HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "~
@@ -1844,18 +1872,43 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 46.
- [5 <./billeder/Kontekst_Diagram.jpg>]
+ [5 <./billeder/Kontekst_Diagram.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 48.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 48.
 
+<<<<<<< HEAD
 <billeder/Usecase_Diagram.jpg, id=128, 570.63188pt x 512.66531pt>
 File: billeder/Usecase_Diagram.jpg Graphic file (type jpg)
 
 <use billeder/Usecase_Diagram.jpg>
 Package pdftex.def Info: billeder/Usecase_Diagram.jpg used on input line 52.
 (pdftex.def)             Requested size: 426.0pt x 382.72229pt.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<billeder/Usecase_Diagram.png, id=128, 559.3698pt x 502.9992pt>
+=======
+<billeder/Usecase_Diagram.png, id=128, 563.9469pt x 459.8781pt>
+>>>>>>> FETCH_HEAD
+=======
+<billeder/Usecase_Diagram.png, id=128, 563.9469pt x 459.8781pt>
+>>>>>>> FETCH_HEAD
+File: billeder/Usecase_Diagram.png Graphic file (type png)
+
+<use billeder/Usecase_Diagram.png>
+Package pdftex.def Info: billeder/Usecase_Diagram.png used on input line 52.
+<<<<<<< HEAD
+<<<<<<< HEAD
+(pdftex.def)             Requested size: 426.0pt x 383.08157pt.
+=======
+(pdftex.def)             Requested size: 426.0pt x 347.3918pt.
+>>>>>>> FETCH_HEAD
+=======
+(pdftex.def)             Requested size: 426.0pt x 347.3918pt.
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining danish shorthand "~
@@ -1876,7 +1929,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 60.
  [6
 
- <./billeder/Usecase_Diagram.jpg>]
+ <./billeder/Usecase_Diagram.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining danish shorthand "~
@@ -1979,22 +2032,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
- (./filer/kravspec/uc8.tex
-Underfull \hbox (badness 2680) in paragraph at lines 34--35
-[]\T1/cmr/m/n/10.95 Systemet va-li-de-rer bru-ger-navn og ad-
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 49--49
-[]\T1/cmr/m/n/10.95 Brugernavn eller adgangskode ikke indtastet
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 49--49
-\T1/cmr/m/n/10.95 korret. Brugernavn og adganskode indtastes
- []
-
-)
+ (./filer/kravspec/uc8.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining danish shorthand "~
@@ -2005,34 +2043,25 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 83.
  [10]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 84.
- (./filer/kravspec/uc9.tex
-Underfull \hbox (badness 2680) in paragraph at lines 34--35
-[]\T1/cmr/m/n/10.95 Systemet va-li-de-rer bru-ger-navn og ad-
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 49--49
-[]\T1/cmr/m/n/10.95 Brugernavn eller adgangskode ikke indtastet
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 49--49
-\T1/cmr/m/n/10.95 korret. Brugernavn og adganskode indtastes
- []
-
-))
+(babel)             in language  on input line 86.
+ (./filer/kravspec/ikkefunktionellekrav.tex
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
- [11]
+(babel)             in language  on input line 32.
+
+[11])
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 91.
+)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining danish shorthand "~
@@ -2462,37 +2491,27 @@ Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--19
  []
 
 ) (./filer/accepttest/atuc8.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
-\T1/cmr/m/n/10.95 bru-ger-navn
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+[]|\T1/cmr/m/n/10.95 Advisering
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 7--7
-[]|\T1/cmr/m/n/10.95 brugernavn vi-ses
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+\T1/cmr/m/n/10.95 væl-ges i
  []
 
 
-Underfull \hbox (badness 3713) in paragraph at lines 8--8
-[]|\T1/cmr/m/n/10.95 Indtastede in-for-
+Underfull \hbox (badness 6641) in paragraph at lines 7--7
+\T1/cmr/m/n/10.95 gers i sy-ste-met
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
-[]|\T1/cmr/m/n/10.95 Bruger får
+Underfull \hbox (badness 1931) in paragraph at lines 7--7
+\T1/cmr/m/n/10.95 og bru-ge-ren bli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
-\T1/cmr/m/n/10.95 ad-gang til
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 9--9
-[]|\T1/cmr/m/n/10.95 Hovedmenu vises
- []
-
-
-Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--13
+Overfull \hbox (6.28575pt too wide) in paragraph at lines 2--11
  [][] 
  []
 
@@ -2568,6 +2587,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
 rsoegelse.aux) (./filer/accepttest.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+<<<<<<< HEAD
 Package rerunfilecheck Info: File `Master.out' has not changed.
 (rerunfilecheck)             Checksum: 7125EE40E9735DF8B2207004C85B4364;1064.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
@@ -2576,6 +2596,33 @@ Here is how much of TeX's memory you used:
  24806 strings out of 493315
  438029 string characters out of 6137905
  769168 words of memory out of 5000000
+=======
+
+
+Package rerunfilecheck Warning: File `Master.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Master.out':
+(rerunfilecheck)             Before: 672DAE00A6D2C6E8F27FC208ABEDEF21;1070
+(rerunfilecheck)             After:  35B2B87A03465F50EC2136CB4D07D613;1133.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
+ ) 
+Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+<<<<<<< HEAD
+ 24805 strings out of 493315
+ 438134 string characters out of 6137904
+=======
+ 24802 strings out of 493315
+ 438011 string characters out of 6137905
+>>>>>>> FETCH_HEAD
+=======
+ 24802 strings out of 493315
+ 438011 string characters out of 6137905
+>>>>>>> FETCH_HEAD
+ 767168 words of memory out of 5000000
+>>>>>>> FETCH_HEAD
  27708 multiletter control sequences out of 15000+600000
  20804 words of font info for 56 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
@@ -2593,7 +2640,19 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf
 -dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-d
 ist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/bookman/ubkl8a.pfb>
+<<<<<<< HEAD
 Output written on Master.pdf (18 pages, 285485 bytes).
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Output written on Master.pdf (18 pages, 348848 bytes).
+=======
+Output written on Master.pdf (18 pages, 320526 bytes).
+>>>>>>> FETCH_HEAD
+=======
+Output written on Master.pdf (18 pages, 320526 bytes).
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
 PDF statistics:
  280 PDF objects out of 1000 (max. 8388607)
  245 compressed objects within 3 object streams
