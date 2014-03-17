@@ -1,6 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  14 MAR 2014 08:19
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  14 MAR 2014 20:19
+>>>>>>> FETCH_HEAD
 =======
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  14 MAR 2014 20:19
 >>>>>>> FETCH_HEAD
@@ -2582,8 +2586,11 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `Master.out' has not changed.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: 0C81146A96425B39819905EBB5DF5D79;945.
 =======
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 (rerunfilecheck)             Checksum: 7125EE40E9735DF8B2207004C85B4364;1064.
