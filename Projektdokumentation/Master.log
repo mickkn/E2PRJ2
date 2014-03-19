@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  17 MAR 2014 15:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  19 MAR 2014 09:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1939,24 +1939,33 @@ Underfull \hbox (badness 2057) in paragraph at lines 7--7
 
 )
 Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 72.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 72.
+ [9]
+Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 73.
  (./filer/kravspec/uc6.tex)
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 75.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 75.
- [9]
-Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 76.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 76.
  (./filer/kravspec/uc7.tex)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 78.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 78.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 78.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 78.
+ [10]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
@@ -1976,21 +1985,21 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 83.
- [10]
+ [11]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 86.
  (./filer/kravspec/ikkefunktionellekrav.tex
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 18.
- [11])
+(babel)             in language  on input line 17.
+ [12])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "~
@@ -2003,13 +2012,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 96.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 96.
- [12]
+ [13]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 97.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 97.
 
-<billeder/cmdprompt/CSS_menu.png, id=215, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_menu.png, id=226, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_menu.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_menu.png>
@@ -2017,7 +2026,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_menu.png used on input line 100
 .
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_login.png, id=217, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_login.png, id=228, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_login.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_login.png>
@@ -2025,7 +2034,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_login.png used on input line 10
 6.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_aktiver.png, id=218, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_aktiver.png, id=229, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_aktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_aktiver.png>
@@ -2033,7 +2042,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_aktiver.png used on input line
 112.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_deaktiver.png, id=219, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_deaktiver.png, id=230, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_deaktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_deaktiver.png>
@@ -2044,7 +2053,7 @@ e 118.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_vis_status.png, id=220, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_vis_status.png, id=231, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_vis_status.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_vis_status.png>
@@ -2055,7 +2064,7 @@ ne 124.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_advisering.png, id=221, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_advisering.png, id=232, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_advisering.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_advisering.png>
@@ -2075,7 +2084,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 13.
- [13 <./billeder/cmdprompt/CSS_menu.png> <./billeder/cmdprompt/CSS_login.png> <
+ [14 <./billeder/cmdprompt/CSS_menu.png> <./billeder/cmdprompt/CSS_login.png> <
 ./billeder/cmdprompt/CSS_aktiver.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
@@ -2085,11 +2094,24 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 13.
- [14 <./billeder/cmdprompt/CSS_deaktiver.png> <./billeder/cmdprompt/CSS_vis_sta
+ [15 <./billeder/cmdprompt/CSS_deaktiver.png> <./billeder/cmdprompt/CSS_vis_sta
 tus.png> <./billeder/cmdprompt/CSS_advisering.png>]
 \openout2 = `filer/forundersoegelse.aux'.
 
  (./filer/forundersoegelse.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+ [16
+
+
+
+]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -2103,11 +2125,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 17.
- [15
-
-
-
-]
+ [17]
 \openout2 = `filer/accepttest.aux'.
 
  (./filer/accepttest.tex
@@ -2120,7 +2138,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-[16
+[18
 
 
 
@@ -2331,7 +2349,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 29.
-[17]) (./filer/accepttest/atuc2.tex
+[19]) (./filer/accepttest/atuc2.tex
 Underfull \hbox (badness 1859) in paragraph at lines 7--7
 []|\T1/cmr/m/n/10.95 Vælg "De-ak-
  []
@@ -2535,25 +2553,25 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
- [18]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 21.
- [19]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 21.
  [20]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+ [21]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+ [22]
 \tf@toc=\write5
 \openout5 = `Master.toc'.
 
@@ -2565,13 +2583,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `Master.out' has not changed.
 (rerunfilecheck)             Checksum: 450E7E815726882167B02734E6CAC9AF;1210.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 24852 strings out of 493315
- 439347 string characters out of 6137904
+ 24861 strings out of 493315
+ 439421 string characters out of 6137904
  765168 words of memory out of 5000000
- 27735 multiletter control sequences out of 15000+600000
+ 27736 multiletter control sequences out of 15000+600000
  20804 words of font info for 56 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
  44i,12n,78p,360b,898s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2588,10 +2610,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf
 -dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-d
 ist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (20 pages, 511551 bytes).
+Output written on Master.pdf (22 pages, 512970 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 280 compressed objects within 3 object streams
- 87 named destinations out of 1000 (max. 500000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
+ 95 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
