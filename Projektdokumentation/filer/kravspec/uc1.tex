@@ -1,6 +1,7 @@
 \begin{table}[H] \centering
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
+<<<<<<< HEAD
 \textbf{Mål}								
 &At tilmeldt bruger af systemet kan logge ind ved brug af personlig brugernavn og password
  \\\hline
@@ -44,6 +45,47 @@
 											
 		\begin{enumerate}[label= \ref{UC8und2}a.]
 			\item Brugernavn eller adgangskode ikke indtastet korret. Brugernavn og adganskode indtastes igen.
+=======
+		\multicolumn{2}{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}} \\\hline
+		
+		\textbf{Mål}							&At brugeren kan aktivere enkelte eller alle enheder, i systemet.	\\\hline
+		\textbf{Initialisering}				&Bruger vælger "Aktiver". 										\\\hline
+		\textbf{Aktører og Stakeholders}		&Primær: Bruger ønsker at aktivere CSS enheder					\\\hline
+		\textbf{Referencer}					&Login															\\\hline
+		\textbf{Antal af samtidige hændelser}&1 																\\\hline
+		\textbf{Forudsætning}				&Ingen															\\\hline
+		\textbf{Efterfølgende tilstand}		&Hovedmenu vises 												\\\hline
+		\textbf{Hovedforløb}					
+			&\begin{enumerate}
+	
+				\item Bruger trykker på "Aktiver" knap
+				
+				\item Bruger logger ind med kode.
+										
+				\item Interface viser mulige enheder samt "Vælg alle", "Aktiver" og "Tilbage"-knapper
+												
+				\item \label{uc1select} Bruger markerer ønskede enheder til aktivering
+												
+				\item \label{uc1ex1} Bruger trykker "Aktiver"\newline
+					\textbf{[Undtagelse \ref{uc1ex1}a]} Bruger trykker "Tilbage"
+												
+				\item \label{uc1ex2} Systemet aktiverer valgte enheder\newline
+					\textbf{[Undtagelse \ref{uc1ex2}a]} Ingen valgte enheder
+				
+				\item Brugerinterface viser besked om at enheder, er aktiverede
+																	
+				\item Interface returnerer til hovedmenu
+												
+			\end{enumerate}\\\hline
+		
+		\textbf{Undtagelser}					
+		&\begin{enumerate}[label= \ref{uc1ex1}a.]
+			\item Brugerinterface returnerer til standardskærm og UC1 afbrydes
+		\end{enumerate}
+											
+		\begin{enumerate}[label= \ref{uc1ex2}a.]
+			\item Hvis ingen unit er valgt udskrives en fejl på skærmen og beder brugeren om at vælge en enhed og går til UC1.\ref{uc1select}.
+>>>>>>> FETCH_HEAD
 		\end{enumerate} \\\hline
 
 
