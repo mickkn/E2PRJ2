@@ -1,49 +1,53 @@
 \begin{table}[H] \centering
-	\begin{tabular} {|p{6cm}|p{8cm}|}
+\begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
-		\multicolumn{2}{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}} \\\hline
-		
-		\textbf{Mål}							&At brugeren kan aktivere enkelte eller alle enheder, i systemet.	\\\hline
-		\textbf{Initialisering}				&Bruger vælger "Aktiver". 								\\\hline
-		\textbf{Aktører og Stakeholders}		&Bruger er primær aktører 							\\\hline
-		\textbf{Referencer}					&Login														\\\hline
-		\textbf{Antal af samtidige hændelser}&1 																\\\hline
-		\textbf{Forudsætning}				&Ingen														\\\hline
-		\textbf{Efterfølgende tilstand}		&Hovedmenu vises 								\\\hline
-		\textbf{Hovedforløb}					
-			&\begin{enumerate}
-	
-				\item Bruger trykker på "Aktiver" knap
-				
-				\item Bruger logger ind med kode.
-										
-				\item Interface viser mulige enheder samt "Vælg alle", "Aktiver" og "Tilbage"-knapper
-												
-				\item \label{uc1select} Bruger markerer ønskede enheder til aktivering
-												
-				\item \label{uc1ex1} Bruger trykker "Aktiver"\newline
-					\textbf{[Undtagelse \ref{uc1ex1}a]} Bruger trykker "Tilbage"
-												
-				\item \label{uc1ex2} Systemet aktiverer valgte enheder\newline
-					\textbf{[Undtagelse \ref{uc1ex2}a]} Ingen valgte enheder
-				
-				\item Brugerinterface viser besked om at enheder, er aktiverede
-																	
-				\item Interface returnerer til hovedmenu
-												
-			\end{enumerate}\\\hline
-		
-		\textbf{Undtagelser}					
-		&\begin{enumerate}[label= \ref{uc1ex1}a.]
-			\item Brugerinterface returnerer til standardskærm og UC1 afbrydes
+\textbf{Mål}								
+&At tilmeldt bruger af systemet kan logge ind ved brug af personlig brugernavn og password
+ \\\hline
+\textbf{Initialisering}					
+&Bruger vælger login i interface
+ \\\hline
+\textbf{Aktører og Stakeholders}			
+&Primær: Bruger
+ \\\hline
+\textbf{Referencer}						
+&Ingen
+ \\\hline
+\textbf{Antal af samtidige hændelser}	
+&Der kan fortages ét login ad gangen (sådan skal det formuleres!)
+ \\\hline
+\textbf{Forudsætning}					
+&At interface er online
+ \\\hline
+\textbf{Efterfølgende tilstand}			
+&At bruger er logget ind og hovedmenu vises på skærmen. Hele systmet er klar til brug
+ \\\hline
+\textbf{Hovedforløb}						
+& 
+\begin{enumerate}
+
+\item Bruger vælger login i interface
+
+\item \label{UC8und1}Bruger indtaster personlig brugernavn og adgangskode [Undtagelse 1: Bruger vælger Annuller]
+
+\item \label{UC8und2} Systemet validerer brugernavn og adgangskode [Undtagelse 2: Ikke valideret]
+
+\item Bruger får adgang til hovedmenu
+ 
+\end{enumerate}
+\\\hline
+
+\textbf{Undtagelser}						
+&\begin{enumerate}[label= \ref{UC8und1}a.]
+			\item Bruger vælger annuller og kommer tilbage til startskærm
 		\end{enumerate}
 											
-		\begin{enumerate}[label= \ref{uc1ex2}a.]
-			\item Hvis ingen unit er valgt udskrives en fejl på skærmen og beder brugeren om at vælge en unit og går til UC1.\ref{uc1select}.
+		\begin{enumerate}[label= \ref{UC8und2}a.]
+			\item Brugernavn eller adgangskode ikke indtastet korret. Brugernavn og adganskode indtastes igen.
 		\end{enumerate} \\\hline
-											
-		\textbf{Version}		&1.0 \\\hline
 
+
+		\textbf{Version}		&1.0 \\\hline
 	\end{tabular}
 	\label{UC1} 
 \end{table}

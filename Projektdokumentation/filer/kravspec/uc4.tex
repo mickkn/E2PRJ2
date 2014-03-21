@@ -1,32 +1,29 @@
 \begin{table}[H] \centering
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
-\multicolumn{2}{|l|}{\textbf{UC4: Detekter røg}} \\\hline
-\textbf{Mål}								&At detektere røg og en evt. brand \\\hline
-\textbf{Initialisering}					&For højt røg niveau\\\hline
-\textbf{Aktører og Stakeholders}			&Bruger (primær) ønsker advisering om røg \\\hline
-\textbf{Referencer}						&Advisering \\\hline
-\textbf{Antal af samtidige hændelser}	&1 \\\hline
-\textbf{Forudsætning}					&CSS enhed aktiveret  \\\hline
-\textbf{Efterfølgende tilstand}			&CSS enhed aktiveret \\\hline
-\textbf{Hovedforløb}						&\begin{enumerate}
-\item CSS sensor detekterer røg 
-
-\item CSS sensor udløser alarm (alarm tilstand)
-
-\item Bruger tvinger CSS sensor ud af alarm tilstand
-
-\end{enumerate}\\\hline
-
-\textbf{Tilføjelser}						&Det skal være mulig at teste alarmeringen og adviseringen uden at røg detektoren udsættes for røg.\\\hline
-\textbf{Hovedforløb}						&  
+\textbf{Mål}	&
+Aflæse status \\\hline
+\textbf{Initialisering} &
+Brugeren vælger "Vis status” \\\hline
+\textbf{Aktører og Stakeholders} &
+Bruger \\\hline
+\textbf{Referencer} &
+Ingen \\\hline
+\textbf{Antal af samtidige hændelser} &
+1 \\\hline
+\textbf{Forudsætning} &
+Systemet er tændt \\\hline
+\textbf{Efterfølgende tilstand} &
+Systemet viser hovedmenu \\\hline
+\textbf{Hovedforløb} &
 \begin{enumerate}
-\item CSS sensor detekterer røg
-\item CSS sensor udløser alarm (alarm tilstand)
-\item Bruger tvinger CSS sensor ud af alarm tilstand
+\item Bruger vælger "Vis status"
+\item Status vises
+\item Bruger vælger tilbage
 \end{enumerate} \\\hline
-\textbf{Undtagelser}						&Ingen \\\hline
+\textbf{Undtagelser} &
+Ingen \\\hline
 		\textbf{Version}		&1.0 \\\hline
 	\end{tabular}
-	\label{UC4} 
+	\label{UC3} 
 \end{table}

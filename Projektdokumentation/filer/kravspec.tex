@@ -1,53 +1,57 @@
 \chapter{Kravspecifikation}
 
+\begin{figure}[htbp] \centering
 \section{Aktører}
-
-\begin{figure}[h] \centering
-\fbox{\includegraphics[width=0.6\textwidth]{billeder/Kontekst_Diagram}}
+\fbox{\includegraphics[width=\textwidth]{billeder/Kontekst_Diagram}}
 \caption{Kontekst diagram}
 \label{lab:kontekstdiagram}
 \end{figure}
 
+\begin{table}[!htbp] \centering
 \subsection{Bruger}
-\begin{table}[htbp] \centering
-\begin{tabular}{|p{4cm}|p{7cm}|}
+\begin{tabular}{|p{4cm}|p{8cm}|}
 	\hline
-\textbf{Aktørnavn} &Bruger \\\hline
 \textbf{Type Beskrivelse} &
 Bruger aktøren er ejeren af systemet eller den voksne med adgang til Computeren.
-Dette kunne være, forældre, barnepige osv.	
+Dette kunne være forældre, barnepige osv.	
 \\\hline
 	\end{tabular}
 \end{table}
 
-\subsection{Barn}
-\begin{table}[htbp] \centering
-\begin{tabular}{|p{4cm}|p{7cm}|}
+\begin{table}[!htbp] \centering
+\subsection{Eksterne enheder}
+\begin{tabular}{|p{4cm}|p{8cm}|}
 	\hline
-\textbf{Aktørnavn} &Barn \\\hline
+\textbf{Type Beskrivelse} &
+Eksterne enheder, omfatter hvad man ønsker at aflåse eller
+slukke for. Dette kunne typisk være skabe, komfur, el-kedel osv.	
+\\\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[!htbp] \centering
+\subsection{Barn}
+\begin{tabular}{|p{4cm}|p{8cm}|}
+	\hline
 \textbf{Type Beskrivelse} &
 Barnet eller børnene i huset, som systemet skal beskytte.	
 \\\hline
 	\end{tabular}
 \end{table}
 
-\subsection{SMS Bruger}
-\begin{table}[htbp] \centering
-\begin{tabular}{|p{4cm}|p{7cm}|}
+\begin{table}[!htbp] \centering
+\subsection{SMS modtager}
+\begin{tabular}{|p{4cm}|p{8cm}|}
 	\hline
-\textbf{Aktørnavn} &SMS Bruger \\\hline
 \textbf{Type Beskrivelse} &
-Ligesom Bruger (ejeren, forældrene osv.)
-Men kan også være naboen eller et familiemedlem der bor i nærheden.
+Typisk forældrene eller barnepigen. Den person der skal
+have besked om gråd eller anden støj fra børneværelset.
 \\\hline
 	\end{tabular}
 \end{table}
 
-\clearpage		% For at fikse Diagram inde i Section
-
+\begin{figure}[!htbp] \centering
 \section{Usecases}
-
-\begin{figure}[htbp] \centering
 \vspace*{\fill}
 \includegraphics[width=\textwidth]{billeder/Usecase_Diagram}
 \caption{Usecase diagram}
@@ -55,38 +59,52 @@ Men kan også være naboen eller et familiemedlem der bor i nærheden.
 \vspace*{\fill}
 \end{figure}
 
-\subsection{Usecase 1}
+% UC1: Login
+
+\subsection{UC1: Login}
 \input{filer/kravspec/uc1}
 
-\subsection{Usecase 2}
+% UC2: Aktiver
+
+\subsection{UC2: Aktiver}
 \input{filer/kravspec/uc2}
 
-\subsection{Usecase 3}
+% UC3: Deaktiver
+
+\subsection{UC3: Deaktiver}
 \input{filer/kravspec/uc3}
 
-\subsection{Usecase 4}
+% UC4: Udlæs status
+
+\subsection{UC4: Udlæs status}
 \input{filer/kravspec/uc4}
 
-\subsection{Usecase 5}
+% UC5: Detekter lyd
+
+\subsection{UC5: Detekter lyd}
 \input{filer/kravspec/uc5}
 
-\subsection{Usecase 6}
+% UC6: Rediger SMS-modtager
+
+\subsection{UC6: Rediger SMS-modtager}
 \input{filer/kravspec/uc6}
 
-\subsection{Usecase 7}
+% UC7: Startopsætning
+
+\subsection{UC7: Startopsætning}
 \input{filer/kravspec/uc7}
 
-% Advisering/SMS
+% UC8: Tilføj/fjern X10 udtag
 
-\subsection{Usecase 8}
+\subsection{UC8: Tilføj/fjern X10 udtag}
 \input{filer/kravspec/uc8}
 
-% Ikke-funktionelle krav
+%% Ikke-funktionelle krav
 
 \section{Ikke-funktionelle krav}
 \input{filer/kravspec/ikkefunktionellekrav}
 
-% Begrænsninger
+%% Begrænsninger
 
 \section{Begrænsninger}
 \begin{itemize}

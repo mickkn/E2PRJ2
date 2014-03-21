@@ -1,31 +1,46 @@
+%%% Tabel opsætning
+
 \begin{center}
 \begin{longtable}{|p{1,8cm}|p{2,2cm}|p{3cm}|p{3cm}|p{3cm}|} % l for left, c for center, r for right 
 \hline
-\multicolumn{5} {|l|} {\textbf{UC1: Aktiver CSS enhed}} \\\hline
-&\textbf{Test} &\textbf{Forventet \newline Resultat} &\textbf{Resultat} &\textbf{Godkendt/ \newline Kommentar} \\\hline
+\multicolumn{5}{|l|}{\textbf{UC1: Login}} \\ \hline
+\multicolumn{1}{|c|}{} &
+\textbf{Test} &
+\textbf{Forventet \newline Resultat} &
+\textbf{Resultat} &
+\textbf{Godkendt/ \newline Kommentar} \\ \hline 
+\endfirsthead
 
-\textbf{Punkt 1}		&Der trykkes på knappen "Aktiver"	&Det er muligt at trykke på knappen				&N/A &N/A \\\hline
-		
-\textbf{Punkt 2}		&Visuel test: Billedet skifter til "Aktiver"-billedet og viser specificerede knapper																	&Brugerinterface viser mulige enheder samt specificerede knapper 																																						&N/A &N/A \\\hline
-		
-\textbf{Punkt 3}		&Bruger kan vælge ønskede enheder		& Det er muligt at vælge ønskede enheder 	&N/A &N/A \\\hline
-		
-\textbf{Punkt 4}		&Der trykkes på knappen "Aktiver"		& Det er muligt at trykke på knappen		 	&N/A &N/A \\\hline
+\multicolumn{5}{l}{...fortsat fra forrige side} \\ \hline 
+\multicolumn{1}{|c|}{} &
+\textbf{Test} &
+\textbf{Forventet \newline Resultat} &
+\textbf{Resultat} &
+\textbf{Godkendt/ \newline Kommentar} \\ \hline 
+\endhead
 
-\textbf{Punkt 4a}	&Der trykkes på knappen "Tilbage"		& Brugerinterface viser hovedmenu
-																										&N/A &N/A \\\hline
+%%%% Tabel Opsætning
 
-\textbf{Punkt 5}		&Der måles at valgte enheder bliver aktiveret				
-					&De valgte enheder bliver aktiveret &N/A &N/A \\\hline
-															
-\textbf{Punkt 5a}	&Der vælges ingen enheder i punkt \ref{uc1select} og trykkes "Aktiver"				
-					&Brugerinterface udskriver fejl på skærmen med besked om at vælge en enhed og går til UC1.\ref{uc1select}																												&N/A &N/A \\\hline
-		
-\textbf{Punkt 6}		&Visuel test: Brugerinterface viser besked om at enheder er aktiverede
-															&Brugerinterface viser besked 				&N/A &N/A \\\hline
-\textbf{Punkt 7}		&Visuel test: Brugerinterface viser hovedmenu
-															&Brugerinterface viser hovedmenu 		&N/A &N/A \\\hline
-															
+\textbf{Punkt 1}		
+&Login vælges i interface	
+&Login screen kommer frem på skærmen 	
+&N/A 	
+&N/A \\\hline
+\textbf{Punkt 2}		
+&Brugernavnet "Test Bruger" oprettes og tildeles passwordet "test4321" Login forsøg foretages med disse parameter	
+&brugernavn vises på skærmen, password karakter vises som "*" 	
+&N/A 	
+&N/A \\\hline
+\textbf{Punkt 3}		
+&Systemet validerer login information		
+&Indtastede information vailders af systemtet 	
+&N/A 	
+&N/A \\\hline
+\textbf{Punkt 4}		
+&Bruger får adgang til hovedmenu		
+&Hovedmenu vises på skærmen og er klar til brug 	
+&N/A 	
+&N/A  \\\hline
 	\end{longtable}
 	%\caption{•}
 	\label{ATUC1} 

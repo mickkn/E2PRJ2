@@ -1,30 +1,45 @@
 \begin{table}[H] \centering
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
-\multicolumn{2}{|l|}{\textbf{UC3: Udlæs Status}} \\\hline
 \textbf{Mål}	&
-Aflæse status \\\hline
+At brugeren kan deaktivere enkelte eller alle enheder, i systemet.
+\\\hline
 \textbf{Initialisering} &
-Brugeren vælger "Vis status” \\\hline
-\textbf{Aktører og Stakeholders} &
-Bruger \\\hline
+Bruger vælger "deaktiver"
+\\\hline
+\textbf{Aktører og Stakeholders}	&
+Bruger(Primær), Eksterne enheder(Sekundær)
+\\\hline
 \textbf{Referencer} &
-Ingen \\\hline
+UC1: Login
+\\\hline
 \textbf{Antal af samtidige hændelser} &
-1 \\\hline
+1
+\\\hline
 \textbf{Forudsætning} &
-Systemet er tændt \\\hline
+At systemet er helt eller delvist aktiveret.
+\\\hline
 \textbf{Efterfølgende tilstand} &
-Systemet viser hovedmenu \\\hline
-\textbf{Hovedforløb} &
+Enkelte eller alle enheder er deaktiveret
+\\\hline
+\textbf{Hovedforløb}	&
+Bruger vælger deaktiver og følger instruktionerne på skærmen.
+
 \begin{enumerate}
-\item Bruger vælger "Vis status"
-\item Status vises
-\item Bruger vælger tilbage
-\end{enumerate} \\\hline
-\textbf{Undtagelser} &
-Ingen \\\hline
-		\textbf{Version}		&1.0 \\\hline
+	
+	\item Deaktiver alt
+
+	\item Deaktiver alle låse
+	
+	\item Deaktiver babyalarm
+	
+\end{enumerate}
+
+\\\hline
+\textbf{Undtagelser}	&
+Ingen
+\\\hline
+\textbf{Version}		&1.1 \\\hline
 	\end{tabular}
-	\label{UC3} 
+	\label{tab:UC2} 
 \end{table}

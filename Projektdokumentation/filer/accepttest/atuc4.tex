@@ -1,24 +1,42 @@
-\begin{table}[htbp] \centering
-\begin{tabular}{|p{1,7cm}|p{2,3cm}|p{3cm}|p{3cm}|p{3cm}|} % l for left, c for center, r for right 
-	\hline
-\multicolumn{5}{|l|}{\textbf{UC4: Detekter røg}} \\\hline
-&\textbf{Test} &\textbf{Forventet \newline Resultat} &\textbf{Resultat} &\textbf{Godkendt/ \newline Kommentar} \\\hline
+%%% Tabel opsætning
+
+\begin{center}
+\begin{longtable}{|p{1,8cm}|p{2,2cm}|p{3cm}|p{3cm}|p{3cm}|} % l for left, c for center, r for right 
+\hline
+\multicolumn{5}{|l|}{\textbf{UC4: Udlæs status}} \\ \hline
+\multicolumn{1}{|c|}{} &
+\textbf{Test} &
+\textbf{Forventet \newline Resultat} &
+\textbf{Resultat} &
+\textbf{Godkendt/ \newline Kommentar} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{l}{...fortsat fra forrige side} \\ \hline 
+\multicolumn{1}{|c|}{} &
+\textbf{Test} &
+\textbf{Forventet \newline Resultat} &
+\textbf{Resultat} &
+\textbf{Godkendt/ \newline Kommentar} \\ \hline 
+\endhead
+
+%%%% Tabel Opsætning
+
 \textbf{Punkt 1} &
-Tilfør røg til sensor &
-Se næste punkt &
-N/A & 
+Vælger "Vis status" &
+Systemet viser status &
+N/A &
 N/A \\\hline
 \textbf{Punkt 2} &
-Alarm udløses &
-Visuel/Auditiv: Alarmering &
-N/A	 &
+Status vises &
+Visuel: Status for systemet vises &
+N/A &
 N/A \\\hline
 \textbf{Punkt 3} &
-Tryk på deaktiver knap &
-Alarmering slukkes midlertidigt&
-N/A	 &
+Vælg tilbage fra status &
+Visuel: Hovedmenu vises &
+N/A &
 N/A \\\hline
-	\end{tabular}
+	\end{longtable}
 	%\caption{•}
 	\label{ATUC4} 
-\end{table}
+\end{center}
