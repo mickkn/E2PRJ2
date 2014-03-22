@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  21 MAR 2014 19:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  22 MAR 2014 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1904,178 +1904,9 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 64.
  (./filer/kravspec/uc1.tex
-Underfull \hbox (badness 2680) in paragraph at lines 34--35
+Underfull \hbox (badness 2680) in paragraph at lines 33--34
 []\T1/cmr/m/n/10.95 Systemet va-li-de-rer bru-ger-navn og ad-
  []
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra }, or forgotten \endgroup.
-<recently read> \egroup 
-                        
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-<template> \unskip \relax \@endpbox \egroup 
-                                            \egroup \begingroup \CT@setup \C...
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-<template> ...ip \relax \@endpbox \egroup \egroup 
-                                                  \begingroup \CT@setup \CT@...
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 47--49
-[]\T1/cmr/m/n/10.95 Brugernavn eller adgangskode ikke indtastet
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 47--49
-\T1/cmr/m/n/10.95 korret. Brugernavn og adganskode indtastes
- []
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.49 ...{|l|}{\textbf{UC1: Aktiver CSS enhed(er)}}
-                                                   \\\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 51--51
-[]|\T1/cmr/m/n/10.95 At brugeren kan aktivere enkelte eller alle
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 83--84
-[]\T1/cmr/m/n/10.95 Brugerinterface re-tur-ne-rer til stan-dards-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.88 >>>>>>> FETCH_
-                   HEAD
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: Command \end{enumerate} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 		\end{enumerate}
-                       \\\hline
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 		\end{enumerate}
-                       \\\hline
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 		\end{enumerate}
-                       \\\hline
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.89 		\end{enumerate}
-                       \\\hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 )
 Package babel Info: Redefining danish shorthand "|
@@ -2096,33 +1927,26 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 66.
  [8 <./billeder/Usecase_Diagram.png>]
-Overfull \vbox (74.79082pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 66.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 66.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 66.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 66.
-
-[9]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 69.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 69.
- (./filer/kravspec/uc2.tex
+
+(./filer/kravspec/uc2.tex
 Underfull \hbox (badness 1701) in paragraph at lines 4--4
 []|\T1/cmr/m/n/10.95 At brugeren kan aktivere enkelte eller alle
  []
 
-
-Underfull \hbox (badness 1014) in paragraph at lines 36--37
-[]\T1/cmr/m/n/10.95 Brugerinterface re-tur-ne-rer til stan-dards-
- []
-
 )
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 71.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 71.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 71.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 71.
+ [9]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "~
@@ -2148,24 +1972,15 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 84.
 
 (./filer/kravspec/uc5.tex
-Underfull \hbox (badness 2409) in paragraph at lines 6--6
-[]|\T1/cmr/m/n/10.95 Bruger(Primær): Ønsker at kunne overvåge
- []
-
-
-Underfull \hbox (badness 2057) in paragraph at lines 6--6
-\T1/cmr/m/n/10.95 ved gråd eller bevægelser. Barn(Sekundær):
- []
-
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 25.
-[11])
+(babel)             in language  on input line 35.
+ [11])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining danish shorthand "~
@@ -2175,7 +1990,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 94.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 94.
- (./filer/kravspec/uc7.tex)
+
+(./filer/kravspec/uc7.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 96.
 Package babel Info: Redefining danish shorthand "~
@@ -2189,13 +2005,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 99.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 99.
-
-(./filer/kravspec/uc8.tex)
+ (./filer/kravspec/uc8.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 104.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 104.
- (./filer/kravspec/ikkefunktionellekrav.tex
+
+(./filer/kravspec/ikkefunktionellekrav.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
@@ -2217,13 +2033,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 114.
-
-[14]
+ [14]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 115.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 115.
- <billeder/cmdprompt/CSS_menu.png, id=249, 511.15968pt x 258.21469pt>
+
+<billeder/cmdprompt/CSS_menu.png, id=235, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_menu.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_menu.png>
@@ -2231,7 +2047,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_menu.png used on input line 118
 .
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_login.png, id=251, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_login.png, id=237, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_login.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_login.png>
@@ -2239,7 +2055,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_login.png used on input line 12
 4.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_aktiver.png, id=252, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_aktiver.png, id=238, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_aktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_aktiver.png>
@@ -2247,7 +2063,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_aktiver.png used on input line
 130.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_deaktiver.png, id=253, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_deaktiver.png, id=239, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_deaktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_deaktiver.png>
@@ -2258,7 +2074,7 @@ e 136.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_vis_status.png, id=254, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_vis_status.png, id=240, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_vis_status.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_vis_status.png>
@@ -2269,7 +2085,7 @@ ne 142.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_advisering.png, id=255, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_advisering.png, id=241, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_advisering.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_advisering.png>
@@ -2695,47 +2511,52 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 []|\T1/cmr/m/n/10.95 Bruger
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 24--24
-\T1/cmr/m/n/10.95 ak-ti-ve-re sy-
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\T1/cmr/m/n/10.95 ak-ti-ve-rer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-\T1/cmr/m/n/10.95 ste-met via
+Overfull \hbox (0.61641pt too wide) in paragraph at lines 30--31
+[]|\T1/cmr/m/n/10.95 Kontinuerligt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-[]|\T1/cmr/m/n/10.95 Efterligner
+Underfull \hbox (badness 7186) in paragraph at lines 30--31
+\T1/cmr/m/n/10.95 lyd ef-ter-lig-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/cmr/m/n/10.95 be-væ-gel-ser
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+[]|\T1/cmr/m/n/10.95 SMS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\T1/cmr/m/n/10.95 SMS-bruger
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+\T1/cmr/m/n/10.95 modtager
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-\T1/cmr/m/n/10.95 mod-ta-ger
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+\T1/cmr/m/n/10.95 får til-sendt
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 26--26
-[]|\T1/cmr/m/n/10.95 Korrekt in-for-ma-
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]|\T1/cmr/m/n/10.95 SMS-modtager
  []
 
 
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--27
+Underfull \hbox (badness 1331) in paragraph at lines 36--37
+\T1/cmr/m/n/10.95 ly-nin-ger om-kring
+ []
+
+
+Overfull \hbox (6.28575pt too wide) in alignment at lines 20--39
  [] [] [] [] [] 
  []
 
@@ -2813,16 +2634,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `Master.out' has not changed.
 (rerunfilecheck)             Checksum: A95FEAAB1755A0C98B12EC87F24F3943;1404.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 24915 strings out of 493315
- 440240 string characters out of 6137904
+ 24904 strings out of 493315
+ 440132 string characters out of 6137905
  765292 words of memory out of 5000000
- 27767 multiletter control sequences out of 15000+600000
+ 27764 multiletter control sequences out of 15000+600000
  20804 words of font info for 56 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
  44i,12n,78p,360b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2830,20 +2648,19 @@ Here is how much of TeX's memory you used:
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
 /usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
 ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/
-type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (22 pages, 517313 bytes).
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/urw/bookman/ubkl8a.pfb>
+Output written on Master.pdf (22 pages, 506918 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 321 compressed objects within 4 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 359 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
