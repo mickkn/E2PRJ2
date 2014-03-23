@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  23 MAR 2014 15:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  23 MAR 2014 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1649,7 +1649,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ))
-No file Master.aux.
+(./Master.aux (./filer/indledning.aux) (./filer/ordliste.aux)
+(./filer/kravspec.aux) (./filer/forundersoegelse.aux) (./filer/accepttest.aux))
 \openout1 = `Master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1730,12 +1731,14 @@ LaTeX Info: Redefining \nameref on input line 3.
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
+(./Master.out) (./Master.out)
 \@outlinefile=\write4
 \openout4 = `Master.out'.
 
 LaTeX Info: Redefining \Ref on input line 3.
 \c__siunitx_mathsf_int=\count337
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1749,7 +1752,7 @@ LaTeX Font Info:    Try loading font information for U+stmry on input line 3.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 \c__siunitx_mathtt_int=\count338
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pbk.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pbk.fd) (./Master.toc)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining danish shorthand "~
@@ -1758,7 +1761,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 9.
- [1
+
+[1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `filer/indledning.aux'.
@@ -1782,7 +1786,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-<billeder/Plan_tegning.png, id=15, 480.3546pt x 382.5492pt>
+<billeder/Plan_tegning.png, id=131, 480.3546pt x 382.5492pt>
 File: billeder/Plan_tegning.png Graphic file (type png)
 
 <use billeder/Plan_tegning.png>
@@ -1858,7 +1862,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 4.
 
-<billeder/Kontekst_Diagram.png, id=41, 285.2256pt x 110.5731pt>
+<billeder/Kontekst_Diagram.png, id=155, 285.2256pt x 110.5731pt>
 File: billeder/Kontekst_Diagram.png Graphic file (type png)
 
 <use billeder/Kontekst_Diagram.png>
@@ -1870,27 +1874,36 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 5--6
  []
 
 Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 31.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 31.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 40.
+Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 49.
-<billeder/Usecase_Diagram.png, id=42, 576.7146pt x 487.8225pt>
+<billeder/Usecase_Diagram.png, id=156, 576.7146pt x 487.8225pt>
 File: billeder/Usecase_Diagram.png Graphic file (type png)
 
 <use billeder/Usecase_Diagram.png>
 Package pdftex.def Info: billeder/Usecase_Diagram.png used on input line 51.
 (pdftex.def)             Requested size: 426.0pt x 360.3503pt.
- (./filer/kravspec/uc1.tex
-Underfull \hbox (badness 2680) in paragraph at lines 33--34
-[]\T1/cmr/m/n/10.95 Systemet va-li-de-rer bru-ger-navn og ad-
- []
-
-
-LaTeX Warning: Reference `UC8und1' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Reference `UC8und2' on page 7 undefined on input line 46.
-
-)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 59.
+ (./filer/kravspec/uc1.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining danish shorthand "~
@@ -1909,29 +1922,15 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 61.
  [8 <./billeder/Usecase_Diagram.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 64.
+
 (./filer/kravspec/uc2.tex
-
-LaTeX Warning: Reference `uc2act' on page 9 undefined on input line 24.
-
-
-LaTeX Warning: Reference `uc2sysact' on page 9 undefined on input line 27.
-
-
-LaTeX Warning: Reference `uc2login' on page 9 undefined on input line 38.
-
-
-LaTeX Warning: Reference `uc2act' on page 9 undefined on input line 42.
-
-
 Underfull \hbox (badness 2452) in paragraph at lines 42--43
 []\T1/cmr/m/n/10.95 UI returnerer til hovedmenu og UC2
  []
-
-
-LaTeX Warning: Reference `uc2sysact' on page 9 undefined on input line 46.
-
-
-LaTeX Warning: Reference `uc2menu' on page 9 undefined on input line 46.
 
 )
 Package babel Info: Redefining danish shorthand "|
@@ -1942,37 +1941,21 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 66.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 66.
- [9] (./filer/kravspec/uc3.tex
+ [9]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 69.
+ (./filer/kravspec/uc3.tex
 Underfull \hbox (badness 1412) in paragraph at lines 5--5
 []|\T1/cmr/m/n/10.95 At Bruger kan deaktivere enkelte eller alle
  []
-
-
-LaTeX Warning: Reference `uc3login' on page 10 undefined on input line 17.
-
-
-LaTeX Warning: Reference `uc3deact' on page 10 undefined on input line 26.
-
-
-LaTeX Warning: Reference `uc3sysdeact' on page 10 undefined on input line 29.
-
-
-LaTeX Warning: Reference `uc3login' on page 10 undefined on input line 40.
-
-
-LaTeX Warning: Reference `uc3deact' on page 10 undefined on input line 44.
 
 
 Underfull \hbox (badness 2452) in paragraph at lines 44--45
 []\T1/cmr/m/n/10.95 UI returnerer til hovedmenu og UC3
  []
 
-
-LaTeX Warning: Reference `uc3sysdeact' on page 10 undefined on input line 48.
-
-
-LaTeX Warning: Reference `uc3menu' on page 10 undefined on input line 48.
-
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 71.
@@ -1982,7 +1965,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 71.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 71.
- [10] (./filer/kravspec/uc4.tex)
+ [10]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 74.
+ (./filer/kravspec/uc4.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 76.
 Package babel Info: Redefining danish shorthand "~
@@ -1991,7 +1979,17 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 76.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 76.
- [11] (./filer/kravspec/uc5.tex)
+ [11]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 79.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 79.
+ (./filer/kravspec/uc5.tex)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 84.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 84.
+
 (./filer/kravspec/uc6.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 86.
@@ -2001,7 +1999,17 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 86.
- [12] (./filer/kravspec/uc7.tex)
+ [12]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 89.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 89.
+ (./filer/kravspec/uc7.tex)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 94.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 94.
+
 (./filer/kravspec/uc8.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 96.
@@ -2045,7 +2053,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 110.
 
-<billeder/cmdprompt/CSS_menu.png, id=151, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_menu.png, id=265, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_menu.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_menu.png>
@@ -2053,7 +2061,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_menu.png used on input line 113
 .
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_login.png, id=153, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_login.png, id=267, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_login.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_login.png>
@@ -2061,7 +2069,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_login.png used on input line 11
 9.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_aktiver.png, id=154, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_aktiver.png, id=268, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_aktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_aktiver.png>
@@ -2069,7 +2077,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_aktiver.png used on input line
 125.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_deaktiver.png, id=155, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_deaktiver.png, id=269, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_deaktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_deaktiver.png>
@@ -2080,7 +2088,7 @@ e 131.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_vis_status.png, id=156, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_vis_status.png, id=270, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_vis_status.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_vis_status.png>
@@ -2091,7 +2099,7 @@ ne 137.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_advisering.png, id=157, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_advisering.png, id=271, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_advisering.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_advisering.png>
@@ -2143,7 +2151,26 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
-)
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 3.
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 3.
+(./filer/forundersoegelse/GSM.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]|\T1/cmr/m/n/10.95 http://dk.farnell.com/cinterion/mc75i/module-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\T1/cmr/m/n/10.95 http://dk.farnell.com/cinterion/tc65i/mod-
+ []
+
+))
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
@@ -2164,8 +2191,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
-
-[20
+ [20
 
 
 
@@ -2175,48 +2201,53 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
  (./filer/accepttest/atuc1.tex
-Overfull \hbox (1.97418pt too wide) in paragraph at lines 30--31
-[]|\T1/cmr/m/n/10.95 Brugernavnet
+Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 30--31
+[]|\T1/cmr/m/n/10.95 Login for-søg
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 "Test Bru-
+\T1/cmr/m/n/10.95 fo-re-ta-ges
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 ger"oprettes
+\T1/cmr/m/n/10.95 me-d-ad-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 og til-de-les
+\T1/cmr/m/n/10.95 gangs-ko-den:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 pas-swor-det
+Underfull \hbox (badness 1910) in paragraph at lines 31--32
+[]|\T1/cmr/m/n/10.95 Adgangskode ka-
  []
 
 
-Overfull \hbox (14.43748pt too wide) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 "test4321"Login
+Underfull \hbox (badness 1215) in paragraph at lines 31--32
+\T1/cmr/m/n/10.95 rak-ter vi-ses som
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 31--32
-[]|\T1/cmr/m/n/10.95 brugernavn vi-ses
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+[]|\T1/cmr/m/n/10.95 Systemet
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 35--36
-\T1/cmr/m/n/10.95 li-de-rer lo-gin
- []
-
-
-Underfull \hbox (badness 3713) in paragraph at lines 36--37
-[]|\T1/cmr/m/n/10.95 Indtastede in-for-
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]|\T1/cmr/m/n/10.95 Indtastede ad-
  []
 
 
@@ -2239,11 +2270,17 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 20--44
  [] [] [] [] [] 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.1 on input line 44.
-
 ) (./filer/accepttest/atuc2.tex
+Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
+ [] [] [] [] [] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 []|\T1/cmr/m/n/10.95 Bruger log-
  []
@@ -2339,7 +2376,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
  []
 
 
-LaTeX Warning: Reference `uc2menu' on page 21 undefined on input line 63.
+Underfull \hbox (badness 1629) in paragraph at lines 63--65
+\T1/cmr/m/n/10.95 til UC2.[][]3[][] . Der
+ []
 
 
 Underfull \hbox (badness 1270) in paragraph at lines 63--65
@@ -2376,10 +2415,6 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 20--80
  [] [] [] [] [] 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.2 on input line 80.
-
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining danish shorthand "~
@@ -2389,6 +2424,16 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 80.
 [21]) (./filer/accepttest/atuc3.tex
+Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
+ [] [] [] [] [] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 []|\T1/cmr/m/n/10.95 Bruger log-
  []
@@ -2489,7 +2534,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
  []
 
 
-LaTeX Warning: Reference `uc3menu' on page 22 undefined on input line 63.
+Underfull \hbox (badness 1629) in paragraph at lines 63--65
+\T1/cmr/m/n/10.95 til UC2.[][]3[][] . Der
+ []
 
 
 Underfull \hbox (badness 1270) in paragraph at lines 63--65
@@ -2534,20 +2581,17 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 80.
-[22]
+[22]) (./filer/accepttest/atuc4.tex
+Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
+ [] [] [] [] [] 
+ []
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.3 on input line 80.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 83.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 83.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 83.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 83.
-[23]) (./filer/accepttest/atuc4.tex
+Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
+ [] [] [] [] [] 
+ []
+
+
 Underfull \hbox (badness 2600) in paragraph at lines 25--25
 []|\T1/cmr/m/n/10.95 Vælger "Vis
  []
@@ -2562,11 +2606,25 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 20--39
  [] [] [] [] [] 
  []
 
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 39.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 39.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 39.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 39.
+[23]) (./filer/accepttest/atuc5.tex
+Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
+ [] [] [] [] [] 
+ []
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.4 on input line 39.
 
-) (./filer/accepttest/atuc5.tex
+Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
+ [] [] [] [] [] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 []|\T1/cmr/m/n/10.95 Bruger
  []
@@ -2616,20 +2674,32 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 20--39
  [] [] [] [] [] 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.5 on input line 39.
-
 ) (./filer/accepttest/atuc6.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--42
+Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
  [] [] [] [] [] 
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.6 on input line 42.
+Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.28575pt too wide) in alignment at lines 20--42
+ [] [] [] [] [] 
+ []
 
 ) (./filer/accepttest/atuc7.tex
+Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
+ [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (6.28575pt too wide) in alignment at lines 20--42
  [] [] [] [] [] 
  []
@@ -2642,19 +2712,20 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 42.
-[24]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.7 on input line 42.
-
-) (./filer/accepttest/atuc8.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--42
+[24]) (./filer/accepttest/atuc8.tex
+Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
  [] [] [] [] [] 
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.8 on input line 42.
+Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.28575pt too wide) in alignment at lines 20--42
+ [] [] [] [] [] 
+ []
 
 ))
 Package babel Info: Redefining danish shorthand "|
@@ -2669,40 +2740,24 @@ Package babel Info: Redefining danish shorthand "~
 \tf@toc=\write5
 \openout5 = `Master.toc'.
 
-
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
-(./Master.aux (./filer/indledning.aux) (./filer/ordliste.aux)
+ (./Master.aux (./filer/indledning.aux) (./filer/ordliste.aux)
 (./filer/kravspec.aux) (./filer/forundersoegelse.aux) (./filer/accepttest.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
-
-Package rerunfilecheck Warning: File `Master.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Master.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  BDAAB4B0E2F72FC6CF7CC95C531CBC1A;568.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `Master.out' has not changed.
+(rerunfilecheck)             Checksum: 08219F46A4ACCC13A7CC38BDD2844944;1459.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 24871 strings out of 493315
- 439465 string characters out of 6137905
- 774292 words of memory out of 5000000
- 27736 multiletter control sequences out of 15000+600000
+ 24929 strings out of 493315
+ 440429 string characters out of 6137905
+ 773292 words of memory out of 5000000
+ 27770 multiletter control sequences out of 15000+600000
  20804 words of font info for 56 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 44i,13n,78p,360b,901s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,78p,360b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
 /usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
@@ -2716,10 +2771,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf
 -dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-d
 ist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (25 pages, 506482 bytes).
+Output written on Master.pdf (25 pages, 513390 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 112 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 344 compressed objects within 4 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
