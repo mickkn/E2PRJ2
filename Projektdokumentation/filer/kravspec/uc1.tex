@@ -2,7 +2,7 @@
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
 \textbf{Mål}								
-&At tilmeldt bruger af systemet kan logge ind ved brug af personlig brugernavn og password
+&At autoriseret bruger kan logge ind ved hjælp af adgangskode
  \\\hline
 \textbf{Initialisering}					
 &Bruger vælger login i interface
@@ -14,7 +14,7 @@
 &Ingen
  \\\hline
 \textbf{Antal af samtidige hændelser}	
-&Der kan fortages ét login ad gangen (sådan skal det formuleres!)
+&Der kan fortages ét login ad gangen
  \\\hline
 \textbf{Forudsætning}					
 &At interface er online
@@ -28,9 +28,9 @@
 
 \item Bruger vælger login i interface
 
-\item \label{UC8und1}Bruger indtaster personlig brugernavn og adgangskode [Undtagelse 1: Bruger vælger Annuller]
+\item \label{UC8und1}Bruger indtaster adgangskode [Undtagelse 1: Bruger vælger Annuller]
 
-\item \label{UC8und2} Systemet validerer brugernavn og adgangskode [Undtagelse 2: Ikke valideret]
+\item \label{UC8und2} Systemet validerer adgangskode [Undtagelse 2: Ikke valideret]
 
 \item Bruger får adgang til hovedmenu
  
@@ -43,7 +43,7 @@
 		\end{enumerate}
 											
 		\begin{enumerate}[label= \ref{UC8und2}a.]
-			\item Brugernavn eller adgangskode ikke indtastet korret. Brugernavn og adganskode indtastes igen.
+			\item Adgangskode ikke indtastet korret. Adganskode indtastes igen.
 		\end{enumerate} \\\hline
 
 
