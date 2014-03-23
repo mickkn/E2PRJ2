@@ -1,24 +1,34 @@
 \begin{table}[H] \centering
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
-\textbf{Mål}								&At detektere om barnet bevæger sig eller græder \\\hline
-\textbf{Initialisering}					&Barnet bevæger sig eller græder\\\hline
-\textbf{Aktører og Stakeholders}			&Bruger(Primær): Ønsker at kunne overvåge barnet. SMS Bruger(Sekundær): 																	Modtager SMS ved gråd eller bevægelser. Barn(Sekundær): Ønskes overvåget 				 \\\hline
-\textbf{Referencer}						&Advisering \\\hline
-\textbf{Antal af samtidige hændelser}	&1 \\\hline
-\textbf{Forudsætning}					&At CSS er aktiveret \\\hline
-\textbf{Efterfølgende tilstand}			&Sensor stadig aktiv \\\hline
-\textbf{Hovedforløb}						&\begin{enumerate}
+\textbf{Mål}								
+&At detektere om barnet græder \\\hline
+\textbf{Initialisering}					
+&Kontinuerligt lyd fra barn \\\hline
+\textbf{Aktører og Stakeholders}			
+&Bruger(Primær): Ønsker at kunne overvåge barnet. SMS-modtager(Sekundær): 					Modtager SMS ved gråd. Barn(Sekundær): Ønskes overvåget 				 \\\hline
+\textbf{Referencer}						
+&Advisering \\\hline
+\textbf{Antal af samtidige hændelser}	
+&1 \\\hline
+\textbf{Forudsætning}					
+&At CSS er aktiveret, og advisering er opsat \\\hline
+\textbf{Efterfølgende tilstand}			
+&Sensor stadig aktiv \\\hline
+\textbf{Hovedforløb}						
+&\begin{enumerate}
 	
 				\item Systemet er aktiveret
 												
-				\item Systemet opfanger bevægelse eller gråd
+				\item Systemet detekter gråd
 												
 				\item Systemet kalder advisering
 								
-			\end{enumerate}\\\hline1.
-\textbf{Undtagelser}					&Ingen \\\hline
-		\textbf{Version}		&1.0 \\\hline
+			\end{enumerate}\\\hline
+			
+\textbf{Undtagelser}					
+&Ingen \\\hline
+		\textbf{Version}		&1.1 \\\hline
 	\end{tabular}
 	\label{UC5} 
 \end{table}
