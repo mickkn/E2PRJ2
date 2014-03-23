@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.27)  23 MAR 2014 14:54
+=======
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.4)  23 MAR 2014 10:16
+>>>>>>> FETCH_HEAD
 =======
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.4)  23 MAR 2014 10:16
 >>>>>>> FETCH_HEAD
@@ -1721,11 +1725,19 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\siunitx\config\siunitx-abbreviati
 ons.cfg"
 File: siunitx-abbreviations.cfg 2012/07/22 v2.5g siunitx: Abbreviated units
+<<<<<<< HEAD
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\siunitx\config\siunitx-binary.cfg
 "
 File: siunitx-binary.cfg 2012/07/22 v2.5g siunitx: Binary units
 )
+=======
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\siunitx\config\siunitx-binary.cfg
+"
+File: siunitx-binary.cfg 2012/07/22 v2.5g siunitx: Binary units
+)
+>>>>>>> FETCH_HEAD
 \c@lstlisting=\count333
 \AtBeginShipoutBox=\box91
 Package hyperref Info: Link coloring ON on input line 3.
@@ -1791,9 +1803,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--9
 /billeder/Plan_tegning.png>]
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
 iler/ordliste.tex" [4
+<<<<<<< HEAD
 
 
 
+=======
+
+
+
+>>>>>>> FETCH_HEAD
 ]) [5]
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
 iler/kravspec.tex" [6
@@ -1812,6 +1830,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 5--6
  [] 
  []
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 11.
@@ -1837,11 +1856,15 @@ Package babel Info: Redefining danish shorthand "~
 =======
 <billeder/Usecase_Diagram.png, id=150, 576.7146pt x 487.8225pt>
 >>>>>>> FETCH_HEAD
+=======
+<billeder/Usecase_Diagram.png, id=150, 576.7146pt x 487.8225pt>
+>>>>>>> FETCH_HEAD
 File: billeder/Usecase_Diagram.png Graphic file (type png)
 
 <use billeder/Usecase_Diagram.png>
 Package pdftex.def Info: billeder/Usecase_Diagram.png used on input line 51.
 (pdftex.def)             Requested size: 426.0pt x 360.3503pt.
+<<<<<<< HEAD
 <<<<<<< HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 59.
@@ -2029,6 +2052,24 @@ Underfull \hbox (badness 1701) in paragraph at lines 4--4
 []|\T1/cmr/m/n/10.95 At brugeren kan aktivere enkelte eller alle
  []
 
+=======
+
+("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
+iler/kravspec/uc1.tex"
+Underfull \hbox (badness 2680) in paragraph at lines 33--34
+[]\T1/cmr/m/n/10.95 Systemet va-li-de-rer bru-ger-navn og ad-
+ []
+
+) [7 <C:/Users/Simon Kirchheiner/Documents/GitHub/E2PRJ2GRP1/Projektdokumentati
+on/billeder/Kontekst_Diagram.png>] [8 <C:/Users/Simon Kirchheiner/Documents/Git
+Hub/E2PRJ2GRP1/Projektdokumentation/billeder/Usecase_Diagram.png>]
+("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
+iler/kravspec/uc2.tex"
+Underfull \hbox (badness 1701) in paragraph at lines 4--4
+[]|\T1/cmr/m/n/10.95 At brugeren kan aktivere enkelte eller alle
+ []
+
+>>>>>>> FETCH_HEAD
 ) [9]
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
 iler/kravspec/uc3.tex") [10]
@@ -2045,6 +2086,9 @@ iler/kravspec/uc8.tex")
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
 iler/kravspec/ikkefunktionellekrav.tex" [13]) [14]
 <billeder/cmdprompt/CSS_menu.png, id=234, 511.15968pt x 258.21469pt>
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 File: billeder/cmdprompt/CSS_menu.png Graphic file (type png)
 
@@ -2054,7 +2098,11 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_menu.png used on input line 113
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <billeder/cmdprompt/CSS_login.png, id=258, 511.15968pt x 258.21469pt>
+=======
+<billeder/cmdprompt/CSS_login.png, id=236, 511.15968pt x 258.21469pt>
+>>>>>>> FETCH_HEAD
 =======
 <billeder/cmdprompt/CSS_login.png, id=236, 511.15968pt x 258.21469pt>
 >>>>>>> FETCH_HEAD
@@ -2066,7 +2114,11 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_login.png used on input line 11
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <billeder/cmdprompt/CSS_aktiver.png, id=259, 511.15968pt x 258.21469pt>
+=======
+<billeder/cmdprompt/CSS_aktiver.png, id=237, 511.15968pt x 258.21469pt>
+>>>>>>> FETCH_HEAD
 =======
 <billeder/cmdprompt/CSS_aktiver.png, id=237, 511.15968pt x 258.21469pt>
 >>>>>>> FETCH_HEAD
@@ -2078,7 +2130,11 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_aktiver.png used on input line
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <billeder/cmdprompt/CSS_deaktiver.png, id=260, 511.15968pt x 258.21469pt>
+=======
+<billeder/cmdprompt/CSS_deaktiver.png, id=238, 511.15968pt x 258.21469pt>
+>>>>>>> FETCH_HEAD
 =======
 <billeder/cmdprompt/CSS_deaktiver.png, id=238, 511.15968pt x 258.21469pt>
 >>>>>>> FETCH_HEAD
@@ -2093,7 +2149,11 @@ e 131.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <billeder/cmdprompt/CSS_vis_status.png, id=261, 511.15968pt x 258.21469pt>
+=======
+<billeder/cmdprompt/CSS_vis_status.png, id=239, 511.15968pt x 258.21469pt>
+>>>>>>> FETCH_HEAD
 =======
 <billeder/cmdprompt/CSS_vis_status.png, id=239, 511.15968pt x 258.21469pt>
 >>>>>>> FETCH_HEAD
@@ -2108,7 +2168,11 @@ ne 137.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <billeder/cmdprompt/CSS_advisering.png, id=262, 511.15968pt x 258.21469pt>
+=======
+<billeder/cmdprompt/CSS_advisering.png, id=240, 511.15968pt x 258.21469pt>
+>>>>>>> FETCH_HEAD
 =======
 <billeder/cmdprompt/CSS_advisering.png, id=240, 511.15968pt x 258.21469pt>
 >>>>>>> FETCH_HEAD
@@ -2122,6 +2186,7 @@ ne 143.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 )
 Package babel Info: Redefining danish shorthand "|
@@ -2157,6 +2222,8 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
  [18
 =======
+=======
+>>>>>>> FETCH_HEAD
 ) [15 <C:/Users/Simon Kirchheiner/Documents/GitHub/E2PRJ2GRP1/Projektdokumentat
 ion/billeder/cmdprompt/CSS_menu.png> <C:/Users/Simon Kirchheiner/Documents/GitH
 ub/E2PRJ2GRP1/Projektdokumentation/billeder/cmdprompt/CSS_login.png> <C:/Users/
@@ -2168,11 +2235,15 @@ pt/CSS_vis_status.png> <C:/Users/Simon Kirchheiner/Documents/GitHub/E2PRJ2GRP1/
 Projektdokumentation/billeder/cmdprompt/CSS_advisering.png>]
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
 iler/forundersoegelse.tex") [17
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 
 
 
 ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
@@ -2201,6 +2272,10 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
 [20
+=======
+("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
+iler/accepttest.tex" [18
+>>>>>>> FETCH_HEAD
 =======
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
 iler/accepttest.tex" [18
@@ -2521,10 +2596,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Underfull \hbox (badness 6220) in paragraph at lines 53--54
 \T1/cmr/m/n/10.95 Punkt 8 (Vi-ser
 =======
+=======
+>>>>>>> FETCH_HEAD
 [19])
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
 iler/accepttest/atuc3.tex"
@@ -2599,6 +2677,7 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 20--80
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining danish shorthand "~
@@ -2617,6 +2696,11 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 83.
  [23]) (./filer/accepttest/atuc4.tex
+=======
+[20])
+("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
+iler/accepttest/atuc4.tex"
+>>>>>>> FETCH_HEAD
 =======
 [20])
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
@@ -2691,6 +2775,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 \T1/cmr/m/n/10.95 får til-sendt
+<<<<<<< HEAD
  []
 
 
@@ -2704,6 +2789,21 @@ Underfull \hbox (badness 1331) in paragraph at lines 36--37
  []
 
 
+=======
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]|\T1/cmr/m/n/10.95 SMS-modtager
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 36--37
+\T1/cmr/m/n/10.95 ly-nin-ger om-kring
+ []
+
+
+>>>>>>> FETCH_HEAD
 Overfull \hbox (6.28575pt too wide) in alignment at lines 20--39
  [] [] [] [] [] 
  []
@@ -2726,7 +2826,13 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 20--42
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ) (./filer/accepttest/atuc7.tex
+=======
+[21])
+("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
+iler/accepttest/atuc7.tex"
+>>>>>>> FETCH_HEAD
 =======
 [21])
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
@@ -2747,6 +2853,7 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 20--42
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining danish shorthand "~
@@ -2756,6 +2863,11 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 42.
 [24]) (./filer/accepttest/atuc8.tex
+=======
+)
+("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
+iler/accepttest/atuc8.tex"
+>>>>>>> FETCH_HEAD
 =======
 )
 ("C:\Users\Simon Kirchheiner\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\f
@@ -2776,6 +2888,7 @@ Overfull \hbox (6.28575pt too wide) in alignment at lines 20--42
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ))
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 25.
@@ -2786,6 +2899,9 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 25.
  [25]
+=======
+)) [22]
+>>>>>>> FETCH_HEAD
 =======
 )) [22]
 >>>>>>> FETCH_HEAD
@@ -2808,6 +2924,7 @@ iler/accepttest.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `Master.out' has not changed.
+<<<<<<< HEAD
 <<<<<<< HEAD
 (rerunfilecheck)             Checksum: A95FEAAB1755A0C98B12EC87F24F3943;1404.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
@@ -2843,6 +2960,12 @@ PDF statistics:
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
+=======
+(rerunfilecheck)             Checksum: 32AF24E37E1486660EF262988706E8C5;1426.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
+ ) 
+Here is how much of TeX's memory you used:
+>>>>>>> FETCH_HEAD
  24577 strings out of 493921
  437937 string characters out of 3144841
  753126 words of memory out of 3000000
@@ -2867,6 +2990,9 @@ Output written on Master.pdf (22 pages, 540570 bytes).
 PDF statistics:
  355 PDF objects out of 1000 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
