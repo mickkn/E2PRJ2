@@ -1,45 +1,54 @@
 \begin{table}[H] \centering
+	\label{tab:UC3}
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
-\textbf{Mål}	&
-At brugeren kan deaktivere enkelte eller alle enheder, i systemet.
-\\\hline
-\textbf{Initialisering} &
-Bruger vælger "deaktiver"
-\\\hline
-\textbf{Aktører og Stakeholders}	&
-Bruger(Primær), Eksterne enheder(Sekundær)
-\\\hline
-\textbf{Referencer} &
-UC1: Login
-\\\hline
-\textbf{Antal af samtidige hændelser} &
-1
-\\\hline
-\textbf{Forudsætning} &
-At systemet er helt eller delvist aktiveret.
-\\\hline
-\textbf{Efterfølgende tilstand} &
-Enkelte eller alle enheder er deaktiveret
-\\\hline
-\textbf{Hovedforløb}	&
-Bruger vælger deaktiver og følger instruktionerne på skærmen.
+		\textbf{Mål}						&At Bruger kan deaktivere enkelte eller alle enheder, i systemet. \\\hline
+		\textbf{Initialisering} 			&Bruger vælger ''Deaktiver'' \\ \hline
+		\textbf{Aktører og Stakeholders}	&Bruger(Primær), Eksterne enheder(Sekundær)\\ \hline
+		\textbf{Referencer} 				&UC1: Login \\ \hline
+		\textbf{Antal af samtidige hændelser} &1 \\ \hline
+		\textbf{Forudsætning} 			&At systemet er helt eller delvist aktiveret.\\ \hline
+		\textbf{Efterfølgende tilstand} 	&Enkelte eller alle enheder er deaktiveret \\ \hline
+		\textbf{Hovedforløb}				&
 
-\begin{enumerate}
+	\begin{enumerate}	
 	
-	\item Deaktiver alt
+				\item \label{uc3login} Bruger logger ind med kode. \newline
+					\textbf{[Undtagelse \ref{uc3login}a]} Bruger ér logget ind					
+					
+				\item Bruger vælger "Deaktiver" i hovedmenu
+										
+				\item \label{uc3menu}UI viser mulige enheder samt ''Vælg alle'', ''Deaktiver''  og ''Tilbage''
+												
+				\item Bruger markerer ønskede enheder til deaktivering
+												
+				\item \label{uc3deact} Bruger vælger "Deaktiver"\newline
+					\textbf{[Undtagelse \ref{uc3deact}a]} Bruger vælger ''Tilbage''
+												
+				\item \label{uc3sysdeact} Systemet deaktiverer valgte enheder \newline
+					\textbf{[Undtagelse \ref{uc3sysdeact}a]} Ingen valgte enheder
+				
+				\item UI viser besked om at enheder, er deaktiverede
+																	
+				\item UI returnerer til hovedmenu	
+	
+	\end{enumerate} \\ \hline
 
-	\item Deaktiver alle låse
-	
-	\item Deaktiver babyalarm
-	
-\end{enumerate}
-
-\\\hline
-\textbf{Undtagelser}	&
-Ingen
-\\\hline
-\textbf{Version}		&1.1 \\\hline
-	\end{tabular}
-	\label{tab:UC2} 
+		\textbf{Undtagelser}	
+		
+		&\begin{enumerate}[label= \ref{uc3login}a.]
+			\item Hovedmenu vises
+		\end{enumerate}
+						
+		\begin{enumerate}[label= \ref{uc3deact}a.]
+			\item UI returnerer til hovedmenu og UC3 afbrydes
+		\end{enumerate}						
+							
+		\begin{enumerate}[label= \ref{uc3sysdeact}a.]
+			\item Hvis ingen enheder er valgt udskrives en fejl på skærmen og beder brugeren om at vælge en enhed og går til UC3.\ref{uc3menu}
+		\end{enumerate} \\\hline
+											
+		\textbf{Version}		&1.2 \\\hline
+		
+	\end{tabular} 
 \end{table}

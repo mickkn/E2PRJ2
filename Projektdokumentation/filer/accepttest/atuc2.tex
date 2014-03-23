@@ -21,27 +21,61 @@
 
 %%%% Tabel Opsætning
 
-\textbf{Punkt 1}		&Der trykkes på knappen "Aktiver"	&Det er muligt at trykke på knappen				&N/A &N/A \\\hline
+\textbf{Punkt 1}		&Bruger logger ind med kode	
+					&\multicolumn{3}{l|}{Testes i UC1: Login} \\\hline
 		
-\textbf{Punkt 2}		&Visuel test: Billedet skifter til "Aktiver"-billedet og viser specificerede knapper																	&Brugerinterface viser mulige enheder samt specificerede knapper 																																						&N/A &N/A \\\hline
+\textbf{Punkt 2}		&Bruger vælger ''Aktiver'' i hovedmenu																
+					&UI fortsætter til Punkt 3 (''Aktiver menu'')
+					&N/A 
+					&N/A \\\hline
+					
+\textbf{Punkt 3}		&Visuel test: Visning af ''Aktiver menu''																
+					&UI viser ''Aktiver menu''
+					&N/A 
+					&N/A \\\hline
 		
-\textbf{Punkt 3}		&Bruger kan vælge ønskede enheder		& Det er muligt at vælge ønskede enheder 	&N/A &N/A \\\hline
-		
-\textbf{Punkt 4}		&Der trykkes på knappen "Aktiver"		& Det er muligt at trykke på knappen		 	&N/A &N/A \\\hline
+\textbf{Punkt 4a}	&''Vælg alle'' vælges		
+					&Alle enheder markeres på skærmen		 	
+					&N/A 
+					&N/A \\\hline
 
-\textbf{Punkt 4a}	&Der trykkes på knappen "Tilbage"		& Brugerinterface viser hovedmenu
-																										&N/A &N/A \\\hline
+\textbf{Punkt 4b}	&Enkelte enheder vælges
+					&De valgte ''enkelte'' enheder markeres på skærmen
+					&N/A 
+					&N/A \\\hline
 
-\textbf{Punkt 5}		&Der måles at valgte enheder bliver aktiveret				
-					&De valgte enheder bliver aktiveret &N/A &N/A \\\hline
+\textbf{Punkt 5}		&''Aktiver'' vælges			
+					&UI fortsætter til Punkt 6 (Aktivering)
+					&N/A 
+					&N/A \\\hline
+					
+\textbf{Punkt 5a}	&''Tilbage'' vælges			
+					&Fortsætter til Punkt 8 (Viser hovedmenu)
+					&N/A 
+					&N/A \\\hline
+
+\textbf{Punkt 6}		&Aktivering			
+					&Valgte enheder måles aktiveret
+					&N/A 
+					&N/A \\\hline
 															
-\textbf{Punkt 5a}	&Der vælges ingen enheder i punkt \ref{uc1select} og trykkes "Aktiver"				
-					&Brugerinterface udskriver fejl på skærmen med besked om at vælge en enhed og går til UC1.\ref{uc1select}																												&N/A &N/A \\\hline
+\textbf{Punkt 6a}	&Der vælges ingen enheder og trykkes "Aktiver"				
+					&UI udskriver fejl på skærmen med besked om at vælge en enhed og går til UC2.\ref{uc2menu}	. 
+					 Der måles ingen ændringer på enhederne
+					&N/A 
+					&N/A \\\hline
 		
-\textbf{Punkt 6}		&Visuel test: Brugerinterface viser besked om at enheder er aktiverede
-															&Brugerinterface viser besked 				&N/A &N/A \\\hline
-\textbf{Punkt 7}		&Visuel test: Brugerinterface viser hovedmenu
-															&Brugerinterface viser hovedmenu 		&N/A &N/A \\\hline
+\textbf{Punkt 7}		&Visuel test: Viser besked om at enheder er aktiverede
+					&UI viser besked
+					&N/A
+					&N/A \\\hline
+					
+\textbf{Punkt 8}		&Visuel test: Viser hovedmenu
+					&UI viser hovedmenu
+					&N/A
+					&N/A \\\hline
+
+\textbf{Version}		&\multicolumn{4}{l|}{1.1} \\ \hline
 															
 	\end{longtable}
 	%\caption{•}

@@ -1,46 +1,52 @@
 \begin{table}[H] \centering
 	\begin{tabular} {|p{6cm}|p{8cm}|}
 	\hline		
-		\textbf{Mål}							&At brugeren kan aktivere enkelte eller alle enheder, i systemet.	\\\hline
-		\textbf{Initialisering}				&Bruger vælger "Aktiver" 								\\\hline
-		\textbf{Aktører og Stakeholders}		&Bruger(Primær) 							\\\hline
-		\textbf{Referencer}					&UC1: Login														\\\hline
-		\textbf{Antal af samtidige hændelser}&1 																\\\hline
-		\textbf{Forudsætning}				&Ingen														\\\hline
-		\textbf{Efterfølgende tilstand}		&Enkelte eller alle enheder er aktiveret  								\\\hline
+		\textbf{Mål}							&At Bruger kan aktivere enkelte eller alle enheder, i systemet\\\hline
+		\textbf{Initialisering}				&Bruger vælger "Aktiver" 	\\\hline
+		\textbf{Aktører og Stakeholders}		&Bruger(Primær) 				\\\hline
+		\textbf{Referencer}					&UC1: Login					\\\hline
+		\textbf{Antal af samtidige hændelser}&1 							\\\hline
+		\textbf{Forudsætning}				&Bruger er logget ind i systemet\\\hline
+		\textbf{Efterfølgende tilstand}		&Enkelte eller alle enheder er aktiveret  \\\hline
 		\textbf{Hovedforløb}					
 			&\begin{enumerate}
 	
-				\item Bruger logger ind med kode.
+				\item \label{uc2login} Bruger logger ind med kode.
+					%\textbf{[Undtagelse \ref{uc2login}a]} Bruger ér logget ind					
 					
-				\item Bruger vælger "Aktiver" i hovedmenu
+				\item Bruger vælger ''Aktiver'' i hovedmenu
 										
-				\item UI viser mulige enheder samt "Vælg alle", "Aktiver" og "Tilbage"
+				\item \label{uc2menu}UI viser mulige enheder samt ''Vælg alle'', ''Aktiver'' og ''Tilbage''
 												
-				\item \label{uc1select} Bruger markerer ønskede enheder til aktivering
+				\item Bruger markerer ønskede enheder til aktivering
 												
-				\item \label{uc1ex1} Bruger trykker "Aktiver"\newline
-					\textbf{[Undtagelse \ref{uc1ex1}a]} Bruger trykker "Tilbage"
+				\item \label{uc2act} Bruger vælger ''Aktiver''\newline
+					\textbf{[Undtagelse \ref{uc2act}a]} Bruger vælger ''Tilbage''
 												
-				\item \label{uc1ex2} Systemet aktiverer valgte enheder\newline
-					\textbf{[Undtagelse \ref{uc1ex2}a]} Ingen valgte enheder
+				\item \label{uc2sysact} Systemet aktiverer valgte enheder \newline
+					\textbf{[Undtagelse \ref{uc2sysact}a]} Ingen valgte enheder
 				
 				\item UI viser besked om at enheder, er aktiverede
 																	
 				\item UI returnerer til hovedmenu
 												
-			\end{enumerate}\\\hline
+			\end{enumerate}\\ \hline
 		
-		\textbf{Undtagelser}					
-		&\begin{enumerate}[label= \ref{uc1ex1}a.]
-			\item Brugerinterface returnerer til standardskærm og UC1 afbrydes
+		\textbf{Undtagelser}	
+		
+		&\begin{enumerate}[label= \ref{uc2login}a.]
+			\item Bruger skal ikke logge ind
 		\end{enumerate}
-											
-		\begin{enumerate}[label= \ref{uc1ex2}a.]
-			\item Hvis ingen unit er valgt udskrives en fejl på skærmen og beder brugeren om at vælge en unit og går til UC1.\ref{uc1select}.
+						
+		\begin{enumerate}[label= \ref{uc2act}a.]
+			\item UI returnerer til hovedmenu og UC2 afbrydes
+		\end{enumerate}						
+							
+		\begin{enumerate}[label= \ref{uc2sysact}a.]
+			\item Hvis ingen unit er valgt udskrives en fejl på skærmen og beder brugeren om at vælge en unit og går til UC2.\ref{uc2menu}
 		\end{enumerate} \\\hline
 											
-		\textbf{Version}		&1.1 \\\hline
+		\textbf{Version}		&1.2 \\\hline
 
 	\end{tabular}
 	\label{UC2} 
