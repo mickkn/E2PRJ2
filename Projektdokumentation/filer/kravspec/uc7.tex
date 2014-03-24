@@ -1,40 +1,35 @@
 \begin{table}[H] \centering
-\begin{tabular}{|p{6cm}|p{8cm}|}
+	\begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
-\textbf{Mål} &
-Skriv her  \\\hline
-
-\textbf{Initialisering} &
-Skriv her  \\\hline
- 
-\textbf{Aktører og Stakeholders} &
-Skriv her  \\\hline
-
-\textbf{Referencer} &
-Skriv her  \\\hline
-
-\textbf{Antal af samtidige hændelser} &
-Skriv her  \\\hline
-
-\textbf{Forudsætning} &
-Skriv her  \\\hline
-
-\textbf{Efterfølgende tilstand} &
-Skriv her  \\\hline
-
-\textbf{Hovedforløb} &
-\begin{enumerate}
-
-\item Punkt
-\item Punkt
-
-\end{enumerate}   
- \\\hline
- 
-\textbf{Undtagelser} &
-Ingen \\\hline
-
-		\textbf{Version}		&1.0 \\\hline
+		\multicolumn{2}{|l|}{\textbf{UC7: Startopsætning}} \\\hline
+		
+		\textbf{Mål}							&At brugeren kan opsætte systemet første gang.					\\\hline
+		\textbf{Initialisering}				&Bruger					 										\\\hline
+		\textbf{Aktører og Stakeholders}		&Bruger(Primær): Ønsker at opsætte systemet første gang			\\\hline
+		\textbf{Referencer}					&UC8 Tilføj/Fjern X10 udtag										\\\hline
+		\textbf{Antal af samtidige hændelser}&1 																\\\hline
+		\textbf{Forudsætning}				&Ingen															\\\hline
+		\textbf{Efterfølgende tilstand}		&Systemet er fuldt opsat											\\\hline
+		\textbf{Hovedforløb}					
+			&\begin{enumerate}
+	
+				\item Bruger sætter følgende kabler sammen:
+				
+					\subitem Serielt RS-232 kabel mellem hovedenhedens COM-port og computer
+					\subitem Medfølgende styrekabel til babyalarm forbindes med hovedenhed og babyalarm
+					\subitem Strømkabel fra et ledigt 230 Vac udtag til hovedenhedens AC indgang
+				
+				\item Bruger tænder for hovedenhed og computer på Tænd/Sluk knappen
+				
+				\item CSS programmet startes på computeren
+				
+				\item \label{uc7tilfoj} UC8 Tilføj/fjern X10 udtag udføres
+				
+				\item Punkt \ref{uc7tilfoj} gentages med antallet af X10 enheder der ønskes opsat
+																													
+			\end{enumerate}\\\hline
+											
+		\textbf{Version}		&1.0: 2014-03-23 Oprettet\\\hline
 	\end{tabular}
 	\label{UC7} 
 \end{table}
