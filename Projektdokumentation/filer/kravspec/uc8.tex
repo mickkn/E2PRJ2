@@ -5,15 +5,15 @@
 		
 		\textbf{Mål}							&At brugeren kan opsætte en ny enhed med CSS						\\\hline
 		\textbf{Initialisering}				&Bruger					 										\\\hline
-		\textbf{Aktører og Stakeholders}		&Bruger(Primær): Ønsker at opsætte en ny enhed						\\\hline
-		\textbf{Referencer}					&UC1 Login														\\\hline
+		\textbf{Aktører og Stakeholders}		&Bruger(Primær): Ønsker at opsætte en ny enhed					\\\hline
+		\textbf{Referencer}					&UC1: Login														\\\hline
 		\textbf{Antal af samtidige hændelser}&1 																\\\hline
 		\textbf{Forudsætning}				&Ingen															\\\hline
 		\textbf{Efterfølgende tilstand}		&En ny enhed er opsat med CSS									\\\hline
 		\textbf{Hovedforløb}					
 			&\begin{enumerate}
 
-				\item UC1 Login udføres
+				\item UC1: Login udføres
 				
 				\item \label{uc8indstilAdresse} Bruger indstiller adresseswitchen til en unik adresse på X10 udtaget
 				
@@ -38,7 +38,7 @@
 		&\begin{enumerate}[label= \ref{uc8adresse}a.\arabic*.]
 			\item Programmet udskriver fejlmeddellelsen "Adressen er ikke unik. Vælg en ny."
 			
-			\item Gå til UC8.\ref{uc8indstilAdresse}	\newline
+			\item Gå til UC8.\ref{uc8indstilAdresse}
 		\end{enumerate}
 		
 	
@@ -46,7 +46,7 @@
 		\begin{enumerate}[label= \ref{uc8adresse}b.\arabic*.]
 			\item Programmet udskriver fejlmeddellelsen "Adressen har ikke den rette længde. Vælg en ny."
 			
-			\item Gå til UC8.\ref{uc8indstilAdresse}\newline
+			\item Gå til UC8.\ref{uc8indstilAdresse}
 		\end{enumerate}
 		
 		
@@ -55,9 +55,7 @@
 			\item Programmet udskriver fejlmeddellelsen "Navnet skal minimum have to og maximum 50 karaktere"
 			
 			\item Gå til UC8.\ref{uc8indstilNavn}
-		\end{enumerate}
-											
-		\\\hline
+		\end{enumerate} \\ \hline
 											
 		\textbf{Version}		&1.0: 2014-03-23 Oprettet \\\hline
 
