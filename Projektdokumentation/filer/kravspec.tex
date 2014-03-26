@@ -1,8 +1,17 @@
 \chapter{Kravspecifikation}
 
+\begin{table}[!htbp] \centering
+\begin{tabular}{|p{2cm}|p{8cm}|}
+	\hline
+		\multicolumn{2}{|l|}{Versionshistorik} \\\hline
+		\textbf{v1.0} &24-03-2014 Hele gruppen (efter 1. review)\\\hline
+		\textbf{v0.5} &20-03-2014 Hele gruppen\\\hline
+	\end{tabular}
+\end{table}
+
 \begin{figure}[htbp] \centering
 \section{Aktører}
-\fbox{\includegraphics[width=\textwidth]{billeder/Kontekst_Diagram}}
+\fbox{\includegraphics[width=0.9\textwidth]{billeder/Kontekst_Diagram}}
 \caption{Kontekst diagram}
 \label{lab:kontekstdiagram}
 \end{figure}
@@ -101,9 +110,11 @@
 
 %% Begrænsninger
 
-\section{Begrænsninger}
+\section{Begrænsninger} \label{sectionBegraensninger}
 \begin{itemize}
-\item Prototypen udføres i et 18 Vac testmiljø
+	\item Prototypen udføres i et 18 Vac testmiljø
+	\item I stedet for magnetlåse til at simulere låsemekanismen bruges en lysindikator
+	\item Protypen udføres med et STK500 kit, hvorfor krav til dimensionerne frafalder
 \end{itemize}
 
 \newpage

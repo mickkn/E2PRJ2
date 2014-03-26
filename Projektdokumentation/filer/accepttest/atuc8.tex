@@ -4,7 +4,7 @@
 \begin{longtable}{|p{1,8cm}|p{2,2cm}|p{3cm}|p{3cm}|p{3cm}|} % l for left, c for center, r for right 
 \hline
 \multicolumn{5}{|l|}{\textbf{UC8: Tilføj/fjern X10 udtag}} \\ \hline
-\multicolumn{1}{|c|}{} &
+\textbf{Punkt} &
 \textbf{Test} &
 \textbf{Forventet \newline Resultat} &
 \textbf{Resultat} &
@@ -12,7 +12,7 @@
 \endfirsthead
 
 \multicolumn{5}{l}{...fortsat fra forrige side} \\ \hline 
-\multicolumn{1}{|c|}{} &
+\textbf{Punkt} &
 \textbf{Test} &
 \textbf{Forventet \newline Resultat} &
 \textbf{Resultat} &
@@ -21,49 +21,68 @@
 
 %%%% Tabel Opsætning
 
-\textbf{Punkt 1} &
+\textbf{1} &
 Se accepttest af UC1 &
 Bruger er logget ind og kan se hovedskærmen &
 N/A &
 N/A \\\hline
 
-\textbf{Punkt 2} &
+\textbf{2} &
 Indstil X10 udtagets adresseswitch til adressen ''0101'' (1234) &
-Visueltest: ?? &
+Visueltest: Adressen er indstillet korrekt &
 N/A &
 N/A \\\hline
 
-\textbf{Punkt 3} &
+\textbf{3} &
 Vælg menupunkt ''Tilføj/fjern X10 udtag'' &
-Visueltest: Programmet udskriver beskeden 'Indtast den fire cifrede adresse'' &
+Visueltest: Programmet udskriver beskeden ''Indtast den fire cifrede adresse'' &
 N/A &
 N/A \\\hline
 
-\textbf{Punkt 4} &
+\textbf{4} &
 Indtast adressen ''0101'' og tryk på ''enter'' knappen &
 ?? &
 N/A &
 N/A \\\hline
 
-\textbf{Punkt 5} &
+\textbf{4a} &
+Indtast adressen ''0000'' og tryk på ''enter'' knappen &
+Programmet udskriver fejlbeskeden og går til UC8.2 &
+N/A &
+N/A \\\hline
+
+\textbf{4b} &
+Indtast adressen ''0'' og tryk på ''enter'' knappen &
+Visueltest: Programmet udskriver fejlbeskeden og går til UC8.2 &
+N/A &
+N/A \\\hline
+
+\textbf{5} &
 N/A &
 Visueltest: Programmet udskriver beskeden ''Indtast navn''&
 N/A &
 N/A \\\hline
 
-\textbf{Punkt 6} &
+\textbf{6} &
 Indtast ''Test enhed'' og tryk på ''enter'' knappen &
 ??  &
 N/A &
 N/A \\\hline
 
-\textbf{Punkt 7} &
+\textbf{6a} &
+Indtast ''A'' og tryk på ''enter'' knappen.\newline
+Gentag med ''abcdefghijklmnopqrstuvxwabcdefghijklmnopqrstuvxwab &
+Visueltest: Programmet udskriver fejlbeskeden og går til UC8.2 &
+N/A &
+N/A \\\hline
+
+\textbf{7} &
 N/A &
 Visueltest: Programmet returnerer til hovedskærmen &
 N/A &
 N/A \\\hline
 
-\textbf{Punkt 8} &
+\textbf{8} &
 Indsæt X10 udtag i et 230 Vac udtag som er forbundet til systemet og kør accepttest af UC2 på den nyopsatte enhed&
 Det er muligt at styre det opsatte X10 udtag ved brug af UC2 og UC3&
 N/A &
