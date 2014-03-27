@@ -24,9 +24,29 @@ Dette ender ud i tre produkter:
 Systemet skal være nemt at sætte op og skal kommunikere over det eksisterende 230 V vekselspændings netværk i hus installationen.
 
 En central enhed håndterer styringen i mellem enhederne og der skal være mulighed for at tilkoble en computer som kan bruges til at styre og aflæse systemet. Hele systemet kan aktiveres med et kodetryk.
-\\
+
+\newpage
+
 \begin{figure}[h] \centering
-\fbox{\includegraphics[width=0.65\textwidth]{billeder/Plan_tegning}}
-\caption{Plan tegning}
-\label{lab:plantegning}
+\fbox{\includegraphics[width=\textwidth]{billeder/Installationsoversigt}}
+\caption{Installationsoversigt}
+\label{lab:installationsoversigt}
 \end{figure}
+
+\begin{enumerate}
+\item Samlet oversigtstegning af CSS. 
+\item CSS programmet med tilhørende DE2 kodelås
+\item SMS besked udsendt af systemet idet lydniveauet i værelse 3 (Laura) har været over det tilladte.
+\item Overblik over hvad systemet er tiltænkt at børnesikre. Køkken skuffe med skarpe genstande, kogeplader, ovn.
+\item 230V udtag. X.10 kontrolleret, således at det bestemmes om der udtaget skal være aktivt.
+\item Babyalarm. Illustrationen vil variere i forhold til virkeligheden.
+\end{enumerate}
+
+\begin{figure}[h] \centering
+\fbox{\includegraphics[width=0.65\textwidth]{billeder/Oversigt}}
+\caption{Oversigt}
+\label{lab:Oversigt}
+\end{figure}
+
+
+Ud fra en kommando fra CSS programmet på computeren styres ønskede 230V udtag i hjemmet. Dette er muligt ved at benytte sig af x.10 protokollen. Testmiljøet er illustreret via billedet XX. Her sender CSS programmet besked til x.10 senderen (STK-500) som giver x.10modtageren (STK-500) besked på at hhv. tænde eller slukket for et givent udtag. Hvad brugen tilslutter i de forskellige udtag står frit for. Ydermere er der på x.10 senderen koblet en babyalarm som via uart kommunikationen med computeren sender en sms ud via API.
