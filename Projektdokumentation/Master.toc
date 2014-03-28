@@ -20,7 +20,10 @@
 \contentsline {section}{\numberline {3.3}Ikke-funktionelle krav}{16}{section.3.3}
 \contentsline {section}{\numberline {3.4}Begr\IeC {\ae }nsninger}{16}{section.3.4}
 \contentsline {section}{\numberline {3.5}HMI(Human Machine Interface)}{17}{section.3.5}
-\contentsline {chapter}{\chapternumberline {4}Forunders\IeC {\o }gelse}{19}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}GSM}{19}{subsection.4.0.1}
-\contentsline {chapter}{\chapternumberline {5}Accepttestspecifikation}{21}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}System Arkitektur}{31}{chapter.6}
+\contentsline {chapter}{\chapternumberline {4}Forunders\IeC {\o }gelse}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}GSM}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}L\IeC {\o }sning}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2.1}L\IeC {\o }sning}{21}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.2}L\IeC {\r a}s}{22}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Accepttestspecifikation}{25}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}System Arkitektur}{37}{chapter.6}
