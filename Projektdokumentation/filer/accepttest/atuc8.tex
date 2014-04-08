@@ -1,7 +1,7 @@
 %%% Tabel opsætning + Headernavn!!
 
 \begin{center}
-\begin{longtable}{|p{0,5cm}|p{3,8cm}|p{3,8cm}|p{2,2cm}|p{2,2cm}|} % l for left, c for center, r for right 
+\begin{longtable}{|p{0,8cm}|p{3,8cm}|p{3,8cm}|p{2,0cm}|p{2,2cm}|} % l for left, c for center, r for right 
 \hline
 \multicolumn{5}{|l|}{\textbf{UC8: Tilføj/fjern X10 udtag}} \\ \hline
 \multicolumn{1}{|c|}{} &
@@ -28,65 +28,69 @@ N/A &
 N/A \\\hline
 
 \textbf{2} &
-Indstil X10 udtagets adresseswitch til adressen ''0101'' (1234) &
-Visueltest: Adressen er indstillet korrekt &
-N/A &
-N/A \\\hline
-
-\textbf{3} &
 Vælg menupunkt ''Tilføj/fjern X10 udtag'' &
 Visueltest: Programmet udskriver beskeden ''Indtast den fire cifrede adresse'' &
 N/A &
 N/A \\\hline
 
-\textbf{4} &
+\textbf{2a Tilføj} &
+Indstil X10 udtagets adresseswitch til adressen ''0101'' (1234) &
+Visueltest: Adressen er indstillet korrekt &
+N/A &
+N/A \\\hline
+
+\textbf{2b} &
 Indtast adressen ''0101'' og tryk på ''enter'' knappen &
 ?? &
 N/A &
 N/A \\\hline
 
-\textbf{4a} &
+\textbf{2b.a} &
 Indtast adressen ''0000'' og tryk på ''enter'' knappen &
 Programmet udskriver fejlbeskeden og går til UC8.2 &
 N/A &
 N/A \\\hline
 
-\textbf{4b} &
+\textbf{2b.b} &
 Indtast adressen ''0'' og tryk på ''enter'' knappen &
 Visueltest: Programmet udskriver fejlbeskeden og går til UC8.2 &
 N/A &
 N/A \\\hline
 
-\textbf{5} &
+\textbf{2c} &
 N/A &
 Visueltest: Programmet udskriver beskeden ''Indtast navn''&
 N/A &
 N/A \\\hline
 
-\textbf{6} &
+\textbf{2d} &
 Indtast ''Test enhed'' og tryk på ''enter'' knappen &
 ??  &
 N/A &
 N/A \\\hline
 
-\textbf{6a} &
+\textbf{2d.a} &
 Indtast ''A'' og tryk på ''enter'' knappen.\newline
 Gentag med ''abcdefghijklmnopqrstuvxwabcdefghijklmnopqrstuvxwab &
 Visueltest: Programmet udskriver fejlbeskeden og går til UC8.2 &
 N/A &
 N/A \\\hline
 
-\textbf{7} &
-N/A &
-Visueltest: Programmet returnerer til hovedskærmen &
-N/A &
-N/A \\\hline
-
-\textbf{8} &
+\textbf{2e} &
 Indsæt X10 udtag i et 230 Vac udtag som er forbundet til systemet og kør accepttest af UC2 på den nyopsatte enhed&
 Det er muligt at styre det opsatte X10 udtag ved brug af UC2 og UC3&
 N/A &
 N/A \\\hline
+
+\textbf{2a Fjern} &
+Vælg den før opsatte enhed ''Test enhed'' og tryk fjern &
+Den valgte enhed forsvinder fra menuen &
+N/A &\\\hline
+
+\textbf{3} & 
+N/A&
+Programmet returnerer til hovedmenuen &
+N/A &\\\hline
 
 
 	\end{longtable}

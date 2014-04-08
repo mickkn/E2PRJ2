@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.3)  28 MAR 2014 09:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.13)  8 APR 2014 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1650,11 +1650,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ))
 (./Master.aux (./filer/indledning.aux) (./filer/ordliste.aux)
-(./filer/kravspec.aux) (./filer/forundersoegelse.aux) (./filer/accepttest.aux
-
-LaTeX Warning: Label `ATUC8' multiply defined.
-
-) (./filer/systemarkitektur.aux))
+(./filer/kravspec.aux) (./filer/forundersoegelse.aux) (./filer/accepttest.aux)
+(./filer/systemarkitektur.aux))
 \openout1 = `Master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -2027,23 +2024,13 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 103.
 
 (./filer/kravspec/uc8.tex
-Underfull \hbox (badness 2088) in paragraph at lines 20--21
-[]\T1/cmr/m/n/10.95 Bruger væl-ger me-nu-punkt ''Til-føj/fjern
+Underfull \hbox (badness 2343) in paragraph at lines 18--19
+[]\T1/cmr/m/n/10.95 Bruger vælger menupunkt ''Tilføj/fjern X10
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 39--40
-[]\T1/cmr/m/n/10.95 Programmet ud-skri-ver fejl-med-del-lel-sen
- []
-
-
-Underfull \hbox (badness 7308) in paragraph at lines 47--48
-[]\T1/cmr/m/n/10.95 Programmet ud-skri-ver fejl-med-del-lel-sen
- []
-
-
-Underfull \hbox (badness 7308) in paragraph at lines 55--56
-[]\T1/cmr/m/n/10.95 Programmet ud-skri-ver fejl-med-del-lel-sen
+Underfull \hbox (badness 2189) in paragraph at lines 18--19
+\T1/cmr/m/n/10.95 udtag'' og programmet udskriver i forvejen
  []
 
 )
@@ -2057,19 +2044,31 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 105.
  [14]
 Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 105.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 105.
+ [15]
+Overfull \vbox (74.46494pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 105.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 105.
+
+[16]
+Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 108.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 108.
- (./filer/kravspec/ikkefunktionellekrav.tex
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 6.
- [15])
+ (./filer/kravspec/ikkefunktionellekrav.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining danish shorthand "~
@@ -2082,13 +2081,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 120.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 120.
- [16]
+ [17]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 121.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 121.
 
-<billeder/cmdprompt/CSS_menu.png, id=342, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_menu.png, id=349, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_menu.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_menu.png>
@@ -2096,7 +2095,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_menu.png used on input line 126
 .
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_pre_login_menu.png, id=344, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_pre_login_menu.png, id=351, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_pre_login_menu.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_pre_login_menu.png>
@@ -2104,7 +2103,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_pre_login_menu.png used on inpu
 t line 132.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_login.png, id=345, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_login.png, id=352, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_login.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_login.png>
@@ -2112,7 +2111,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_login.png used on input line 13
 8.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_aktiver.png, id=346, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_aktiver.png, id=353, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_aktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_aktiver.png>
@@ -2123,7 +2122,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_aktiver.png used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_deaktiver.png, id=347, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_deaktiver.png, id=354, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_deaktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_deaktiver.png>
@@ -2134,7 +2133,7 @@ e 150.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_vis_status.png, id=348, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_vis_status.png, id=355, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_vis_status.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_vis_status.png>
@@ -2145,7 +2144,7 @@ ne 156.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<billeder/cmdprompt/CSS_advisering.png, id=349, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_advisering.png, id=356, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_advisering.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_advisering.png>
@@ -2157,7 +2156,7 @@ ne 162.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<billeder/cmdprompt/CSS_startopsaetning.png, id=350, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_startopsaetning.png, id=357, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_startopsaetning.png Graphic file (type png)
 <use billeder/cmdprompt/CSS_startopsaetning.png>
 Package pdftex.def Info: billeder/cmdprompt/CSS_startopsaetning.png used on inp
@@ -2176,7 +2175,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 17.
- [17 <./billeder/cmdprompt/CSS_menu.png> <./billeder/cmdprompt/CSS_pre_login_me
+ [18 <./billeder/cmdprompt/CSS_menu.png> <./billeder/cmdprompt/CSS_pre_login_me
 nu.png> <./billeder/cmdprompt/CSS_login.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
@@ -2186,7 +2185,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 17.
- [18 <./billeder/cmdprompt/CSS_aktiver.png> <./billeder/cmdprompt/CSS_deaktiver
+ [19 <./billeder/cmdprompt/CSS_aktiver.png> <./billeder/cmdprompt/CSS_deaktiver
 .png> <./billeder/cmdprompt/CSS_vis_status.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
@@ -2196,24 +2195,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 17.
- [19 <./billeder/cmdprompt/CSS_advisering.png> <./billeder/cmdprompt/CSS_starto
+ [20 <./billeder/cmdprompt/CSS_advisering.png> <./billeder/cmdprompt/CSS_starto
 psaetning.png>]
 \openout2 = `filer/forundersoegelse.aux'.
 
  (./filer/forundersoegelse.tex
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
- [20
-
-
-
-]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -2233,21 +2219,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 \T1/cmr/m/n/10.95 http://dk.farnell.com/cinterion/tc65i/mod-
  []
 
-<billeder/GSM_TC65I.jpg, id=384, 215.80624pt x 200.75pt>
+<billeder/GSM_TC65I.jpg, id=387, 215.80624pt x 200.75pt>
 File: billeder/GSM_TC65I.jpg Graphic file (type jpg)
 
 <use billeder/GSM_TC65I.jpg>
 Package pdftex.def Info: billeder/GSM_TC65I.jpg used on input line 16.
 (pdftex.def)             Requested size: 91.76088pt x 85.35826pt.
 
-<billeder/GSM_Clickatell.jpg, id=385, 252.945pt x 100.375pt>
+<billeder/GSM_Clickatell.jpg, id=388, 252.945pt x 100.375pt>
 File: billeder/GSM_Clickatell.jpg Graphic file (type jpg)
 
 <use billeder/GSM_Clickatell.jpg>
 Package pdftex.def Info: billeder/GSM_Clickatell.jpg used on input line 34.
 (pdftex.def)             Requested size: 215.1162pt x 85.35826pt.
 
-<billeder/GSM_Arduino.jpg, id=386, 451.6875pt x 285.065pt>
+<billeder/GSM_Arduino.jpg, id=389, 451.6875pt x 285.065pt>
 File: billeder/GSM_Arduino.jpg Graphic file (type jpg)
 
 <use billeder/GSM_Arduino.jpg>
@@ -2262,10 +2248,24 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
+
+<billeder/TFS-A21.png, id=390, 528.97626pt x 449.17813pt>
+File: billeder/TFS-A21.png Graphic file (type png)
+
+<use billeder/TFS-A21.png>
+Package pdftex.def Info: billeder/TFS-A21.png used on input line 17.
+(pdftex.def)             Requested size: 100.52267pt x 85.35826pt.
+
+<billeder/magnetic.png, id=391, 301.125pt x 188.705pt>
+File: billeder/magnetic.png Graphic file (type png)
+
+<use billeder/magnetic.png>
+Package pdftex.def Info: billeder/magnetic.png used on input line 35.
+(pdftex.def)             Requested size: 136.208pt x 85.35826pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 39.
 ))
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
@@ -2275,18 +2275,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
- [21 <./billeder/GSM_TC65I.jpg>]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 21.
- [22
+ [21
 
- <./billeder/GSM_Clickatell.jpg> <./billeder/GSM_Arduino.jpg>]
+
+
+ <./billeder/GSM_TC65I.jpg>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
@@ -2295,7 +2288,18 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
- [23]
+ [22 <./billeder/GSM_Clickatell.jpg> <./billeder/GSM_Arduino.jpg>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+ [23
+
+ <./billeder/TFS-A21.png> <./billeder/magnetic.png>]
 \openout2 = `filer/accepttest.aux'.
 
  (./filer/accepttest.tex
@@ -2316,317 +2320,80 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- (./filer/accepttest/atuc1.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
+
+(./filer/accepttest/atuc1.tex
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 30--31
-[]|\T1/cmr/m/n/10.95 Login for-søg
+Underfull \hbox (badness 6708) in paragraph at lines 30--31
+[]|\T1/cmr/m/n/10.95 Login for-søg fo-re-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 fo-re-ta-ges
+Underfull \hbox (badness 6708) in paragraph at lines 35--36
+[]|\T1/cmr/m/n/10.95 Login for-søg fo-re-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 me-d-ad-
+Underfull \hbox (badness 1983) in paragraph at lines 41--42
+[]|\T1/cmr/m/n/10.95 pre-login me-nu kom-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 gangs-ko-den:
+Underfull \hbox (badness 1946) in paragraph at lines 51--52
+[]|\T1/cmr/m/n/10.95 Systemet næg-ter ad-
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 31--32
-[]|\T1/cmr/m/n/10.95 Adgangskode ka-
+Underfull \hbox (badness 3428) in paragraph at lines 51--52
+\T1/cmr/m/n/10.95 gang og be-der bru-
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 31--32
-\T1/cmr/m/n/10.95 rak-ter vi-ses som
+Underfull \hbox (badness 3460) in paragraph at lines 57--58
+[]|\T1/cmr/m/n/10.95 Hovedmenu vi-ses på
+ []
+
+) (./filer/accepttest/atuc2.tex
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 35--36
-[]|\T1/cmr/m/n/10.95 Login for-søg
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-\T1/cmr/m/n/10.95 fo-re-ta-ges
+Underfull \hbox (badness 1721) in paragraph at lines 27--28
+[]|\T1/cmr/m/n/10.95 Bruger væl-ger ''Ak-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-\T1/cmr/m/n/10.95 me-d-ad-
+Underfull \hbox (badness 1264) in paragraph at lines 42--43
+[]|\T1/cmr/m/n/10.95 Enkelte en-he-der væl-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-\T1/cmr/m/n/10.95 gangs-ko-den:
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[]|\T1/cmr/m/n/10.95 De valg-te ''en-kel-te''
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 36--37
-[]|\T1/cmr/m/n/10.95 Adgangskode ka-
+Underfull \hbox (badness 2134) in paragraph at lines 43--44
+\T1/cmr/m/n/10.95 en-he-der mar-ke-res på
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 36--37
-\T1/cmr/m/n/10.95 rak-ter vi-ses som
- []
-
-
-Underfull \hbox (badness 5245) in paragraph at lines 40--41
-[]|\T1/cmr/m/n/10.95 Bruger væl-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-[]|\T1/cmr/m/n/10.95 pre-login me-nu
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-\T1/cmr/m/n/10.95 kom-mer fre på
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-[]|\T1/cmr/m/n/10.95 Indtastede ad-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-\T1/cmr/m/n/10.95 næg-ter ad-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-\T1/cmr/m/n/10.95 gang og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-\T1/cmr/m/n/10.95 be-der bru-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-\T1/cmr/m/n/10.95 ger om at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-\T1/cmr/m/n/10.95 ind-ta-ste
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-\T1/cmr/m/n/10.95 ad-gangs-ko-de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-[]|\T1/cmr/m/n/10.95 Indtastede ad-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-\T1/cmr/m/n/10.95 gangs-ko-de ik-ke
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-[]|\T1/cmr/m/n/10.95 Bruger får
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-\T1/cmr/m/n/10.95 ad-gang til
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 57--58
-[]|\T1/cmr/m/n/10.95 Hovedmenu vises
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--60
- [] [] [] [] [] 
- []
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 60.
-[25]) (./filer/accepttest/atuc2.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-[]|\T1/cmr/m/n/10.95 Bruger log-
- []
-
-
-Underfull \hbox (badness 5245) in paragraph at lines 27--28
-[]|\T1/cmr/m/n/10.95 Bruger væl-
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 28--29
-[]|\T1/cmr/m/n/10.95 UI fortsætter til
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-[]|\T1/cmr/m/n/10.95 Visuel test:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\T1/cmr/m/n/10.95 Vis-ning af
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\T1/cmr/m/n/10.95 ''Ak-ti-ver
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-[]|\T1/cmr/m/n/10.95 ''Vælg al-le''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-[]|\T1/cmr/m/n/10.95 Enkelte
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-\T1/cmr/m/n/10.95 en-he-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-[]|\T1/cmr/m/n/10.95 ''Aktiver''
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 48--49
-[]|\T1/cmr/m/n/10.95 UI fort-sæt-ter til
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-[]|\T1/cmr/m/n/10.95 ''Tilbage''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-[]|\T1/cmr/m/n/10.95 Fortsætter til
- []
-
-
-Underfull \hbox (badness 6220) in paragraph at lines 53--54
-\T1/cmr/m/n/10.95 Punkt 8 (Vi-ser
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-[]|\T1/cmr/m/n/10.95 Valgte en-he-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-[]|\T1/cmr/m/n/10.95 Der væl-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/10.95 ges in-gen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/10.95 en-he-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/10.95 og tryk-kes
- []
-
-
-Underfull \hbox (badness 1629) in paragraph at lines 63--65
-\T1/cmr/m/n/10.95 til UC2.[][]3[][] . Der
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 63--65
-\T1/cmr/m/n/10.95 må-les in-gen æn-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-[]|\T1/cmr/m/n/10.95 Visuel test:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\T1/cmr/m/n/10.95 Vi-ser be-
- []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 68--69
-\T1/cmr/m/n/10.95 sked om at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\T1/cmr/m/n/10.95 en-he-der er
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-[]|\T1/cmr/m/n/10.95 Visuel test:
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--80
- [] [] [] [] [] 
+Underfull \hbox (badness 2181) in paragraph at lines 63--65
+[]|\T1/cmr/m/n/10.95 UI udskriver fejl på
  []
 
 Package babel Info: Redefining danish shorthand "|
@@ -2637,154 +2404,39 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 80.
-[26]) (./filer/accepttest/atuc3.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
+[25]) (./filer/accepttest/atuc3.tex
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-[]|\T1/cmr/m/n/10.95 Bruger log-
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+[]|\T1/cmr/m/n/10.95 UI vi-ser ''De-ak-ti-ver
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 27--28
-[]|\T1/cmr/m/n/10.95 Bruger væl-
+Underfull \hbox (badness 1264) in paragraph at lines 42--43
+[]|\T1/cmr/m/n/10.95 Enkelte en-he-der væl-
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 27--28
-\T1/cmr/m/n/10.95 ger ''De-ak-ti-
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[]|\T1/cmr/m/n/10.95 De valg-te ''en-kel-te''
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 28--29
-[]|\T1/cmr/m/n/10.95 UI fort-sæt-ter til
+Underfull \hbox (badness 2134) in paragraph at lines 43--44
+\T1/cmr/m/n/10.95 en-he-der mar-ke-res på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-[]|\T1/cmr/m/n/10.95 Visuel test:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\T1/cmr/m/n/10.95 Vis-ning af
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\T1/cmr/m/n/10.95 ''De-ak-ti-ver
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-[]|\T1/cmr/m/n/10.95 ''Vælg al-le''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-[]|\T1/cmr/m/n/10.95 Enkelte
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-\T1/cmr/m/n/10.95 en-he-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-[]|\T1/cmr/m/n/10.95 ''Deaktiver''
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 48--49
-[]|\T1/cmr/m/n/10.95 UI fort-sæt-ter til
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-[]|\T1/cmr/m/n/10.95 ''Tilbage''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-[]|\T1/cmr/m/n/10.95 Fortsætter til
- []
-
-
-Underfull \hbox (badness 6220) in paragraph at lines 53--54
-\T1/cmr/m/n/10.95 Punkt 8 (Vi-ser
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-[]|\T1/cmr/m/n/10.95 Valgte en-he-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-[]|\T1/cmr/m/n/10.95 Der væl-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/10.95 ges in-gen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/10.95 en-he-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/10.95 og tryk-kes
- []
-
-
-Underfull \hbox (badness 1629) in paragraph at lines 63--65
-\T1/cmr/m/n/10.95 til UC2.[][]3[][] . Der
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 63--65
-\T1/cmr/m/n/10.95 må-les in-gen æn-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-[]|\T1/cmr/m/n/10.95 Visuel test:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\T1/cmr/m/n/10.95 Vi-ser be-
- []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 68--69
-\T1/cmr/m/n/10.95 sked om at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\T1/cmr/m/n/10.95 en-he-der er
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-[]|\T1/cmr/m/n/10.95 Visuel test:
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--80
- [] [] [] [] [] 
+Underfull \hbox (badness 2181) in paragraph at lines 63--65
+[]|\T1/cmr/m/n/10.95 UI udskriver fejl på
  []
 
 Package babel Info: Redefining danish shorthand "|
@@ -2795,89 +2447,44 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 80.
-[27]) (./filer/accepttest/atuc4.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
+[26]) (./filer/accepttest/atuc4.tex
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 25--25
-[]|\T1/cmr/m/n/10.95 Vælger "Vis
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\T1/cmr/m/n/10.95 Systemet vi-ser
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--39
- [] [] [] [] [] 
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 ) (./filer/accepttest/atuc5.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-[]|\T1/cmr/m/n/10.95 Bruger
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+[]|\T1/cmr/m/n/10.95 Detektorer op-fan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-\T1/cmr/m/n/10.95 ak-ti-ve-rer
- []
-
-
-Overfull \hbox (0.61641pt too wide) in paragraph at lines 30--31
-[]|\T1/cmr/m/n/10.95 Kontinuerligt
- []
-
-
-Underfull \hbox (badness 7186) in paragraph at lines 30--31
-\T1/cmr/m/n/10.95 lyd ef-ter-lig-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-[]|\T1/cmr/m/n/10.95 SMS-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-\T1/cmr/m/n/10.95 modtager
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-\T1/cmr/m/n/10.95 får til-sendt
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+\T1/cmr/m/n/10.95 ger lyd og kal-der
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 36--37
-[]|\T1/cmr/m/n/10.95 SMS-modtager
+[]|\T1/cmr/m/n/10.95 SMS-modtager får
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 36--37
-\T1/cmr/m/n/10.95 ly-nin-ger om-kring
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--39
- [] [] [] [] [] 
+Underfull \hbox (badness 1490) in paragraph at lines 36--37
+\T1/cmr/m/n/10.95 SMS med op-ly-nin-ger
  []
 
 Package babel Info: Redefining danish shorthand "|
@@ -2888,337 +2495,167 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 39.
-[28]) (./filer/accepttest/atuc6.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
+[27]) (./filer/accepttest/atuc6.tex
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-[]|\T1/cmr/m/n/10.95 "Rediger
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/cmr/m/n/10.95 SMS-
+[]|\T1/cmr/m/n/10.95 "Rediger SMS-
  []
 
 
-Overfull \hbox (4.30667pt too wide) in paragraph at lines 25--25
-\T1/cmr/m/n/10.95 bruger"vælges
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/cmr/m/n/10.95 bruger"vælges i in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\T1/cmr/m/n/10.95 Skærmen for
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\T1/cmr/m/n/10.95 Ændring for-ta-ges i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-[]|\T1/cmr/m/n/10.95 SMS-brugerens
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\T1/cmr/m/n/10.95 SMS-brugeres mo-bil
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\T1/cmr/m/n/10.95 mo-bil num-mer
+Underfull \hbox (badness 3872) in paragraph at lines 32--32
+[]|\T1/cmr/m/n/10.95 SMS-brugerens mo-bil
  []
 
 
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--37
- [] [] [] [] [] 
+Underfull \hbox (badness 4699) in paragraph at lines 32--32
+\T1/cmr/m/n/10.95 num-mer op-da-te-res i
  []
 
 ) (./filer/accepttest/atuc7.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 4634) in paragraph at lines 25--27
-[]|\T1/cmr/m/n/10.95 Indsæt se-ri-
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 ka-tions-ka-bel
+[]|\T1/cmr/m/n/10.95 Indsæt se-ri-elt kom-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 (RS232)
+\T1/cmr/m/n/10.95 mu-ni-ka-tions-ka-bel
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 i mel-lem
+\T1/cmr/m/n/10.95 (RS232) i mel-lem
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 com-pu-ter
+\T1/cmr/m/n/10.95 Indsæt sty-r-e-ka-bel
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 og ho-ve-d-
+\T1/cmr/m/n/10.95 Indsæt strøm-ka-bel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 en-he-dens
+Underfull \hbox (badness 1983) in paragraph at lines 25--27
+\T1/cmr/m/n/10.95 ud-tag og ho-ve-d-en-he-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 ba-by-a-larm
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\T1/cmr/m/n/10.95 Visueltest: Sy-ste-met
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 og ho-ve-d-en-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 Indsæt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 strøm-ka-bel
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 mel-lem le-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/cmr/m/n/10.95 ve-d-en-he-dens
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-[]|\T1/cmr/m/n/10.95 Visueltest: Al-le
- []
-
-
-Underfull \hbox (badness 3690) in paragraph at lines 33--33
-[]|\T1/cmr/m/n/10.95 Tænd ho-ve-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\T1/cmr/m/n/10.95 d-en-hed og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-[]|\T1/cmr/m/n/10.95 Start CSS
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-\T1/cmr/m/n/10.95 pro-gram-met
+Underfull \hbox (badness 2173) in paragraph at lines 34--34
+\T1/cmr/m/n/10.95 star-ter op in-den for
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\T1/cmr/m/n/10.95 Visueltest: Pro-gram-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 56.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 56.
+[28]) (./filer/accepttest/atuc8.tex
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
+ []
+
+
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 []|\T1/cmr/m/n/10.95 Visueltest: Pro-
  []
 
 
-Underfull \hbox (badness 8151) in paragraph at lines 40--40
-\T1/cmr/m/n/10.95 gram-met star-ter
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\T1/cmr/m/n/10.95 gram-met ud-skri-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-[]|\T1/cmr/m/n/10.95 En en-hed
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]|\T1/cmr/bx/n/10.95 2a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-\T1/cmr/m/n/10.95 at ud-fø-re
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+\T1/cmr/bx/n/10.95 Til-
  []
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 46--46
-[]|\T1/cmr/m/n/10.95 Den op-sat-te en-
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--50
- [] [] [] [] [] 
- []
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
-[29]) (./filer/accepttest/atuc8.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 26--26
-[]|\T1/cmr/m/n/10.95 Bruger er log-get
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]|\T1/cmr/m/n/10.95 Indstil X10
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\T1/cmr/m/n/10.95 ud-ta-gets
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\T1/cmr/m/n/10.95 adres-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\T1/cmr/m/n/10.95 seswitch
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\T1/cmr/m/n/10.95 til adres-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\T1/cmr/m/n/10.95 sen ''0101''
- []
-
-
-Underfull \hbox (badness 3646) in paragraph at lines 32--32
-\T1/cmr/m/n/10.95 sen er indstil-let
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\T1/cmr/m/n/10.95 Vælg me-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/cmr/m/n/10.95 nu-punkt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/cmr/m/n/10.95 ''Til-føj/fjern
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
-[]|\T1/cmr/m/n/10.95 Visueltest: Pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
-\T1/cmr/m/n/10.95 gram-met ud-
- []
-
-
-Underfull \hbox (badness 6252) in paragraph at lines 38--38
-\T1/cmr/m/n/10.95 skri-ver be-ske-den
- []
-
-
-Underfull \hbox (badness 1137) in paragraph at lines 38--38
-\T1/cmr/m/n/10.95 ''Ind-tast den fi-re
+Underfull \hbox (badness 2503) in paragraph at lines 37--37
+[]|\T1/cmr/m/n/10.95 Indstil X10 ud-ta-gets
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
-[]|\T1/cmr/m/n/10.95 Indtast
+[]|\T1/cmr/m/n/10.95 Indtast adres-sen
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
-\T1/cmr/m/n/10.95 adres-sen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
-\T1/cmr/m/n/10.95 ''0101'' og
+\T1/cmr/m/n/10.95 ''0101'' og tryk på
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 49--49
-[]|\T1/cmr/m/n/10.95 Indtast
+[]|\T1/cmr/m/n/10.95 Indtast adres-sen
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 49--49
-\T1/cmr/m/n/10.95 adres-sen
+\T1/cmr/m/n/10.95 ''0000'' og tryk på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
-\T1/cmr/m/n/10.95 ''0000'' og
- []
-
-
-Underfull \hbox (badness 4752) in paragraph at lines 50--50
-[]|\T1/cmr/m/n/10.95 Programmet ud-
- []
-
-
-Underfull \hbox (badness 3590) in paragraph at lines 50--50
-\T1/cmr/m/n/10.95 skri-ver fejl-be-ske-
- []
-
-
-Underfull \hbox (badness 5939) in paragraph at lines 50--50
-\T1/cmr/m/n/10.95 den og går til
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
-[]|\T1/cmr/m/n/10.95 Indtast
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
-\T1/cmr/m/n/10.95 adres-sen
- []
-
-
-Underfull \hbox (badness 2689) in paragraph at lines 55--55
-\T1/cmr/m/n/10.95 ''0'' og tryk
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
-\T1/cmr/m/n/10.95 på ''en-ter''
+Overfull \hbox (0.86757pt too wide) in paragraph at lines 54--54
+[]|\T1/cmr/bx/n/10.95 2b.b| 
  []
 
 
@@ -3227,13 +2664,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--56
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 56--56
-\T1/cmr/m/n/10.95 gram-met ud-skri-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 56--56
-\T1/cmr/m/n/10.95 ver fejl-be-ske-den
+\T1/cmr/m/n/10.95 gram-met ud-skri-ver
  []
 
 
@@ -3243,57 +2675,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
-\T1/cmr/m/n/10.95 gram-met ud-
+\T1/cmr/m/n/10.95 gram-met ud-skri-ver
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 62--62
-\T1/cmr/m/n/10.95 skri-ver be-ske-den
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+\T1/cmr/m/n/10.95 be-ske-den ''Ind-tast
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-\T1/cmr/m/n/10.95 en-hed'' og
+Underfull \hbox (badness 2293) in paragraph at lines 67--67
+[]|\T1/cmr/m/n/10.95 Indtast ''Test en-hed''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-[]|\T1/cmr/m/n/10.95 Indtast ''A''
- []
-
-
-Underfull \hbox (badness 4582) in paragraph at lines 73--74
-\T1/cmr/m/n/10.95 og tryk på
- []
-
-
-Underfull \hbox (badness 1803) in paragraph at lines 73--74
-\T1/cmr/m/n/10.95 Gentag med
+Underfull \hbox (badness 7379) in paragraph at lines 67--67
+\T1/cmr/m/n/10.95 og tryk på ''en-ter''
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
-\T1/cmr/m/n/10.95 ''abc-def-g-hi-
+\T1/cmr/m/n/10.95 Gentag med ''abc-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
-\T1/cmr/m/n/10.95 j-klm-nopqr-
+\T1/cmr/m/n/10.95 def-g-hi-j-klm-nopqr-st-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
-\T1/cmr/m/n/10.95 st-u-vxwabc-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-\T1/cmr/m/n/10.95 def-g-hi-j-klm-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-\T1/cmr/m/n/10.95 nopqr-st-u-
+\T1/cmr/m/n/10.95 u-vxwabc-def-g-hi-j-klm-
  []
 
 
@@ -3302,604 +2714,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--75
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 75--75
-\T1/cmr/m/n/10.95 gram-met ud-skri-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 75--75
-\T1/cmr/m/n/10.95 ver fejl-be-ske-den
+\T1/cmr/m/n/10.95 gram-met ud-skri-ver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-[]|\T1/cmr/m/n/10.95 Visueltest: Pro-
+Underfull \hbox (badness 1924) in paragraph at lines 80--80
+\T1/cmr/m/n/10.95 og kør accepttest af
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-\T1/cmr/m/n/10.95 gram-met re-
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+[]|\T1/cmr/bx/n/10.95 2a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-\T1/cmr/m/n/10.95 tur-ne-rer til
+Overfull \hbox (6.7148pt too wide) in paragraph at lines 85--85
+\T1/cmr/bx/n/10.95 Fjern| 
  []
 
 
-Underfull \hbox (badness 7047) in paragraph at lines 86--86
-[]|\T1/cmr/m/n/10.95 Indsæt X10
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/cmr/m/n/10.95 ud-tag i et
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/cmr/m/n/10.95 230 Vac
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/cmr/m/n/10.95 ud-tag som
- []
-
-
-Underfull \hbox (badness 6047) in paragraph at lines 86--86
-\T1/cmr/m/n/10.95 til sy-ste-met
- []
-
-
-Underfull \hbox (badness 7649) in paragraph at lines 86--86
-\T1/cmr/m/n/10.95 og kør ac-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/cmr/m/n/10.95 cept-test af
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/cmr/m/n/10.95 ny-op-sat-te
- []
-
-
-Underfull \hbox (badness 2653) in paragraph at lines 87--87
-\T1/cmr/m/n/10.95 sty-re det op-sat-
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--92
- [] [] [] [] [] 
+Underfull \hbox (badness 5622) in paragraph at lines 92--92
+[]|\T1/cmr/m/n/10.95 Programmet re-tur-ne-
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 96.
+[29]) (./filer/accepttest/atikkefunktionellekrav.tex
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
+\T1/cmr/bx/n/10.95 Kommentar| 
+ []
+
+
+Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
+\T1/cmr/bx/n/10.95 Kommentar| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/cmr/m/n/10.95 gen-nem-læ-ser ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/cmr/m/n/10.95 nu-a-len og op-sæt-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+\T1/cmr/m/n/10.95 Bruger ak-ti-ve-rer et
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 43--44
+\T1/cmr/m/n/10.95 X10 ud-tag iht. UC2
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+\T1/cmr/m/n/10.95 ti-den fra ''Ak-ti-ver''
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 70--71
+\T1/cmr/m/n/10.95 op på sy-ste-met fjer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+[]|\T1/cmr/m/n/10.95 X10 ud-ta-get vir-ker
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\T1/cmr/m/n/10.95 Testet un-der punkt
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 155.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 155.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 155.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 155.
 [30]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 92.
- [31]) (./filer/accepttest/atikkefunktionellekrav.tex
-Overfull \hbox (6.28575pt too wide) in alignment at lines 4--12
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 12--20
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (11.25879pt too wide) in paragraph at lines 25--25
-[]|\T1/cmr/m/n/10.95 Udenforstående
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/cmr/m/n/10.95 bru-ger gen-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/cmr/m/n/10.95 nem-læ-ser
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/cmr/m/n/10.95 ma-nu-a-len
- []
-
-
-Underfull \hbox (badness 5460) in paragraph at lines 25--25
-\T1/cmr/m/n/10.95 og op-sæt-ter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/cmr/m/n/10.95 sy-ste-met
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\T1/cmr/m/n/10.95 Brugeren har
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-\T1/cmr/m/n/10.95 ik-ke pro-ble-mer
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-\T1/cmr/m/n/10.95 og bru-gen af
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 43--44
-\T1/cmr/m/n/10.95 an-ta-ges som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-\T1/cmr/m/n/10.95 væ-ren-de
- []
-
-
-Underfull \hbox (badness 1400) in paragraph at lines 43--44
-\T1/cmr/m/n/10.95 Bruger ak-ti-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-\T1/cmr/m/n/10.95 ud-tag iht.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-\T1/cmr/m/n/10.95 og kon-trol-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-\T1/cmr/m/n/10.95 le-rer ti-den
- []
-
-
-Underfull \hbox (badness 4266) in paragraph at lines 43--44
-\T1/cmr/m/n/10.95 er valgt til
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-\T1/cmr/m/n/10.95 en-hen-den
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 an-ta-ges som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 væ-ren-de
- []
-
-
-Underfull \hbox (badness 5832) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 Der tryk-kes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 på Tænd/-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 på ho-ve-d-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 en-he-den og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 com-pu-te-ren.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 Når com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 pu-te-ren er
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 star-tet op
- []
-
-
-Underfull \hbox (badness 6859) in paragraph at lines 50--51
-\T1/cmr/m/n/10.95 star-tes CSS
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 63--64
-\T1/cmr/m/n/10.95 an-ta-ges som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-\T1/cmr/m/n/10.95 væ-ren-de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-\T1/cmr/m/n/10.95 Babyalarmen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-\T1/cmr/m/n/10.95 ud-sæt-tes
- []
-
-
-Underfull \hbox (badness 6792) in paragraph at lines 63--64
-\T1/cmr/m/n/10.95 for et lyd-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-\T1/cmr/m/n/10.95 tryk ved
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-\T1/cmr/m/n/10.95 at klap-pe
- []
-
-
-Underfull \hbox (badness 5592) in paragraph at lines 63--64
-\T1/cmr/m/n/10.95 kon-ti-nu-ert i
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 an-ta-ges som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 væ-ren-de
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 Et X10 ud-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 tag koblet
- []
-
-
-Underfull \hbox (badness 5446) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 met fjer-nes.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 Adres-sen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 af-læ-ses og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 en ny en-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 hed sæt-tes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 i sy-ste-met
- []
-
-
-Underfull \hbox (badness 4156) in paragraph at lines 70--71
-\T1/cmr/m/n/10.95 med sam-me
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-\T1/cmr/m/n/10.95 kon-trol-le-re den
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 72--72
-\T1/cmr/m/n/10.95 æn-dre op-sæt-ning
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-\T1/cmr/m/n/10.95 op-sæt-tes i
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-\T1/cmr/m/n/10.95 et test-mil-jø
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-\T1/cmr/m/n/10.95 som re-flek-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-\T1/cmr/m/n/10.95 te-re den
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-\T1/cmr/m/n/10.95 al-min-de-li-ge
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-\T1/cmr/m/n/10.95 bru-ger ved
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-\T1/cmr/m/n/10.95 at ud-fø-re
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 83--84
-\T1/cmr/m/n/10.95 an-ta-ges som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-\T1/cmr/m/n/10.95 væ-ren-de
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 83--84
-\T1/cmr/m/n/10.95 Et nyt X10
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-\T1/cmr/m/n/10.95 tes ved at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 96--97
-\T1/cmr/m/n/10.95 an-ta-ges som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-\T1/cmr/m/n/10.95 væ-ren-de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
-[]|\T1/cmr/m/n/10.95 Testes ik-ke
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
-\T1/cmr/m/n/10.95 på grund
- []
-
-
-Underfull \hbox (badness 7030) in paragraph at lines 109--109
-\T1/cmr/m/n/10.95 af be-græns-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
-\T1/cmr/m/n/10.95 nin-ger i
- []
-
-
-Underfull \hbox (badness 2409) in paragraph at lines 109--109
-\T1/cmr/m/n/10.95 sy-ste-met, se
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 115--116
-\T1/cmr/m/n/10.95 an-ta-ges som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-\T1/cmr/m/n/10.95 væ-ren-de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-\T1/cmr/m/n/10.95 ud-fø-res på
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-[]|\T1/cmr/m/n/10.95 Visueltest: En
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-\T1/cmr/m/n/10.95 LED in-di-ka-tor
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-[]|\T1/cmr/m/n/10.95 Systemet
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 128--129
-\T1/cmr/m/n/10.95 an-ta-ges som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-\T1/cmr/m/n/10.95 væ-ren-de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
-[]|\T1/cmr/m/n/10.95 Testes ik-ke
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
-\T1/cmr/m/n/10.95 på grund
- []
-
-
-Underfull \hbox (badness 7030) in paragraph at lines 135--135
-\T1/cmr/m/n/10.95 af be-græns-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
-\T1/cmr/m/n/10.95 nin-ger i
- []
-
-
-Underfull \hbox (badness 2409) in paragraph at lines 135--135
-\T1/cmr/m/n/10.95 sy-ste-met, se
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
-[]|\T1/cmr/m/n/10.95 Testes ik-ke
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
-\T1/cmr/m/n/10.95 på grund
- []
-
-
-Underfull \hbox (badness 7030) in paragraph at lines 141--141
-\T1/cmr/m/n/10.95 af be-græns-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
-\T1/cmr/m/n/10.95 nin-ger i
- []
-
-
-Underfull \hbox (badness 2409) in paragraph at lines 141--141
-\T1/cmr/m/n/10.95 sy-ste-met, se
- []
-
-
-Overfull \hbox (6.28575pt too wide) in alignment at lines 20--148
- [] [] [] [] [] 
- []
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
-[32]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
- [33]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
- [34]))
+(babel)             in language  on input line 155.
+ [31]))
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining danish shorthand "~
@@ -3908,23 +2822,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 25.
- [35]
+ [32]
 \openout2 = `filer/systemarkitektur.aux'.
 
  (./filer/systemarkitektur.tex
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
- [36
-
-
-
-]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -3938,7 +2839,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 29.
- [37]
+ [33
+
+
+
+]
 \tf@toc=\write5
 \openout5 = `Master.toc'.
 
@@ -3952,20 +2857,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 Package rerunfilecheck Info: File `Master.out' has not changed.
 (rerunfilecheck)             Checksum: 5E379B56E09DD18248BA470BF8B3FFD8;1688.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
  ) 
 Here is how much of TeX's memory you used:
- 25063 strings out of 493315
- 442800 string characters out of 6137905
+ 25076 strings out of 493315
+ 443058 string characters out of 6137904
  784292 words of memory out of 5000000
- 27824 multiletter control sequences out of 15000+600000
+ 27836 multiletter control sequences out of 15000+600000
  20804 words of font info for 56 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 44i,13n,78p,582b,902s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,13n,78p,582b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
 /usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
@@ -3977,10 +2878,10 @@ e/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Master.pdf (37 pages, 5343456 bytes).
+Output written on Master.pdf (33 pages, 6256046 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 174 named destinations out of 1000 (max. 500000)
- 292 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 532 PDF objects out of 1000 (max. 8388607)
+ 458 compressed objects within 5 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 
