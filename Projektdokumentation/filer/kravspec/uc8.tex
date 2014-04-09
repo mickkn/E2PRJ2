@@ -3,25 +3,23 @@
 	\hline
 		\multicolumn{2}{|l|}{\textbf{UC8: Tilføj/fjern X10 udtag}} \\\hline
 		
-		\textbf{Mål}							&At brugeren kan opsætte en ny enhed med CSS						\\\hline
+		\textbf{Mål}							&At brugeren kan tilføje en ny enhed til CSS						\\\hline
 		\textbf{Initialisering}				&Bruger					 										\\\hline
-		\textbf{Aktører og Stakeholders}		&Bruger(Primær): Ønsker at opsætte en ny enhed					\\\hline
-		\textbf{Referencer}					&UC1: Login														\\\hline
+		\textbf{Aktører og Stakeholders}		&Bruger(Primær)					\\\hline
+		\textbf{Referencer}					&UC1: Login													\\\hline
 		\textbf{Antal af samtidige hændelser}&1 																\\\hline
-		\textbf{Forudsætning}				&Ingen															\\\hline
-		\textbf{Efterfølgende tilstand}		&En ny enhed er opsat med CSS									\\\hline
+		\textbf{Forudsætning}				&Systemet er tændt															\\\hline
+		\textbf{Efterfølgende tilstand}		&Et nyt X10 udtag er tilføjet 					\\\hline
 		\textbf{Hovedforløb}					
 			&\begin{enumerate}
-
-				\item UC1: Login udføres
 				
-				\item Bruger vælger menupunkt ''Tilføj/fjern X10 udtag'' og programmet udskriver i forvejen indstilled enheder og mulighed for at vælge Tilføj eller fjern
+				\item Bruger vælger menupunkt ''Tilføj/fjern X10 udtag'' (UC1 gennemføres) og programmet udskriver i forvejen indstillede X10 udtag og mulighed for at vælge tilføj eller fjern
 					
 				\subitem \textbf{Tilføj valgt}			
 				\begin{enumerate}
-					\item \label{uc8indstilAdresse} Bruger indstiller adresseswitchen til en unik adresse på X10 udtaget
+					\item \label{uc8indstilAdresse} Bruger indstiller adresseswitchen til en adresse på X10 udtaget
 
-					\item \label{uc8adresse} Bruger indtaster den fire sifrede kombination som er indstillet på X10 udtaget efterfulgt af "enter"\newline
+					\item \label{uc8adresse} Bruger indtaster den fire cifrede kombination som er indstillet på X10 udtaget efterfulgt af ''Enter''\newline
 						\textbf{[Undtagelse \ref{uc8adresse}.a]} Adressen er ikke unik\newline
 						\textbf{[Undtagelse \ref{uc8adresse}.b]} Adressen har ikke den rette længde
 				

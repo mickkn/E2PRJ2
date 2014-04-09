@@ -2,19 +2,16 @@
 	\begin{tabular} {|p{6cm}|p{8cm}|}
 	\hline		
 		\textbf{Mål}							&At Bruger kan aktivere enkelte eller alle enheder, i systemet\\\hline
-		\textbf{Initialisering}				&Bruger vælger "Aktiver" 	\\\hline
-		\textbf{Aktører og Stakeholders}		&Bruger(Primær) 				\\\hline
+		\textbf{Initialisering}				&Bruger vælger ''Aktiver'' hovedmenu  	\\\hline
+		\textbf{Aktører og Stakeholders}		&Bruger(Primær), Eksterne enheder(Sekundær) 		\\\hline
 		\textbf{Referencer}					&UC1: Login					\\\hline
 		\textbf{Antal af samtidige hændelser}&1 							\\\hline
-		\textbf{Forudsætning}				&Bruger er logget ind i systemet\\\hline
+		\textbf{Forudsætning}				&Systemet er tændt\\\hline
 		\textbf{Efterfølgende tilstand}		&Enkelte eller alle enheder er aktiveret  \\\hline
 		\textbf{Hovedforløb}					
-			&\begin{enumerate}
-	
-				\item \label{uc2login} Bruger logger ind med kode.
-					%\textbf{[Undtagelse \ref{uc2login}a]} Bruger ér logget ind					
+			&\begin{enumerate}				
 					
-				\item Bruger vælger ''Aktiver'' i hovedmenu
+				\item Bruger vælger ''Aktiver'' i hovedmenu (UC1 gennemføres)
 										
 				\item \label{uc2menu}UI viser mulige enheder samt ''Vælg alle'', ''Aktiver'' og ''Tilbage''
 												
@@ -34,11 +31,7 @@
 		
 		\textbf{Undtagelser}	
 		
-		&\begin{enumerate}[label= \ref{uc2login}a.]
-			\item Bruger skal ikke logge ind
-		\end{enumerate}
-						
-		\begin{enumerate}[label= \ref{uc2act}a.]
+		&\begin{enumerate}[label= \ref{uc2act}a.]
 			\item UI returnerer til hovedmenu og UC2 afbrydes
 		\end{enumerate}						
 							

@@ -2,28 +2,30 @@
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
 		\textbf{Mål} &
-			At detektere om barnet græder \\\hline
+			At detektere lyd fra Barn \\\hline
 		\textbf{Initialisering} &
-			Barnet \\\hline
+			Barn afgiver lyd \\\hline
 		\textbf{Aktører og Stakeholders} &
-			Bruger(Primær): Ønsker at kunne overvåge barnet. SMS-modtager(Sekundær): Modtager SMS ved gråd. Barn(Sekundær): Ønskes overvåget 						\\\hline
+			SMS-modtager(Primær), Barn(Sekundær) \\\hline
 		\textbf{Referencer}						
-			&Advisering \\\hline
+			&Ingen \\\hline
 		\textbf{Antal af samtidige hændelser} &
 			1 \\\hline
 		\textbf{Forudsætning} & 
-			At CSS er aktiveret, og advisering er opsat \\\hline
+			At systemet er tændt og har forbindelse til internettet \\\hline
 		\textbf{Efterfølgende tilstand} &
-			Sensor stadig aktiv \\\hline
+			Lyddetektor stadig aktiv \\\hline
 		\textbf{Hovedforløb} &
 			\begin{enumerate}
 
 	
-				\item Systemet er aktiveret
+				\item Lyddetektor er aktiveret
 												
-				\item Systemet detekter gråd
+				\item Lyddetektor detekterer lyd 
+				
+				\item Systemet underrettes
 												
-				\item Systemet kalder advisering
+				\item Systemet udsender SMS
 								
 			\end{enumerate}\\\hline
 	

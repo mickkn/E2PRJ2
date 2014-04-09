@@ -7,22 +7,20 @@
 		\textbf{Aktører og Stakeholders}	&Bruger(Primær), Eksterne enheder(Sekundær)\\ \hline
 		\textbf{Referencer} 				&UC1: Login \\ \hline
 		\textbf{Antal af samtidige hændelser} &1 \\ \hline
-		\textbf{Forudsætning} 			&At systemet er helt eller delvist aktiveret.\\ \hline
+		\textbf{Forudsætning} 			&Systemet er tændt \\ \hline
 		\textbf{Efterfølgende tilstand} 	&Enkelte eller alle enheder er deaktiveret \\ \hline
 		\textbf{Hovedforløb}				&
 
 	\begin{enumerate}	
-	
-				\item \label{uc3login} Bruger logger ind med kode. \newline
-					\textbf{[Undtagelse \ref{uc3login}a]} Bruger ér logget ind					
+						
 					
-				\item Bruger vælger "Deaktiver" i hovedmenu
+				\item Bruger vælger ''Deaktiver'' i hovedmenu (UC1 gennemføres)
 										
 				\item \label{uc3menu}UI viser mulige enheder samt ''Vælg alle'', ''Deaktiver''  og ''Tilbage''
 												
 				\item Bruger markerer ønskede enheder til deaktivering
 												
-				\item \label{uc3deact} Bruger vælger "Deaktiver"\newline
+				\item \label{uc3deact} Bruger vælger ''Deaktiver''\newline
 					\textbf{[Undtagelse \ref{uc3deact}a]} Bruger vælger ''Tilbage''
 												
 				\item \label{uc3sysdeact} Systemet deaktiverer valgte enheder \newline
@@ -36,11 +34,7 @@
 
 		\textbf{Undtagelser}	
 		
-		&\begin{enumerate}[label= \ref{uc3login}a.]
-			\item Hovedmenu vises
-		\end{enumerate}
-						
-		\begin{enumerate}[label= \ref{uc3deact}a.]
+		&\begin{enumerate}[label= \ref{uc3deact}a.]
 			\item UI returnerer til hovedmenu og UC3 afbrydes
 		\end{enumerate}						
 							

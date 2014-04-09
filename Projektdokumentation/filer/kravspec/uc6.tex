@@ -5,35 +5,35 @@
 At bruger kan ændre SMS-modtager i systemet\\\hline
 
 \textbf{Initialisering} &
-  Bruger \\\hline
+  Bruger vælger ''Rediger SMS-bruger'' \\\hline
  
 \textbf{Aktører og Stakeholders} &
-Bruger(Primær): Ønsker at kunne ændre oplysninger på SMS-modtager  \\\hline
+Bruger(Primær) \\\hline
 
 \textbf{Referencer} &
-Login  \\\hline
+UC1: Login  \\\hline
 
 \textbf{Antal af samtidige hændelser} &
 1  \\\hline
 
 \textbf{Forudsætning} &
-At der er logget ind i systemet  \\\hline
+Systemet er tændt  \\\hline
 
 \textbf{Efterfølgende tilstand} &
-Startskærm  \\\hline
+Hovedmenu vises  \\\hline
 
 \textbf{Hovedforløb} &
 \begin{enumerate}
 
-\item Bruger vælger "Rediger SMS-bruger"
+\item Bruger vælger ''Rediger SMS-bruger'' \newline (UC1 gennemføres)
 \item Bruger fortager ændringer og bekræfter \newline
-\textbf{[Undtagelse 1: Bruger vælger Annuller]}
+\textbf{[Undtagelse 2a. Bruger vælger Annuller]}
 
 \end{enumerate}   
  \\\hline
  
 \textbf{Undtagelser}
-&\begin{enumerate}[label= \ref{UC8und1}a.]
+&\begin{enumerate}[label= 2a.]
 \item Bruger vælger annuller og kommer tilbage til startskærm
 \end{enumerate}
  \\\hline

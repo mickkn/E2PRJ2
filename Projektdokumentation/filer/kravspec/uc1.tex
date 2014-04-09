@@ -2,37 +2,39 @@
 \begin{tabular}{|p{6cm}|p{8cm}|}
 	\hline
 \textbf{Mål}								
-&At autoriseret bruger kan logge ind ved hjælp af adgangskode
+&At Bruger kan logge ind ved hjælp af adgangskode
  \\\hline
 \textbf{Initialisering}					
-&Bruger vælger login i interface
+&Bruger bedes om login i interface
  \\\hline
 \textbf{Aktører og Stakeholders}			
-&Primær: Bruger
+&Bruger(Primær)
  \\\hline
 \textbf{Referencer}						
 &Ingen
  \\\hline
 \textbf{Antal af samtidige hændelser}	
-&Der kan fortages ét login ad gangen
+&1
  \\\hline
 \textbf{Forudsætning}					
-&At interface er online
+&At interfacet er tændt
  \\\hline
 \textbf{Efterfølgende tilstand}			
-&At bruger er logget ind og hovedmenu vises på skærmen. Hele systmet er klar til brug
+&At bruger er logget ind og hovedmenu vises på skærmen. Hele systemet er klar til brug
  \\\hline
 \textbf{Hovedforløb}						
 & 
 \begin{enumerate}
 
-\item Bruger vælger login i interface
+\item Bruger bedes om login i interfacet
 
-\item \label{UC8und1}Bruger indtaster adgangskode [Undtagelse 1: Bruger vælger Annuller]
+\item \label{UC2und1}Bruger indtaster adgangskode \newline
+\textbf{[Undtagelse \ref{UC2und1}a]} Bruger vælger Annuller
 
-\item \label{UC8und2} Systemet validerer adgangskode [Undtagelse 2: Ikke valideret]
+\item \label{UC2und2} Systemet validerer adgangskode \newline
+\textbf{[Undtagelse \ref{UC2und2}a]} Ikke valideret
 
-\item Bruger får adgang til hovedmenu
+\item Bruger får adgang til ønsket menufunktion	
  
 \end{enumerate}
 \\\hline
@@ -43,7 +45,7 @@
 		\end{enumerate}
 											
 		\begin{enumerate}[label= \ref{UC8und2}a.]
-			\item Adgangskode ikke indtastet korret. Adganskode indtastes igen.
+			\item Adgangskode ikke indtastet korrekt. Adgangskode indtastes igen.
 		\end{enumerate} \\\hline
 
 
