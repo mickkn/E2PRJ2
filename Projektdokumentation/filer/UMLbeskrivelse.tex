@@ -1,113 +1,112 @@
 {\centering Hukommelse klasse}
 
-Void SaveLogin(bool);
-\textbf{Parametre:} ingen 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} Gemmer login status og bevare denne i 10 minutter.
+Void SaveLogin(bool); \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Gemmer login status og bevare denne i 10 minutter. \\
 
-Void SaveStatus(bool, int adresse);
-\textbf{Parametre:} bool til bestemmelse af om status er aktiv eller deaktiv. Int adresse til bestemmelse af status på adressen.
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} Gemmer status på enheden på pågældende adresse.
+Void SaveStatus(bool, int adresse); \\
+\textbf{Parametre:} bool til bestemmelse af om status er aktiv eller deaktiv. Int adresse til bestemmelse af status på adressen. \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Gemmer status på enheden på pågældende adresse. \\
 
-Void printStatus();
-\textbf{Parametre:} ingen 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} Udskriver status for enhederne på skærmen.
+Void printStatus(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Udskriver status for enhederne på skærmen. \\
 
-Void getEnheder);
-\textbf{Parametre:} ingen 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} Gemmer login status og bevare denne i 10 minutter.
+Void getEnheder); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Gemmer login status og bevare denne i 10 minutter. \\
 
-int getNumber();
-\textbf{Parametre:} ingen 
-\textbf{Returværdi:} gemte telefonnummer.
-\textbf{Beskrivelse:} returnere det gemte telefonnummer.
+int getNumber(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi:} gemte telefonnummer. \\
+\textbf{Beskrivelse:} returnere det gemte telefonnummer. \\
 
-Void SaveNumber(int number);
-\textbf{Parametre:} number der skal gemmes.
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} Gemmer telefonnummeret.
+Void SaveNumber(int number); \\
+\textbf{Parametre:} number der skal gemmes. \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Gemmer telefonnummeret. \\
 
 {\centering Login klasse}
 
-Void loginValid();
-\textbf{Parametre:} ingen 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} N/A
+Void loginValid(); \\
+\textbf{Parametre:} ingen  \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} N/A \\
 
 {\centering Aktiver klasse}
 
-Void aktiverEnhed(int adresse);
-\textbf{Parametre:} adresse på enhed 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} N/A
+Void aktiverEnhed(int adresse); \\
+\textbf{Parametre:} adresse på enhed \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} N/A \\
 
 {\centering Deaktiver klasse}
 
-Void deaktiverEnhed(int adresse);
-\textbf{Parametre:} adresse på enhed
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} N/A
+Void deaktiverEnhed(int adresse); \\
+\textbf{Parametre:} adresse på enhed \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} N/A \\
 
 {\centering DetekterLyd klasse}
 
-Void lydDetekteret();
-\textbf{Parametre:} ingen 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} Henter telefonnummer i hukommelse og sender det til ClickATell klassen.
+Void lydDetekteret(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Henter telefonnummer i hukommelse og sender det til ClickATell klassen. \\
 
 {\centering RedigerSmSBruger klasse}
 
-Void redigerSMS(int number);
-\textbf{Parametre:} nye nummer.
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} Gemmer nye nummer i hukommelsen.
+Void redigerSMS(int number); \\
+\textbf{Parametre:} nye nummer. \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Gemmer nye nummer i hukommelsen. \\
 
 {\centering Udtag klasse}
 
-Bool addUdtag(int adresse, string name);
-\textbf{Parametre:} adresse og navn på udtag.
-\textbf{Returværdi:} true hvis operation gik godt, false hvis ikke.
-\textbf{Beskrivelse:} tilføjer udtag til hukommelse ved at gemme navn og adresse.
+Bool addUdtag(int adresse, string name); \\
+\textbf{Parametre:} adresse og navn på udtag. \\
+\textbf{Returværdi:} true hvis operation gik godt, false hvis ikke. \\
+\textbf{Beskrivelse:} tilføjer udtag til hukommelse ved at gemme navn og adresse. \\
 
 {\centering ClickATell klasse}
 
-Void sendSMS(int number);
-\textbf{Parametre:} telefonnummer 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} sender sms til bruger via GSM modul.
+Void sendSMS(int number); \\
+\textbf{Parametre:} telefonnummer \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} sender sms til bruger via GSM modul. \\
 
 {\centering RS232IF klasse}
 
-Bool loginValid();
-\textbf{Parametre:} Ingen 
-\textbf{Returværdi:} true eller false.
-\textbf{Beskrivelse:} Afventer login fra DE2 board.
+Bool loginValid(); \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi:} true eller false. \\
+\textbf{Beskrivelse:} Afventer login fra DE2 board. \\
 
-Void aktiver(int adresse);
-\textbf{Parametre:} adresse på enhed 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} beder om aktivering af enhed på adressen, ifølge protokol.
+Void aktiver(int adresse); \\
+\textbf{Parametre:} adresse på enhed \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} beder om aktivering af enhed på adressen, ifølge protokol. \\
 
-
-Void deaktiver(int adresse);
-\textbf{Parametre:} adresse på enhed
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} beder om deaktiver af enhed på adressen, ifølge protokol.
+Void deaktiver(int adresse); \\
+\textbf{Parametre:} adresse på enhed \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} beder om deaktiver af enhed på adressen, ifølge protokol. \\
 
 {\centering BrugerUI klasse}
 
-Void showMenu();
-\textbf{Parametre:} Ingen 
-\textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} udskriver menu
+Void showMenu(); \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} udskriver menu \\
 
-Bool printStatus();
-\textbf{Parametre:} Ingen 
-\textbf{Returværdi}: bool godkendt
-\textbf{Beskrivelse:} Hente status og navne fra hukommelse og udskrive dem på skærmen
+Bool printStatus(); \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi}: bool godkendt \\
+\textbf{Beskrivelse:} Hente status og navne fra hukommelse og udskrive dem på skærmen \\
 
 
 

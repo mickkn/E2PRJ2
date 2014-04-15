@@ -25,3 +25,7 @@
 \BOOKMARK [1][-]{section.4.2}{L\345s}{chapter.4}% 24
 \BOOKMARK [0][-]{chapter.5}{Accepttestspecifikation}{}% 26
 \BOOKMARK [0][-]{chapter.6}{System Arkitektur}{}% 27
+\BOOKMARK [1][-]{section.6.1}{Protokol}{chapter.6}% 28
+\BOOKMARK [2][-]{subsection.6.1.1}{Seriel kommunikation}{section.6.1}% 29
+\BOOKMARK [1][-]{section.6.2}{Software}{chapter.6}% 30
+\BOOKMARK [2][-]{subsection.6.2.1}{UML klassebeskrivelse}{section.6.2}% 31
