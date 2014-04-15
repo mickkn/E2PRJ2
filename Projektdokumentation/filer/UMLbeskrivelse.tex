@@ -1,8 +1,8 @@
-\centering{Hukommelse Classen}
+{\centering Hukommelse klasse}
 
 Void SaveLogin(bool);
 \textbf{Parametre:} ingen 
-\textbf{Returværdi}: Ingen
+\textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} Gemmer login status og bevare denne i 10 minutter.
 
 Void SaveStatus(bool, int adresse);
@@ -30,57 +30,56 @@ Void SaveNumber(int number);
 \textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} Gemmer telefonnummeret.
 
-\centering{Login klasse}
+{\centering Login klasse}
 
 Void loginValid();
 \textbf{Parametre:} ingen 
 \textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} N/A
 
-\centering{Aktiver klasse}
+{\centering Aktiver klasse}
 
 Void aktiverEnhed(int adresse);
 \textbf{Parametre:} adresse på enhed 
 \textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} N/A
 
-
-\centering{Deaktiver klasse}
+{\centering Deaktiver klasse}
 
 Void deaktiverEnhed(int adresse);
 \textbf{Parametre:} adresse på enhed
 \textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} N/A
 
-\centering{DetekterLyd klasse}
+{\centering DetekterLyd klasse}
 
 Void lydDetekteret();
 \textbf{Parametre:} ingen 
 \textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} Henter telefonnummer i hukommelse og sender det til ClickATell klassen.
 
-\centering{RedigerSmSBruger klasse}
+{\centering RedigerSmSBruger klasse}
 
 Void redigerSMS(int number);
 \textbf{Parametre:} nye nummer.
 \textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} Gemmer nye nummer i hukommelsen.
 
-\centering{Udtag klasse}
+{\centering Udtag klasse}
 
 Bool addUdtag(int adresse, string name);
 \textbf{Parametre:} adresse og navn på udtag.
 \textbf{Returværdi:} true hvis operation gik godt, false hvis ikke.
 \textbf{Beskrivelse:} tilføjer udtag til hukommelse ved at gemme navn og adresse.
 
-\centering{ClickATell klasse}
+{\centering ClickATell klasse}
 
 Void sendSMS(int number);
 \textbf{Parametre:} telefonnummer 
 \textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} sender sms til bruger via GSM modul.
 
-\centering{RS232IF klasse}
+{\centering RS232IF klasse}
 
 Bool loginValid();
 \textbf{Parametre:} Ingen 
@@ -98,12 +97,18 @@ Void deaktiver(int adresse);
 \textbf{Returværdi:} Ingen
 \textbf{Beskrivelse:} beder om deaktiver af enhed på adressen, ifølge protokol.
 
-\centering{BrugerUI klasse}
+{\centering BrugerUI klasse}
 
-Void status();
-\textbf{Parametre:} telefonnummer 
+Void showMenu();
+\textbf{Parametre:} Ingen 
 \textbf{Returværdi:} Ingen
-\textbf{Beskrivelse:} sender sms til bruger via GSM modul.
+\textbf{Beskrivelse:} udskriver menu
+
+Bool printStatus();
+\textbf{Parametre:} Ingen 
+\textbf{Returværdi}: bool godkendt
+\textbf{Beskrivelse:} Hente status og navne fra hukommelse og udskrive dem på skærmen
+
 
 
 
