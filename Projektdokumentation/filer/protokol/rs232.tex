@@ -1,0 +1,53 @@
+Kommunikationen mellem PC og CSS hovedenheden sker over seriel kommunikation på et RS232 interface.
+
+Det fysiske setup for RS232-interfacet er: 9200 kbps, ingen paritet, 8 bits, 1 stop bit.
+
+For alt kommunikation gælder.
+\begin{tabular}{|c|c|c|}
+\hline 
+STX & 'S' / 's' & 0x53 / 0x73 \\ 
+\hline 
+ETX & 'cr' & 0x0D \\ 
+\hline 
+\end{tabular} 
+
+Formateringen er som følger.
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+STX & <Kommando> & <Data> & ETX \\ 
+\hline 
+\end{tabular} 
+
+\textbf{<Kommando>}
+Følgende kommandoer er gyldige.
+
+\begin{tabular}{|c|c|c|}
+\hline 
+'A' / 'a' & 0x41 / 0x61 & Aktiver enhed \\ 
+\hline 
+'D' / 'd' & 0x44 / 0x64 & Deaktiver enhed \\ 
+\hline 
+'L' / 'l' & 0x4C / 0x6C & Hent login status \\ 
+\hline 
+'T' / 't' & 0x54 / 0x74 & Login korrekt \\ 
+\hline 
+'F' / 'f' & 0x46 / 0x66 & Login forkert \\ 
+\hline
+\end{tabular} 
+
+\textbf{Aktiver og Deaktiver}
+For at bruge aktiver eller deaktiver kommandoerne er <Data> formateret som adressen. Denne adressering formateres som 4 byte, som hver består af ASCII karakterende '0' eller '1'. På den måde skriver man blot den adresse ind, som man har indstillet på sit X10 udtag. F.eks. "0100".
+Bemærk at adresse "0000" ikke er gyldig.
+
+Eksempeler:
+\textbf{"SA0101<cr>"}
+Kommandoen aktiverer enheden med adresse "0101".
+
+\textbf{"SL<cr>"}
+Kommandoen beder CSS hovedenheden om at returnerer login status.
+
+CSS Hovedenheden vil så returnerer et svar:
+\textbf{"ST"} eller \textbf{"SF"}
+T for at brugeren er logget ind eller F hvis brugeren ikke er logget ind.
+
