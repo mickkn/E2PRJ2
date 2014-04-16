@@ -1,4 +1,6 @@
-{\centering Hukommelse klasse}
+{\centering
+Hukommelse klasse\par
+}
 
 Void SaveLogin(bool); \\
 \textbf{Parametre:} ingen \\
@@ -25,56 +27,72 @@ Void SaveNumber(int number); \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} gemmer telefonnummeret \\
 
-{\centering Login klasse}
+{\centering 
+Login klasse\par
+}
 
 Void loginValid(); \\
 \textbf{Parametre:} ingen  \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} N/A \\
 
-{\centering Aktiver klasse}
+{\centering 
+Aktiver klasse\par
+}
 
 Void aktiverEnhed(int adresse); \\
 \textbf{Parametre:} adresse på enhed \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} N/A \\
 
-{\centering Deaktiver klasse}
+{\centering 
+Deaktiver klasse\par
+}
 
 Void deaktiverEnhed(int adresse); \\
 \textbf{Parametre:} adresse på enhed \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} N/A \\
 
-{\centering DetekterLyd klasse}
+{\centering 
+DetekterLyd klasse\par
+}
 
 Void lydDetekteret(); \\
 \textbf{Parametre:} ingen \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} henter telefonnummer i hukommelse og sender det til ClickATell klassen \\
 
-{\centering RedigerSmSBruger klasse}
+{\centering 
+RedigerSmSBruger klasse\par
+}
 
 Void redigerSMS(int number); \\
 \textbf{Parametre:} nye nummer \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} gemmer nye nummer i hukommelsen \\
 
-{\centering Udtag klasse}
+{\centering 
+Udtag klasse\par
+}
 
 Bool addUdtag(int adresse, string name); \\
 \textbf{Parametre:} adresse og navn på udtag \\
 \textbf{Returværdi:} true hvis operation gik godt, false hvis ikke \\
 \textbf{Beskrivelse:} tilføjer udtag til hukommelse ved at gemme navn og adresse \\
 
-{\centering ClickATell klasse}
+{\centering 
+ClickATellIF klasse\par
+}
 
 Void sendSMS(int number); \\
 \textbf{Parametre:} telefonnummer \\
 \textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} sender sms til bruger via GSM modul \\
+\textbf{Beskrivelse:} sender sms til bruger via clickatell \\
 
-{\centering RS232IF klasse}
+{\centering 
+RS232IF klasse\par
+}
 
 Bool loginValid(); \\
 \textbf{Parametre:} ingen \\
@@ -91,7 +109,9 @@ Void deaktiver(int adresse); \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} beder om deaktiver af enhed på adressen, ifølge protokol \\
 
-{\centering BrugerUI klasse}
+{\centering 
+BrugerUI klasse\par
+}
 
 Void showMenu(); \\
 \textbf{Parametre:} ingen \\
