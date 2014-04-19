@@ -38,7 +38,7 @@ En central enhed håndterer styringen i mellem enhederne og der skal være mulig
 \item CSS programmet med tilhørende DE2 kodelås
 \item SMS besked udsendt af systemet idet lydniveauet i værelse 3 (Laura) har været over det tilladte.
 \item Overblik over hvad systemet er tiltænkt at børnesikre. Køkken skuffe med skarpe genstande, kogeplader, ovn.
-\item 230V udtag. X.10 kontrolleret, således at det bestemmes om der udtaget skal være aktivt.
+\item 230V udtag. X10 styret, således at det bestemmes om der udtaget skal være aktivt.
 \item Babyalarm. Illustrationen vil variere i forhold til virkeligheden.
 \end{enumerate}
 
@@ -49,4 +49,4 @@ En central enhed håndterer styringen i mellem enhederne og der skal være mulig
 \end{figure}
 
 
-Ud fra en kommando fra CSS programmet på computeren styres ønskede 230V udtag i hjemmet. Dette er muligt ved at benytte sig af x.10 protokollen. Testmiljøet er illustreret via billedet XX. Her sender CSS programmet besked til x.10 senderen (STK-500) som giver x.10modtageren (STK-500) besked på at hhv. tænde eller slukket for et givent udtag. Hvad brugen tilslutter i de forskellige udtag står frit for. Ydermere er der på x.10 senderen koblet en babyalarm som via uart kommunikationen med computeren sender en sms ud via API.
+Ud fra en kommando fra CSS programmet på computeren styres ønskede 230V udtag i hjemmet. Dette er muligt ved at benytte sig af X10 protokollen. Testmiljøet er illustreret via billedet \ref{lab:Oversigt}. Her sender CSS programmet besked til X10 senderen som giver X10 modtageren besked på at hhv. tænde eller slukket for et givent udtag. Hvad brugen tilslutter i de forskellige udtag står frit for. Ydermere er der på X10 senderen koblet en lyddetektor som via computeren sender en sms ud via API.
