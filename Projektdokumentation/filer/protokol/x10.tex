@@ -1,0 +1,66 @@
+Kommunikationen mellem CSS Hovedenhed og X10 Udtagene sker over strømnettet via et X10 interface.
+
+For alt kommunikation mellem CSS hovedenheden og X10 Udtagene gælder om STX (Start of text), start-byten, og ETX (End of text), slut-byten.
+
+\begin{table}[h]
+	\caption{Start og stop bytes for X10 kommunikation}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		& ASCII & Hex \\ 
+		\hline 
+		\textbf{STX} & 'S' / 's' & 0x53 / 0x73 \\ 
+		\hline 
+		\textbf{ETX} & 'cr' & 0x0D \\ 
+		\hline 
+	\end{tabular} 
+	\label{table:X10StartStopBytes}
+\end{table}
+
+Data formateres som vist i tabel \ref{table:X10DataFormat}.
+
+\begin{table}[h]
+	\caption{Data formatering for X10 kommunikation}
+	\centering
+	\begin{tabular}{|r|c|c|c|c|}
+		\hline 
+		\textbf{Byte} & 0 & 1..4 & 5 & 6 \\ 
+		\hline 
+		\textbf{Indhold} & STX & <Adresse> & <Kommando> & ETX \\ 
+		\hline 
+	\end{tabular} 
+	\label{table:X10DataFormat}
+\end{table}
+
+\textbf{<Kommando>}
+
+Kun kommandoerne beskrevet i tabel \ref{tabel:X10Kommandoer} er gyldige. I tilfælde af at kommandoen ikke genkendes er der intet svar. Bemærk at det er muligt at bruge både store og små karakterer.
+
+\begin{table}[h]
+\caption{Kommandoer for X10 kommunikation}
+\center
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{ASCII} & \textbf{HEX} & \textbf{Funktion} \\ 
+\hline 
+'A' / 'a' & 0x41 / 0x61 & Aktiver enhed \\ 
+\hline 
+'D' / 'd' & 0x44 / 0x64 & Deaktiver enhed \\ 
+\hline
+\end{tabular}
+\label{tabel:X10Kommandoer}
+\end{table} 
+
+\textbf{Aktiver- og Deaktiver kommandoerne}
+
+For at bruge aktiver eller deaktiver kommandoerne er <Adresse> formateret som adressen. Denne adressering formateres som 4 byte, som hver består af ASCII karakterende '0' eller '1'. På den måde skriver man blot den adresse ind, som man har indstillet på sit X10 udtag. F.eks. "0100".
+Bemærk at adresse "0000" ikke er gyldig.
+
+\textbf{Eksempler:}
+
+\textbf{"S0101A<cr>"}
+Kommandoen aktiverer X10 udtaget med adresse ''0101''.
+
+\textbf{"s0101d<cr>"}
+Kommandoen deaktiverer X10 udtaget med adresse ''0101''.
+
