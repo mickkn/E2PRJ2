@@ -2,27 +2,49 @@ Kommunikationen mellem PC og CSS hovedenheden sker over seriel kommunikation på
 
 Det fysiske setup for RS232-interfacet er: 9200 kbps, ingen paritet, 8 bits, 1 stop bit.
 
-For alt kommunikation gælder.
-\begin{tabular}{|c|c|c|}
-\hline 
-STX & 'S' / 's' & 0x53 / 0x73 \\ 
-\hline 
-ETX & 'cr' & 0x0D \\ 
-\hline 
-\end{tabular} 
+For alt kommunikation mellem computeren og CSS hovedenheden gælder om STX (Start of text), start-byten, og ETX (End of text), slut-byten.
 
-Formateringen er som følger.
+\begin{table}[h]
+	\caption{Start og stop bytes for RS232 kommunikation}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		& ASCII & Hex \\ 
+		\hline 
+		\textbf{STX} & 'S' / 's' & 0x53 / 0x73 \\ 
+		\hline 
+		\textbf{ETX} & 'cr' & 0x0D \\ 
+		\hline 
+	\end{tabular} 
+	\label{table:RS232StartStopBytes}
+\end{table}
 
-\begin{tabular}{|c|c|c|c|}
-\hline 
-STX & <Kommando> & <Data> & ETX \\ 
-\hline 
-\end{tabular} 
+
+Dataen formateres som vist i tabel \ref{table:RS232DataFormat}. <Data> blokken bruges kun i tilfælde af at der skal overføres en adresse.
+
+\begin{table}[h]
+	\caption{Data formatering for RS232 kommunikation}
+	\centering
+	\begin{tabular}{|r|c|c|c|c|}
+		\hline 
+		\textbf{Byte} & 0 & 1 & 2..5 & 2/6 \\ 
+		\hline 
+		\textbf{Indhold} & STX & <Kommando> & <Data> & ETX \\ 
+		\hline 
+	\end{tabular} 
+	\label{table:RS232DataFormat}
+\end{table}
 
 \textbf{<Kommando>}
-Følgende kommandoer er gyldige.
 
+Kun kommandoerne beskrevet i tabel \ref{tabel:RS232Kommandoer} er gyldige. I tilfælde af at kommandoen ikke genkendes er der intet svar. Bemærk at det er muligt at bruge både store og små karakterer.
+
+\begin{table}[h]
+\caption{Kommandoer for RS232 kommunikation}
+\center
 \begin{tabular}{|c|c|c|}
+\hline 
+\textbf{ASCII} & \textbf{HEX} & \textbf{Funktion} \\ 
 \hline 
 'A' / 'a' & 0x41 / 0x61 & Aktiver enhed \\ 
 \hline 
@@ -34,20 +56,23 @@ Følgende kommandoer er gyldige.
 \hline 
 'F' / 'f' & 0x46 / 0x66 & Login forkert \\ 
 \hline
-\end{tabular} 
+\end{tabular}
+\label{tabel:RS232Kommandoer}
+\end{table} 
 
-\textbf{Aktiver og Deaktiver}
+\textbf{Aktiver- og Deaktiverkommandoerne}
+
 For at bruge aktiver eller deaktiver kommandoerne er <Data> formateret som adressen. Denne adressering formateres som 4 byte, som hver består af ASCII karakterende '0' eller '1'. På den måde skriver man blot den adresse ind, som man har indstillet på sit X10 udtag. F.eks. "0100".
 Bemærk at adresse "0000" ikke er gyldig.
 
-Eksempeler:
+\textbf{Eksempler:}
+
 \textbf{"SA0101<cr>"}
 Kommandoen aktiverer enheden med adresse "0101".
 
 \textbf{"SL<cr>"}
 Kommandoen beder CSS hovedenheden om at returnerer login status.
 
-CSS Hovedenheden vil så returnerer et svar:
-\textbf{"ST"} eller \textbf{"SF"}
-T for at brugeren er logget ind eller F hvis brugeren ikke er logget ind.
+CSS Hovedenheden vil returnerer et svar:
+\textbf{"ST<cr>"} for at brugeren er logget ind eller \textbf{"SF<cr>"} hvis brugeren ikke er logget ind.
 
