@@ -1,24 +1,46 @@
+%
+% System arkitektur
+%
 \chapter{System Arkitektur}
 
+%% Protokol
 \section{Protokol}
 
+%%% Seriel kommunikation
 \subsection{Seriel kommunikation}
 \input{filer/protokol/rs232}
 
 \newpage
+%%% X10 kommunikation
 \subsection{X10 kommunikation}
 \input{filer/protokol/x10}
 
 \newpage
+%% Hardware
 \section{Hardware}
 
 \subsection{Hardware beskrivelse}
 \input{filer/HWbeskrivelse}
 
 \newpage
+%% Software
 \section{Software}
-\subsection{Applications model RS232}
+
+%%% Applikationsmodel for PC
+\subsection{Applikations model for PC}
 \input{filer/UML/applicationsmodel_pc}
 \clearpage
+
+%%%% Klasse beskrivelser
 \subsection{UML klassebeskrivelse}
 \input{filer/UMLbeskrivelse}
+\newpage
+
+%%% Applikationsmodel for CSS hovedenhed
+\subsection{Applikations model for CSS hovedenhed}
+\input{filer/UML/applicationsmodel_css_hovedenhed}
+
+\newpage
+%%% Applikations model for X10 modtager
+\subsection{Applications model for X10 modtager}
+\input{filer/UML/applicationsmodel_x10_modtager}

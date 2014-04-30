@@ -1,15 +1,15 @@
 Kommunikationen mellem PC og CSS hovedenheden sker over seriel kommunikation på et RS232 interface.
 
-Det fysiske setup for RS232-interfacet er: 9200 kbps, ingen paritet, 8 bits, 1 stop bit.
+Det fysiske setup for RS232-interfacet er: 9600 kbps, ingen paritet, 8 bits, 1 stop bit.
 
-For alt kommunikation mellem computeren og CSS hovedenheden gælder om STX (Start of text), start-byten, og ETX (End of text), slut-byten.
+I tabel \ref{table:RS232StartStopBytes} beskrives de fælles informationer som gælder mellem computeren og CSS hovedenheden.
 
 \begin{table}[h]
 	\caption{Start og stop bytes for RS232 kommunikation}
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline 
-		& ASCII & Hex \\ 
+		& \textbf{ASCII} & \textbf{Hex} \\ 
 		\hline 
 		\textbf{STX} & 'S' / 's' & 0x53 / 0x73 \\ 
 		\hline 
@@ -25,7 +25,7 @@ Dataen formateres som vist i tabel \ref{table:RS232DataFormat}. <Data> blokken b
 \begin{table}[h]
 	\caption{Data formatering for RS232 kommunikation}
 	\centering
-	\begin{tabular}{|r|c|c|c|c|}
+	\begin{tabular}{|l|c|c|c|c|}
 		\hline 
 		\textbf{Byte} & 0 & 1 & 2..5 & 2/6 \\ 
 		\hline 
@@ -35,7 +35,7 @@ Dataen formateres som vist i tabel \ref{table:RS232DataFormat}. <Data> blokken b
 	\label{table:RS232DataFormat}
 \end{table}
 
-\textbf{<Kommando>}
+\textbf{Blokken <Kommando>}
 
 Kun kommandoerne beskrevet i tabel \ref{tabel:RS232Kommandoer} er gyldige. I tilfælde af at kommandoen ikke genkendes er der intet svar. Bemærk at det er muligt at bruge både store og små karakterer.
 
