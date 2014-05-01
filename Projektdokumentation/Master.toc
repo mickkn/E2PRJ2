@@ -1,0 +1,49 @@
+\changetocdepth {2}
+\select@language {danish}
+\contentsline {chapter}{\chapternumberline {1}Indledning}{3}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}Ordliste}{5}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Kravspecifikation}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Akt\IeC {\o }rer}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Bruger}{7}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Eksterne enheder}{7}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Barn}{7}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}SMS modtager}{7}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Usecases}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}UC1: Login}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}UC2: Aktiver}{10}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}UC3: Deaktiver}{11}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}UC4: Udl\IeC {\ae }s status}{11}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}UC5: Detekter lyd}{12}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}UC6: Rediger SMS-modtager}{12}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}UC7: Startops\IeC {\ae }tning}{13}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}UC8: Tilf\IeC {\o }j/fjern X10 udtag}{15}{subsection.3.2.8}
+\contentsline {section}{\numberline {3.3}Ikke-funktionelle krav}{16}{section.3.3}
+\contentsline {section}{\numberline {3.4}Begr\IeC {\ae }nsninger}{16}{section.3.4}
+\contentsline {section}{\numberline {3.5}HMI(Human Machine Interface)}{17}{section.3.5}
+\contentsline {chapter}{\chapternumberline {4}Forunders\IeC {\o }gelse}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}GSM}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}GSM-valg}{22}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}L\IeC {\r a}s}{23}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}L\IeC {\r a}svalg}{23}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Babyalarm}{24}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Babyalarm sammenligning}{24}{subsection.4.3.1}
+\contentsline {chapter}{\chapternumberline {5}Accepttestspecifikation}{25}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}System Arkitektur}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Protokol}{33}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Seriel kommunikation}{33}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}X10 kommunikation}{35}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Hardware}{36}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Hardware beskrivelse}{36}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}BDD Hardware}{36}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}BDD Hovedenhed}{36}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}BDD Modtager}{37}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}IBD Hardware}{37}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}IBD Hovedenhed og Modtager}{38}{subsection.6.2.6}
+\contentsline {subsection}{\numberline {6.2.7}Signaltabel}{38}{subsection.6.2.7}
+\contentsline {subsubsection}{Hovedenhed}{38}{section*.8}
+\contentsline {subsubsection}{Modtager}{38}{section*.9}
+\contentsline {section}{\numberline {6.3}Software}{39}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Applikations model for PC}{39}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}UML klassebeskrivelse}{42}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Applikations model for CSS hovedenhed}{45}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Applications model for X10 modtager}{46}{subsection.6.3.4}
