@@ -1,7 +1,12 @@
-\begin{table}[H] \centering
-	\begin{tabular}{|p{6cm}|p{8cm}|}
+\begin{center} \centering
+	\begin{longtable}{|p{6cm}|p{8cm}|}
 	\hline
 		\multicolumn{2}{|l|}{\textbf{UC8: Tilføj/fjern X10 udtag}} \\\hline
+		\endfirsthead
+		
+		\multicolumn{2}{l}{...fortsat fra forrige side} \\ \hline 
+		\multicolumn{2}{|l|}{\textbf{UC8: Tilføj/fjern X10 udtag}} \\\hline
+		\endhead		
 		
 		\textbf{Mål}							&At brugeren kan tilføje en ny enhed til CSS	\\\hline
 		\textbf{Initialisering}				&Bruger					 					\\\hline
@@ -13,13 +18,13 @@
 		\textbf{Hovedforløb}					
 			&\begin{enumerate}
 				
-				\item Bruger vælger menupunkt ''Tilføj/fjern X10 udtag'' (UC1 gennemføres) og programmet udskriver i forvejen indstillede X10 udtag og mulighed for at vælge tilføj eller fjern
+		\item Bruger vælger menupunkt ''Tilføj/fjern X10 udtag'' (UC1 gennemføres) og programmet udskriver i forvejen indstillede X10 udtag og mulighed for at vælge tilføj eller fjern
 					
 				\subitem \textbf{Tilføj valgt}			
 				\begin{enumerate}
-					\item \label{uc8indstilAdresse} Bruger indstiller adresseswitchen til en adresse på X10 udtaget
+				\item \label{uc8indstilAdresse} Bruger indstiller adresseswitchen til en adresse på X10 udtaget
 
-					\item \label{uc8adresse} Bruger indtaster den fire cifrede kombination som er indstillet på X10 udtaget efterfulgt af ''Enter''\newline
+				\item \label{uc8adresse} Bruger indtaster den fire cifrede kombination som er indstillet på X10 udtaget efterfulgt af ''Enter''\newline
 						\textbf{[Undtagelse \ref{uc8adresse}.a]} Adressen er ikke unik\newline
 						\textbf{[Undtagelse \ref{uc8adresse}.b]} Adressen har ikke den rette længde
 				
@@ -42,30 +47,30 @@
 			\end{enumerate}\\\hline
 		
 		\textbf{Undtagelser}					
-		&\begin{enumerate}[label= \ref{uc8adresse}.a.\arabic*.]
+		&\begin{enumerate}[label=\ref{uc8adresse}.a.]
 			\item Programmet udskriver fejlmeddellelsen "Adressen er ikke unik. Vælg en ny."
 			
-			\item Gå til UC8.\ref{uc8indstilAdresse}
+			\subitem Gå til UC8.\ref{uc8indstilAdresse}
 		\end{enumerate}
 		
 	
 		
-		\begin{enumerate}[label= \ref{uc8adresse}.b.\arabic*.]
+		\begin{enumerate}[label= \ref{uc8adresse}.b.]
 			\item Programmet udskriver fejlmeddellelsen "Adressen har ikke den rette længde. Vælg en ny."
 			
-			\item Gå til UC8.\ref{uc8indstilAdresse}
+			\subitem Gå til UC8.\ref{uc8indstilAdresse}
 		\end{enumerate}
 		
 		
 		
-		\begin{enumerate}[label= \ref{uc8navn}.a.\arabic*.]
+		\begin{enumerate}[label= \ref{uc8navn}.a.]
 			\item Programmet udskriver fejlmeddellelsen "Navnet skal minimum have to og maximum 50 karaktere"
 			
-			\item Gå til UC8.\ref{uc8indstilNavn}
+			\subitem Gå til UC8.\ref{uc8indstilNavn}
 		\end{enumerate} \\ \hline
 											
 		%\textbf{Version}		&1.0: 2014-03-23 Oprettet \\\hline
 
-	\end{tabular}
+	\end{longtable}
 	\label{UC8} 
-\end{table}
+\end{center}
