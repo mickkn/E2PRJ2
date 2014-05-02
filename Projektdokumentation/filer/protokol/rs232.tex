@@ -56,11 +56,14 @@ Kun kommandoerne beskrevet i tabel \ref{tabel:RS232Kommandoer} er gyldige. I til
 \hline 
 'F' / 'f' & 0x46 / 0x66 & Login forkert \\ 
 \hline
+'B' / 'b' & 0x42 / 0x62 & Lyd detekteret \\ 
+\hline
 \end{tabular}
 \label{tabel:RS232Kommandoer}
 \end{table} 
 
-\textbf{Aktiver- og Deaktiverkommandoerne}
+\textbf{Blokken <Data>}
+Ved alle kommandoer undtaget Aktiver- og Deaktiverkommandoerne bruges <Data> ikke.
 
 For at bruge aktiver eller deaktiver kommandoerne er <Data> formateret som adressen. Denne adressering formateres som 4 byte, som hver består af ASCII karakterende '0' eller '1'. På den måde skriver man blot den adresse ind, som man har indstillet på sit X10 udtag. F.eks. "0100".
 Bemærk at adresse "0000" ikke er gyldig.
