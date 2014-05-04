@@ -1,8 +1,30 @@
 
 #include "hukommelse.h"
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <stdio.h>
+#include <limits>
+#include <sstream> 
+
+using namespace std;
+
 
 hukommelse::hukommelse()
 {
+	fstream myFile("hukommelse.txt");
+		
+	string line;
+	while (getline(myFile, line)) // kører txt filen igennem og indlæser linje for linje.
+	{
+		memory_.push_back(line);
+	}
+
+	telefonNummer_ = atoi(memory_[0].c_str()); // læser string på første plads i memory_ og convertere til int.
+
+	statusLogin_ = false;
+
+	myFile.close();
 
 }
 
@@ -11,35 +33,114 @@ hukommelse::~hukommelse()
 
 }
 
-void WriteString(ofstream& file,const string& str)
+void hukommelse::saveLogin(bool login)   // overflødig? bliver ikke gemt til hukommelsen, hvorfor sku den? 
 {
-file.open (file, ios::in);
-  // get the length of the string data
-  unsigned len = str.size();
-
-  // write the size:
-  file.write( reinterpret_cast<const char*>( &len ), sizeof(len) );
-
-  // write the actual string data:
-  file.write( str.c_str(), len );
+	statusLogin_ = login;
 }
 
-string ReadString(ifstream& file)
+void hukommelse::saveStatus(bool status, int enhed)
 {
-  // this probably isn't the optimal way to do it, but whatever
-  string str;
+	memory_[enhed+2] = BoolToString(status); // ændre status i vectoren.
 
-  // get the length
-  unsigned len;
-  file.read( reinterpret_cast<char*>( &len ), sizeof(len) );
+	fstream myFile;
+	
+	myFile.open("hukommelse.txt", fstream::out | fstream::trunc);
 
-  // we can't read to string directly, so instead, create a temporary buffer
-  if(len > 0)
-  {
-    char* buf = new char[len];
-    file.read( buf, len );
-    str.append( buf, len );
-    delete[] buf;
-  }
-  return str;
+		while(myFile)
+		{
+			for(int i = 0; i<memory_.size(); i++)
+			{
+				string text = memory_[i];
+				myFile << text << "\n";
+			}
+			myFile.close();
+		}
 }
+
+vector<string> hukommelse::getEnheder() const
+{
+	return memory_;
+}
+
+int hukommelse::getNumber() const
+{
+	return telefonNummer_;
+}
+
+bool hukommelse::saveNumber(int num)
+{
+	fstream myFile("hukommelse.txt");  // åben filen
+	if(num == telefonNummer_)
+	{
+		return false;
+	}
+		
+	if (myFile)					// if filen er åben
+	{
+		GotoLine(myFile, 1);	 // gå til og skriv i linje 1.
+		int line1;
+		myFile << num;
+
+		telefonNummer_ = num;
+		return true;
+	}			
+		
+	else
+		return false;
+
+}
+
+bool hukommelse::saveAdresse(string adresse, string navn)
+{
+
+		memory_.push_back(adresse);
+		memory_.push_back(navn);
+		memory_.push_back("false");
+
+		fstream myFile;
+		myFile.open("hukommelse.txt", fstream::out | fstream::trunc); 
+
+		while(myFile)
+		{
+			for(int i = 0; i<memory_.size(); i++)
+			{
+				string text = memory_[i];
+				//cout << text << endl;
+				myFile << text << "\n";
+			}
+			myFile.close();
+			return true;
+		}
+
+		return false;	
+}
+
+bool hukommelse::removeAdresse(int num)
+{
+	fstream myFile("hukommelse.txt"); // åben filen
+
+	int move = 0;
+	
+	move = ((num*3) - 2);
+	if (myFile)
+	{
+		memory_.erase(memory_.begin() + (move), memory_.begin() + (move+3));	
+		return true;
+	}
+	return false;
+}
+
+void hukommelse::print() const
+{
+for(int i = 0; i<memory_.size(); i++)
+	{
+		string text = memory_[i];
+		cout << text << endl;
+
+	}
+}
+
+
+
+
+
