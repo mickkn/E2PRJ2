@@ -1,0 +1,10 @@
+222222232
+0010
+vaerelse 1
+false
+0100
+vaerelse 2
+true
+0111
+vaerelse 3
+false
