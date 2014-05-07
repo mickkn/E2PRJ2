@@ -7,7 +7,11 @@ int main()
 bool tester, numtester;
 hukommelse testObj;
 
-numtester = testObj.saveNumber(30227090);
+testObj.removeAdresse(1);
+testObj.removeAdresse(1);
+testObj.removeAdresse(1);
+
+/*numtester = testObj.saveNumber(30227090);
 
 if(numtester == 1)
 {
@@ -56,10 +60,22 @@ else
 
 testObj.saveStatus(true, 1);
 
-testObj.removeAdresse(1);
-testObj.removeAdresse(1);
+tester = testObj.removeAdresse(1);
+if(tester == 1)
+{
+	cout << "*****************" << endl << "den nye adresse blev gemt" << endl << "*****************" << endl << endl;
+}
+else
+	cout << "*****************" << endl << "den nye adresse blev IKKE gemt" << endl << "*****************" << endl << endl;
+tester = testObj.removeAdresse(1);
+if(tester == 1)
+{
+	cout << "*****************" << endl << "den nye adresse blev gemt" << endl << "*****************" << endl << endl;
+}
+else
+	cout << "*****************" << endl << "den nye adresse blev IKKE gemt" << endl << "*****************" << endl << endl;
 
-testObj.print();
+testObj.print();*/
 
 cout << "im done!" << endl;
 

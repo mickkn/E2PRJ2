@@ -1,7 +1,0 @@
-55555555
-1000
-roof
-true
-1001
-last
-false

@@ -1,20 +1,9 @@
-﻿Build started 04-05-2014 15:38:53.
-     1>Project "C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Hukommelse\Hukommelse.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt hukommelse.cpp test_hukommelse.cpp
-         test_hukommelse.cpp
-         hukommelse.cpp
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\hukommelse\hukommelse\hukommelse\hukommelse.cpp(51): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\hukommelse\hukommelse\hukommelse\hukommelse.cpp(81): warning C4101: 'line1' : unreferenced local variable
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\hukommelse\hukommelse\hukommelse\hukommelse.cpp(105): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\hukommelse\hukommelse\hukommelse\hukommelse.cpp(135): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-       Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Debug\Hukommelse.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Debug\Hukommelse.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Debug\Hukommelse.lib" /MACHINE:X86 Debug\hukommelse.obj
-         Debug\test_hukommelse.obj
-         Hukommelse.vcxproj -> C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Debug\Hukommelse.exe
-     1>Done Building Project "C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Hukommelse\Hukommelse.vcxproj" (Build target(s)).
+﻿Build started 06-05-2014 12:34:54.
+     1>Project "C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Hukommelse\Hukommelse.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         Hukommelse.vcxproj -> C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Debug\Hukommelse.exe
+     1>Done Building Project "C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Hukommelse\Hukommelse\Hukommelse\Hukommelse.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.01
+Time Elapsed 00:00:00.26

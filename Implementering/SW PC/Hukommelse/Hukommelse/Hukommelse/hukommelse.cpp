@@ -117,14 +117,28 @@ bool hukommelse::saveAdresse(string adresse, string navn)
 
 bool hukommelse::removeAdresse(int num)
 {
-	fstream myFile("hukommelse.txt"); // åben filen
+	fstream myFile;
+	myFile.open("hukommelse.txt", fstream::out | fstream::trunc); 
 
-	int move = 0;
+	int move = 0; 
 	
-	move = ((num*3) - 2);
-	if (myFile)
+	move = ((num*3) - 2); 
+	if(myFile)
 	{
+		if(memory_.size() < move+1)
+		{
+			cout << "Adressen blev ikke fjernet" << endl;
+			return false;
+		}
+	
 		memory_.erase(memory_.begin() + (move), memory_.begin() + (move+3));	
+
+		for(int i = 0; i<memory_.size(); i++)
+			{
+				string text = memory_[i];
+				myFile << text << "\n";
+			}
+			myFile.close();
 		return true;
 	}
 	return false;
