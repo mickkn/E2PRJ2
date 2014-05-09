@@ -145,7 +145,7 @@ int brugerUI::aktiverMenu() const
 	while(1) // mangler rigtigt kald til RS232 klasse   loginValid()
 	{
 		string temp;
-		cout << "Følgende enheder er deaktiveret:" << endl << endl;
+		cout << "Følgende enheder er aktiveret:" << endl << endl;
 
 		vector<string> tempVector = objHuk.getEnheder;
 
@@ -183,7 +183,7 @@ int brugerUI::aktiverMenu() const
 			c=getch();
 			if(c == 27)
 			{
-			return 2; // Main menu int.
+			return 99; // aktiver controller stopper loop
 			}
 		}
 
@@ -261,10 +261,67 @@ int brugerUI::visStatusMenu() const
 	
 int brugerUI::redigerSmsMenu() const
 {
+	int num = huPtr->getNumber;
 
+	cout << "sms modtager:" << endl;
+	cout << "Tlf nr: " << num << endl << endl;
+	cout << "Tryk 1. for at ændre tlf nr." << endl << endl;
+	cout << "Tryk ESC for at gå tilbage til hovedmenu" << endl;
+
+	int retur;
+	do
+	{
+		cin >> retur;
+		if(retur > 99999999 || retur <10000000)
+			cout << "nummer er invalid. skal være mindre end 99999999 og større end 10000000" << endl;
+	}while(retur > 99999999 || retur <10000000);
+	
+	return retur;
 }
 	
 int brugerUI::addRemoveMenu() const
 {
+	vector<string> tempVector = objHuk.getEnheder;
+	int move;
 
+	cout << "Du har følgende enheder:" << endl << endl;
+
+	for(int i = 0; i<16; i++)
+	{
+		int move = ((i*3) - 2); 
+		while(move < tempVector.size())
+		{
+		string text = tempVector[move];
+		cout << "	" << i << ". " << text << endl;
+		}
+	
+	}
+
+	if(tempVector.size() >= 46)
+	{	cout << "Der kan ikke tilføjes flere enheder" << endl <<
+				"Slet nogle enheder hvis der ønskes at tilføje nye" << endl;
+	}
+
+	cout << "Ønsker du at tilføje eller fjerne udtag?" << endl;
+	cout << "Tryk T for tilføje enhed." << "Tryk F for fjern enhed" << endl;
+	cout << "Tryk ESC for at annullere" << endl;
+
+	char c;
+	while(1)
+	{
+		cin >> c;
+		if(c == 'T' || c == 't')
+		{
+			return 1;
+
+		if(c == 'F' || c == 'f')
+			return 0;
+
+		}
+		c=getch();
+		if(c == 27)
+		{
+		return 2;
+		}
+	}
 }

@@ -1,0 +1,43 @@
+302270902
+0101
+vaerelse 3
+false
+0001
+vaerelse 4
+false
+0001
+vaerelse 5
+false
+0001
+vaerelse 6
+false
+0001
+vaerelse 7
+false
+0001
+vaerelse 8
+true
+0001
+vaerelse 9
+true
+0001
+vaerelse 10
+true
+0001
+vaerelse 11
+true
+0001
+vaerelse 12
+true
+0001
+vaerelse 13
+true
+0001
+vaerelse 14
+true
+0001
+vaerelse 100
+false
+0001
+vaerelse 50
+false

@@ -23,5 +23,5 @@ public:
 	int addRemoveMenu() const;
 
 private:
-	hukommelse objHuk;
+	hukommelse *huPtr;
 };
