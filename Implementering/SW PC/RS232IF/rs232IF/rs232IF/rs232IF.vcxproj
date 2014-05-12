@@ -62,6 +62,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="rs232IF.cpp" />
     <ClCompile Include="Serial.cpp" />
   </ItemGroup>

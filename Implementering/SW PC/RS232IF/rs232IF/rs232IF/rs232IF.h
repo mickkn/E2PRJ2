@@ -3,6 +3,8 @@
 
 #include "Serial.h"
 
+#define port 1
+
 class RS232IF
 {
 public:
