@@ -125,3 +125,47 @@ void UART::sendString(char* streng) {
 	}
 	
 }
+
+// Definer globale variable
+char dataIn[COMMAND_SIZE];
+unsigned char volatile dataCount;
+unsigned char volatile commandReady;
+
+// Globalt UART objekt
+UART RS232UART (9600, 8);
+
+// RS232 Modtage data interrupt
+ISR (USART_RXC_vect)
+{
+	// Hent UART char
+	dataIn[dataCount] = UDR;
+	
+	// Hvis dataIn har rigtig start og stop terminering	    
+	if((dataIn[0] == 'S' || dataIn[0] == 's') && (dataIn[COMMAND_SIZE - 1] == '\r') && (dataCount >= (COMMAND_SIZE - 1))	)
+	{
+		// Flag sættes for kommando klar
+		commandReady = 1;
+
+		// Counter nulstilles
+		dataCount = 0;
+		
+	}
+	// Hvis frame overskrides
+	else if(dataCount >= COMMAND_SIZE)
+	{
+		// Tøm buffer
+		for(unsigned char i = 0; i < COMMAND_SIZE; i++)
+		dataIn[i] = 0;
+		
+		// Counter nulstilles
+		dataCount = 0;
+		
+		// Flag nulstilles
+		commandReady = 0;
+
+	}
+	// Ellers incrementer counter
+	else
+		dataCount++;
+	
+}

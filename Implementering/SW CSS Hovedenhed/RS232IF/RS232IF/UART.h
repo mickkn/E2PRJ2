@@ -12,14 +12,14 @@
 #define F_CPU 3686400
 
 #include <avr/io.h>
-#include <string.h>
+#include <util/delay.h>
 
 class UART {
 public:
 	UART( unsigned long BaudRate, unsigned char Databit );
 	~UART( );
 
-	unsigned char charReady( );
+	char charReady( );
 	char readChar( );
 	void sendChar( char );
 	void sendString( char * );
