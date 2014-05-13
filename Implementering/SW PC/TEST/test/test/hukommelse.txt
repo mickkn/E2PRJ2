@@ -1,43 +1,43 @@
-302270902
-0101
-vaerelse 3
+123455672
+1000
+h
+false
+1000
+j
+false
+0000
+j
+false
+0000
+k
 false
 0001
-vaerelse 4
+2
 false
 0001
-vaerelse 5
+2
 false
-0001
-vaerelse 6
+0110
+hu
 false
-0001
-vaerelse 7
+0110
+
 false
-0001
-vaerelse 8
-true
-0001
-vaerelse 9
-true
-0001
-vaerelse 10
-true
-0001
-vaerelse 11
-true
-0001
-vaerelse 12
-true
-0001
-vaerelse 13
-true
-0001
-vaerelse 14
-true
-0001
-vaerelse 100
+1010
+111
 false
-0001
-vaerelse 50
+0010
+h
+false
+1110
+hh
+false
+0011
+h
+false
+0111
+2222562
+false
+1111
+g
 false

@@ -18,13 +18,12 @@ udtag::udtag(hukommelse * hu, brugerUI * ui)
 void udtag::addRemoveUdtag()
 {
 	
-	vector<string> tempVector = huPtr->getEnheder();
+
 	bool imens = true;
 	while(imens)
 	{
 		bool test = false;
 		int resultat = uiPtr->addRemoveMenu();
-
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(),'\n');
 
@@ -37,6 +36,7 @@ void udtag::addRemoveUdtag()
 			string adresse;
 			while(!test)
 			{
+				vector<string> tempVector = huPtr->getEnheder();
 				cout << "Angiv venligst valid adresse kode" << endl;
 				cin.clear();
 				getline(cin, adresse,'\n');
@@ -55,13 +55,13 @@ void udtag::addRemoveUdtag()
 						bool tasting = true;
 						//while(tasting)
 						//{
-							for(int i = 1; i<(tempVector.size()-1)/3; i++)
+							for(int i = 1; i<=(tempVector.size()-1)/3; i++)
 							{
 								int move = ((i*3) - 2);
 								if(tempVector[move] == adresse)
 								{
 									cout << endl << "adressen er allerede brugt, vælg en anden" << endl << endl;
-									i = 100;
+									//i = 100;
 									tasting = false;
 									break;
 								}

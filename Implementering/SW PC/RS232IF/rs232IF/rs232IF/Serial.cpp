@@ -116,6 +116,7 @@ int CSerial::SendData( const char *buffer, int size )
 	int i;
 	for( i=0; i<size; i++ ){
 		WriteCommByte( buffer[i] );
+		Sleep(8); //// SLEEP IMPLEMENTERET AF MIG!
 		dwBytesWritten++;
 		}
 

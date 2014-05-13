@@ -70,37 +70,33 @@ int brugerUI::preLogin() const
 
 	while(1)
 	{
-	cin >> temp;
+		string retur;
+		cin.clear();
+		getline(cin, retur,'\n');
 
-	if(temp == 1)
-		return 1;
 
-	if(temp == 2)
-		return 2;
+		if(!cin) // Hvi brugeren indtaster nogeet der ikke er int
+		{
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(),'\n');
+		}
 
+		if(retur == "1")
+			return 1;
+
+		if(retur == "2")
+			return 2;
+		cin.clear();
 	}
 }
 
-int brugerUI::login() const
+void brugerUI::login() const
 {
 	system("cls"); // clear screen
 
 	cout << "CSS: Child Security System" << endl << endl;
 	cout << "	Login på DE2 boardet" << endl << endl << endl << endl;
-	cout << "	Tryk ESC for at annullere" << endl;
-
-	char c;
-
-	 while(1)
-    {
-		////////////// Login kald mangler! ///////////////
-
-        c=getch();
-        if(c == 27)
-		{
-        return 0;
-		}
-    }
+	cout << "	Tryk på en vilkårlig tast for at annullere" << endl;
 }
 
 int brugerUI::mainMenu() const
@@ -274,6 +270,8 @@ int brugerUI::deaktiverMenu() const
 	
 int brugerUI::visStatusMenu() const
 {
+	system("cls"); // clear screen
+
 	vector<string> tempVector = huPtr->getEnheder();
 
 	cout << "Enhederne har følgende status" << endl << endl;
@@ -318,7 +316,7 @@ int brugerUI::redigerSmsMenu() const
 	cout << "sms modtager:" << endl;
 	cout << "Tlf nr: " << num << endl << endl;
 	cout << "Tryk 1. for at ændre tlf nr." << endl << endl;
-	cout << "Tryk ESC for at gå tilbage til hovedmenu" << endl << endl;
+	cout << "Tryk 27 for at gå tilbage til hovedmenu" << endl << endl;
 
 	int retur;
 	cin >> retur;
@@ -408,20 +406,22 @@ int brugerUI::addRemoveMenu() const
 		cout << "Tast 27 for at annullere" << endl;
 		while(1)
 		{		
-			cin >> retur;
+			string retur;
+			getline(cin, retur,'\n');
+
 
 			if(!cin) // Hvi brugeren indtaster nogeet der ikke er int
 			{
 				cin.clear();
 				cin.ignore(numeric_limits<streamsize>::max(),'\n');
 			}
-			if(retur == 1)
+			if(retur == "1")
 				return 0;
 		
-			if(retur == 27)
+			if(retur == "27")
 				return 27;
 
-			if(retur == 2);
+			if(retur == "2");
 				return 1;
 		}
 	}

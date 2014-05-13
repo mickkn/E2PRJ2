@@ -6,21 +6,9 @@
 
 using namespace std;
 
-RS232IF::RS232IF() 
+RS232IF::RS232IF()
 {
-	CSerial temp;
-	serial = temp;
-
 	serial.Open(port, 9600);
-	/*
-	// forsøger at åbne serie port.
-	serial.Open("COM1");
-
-	serial.Setup(CSerial::EBaud9600,CSerial::EData8,CSerial::EParNone,CSerial::EStop1);
-
-	serial.SetupReadTimeouts(CSerial::EReadTimeoutNonblocking);
-
-	login = false;*/
 }
 
 RS232IF::~RS232IF()
@@ -28,85 +16,55 @@ RS232IF::~RS232IF()
 	// forsøger at lukke serie port.
 	serial.Close();
 }
-
-bool RS232IF::loginValid()
-{
-	if(login == true)
-		return true;
-
-	string start = "SL";
-	string data = "0000";
-	string slut = "cr";
-
-	string message = start + data + slut;
-
-	//serial.Write(message);
-	
-}
 	
 bool RS232IF::aktiver(int a)
 {
 	string start = "SA";
 	string data = to_string(a);
-	string slut = "cr";
+	char slut = '\r';
 
 	string message = start + data + slut;
 	const char * c = message.c_str();
-
-	serial.SendData( c, 8);
+	serial.SendData( c, commandSize);
 	return true;
-	/*
-	serial.Write(message);
-	*/
 }
 	
 bool RS232IF::deaktiver(int b)
 {
 	string start = "SD";
 	string data = to_string(b);
-	string slut = "cr";
+	char slut = '\r';
 
 	string message = start + data + slut;
 	const char * c = message.c_str();
 
-	serial.SendData( c, 8);
+	serial.SendData( c, commandSize);
 	return true;
-	/*
-	serial.Write(message);
-	*/
 }
 
 int RS232IF::read()
 {
-	string reading;
-	void *ptr = &reading;
 
-	if(serial.ReadDataWaiting() >= 8)
+	char *ipBuffer = new char[commandSize+1];
+
+	if(serial.ReadDataWaiting() >= 7)
 	{
-		serial.ReadData(ptr, 8);
+		serial.ReadData(ipBuffer, commandSize+1);
 		cout << "data was read" << endl;
 	}
+	string reading(ipBuffer, commandSize);
 
-	if(reading[0] == 'b' || reading[0] == 'B')
-		return 2;
+	cout << reading << endl;
+	delete []ipBuffer;
 
-	if(reading[0] == 't' || reading[0] == 'T')
+	if(reading[0] == 'b' || reading[0] == 'B') // Lyd detekteret
+		return 3;
+
+	if(reading[0] == 't' || reading[0] == 'T') // Login 
 		return 1;
 
-	return 0;
+	if(reading[0] == 'f' || reading[0] == 'F') // Login udløbet
+		return 2;
 
-	/*
-	// Read data, until there is nothing left
-	unsigned long int abBuffer[100];
-	long int dwBytesRead = 0;
-    do
-    {
-        // Read data from the COM-port
-        serial.Read(abBuffer ,sizeof(abBuffer),&dwBytesRead);
-        if (dwBytesRead > 0)
-        {
-            // TODO: Process the data
-        }
-    }
-    while (dwBytesRead == sizeof(abBuffer));*/
+	return 0;
 }

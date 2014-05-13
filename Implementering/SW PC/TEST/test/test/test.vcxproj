@@ -66,7 +66,10 @@
     <ClCompile Include="brugerUI.cpp" />
     <ClCompile Include="Deaktiver.cpp" />
     <ClCompile Include="hukommelse.cpp" />
+    <ClCompile Include="Login.cpp" />
     <ClCompile Include="RedigerSmsBruger.cpp" />
+    <ClCompile Include="rs232IF.cpp" />
+    <ClCompile Include="Serial.cpp" />
     <ClCompile Include="tester.cpp" />
     <ClCompile Include="Udtag.cpp" />
   </ItemGroup>
@@ -75,7 +78,10 @@
     <ClInclude Include="brugerUI.h" />
     <ClInclude Include="Deaktiver.h" />
     <ClInclude Include="hukommelse.h" />
+    <ClInclude Include="Login.h" />
     <ClInclude Include="RedigerSmsBruger.h" />
+    <ClInclude Include="rs232IF.h" />
+    <ClInclude Include="Serial.h" />
     <ClInclude Include="Udtag.h" />
   </ItemGroup>
   <ItemGroup>

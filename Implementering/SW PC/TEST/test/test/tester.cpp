@@ -6,6 +6,7 @@
 #include "hukommelse.h"
 #include "redigerSmsBruger.h"
 #include "udtag.h"
+#include "Login.h"
 
 #include <conio.h>
 
@@ -19,26 +20,42 @@ int main()
 	deaktiver deaktiverObj(huPtr, uiPtr);
 	udtag udtagObj(huPtr, uiPtr);
 	redigerSmsBruger smsObj(huPtr, uiPtr);
+	RS232IF rsObj;
+	RS232IF * rsPtr = &rsObj;
+	login logObj(rsPtr, uiPtr);
 
 	char ch;
 	
 
 	while(1)
 	{
+		logObj.loginValid();
 		uiObj.mainMenu();
-		ch = getch();
-		int i = (int)((char)ch - '0');
+		while(!kbhit)
+		{
+			int read = rsObj.read();
+			if(read == 2)
+			{
+				bool test = logObj.loginValid();
+
+				if(test == true) // break while når der er logget ind igen.
+					break;
+			}
+			if(read == 3);
+				// BABY ALARM KALD ////////////////////////////////////
+		}
+
+		int i;
+		cin >> i;
+
+		//ch = getch();
+		//int i = (int)((char)ch - '0');
 		//cin >> i;
 
 		if(!cin) // Hvis brugeren indtaster nogeet der ikke er int
 		{
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		}
-
-		if(i == 0)   // vis prelogin menu. Login og vis status kan vælges
-		{
-		
 		}
 
 		if(i == 1)	// aktiver menu
@@ -65,13 +82,5 @@ int main()
 		{
 			udtagObj.addRemoveUdtag();
 		}
-
-
 	}
-
-		while(1);
-
-
-
-
 }

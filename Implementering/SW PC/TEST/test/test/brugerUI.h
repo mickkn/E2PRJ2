@@ -14,7 +14,7 @@ public:
 	void showMenu(int);
 	void print() const;
 	int preLogin() const;
-	int login() const;
+	void login() const;
 	int mainMenu() const;
 	int aktiverMenu() const;
 	int deaktiverMenu() const;

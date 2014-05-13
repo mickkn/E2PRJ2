@@ -1,28 +1,28 @@
-﻿Build started 09-05-2014 14:00:33.
-     1>Project "C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\test\test.vcxproj" on node 2 (Build target(s)).
+﻿Build started 13-05-2014 12:41:56.
+     1>Project "C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\test\test.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt brugerUI.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt brugerUI.cpp
          brugerUI.cpp
      1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(98): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
-                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
      1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(133): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(151): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(213): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(231): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(370): warning C4018: '<=' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(425): warning C4390: ';' : empty controlled statement found; is this the intent?
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(366): warning C4101: 'move' : unreferenced local variable
+     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(372): warning C4018: '<=' : signed/unsigned mismatch
+     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(429): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\test\test\test\brugerui.cpp(368): warning C4101: 'move' : unreferenced local variable
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\Debug\test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\Debug\test.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\Debug\test.lib" /MACHINE:X86 Debug\Aktiver.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\Debug\test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\Debug\test.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\Debug\test.lib" /MACHINE:X86 Debug\Aktiver.obj
          Debug\brugerUI.obj
          Debug\Deaktiver.obj
          Debug\hukommelse.obj
          Debug\RedigerSmsBruger.obj
          Debug\tester.obj
          Debug\Udtag.obj
-         test.vcxproj -> C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\Debug\test.exe
-     1>Done Building Project "C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\test\test.vcxproj" (Build target(s)).
+         test.vcxproj -> C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\Debug\test.exe
+     1>Done Building Project "C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\TEST\test\test\test.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.77
+Time Elapsed 00:00:01.69

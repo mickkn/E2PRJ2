@@ -10,15 +10,17 @@ using namespace std;
 int main()
 {
 	RS232IF objRS;
+	
+	while(1)
+	{
+	int aktiver = objRS.read();
+
+	Sleep(3000);
+	cout << aktiver << endl;
 
 	objRS.aktiver(1111);
 
-	int aktiver = objRS.read();
-
-	Sleep(1000);
-	cout << aktiver << endl;
-
-
+	}
 
 	while(1);
 }
