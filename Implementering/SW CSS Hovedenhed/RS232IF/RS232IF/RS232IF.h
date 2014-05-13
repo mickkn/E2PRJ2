@@ -21,11 +21,16 @@
 
 class RS232IF {
 public:
-	RS232IF( unsigned long baudRate, unsigned char dataBit );	// Indsæt som første parameter:  UC1Login * UC1Ptr, UC2Aktiver * UC2Ptr, UC3Deaktiver * UC3Ptr,
+	RS232IF( );	// Indsæt som første parameter:  UC1Login * UC1Ptr, UC2Aktiver * UC2Ptr, UC3Deaktiver * UC3Ptr,
+	~RS232IF();
+
+	unsigned char getUC(char *);	// Henter fuld kommando, unwrapper og dekoder protokollen, returnerer nummer på næste UC kald:
+										// // 1: UC1 Login
+										// // 2: UC2 Aktiver
+										// // 3: UC3 Deaktiver
 	
-	void loginStatus( bool status );	// Retur svar fra loginValid
+	void loginStatus( bool status );	// Afsend login status
 	void adviser( );					// Alarmer PC om babyalarm
-	void kommandoStandby();				// Afventer chars på RS232 og kalder passende UC når de modtages
 
 private:
 	// Referencer
@@ -33,11 +38,16 @@ private:
 	UC2Aktiver * UC2Ptr_;
 	UC3Deaktiver * UC3Ptr_;*/
 	
-	bool getKommando(char *);	// Hent fuld kommando
 	
 	// Kommandowrapper (STX og ETX)
-	void wrapper(char *, char *);
+	void wrapper(const char *kommando, char *wrapped);
+	void unwrapper(const char *wrapped, char *kommando);
+	unsigned char protokolUnwrap(char *kommando);
 	
-	// UART Forbindelse
-	UART forbindelse;
+	// Afsend wrapped kommando
+	void sendKommando(char * wrapped);
+
+	void loginTrue( );					// Afsend login verificeret
+	void loginFalse( );					// Afsend login ikke verificeret
+	
 };

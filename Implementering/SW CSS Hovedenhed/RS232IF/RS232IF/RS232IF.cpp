@@ -9,8 +9,10 @@
 
 #include "RS232IF.h"
 
+#define STX 'S'
+#define ETX '\r'
 
-RS232IF::RS232IF( unsigned long baudRate, unsigned char dataBit ) : forbindelse(baudRate, dataBit)	// Indsæt som første parameter:  UC1Login * UC1Ptr, UC2Aktiver * UC2Ptr, UC3Deaktiver * UC3Ptr,
+RS232IF::RS232IF( )	// Indsæt som første parameter:  UC1Login * UC1Ptr, UC2Aktiver * UC2Ptr, UC3Deaktiver * UC3Ptr,
 {
 	// Init referencer
 	 /*UC1Ptr_ = UC1Ptr;
@@ -19,158 +21,154 @@ RS232IF::RS232IF( unsigned long baudRate, unsigned char dataBit ) : forbindelse(
 	
 }
 
-void RS232IF::kommandoStandby()
+RS232IF::~RS232IF()
 {
-	// Kommando char array
-	char kommando[8];
-	getKommando(kommando);
+	
 }
 
-bool RS232IF::getKommando(char * kommando)
+// Returnerer UC nummer
+unsigned char RS232IF::getUC(char * kommando)
 {
-	// Clear kommando array
-	for(unsigned char i = 0; i < 8; i++)
-		kommando[i] = '\0';
-	
-	// Hent komplet kommando
-	unsigned char i = 0;
-	while(kommando[i] != 0x0d && i <= 7)	// Ikke ETX og max længde for en kommando
+	// Afvent komplet flag fra UART
+	while(!commandReady)
 	{
-		// Hent char
-		kommando[i] = forbindelse.readChar();
-		
-		 PORTB = ~kommando[i]; 
-		 
-		 // Vent
-		_delay_ms(1000);
-				
-		// Returner modtagne char DEBUG
-		forbindelse.sendChar(kommando[i]);
-		
-
-		// Næste char
-		i++;
+		PORTB = ~dataCount;
 	}
 	
-	// Send fuld kommando retur DEBUG	
-	//forbindelse.sendString(kommando);
+	// Unwrap kommando
+	unwrapper(dataIn, kommando);
+
+	// Sænk komplet flag og nulstil buffer
+	commandReady = 0;
+	dataCount = 0;
 	
-	return true;
+	
+	PORTB = ~kommando[0];
+		
+	// Dekod protokol
+	//unsigned char ucNr = protokolUnwrap(kommando);
+
+	// Returner UC nummer
+	return 0xFF;
 }
 
+// Retur svar fra loginValid
 void RS232IF::loginStatus( bool status )
 {
-	/*char kommando[2] = {'\0', '\0' };
-		
-	// Send T hvis logget ind
-	if( status == true )
-		kommando[0] = 'T';
-	else	if( status == false )	// Ellers F
-		kommando[0] = 'F';
-	
-	// Wrap og send
-	char wrapped[8];
+	// Send T når login er gyldigt
+	if(status == true)
+		loginTrue();
+	// Ellers F
+	else
+		loginFalse();
+
+}
+
+// Afsend login verificeret
+void RS232IF::loginTrue()
+{
+	// Send T og dummy adresse når login er verificeret
+	char kommando[] = "T9999";
+
+	// Wrap kommando med STX og ETX
+	char wrapped[COMMAND_SIZE];
 	wrapper(kommando, wrapped);
-	forbindelse.sendString( wrapped );
-	*/
+	
+	// Afsend kommando
+	sendKommando(wrapped);
 	
 }
 
+// Afsend login ikke verificeret
+void RS232IF::loginFalse()
+{
+	// Send F og dummy adresse når login ikke er verificeret
+	char kommando[] = "F9999";
+
+	// Wrap kommando med STX og ETX
+	char wrapped[COMMAND_SIZE];
+	wrapper(kommando, wrapped);
+	
+	// Afsend kommando
+	sendKommando(wrapped);
+	
+}
+
+// Alarmer PC om babyalarm
 void RS232IF::adviser( )
 {
-	// Send B når alarm aktiveres
-	char kommando[] = "B";
+	// Send B og dummy adresse når alarm aktiveres
+	char kommando[] = "B9999";
 	
-	// Wrap og send
-	char wrapped[8];
+	// Wrap kommando med STX og ETX
+	char wrapped[COMMAND_SIZE];
 	wrapper(kommando, wrapped);
-	forbindelse.sendString(wrapped);
-}
-/*
-void RS232IF::protokol( string kommando )
-{
 	
-		/*if(kommando[0] == 'S' || kommando[0] == 's')
-		{
-			switch (kommando[1])
-			{
-				// Aktiver eller deaktiver, hent adresse
-				case 'A':
-				case 'a':
-				case 'D':
-				case 'd':
-					// Array til char adressen
-					char adresseChar[4];
-					
-					// Hent fire chars til adressen
-					for(unsigned char i = 0; i < 4 && !dataFejl; i++)
-					{
-						if( kommando[2 + i] == '1' || kommando[2 + i] == '0' )
-							adresseChar[i] = kommando[2 + i];
-						else
-							dataFejl = true;
-					}
-					
-					// Kontroller ETX
-					if(kommando[6] != 0x0D)
-						dataFejl = true;
-					
-					if(!dataFejl)
-					{
-						// Konverter char adresse til int
-						int adresseInt = atoi(adresseChar);
-						
-						if(kommando[1] == 'A' || kommando[1] == 'a' )
-						{
-							//UC2Ptr_->aktiver(adresseInt);
-							
-							// Dummy: Returner adresse
-							forbindelse.sendChar('A');
-							char array[5];
-							itoa(adresseInt, array, 5);
-							forbindelse.sendString(array);
-						}
-						else if( kommando[1] == 'D' || kommando[1] == 'd')
-						{
-							//UC3Ptr_->deaktiver(adresseInt);
-							forbindelse.sendChar('D');
-							char array[5];
-							itoa(adresseInt, array, 5);
-							forbindelse.sendString(array);
-						}
-					}
-					
-				break; // End 'A' og 'D'
-					
-				// Login
-				case 'L':
-				case 'l':
-					//loginStatus( UC1Ptr_->loginValid( ) );
-					loginStatus(true);
-				break; // End 'L'
-					
-			}
-		}*
-}*/
+	// Afsend kommando
+	sendKommando(wrapped);
+}
 
 // Kommandowrapper (STX og ETX)
-void RS232IF::wrapper(char * kommando, char * wrapped)
+void RS232IF::wrapper(const char * kommando, char * wrapped)
 {
 	// STX: 'S'
-	wrapped[0] = 'S';
+	wrapped[0] = STX;
 	
 	// Indskriv kommando indhold
-	unsigned char i = 0;
-	while(kommando[i] != '\0')
-	{
+	for(unsigned char i = 0; i < (COMMAND_SIZE - 2); i++)	// Kommando længde minus STX og ETX
 		wrapped[i + 1] = kommando[i];
+
+	// ETX: <cr>
+	wrapped[COMMAND_SIZE - 1] = ETX;
+}
+
+// Kommandounwrapper (STX og ETX)
+void RS232IF::unwrapper(const char * wrapped, char * kommando)
+{
+	// Indskriv kommando indhold
+	unsigned char i = 0;
+	while(wrapped[i + 1] != ETX)
+	{
+		kommando[i] = wrapped[i + 1];
 		i++;
 	}
-	
-	// ETX: <cr>
-	wrapped[i + 1] = 0x0D;
-	
-	// Terminer streng
-	wrapped[i + 2] = '\0';
+}
 
+// Afsend wrapped kommando over UART
+void RS232IF::sendKommando(char * wrapped)
+{
+	for(unsigned char i = 0; i < COMMAND_SIZE; i++)
+		RS232UART.sendChar(wrapped[i]);
+}
+
+// Dekod protokol ud fra unwrapped kommando
+unsigned char RS232IF::protokolUnwrap( char * kommando )
+{
+	// UC nummer
+	unsigned char ucNr = 0;
+	
+	switch (kommando[0])
+	{
+		// UC1 Login
+		case 'L':
+		case 'l':
+			ucNr = 1;
+			break;
+		
+		// UC2 Aktiver
+		case 'A':
+		case 'a':
+			ucNr = 2;
+			break;
+		
+		// UC3 Deaktiver
+		case 'D':
+		case 'd':
+			ucNr = 3;
+			break;
+
+	}
+	
+	// Returner UC nummer
+	return ucNr;
 }

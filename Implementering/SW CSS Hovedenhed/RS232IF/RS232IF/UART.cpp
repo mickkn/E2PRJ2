@@ -46,7 +46,7 @@ UART::UART( unsigned long BaudRate, unsigned char databit )
 		/*
 		 * Baudrate setup
 		 */
-		ubrrValue = (F_CPU/(16UL*BaudRate))-1;	// Calculate value according to baudrate
+		ubrrValue = (F_CPU/(16*BaudRate))-1;	// Calculate value according to baudrate
 		ubrrValueH = ubrrValue >> 8;			// Shift value right 8 bits to get high byte
 		ubrrValueL = ubrrValue;					// Discard high byte
 		
@@ -57,8 +57,7 @@ UART::UART( unsigned long BaudRate, unsigned char databit )
 		 * Databit set (Do not edit!)
 		 */
 		switch(databit) {
-			case 5:		// 000f
-			
+			case 5:		// 000
 				dataBitUCSZ2 = 0;
 				dataBitUCSZ10 = 00;
 				
@@ -100,14 +99,15 @@ char UART::charReady( )
 // Afventer char og returnerer når den er modtaget
 char UART::readChar() {
 	
-	while(!((1 << RXC) & UCSRA));
+	while(!charReady() );
 
 	return UDR;
 	
 }
 
 // Afventer afsendelses buffer klar og afsender char
-void UART::sendChar(char tegn) {
+void UART::sendChar(char tegn)
+{
 	
 	while(!((1 << UDRE) & UCSRA));
 	
@@ -125,4 +125,48 @@ void UART::sendString(char* streng) {
 		i++;
 	}
 	
+}
+
+// Definer globale variable
+char dataIn[COMMAND_SIZE];
+unsigned char volatile dataCount;
+unsigned char volatile commandReady;
+
+// Globalt UART objekt
+UART RS232UART (9600, 8);
+
+// RS232 Modtage data interrupt
+ISR (USART_RXC_vect)
+{
+	// Hent UART char
+	dataIn[dataCount] = UDR;
+	
+	// Kontroller STX og ETX samt frame størrelse
+	if((dataIn[0] == 'S' || dataIn[0] == 's') && (dataIn[COMMAND_SIZE - 1] == '\r') && (dataCount >= (COMMAND_SIZE - 1))	)
+	{
+		// Flag sættes for kommando klar
+		commandReady = 1;
+
+		// Counter nulstilles
+		dataCount = 0;
+		
+	}
+	// Hvis frame overskrides
+	else if(dataCount >= (COMMAND_SIZE - 1))
+	{
+		// Tøm buffer
+		for(unsigned char i = 0; i < COMMAND_SIZE; i++)
+		dataIn[i] = 0;
+		
+		// Counter nulstilles
+		dataCount = 0;
+		
+		// Flag nulstilles
+		commandReady = 0;
+
+	}
+	// Ellers incrementer counter
+	else
+		dataCount++;
+
 }
