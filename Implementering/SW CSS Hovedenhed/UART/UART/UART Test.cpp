@@ -37,22 +37,11 @@ int main()
 		// Hvis fuld kommando er klar
 		if(commandReady == 1)
 		{
-			// Alloker hukommelse
-			char * dataRetur = (char*) malloc((COMMAND_SIZE + 1)*sizeof(*dataRetur));
-			
-			// Kopier data over
-			for(unsigned char i = 0; i < COMMAND_SIZE; i++)
-				dataRetur[i] = dataIn[i];
-			
-			// Terminer med \n
-			dataRetur[COMMAND_SIZE] = '\n';
-			
+	
 			// Returner modtaget kommando
-			RS232UART.sendString(dataRetur);
-			
-			// Frigør hukommelse
-			free(dataRetur);
-			
+			for( unsigned char i = 0; i < COMMAND_SIZE; i++ )
+				RS232UART.sendChar(dataIn[i]);
+
 			// Kommando læst, nulstil buffer
 			commandReady = 0;
 			dataCount = 0;

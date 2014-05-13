@@ -91,7 +91,7 @@ UART::~UART( )
 }
 
 // Returnerer 0 når der ikke er modtaget en char, ellers <> 0
-unsigned char UART::charReady( )
+char UART::charReady( )
 {
 	return ((1 << RXC) & UCSRA);
 }
@@ -140,7 +140,7 @@ ISR (USART_RXC_vect)
 	// Hent UART char
 	dataIn[dataCount] = UDR;
 	
-	// Hvis dataIn har rigtig start og stop terminering	    
+	// Kontroller STX og ETX samt frame størrelse
 	if((dataIn[0] == 'S' || dataIn[0] == 's') && (dataIn[COMMAND_SIZE - 1] == '\r') && (dataCount >= (COMMAND_SIZE - 1))	)
 	{
 		// Flag sættes for kommando klar
@@ -151,7 +151,7 @@ ISR (USART_RXC_vect)
 		
 	}
 	// Hvis frame overskrides
-	else if(dataCount >= COMMAND_SIZE)
+	else if(dataCount >= (COMMAND_SIZE - 1))
 	{
 		// Tøm buffer
 		for(unsigned char i = 0; i < COMMAND_SIZE; i++)
@@ -167,5 +167,5 @@ ISR (USART_RXC_vect)
 	// Ellers incrementer counter
 	else
 		dataCount++;
-	
+
 }

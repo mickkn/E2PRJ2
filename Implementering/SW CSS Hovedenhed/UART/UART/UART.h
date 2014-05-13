@@ -22,7 +22,7 @@ public:
 	UART( unsigned long BaudRate, unsigned char Databit );
 	~UART( );
 
-	unsigned char charReady( );
+	char charReady( );
 	char readChar( );
 	void sendChar( char );
 	void sendString( char * );
