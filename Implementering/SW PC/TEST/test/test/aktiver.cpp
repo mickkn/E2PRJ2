@@ -31,7 +31,7 @@ void aktiver::aktiverEnhed()
 		string adresse = temp[move];
 
 		bool test = rsPtr->aktiver(adresse);
-		if(/*test*/ test)
+		if(test)
 		{
 			huPtr->saveStatus("true", enhed);
 		}

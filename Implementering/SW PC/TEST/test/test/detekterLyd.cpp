@@ -1,9 +1,9 @@
 
 #include "detekterLyd.h"
 
-detekterLyd::detekterLyd(clickATellIF * click, hukommelse * hu)
+detekterLyd::detekterLyd(/*clickATellIF * click,*/ hukommelse * hu)
 {
-	smsPtr = click;
+	//smsPtr = click;
 	huPtr = hu;
 }
 
@@ -11,6 +11,6 @@ void detekterLyd::lydDetekteret()
 {
 	int nummer = huPtr->getNumber;
 
-	smsPtr->sendSMS(nummer);
+	//smsPtr->sendSMS(nummer);
 
 }

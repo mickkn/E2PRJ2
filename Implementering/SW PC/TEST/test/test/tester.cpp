@@ -17,13 +17,14 @@ int main()
 	hukommelse * huPtr = &huObj;
 	brugerUI uiObj(huPtr);
 	brugerUI * uiPtr = &uiObj;
-	aktiver aktiverObj(huPtr, uiPtr);
-	deaktiver deaktiverObj(huPtr, uiPtr);
+
 	udtag udtagObj(huPtr, uiPtr);
 	redigerSmsBruger smsObj(huPtr, uiPtr);
 	RS232IF rsObj;
 	RS232IF * rsPtr = &rsObj;
 	login logObj(rsPtr, uiPtr);
+	aktiver aktiverObj(rsPtr, huPtr, uiPtr);
+	deaktiver deaktiverObj(rsPtr, huPtr, uiPtr);
 
 	//char ch;
 	int i;
@@ -115,6 +116,7 @@ int main()
 			if(read == 3)
 			{
 						// BABY ALARM KALD ////////////////////////////////////
+				cout << " BABY ALARM OMG!" << endl;
 			}		
 		}
 	}
