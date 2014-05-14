@@ -3,135 +3,182 @@ Her følger klassebeskrivelser for alle klasser til PC. \\
 {\centering
 \textbf{Hukommelse klasse}\par
 }
+\textbf{Ansvar:} at håndtere hukommelsen så man kan lukke programmet og åbne det igen, og så stadig se det gemte telefonnr og de gemte enheder med status og navn. \\
+når der nævnes at ting gemmes i hukommelsen så menes der både hukommelse.txt filen og vectoren memory\_ \\
 
-void saveLogin(bool); \\
-\textbf{Parametre:} ingen \\
-\textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} gemmer login status og bevare denne i 10 minutter \\
-
-void saveStatus(bool, int adresse); \\
-\textbf{Parametre:} bool til bestemmelse af om status er aktiv eller deaktiv. Int adresse til bestemmelse af status på adressen \\
+void saveStatus(string, int adresse); \\
+\textbf{Parametre:} string til bestemmelse af om status er aktiv eller deaktiv. Int adresse til bestemmelse af adressen \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} gemmer status på enheden på pågældende adresse \\
 
-void getEnheder); \\
+vector<string> getEnheder); \\
 \textbf{Parametre:} ingen \\
-\textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} gemmer login status og bevare denne i 10 minutter \\
+\textbf{Returværdi:} vector som indeholder strings. Hver string i vectoren er en linje i hukommelses filen. \\
+\textbf{Beskrivelse:}  Skal returnere hukommelsen hvor adresse, navn og status på alle enheder er gemt \\
 
 int getNumber(); \\
 \textbf{Parametre:} ingen \\
 \textbf{Returværdi:} gemte telefonnummer \\
 \textbf{Beskrivelse:} returnere det gemte telefonnummer \\
 
-void saveNumber(int number); \\
+bool saveNumber(int number); \\
 \textbf{Parametre:} number der skal gemmes \\
 \textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} gemmer telefonnummeret \\
+\textbf{Beskrivelse:} gemmer telefonnummeret. Både i hukommelsen og i den private variabel telefonNummer \\
+
+bool saveAdresse(string adresse, string navn); \\
+\textbf{Parametre:} 2 strings. første skal være adressen og anden parametre er navnet på enheden \\
+\textbf{Returværdi:} ingen \\
+\textbf{Beskrivelse:} Skal gemme enheden i hukommelsen. Status på nye oprettede enheder skal initialiseres som false (deaktive) \\
+
+\newpage
+
+bool removeAdresse(int nr); \\
+\textbf{Parametre:} modtager en integer som repræsentere nr på enheden i vectoren. Nr er dog ikke den direkte plads i vectoren da enhederne ligger fra plads nr 1 til 46. Hver enhed fylder 3 pladser i vectoren.  \\
+De ligger på følgende måde: adresse, navn, status \\
+\textbf{Returværdi:} ingen \\
+\textbf{Beskrivelse:} Skal slette enheden i hukommelsen\\
 
 {\centering 
 \textbf{Login klasse}\par
 }
 
-void loginValid(); \\
+bool loginValid(); \\
 \textbf{Parametre:} ingen  \\
-\textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} N/A \\
+\textbf{Returværdi:} returne true hvis login går godt. returnere false hvis brugeren annullere login forsøg. \\
+\textbf{Beskrivelse:} loginValid metoden styrer forløbet under login forsøg. Kalder brugerUIs login() menu vha. en pointer. Derefter kalder den RS232IF validLogin metode. Enter while(!kbhit) hvor den kalder RS232IF read() metode indtil den returnere 1 eller brugeren trykker på en vilkårlig tast. \\
 
 {\centering 
 \textbf{Aktiver klasse}\par
 }
-
-void aktiverEnhed(int adresse); \\
-\textbf{Parametre:} adresse på enhed \\
+\textbf{Ansvar:} at kontrollere forløbet under UC2 \\
+void aktiverEnhed(); \\
+\textbf{Parametre:} ingen \\
 \textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} N/A \\
+\textbf{Beskrivelse:} enter en while(1) loop. Kalder brugerUI aktiverMenu(). Hvis returværdien er 27 (annullere) så skal forloopet breakes og mainMenu() skal kaldes. Ellers skal RS232IF metode aktiver() kaldes med adresse som parametre. Status skal gemmes vha hukommelses metoden saveStatus som skal have "true" som første parametre og nr. på enheden i anden parametre. \\
 
 {\centering 
 \textbf{Deaktiver klasse}\par
 }
+\textbf{Ansvar:} at kontrollere forløbet under UC3 \\
 
-void deaktiverEnhed(int adresse); \\
-\textbf{Parametre:} adresse på enhed \\
+void deaktiverEnhed(); \\
+\textbf{Parametre:} ingen \\
 \textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} N/A \\
+\textbf{Beskrivelse:} enter en while(1) loop. Kalder brugerUI deaktiverMenu(). Hvis returværdien er 27 (annullere) så skal forloopet breakes og mainMenu() skal kaldes. Ellers skal RS232IF metode deaktiver() kaldes med adresse som parametre. Status skal gemmes vha hukommelses metoden saveStatus som skal have "false" som første parametre og nr. på enheden i anden parametre. \\
 
 {\centering 
 \textbf{DetekterLyd klasse}\par
 }
+\textbf{Ansvar:} at hente nummer og sende det til clickATellIFs metode sendSMS(nummer) \\
 
 void lydDetekteret(); \\
 \textbf{Parametre:} ingen \\
 \textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} henter telefonnummer i hukommelse og sender det til ClickATell klassen \\
+\textbf{Beskrivelse:} henter telefonnummer i hukommelse vha getNumber() og kalde ClickATellIF metoden sendSMS(int ) med det nummer den fik fra hukommelsen. \\
 
 {\centering 
 \textbf{RedigerSmSBruger klasse}\par
 }
+\textbf{Ansvar:} at kontrollere forløbet under UC6 \\
 
 void redigerSMS(int number); \\
 \textbf{Parametre:} nye nummer \\
 \textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} gemmer nye nummer i hukommelsen \\
+\textbf{Beskrivelse:} gemmer nye nummer i hukommelsen vha saveNumber(nummer) \\
 
 {\centering 
 \textbf{Udtag klasse}\par
 }
+\textbf{Ansvar:} at kontrollere forløbet under UC8 \\
 
-bool addUdtag(int adresse, string name); \\
-\textbf{Parametre:} adresse og navn på udtag \\
-\textbf{Returværdi:} true hvis operation gik godt, false hvis ikke \\
-\textbf{Beskrivelse:} tilføjer udtag til hukommelse ved at gemme navn og adresse \\
-
+void addRemoveUdtag(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi:} ingen \\
+\textbf{Beskrivelse:} kalder først brugerUI addRemoveMenu som returnere om brugeren ville annullere, tilføje eller fjerne en enhed. Hvis brugeren annullere udskrives mainMenu() og metoden returnere til main. 
+\newline Hvis brugeren valgte tilføje skal han indtaste navn og adresse. Adressen skal valideres så den kun indholde 4 cifre som alle er enten 1 eller 0. Hvis det går godt skal det indtastede holdes op imod de allerede gemte adresse i hukommelsen. Hvis adressen allerede er brugt bedes bruger om at indtaste ny adresse indtil den er valideret. Når den er valideret sendes navn og adresse til hukommelsen vha saveAdresse(adresse, navn) metoden. Hvis saveAdresse returnere true skal der udskrives "Enhed tilføjet", ellers udskrives "Enhed blev ikke tilføjet".
+\newline Hvis brugeren valgte fjerne bedes brugeren om at angive den enhed som skal fjernes. bruger inputtet sendes til removeAdresse(input). Hvis den returnere true udskrives "Enhed fjernet", ellers udskrives "Enhed blev ikke fjernet"
+\newline Brugeren bliver efterfølgende præsenteret med et opdateret ui som igen giver ham mulighed for at tilføje, fjerne eller annullere. Dette looper indtil han vælger at annullere.\\
+\newpage
 {\centering 
 \textbf{ClickATellIF klasse}\par
 }
+\textbf{Ansvar:} sende brugeren en sms \\
 
 void sendSMS(int number); \\
 \textbf{Parametre:} telefonnummer \\
 \textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} sender sms til bruger via clickatell \\
+\textbf{Beskrivelse:} sender sms til bruger via clickatell API \\
 
 {\centering 
 \textbf{RS232IF klasse}\par
 }
+\textbf{Ansvar:} at være binde-led imellem pc og STK kittet ifølge protokollen \\
 
 bool loginValid(); \\
 \textbf{Parametre:} ingen \\
-\textbf{Returværdi:} true eller false \\
-\textbf{Beskrivelse:} afventer login fra DE2 board \\
+\textbf{Returværdi:} altid true\\
+\textbf{Beskrivelse:} spørger STK kittet om der er logget ind ved at sende 1 kommando ifølge protokollen \\
 
-void aktiver(int adresse); \\
+void aktiver(string adresse); \\
 \textbf{Parametre:} adresse på enhed \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} beder om aktivering af enhed på adressen, ifølge protokol \\
 
-void deaktiver(int adresse); \\
+void deaktiver(string adresse); \\
 \textbf{Parametre:} adresse på enhed \\
 \textbf{Returværdi:} ingen \\
 \textbf{Beskrivelse:} beder om deaktiver af enhed på adressen, ifølge protokol \\
 
+int read(); \\
+\textbf{Parametre:} ingen\\
+\textbf{Returværdi:} int fra 0-3 \\
+\textbf{Beskrivelse:} tjekker først om der er modtaget 7 eller flere bytes i bufferen. Hvis der ikke er, returneres 0. Hvis der er modtaget 7 eller flere læses 7 bytes. De tjekkes imod 3 parametre. Hvis t / T er det første bogstav den læste så returneres 1. Hvis f / F er det første bogstav den læste så returneres 2. Hvis b / B er det første bogstav den læste så returneres 3.  \\
+
 {\centering 
 \textbf{BrugerUI klasse}\par
 }
+\textbf{Ansvar:} at udskrive text og i nogle tilfælde tage imod bruger input \\
 
-void showMenu(); \\
+void mainMenu(); \\
 \textbf{Parametre:} ingen \\
 \textbf{Returværdi:} ingen \\
-\textbf{Beskrivelse:} skal styre hele brugerUI menuen. \\
+\textbf{Beskrivelse:} udskriver main menu på skærmen. \\
 
-bool printStatus(); \\
+void preLogin(); \\
 \textbf{Parametre:} ingen \\
-\textbf{Returværdi}: bool godkendt \\
-\textbf{Beskrivelse:} hente status og navne fra hukommelse og udskrive dem på skærmen \\
+\textbf{Returværdi:} ingen \\
+\textbf{Beskrivelse:} udskriver pre-login menu på skærmen. \\
 
+void login(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi:} ingen \\
+\textbf{Beskrivelse:} udskriver login menu på skærmen. \\
 
+int visStatusMenu(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi}: altid 0 \\
+\textbf{Beskrivelse:} udskriver status og navne på enhederne. Når brugeren trykker 27 udskrives mainMenu og returneres 0. \\
 
+int aktiverMenu(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi}: integer \\
+\textbf{Beskrivelse:} udskriver hvilke aktive enheder der er og hvilke der er deaktive, og altså kan aktiveres. Skal tage imod bruger input som skal matche nummeret på enheden. Brugeren kan annullere ved at trykke 27. Hvis der annulleres returneres 27. Ellers returneres tallet på den valgte enhed. \\
 
+int deaktiverMenu(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi}: integer \\
+\textbf{Beskrivelse:} udskriver hvilke deaktive enheder der er og hvilke der er aktive, og altså kan deaktiveres. Skal tage imod bruger input som skal matche nummeret på enheden. Brugeren kan annullere ved at trykke 27. Hvis der annulleres returneres 27. Ellers returneres tallet på den valgte enheh. \\
 
+int redigerSmsMenu(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi}: integer \\
+\textbf{Beskrivelse:} Henter nr fra hukommelsen vha. getNumber(). udskriver nummeret at brugeren kan taste 1 for at ændre nr eller 27 for at annullere. Der tages imod bruger input. Hvis brugeren vælger at annullere returneres 0. Hvis brugerne vælger 1. så bedes han om at indtaste et 8 cifret tlf nr. Inputtet bliver valideret ved at det skal være mindre end 99999999 og større end 10000000. Hvis det går godt returneres nummeret. \\
 
-
-
+int addRemoveMenu(); \\
+\textbf{Parametre:} ingen \\
+\textbf{Returværdi}: integer \\
+\textbf{Beskrivelse:} Alle enheder udskrives på skærmen med navn og adresser. Hvis der er 15 enheder bedes brugeren om at fjerne nogle før han kan tilføje nogle nye. Han kan også vælge at annullere ved at trykke 27. Trykkes der 27 returneres 27. Hvis der vælges at fjerne enheder returneres 1. Hvis brugeren vælger at tilføje returneres 2. \\
 
 
 

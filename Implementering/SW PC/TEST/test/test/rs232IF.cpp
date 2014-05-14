@@ -31,25 +31,23 @@ bool RS232IF::validLogin()
 
 
 	
-bool RS232IF::aktiver(int a)
+bool RS232IF::aktiver(string adresse)
 {
 	string start = "SA";
-	string data = to_string(a);
 	char slut = '\r';
 
-	string message = start + data + slut;
+	string message = start + adresse + slut;
 	const char * c = message.c_str();
 	serial.SendData( c, commandSize);
 	return true;
 }
 	
-bool RS232IF::deaktiver(int b)
+bool RS232IF::deaktiver(string adresse)
 {
 	string start = "SD";
-	string data = to_string(b);
 	char slut = '\r';
 
-	string message = start + data + slut;
+	string message = start + adresse + slut;
 	const char * c = message.c_str();
 
 	serial.SendData( c, commandSize);

@@ -58,36 +58,13 @@ void brugerUI::showMenu(int menu)
 
 }
 
-int brugerUI::preLogin() const
+void brugerUI::preLogin() const
 {
 	system("cls");  // clear screen.
 	
 	cout << "CSS: Child Security System" << endl << endl;
 	cout << "	1. Login" << endl;
 	cout << "	2. Vis status" << endl;
-
-	char temp;
-
-	while(1)
-	{
-		string retur;
-		cin.clear();
-		getline(cin, retur,'\n');
-
-
-		if(!cin) // Hvi brugeren indtaster nogeet der ikke er int
-		{
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		}
-
-		if(retur == "1")
-			return 1;
-
-		if(retur == "2")
-			return 2;
-		cin.clear();
-	}
 }
 
 void brugerUI::login() const
@@ -99,7 +76,7 @@ void brugerUI::login() const
 	cout << "	Tryk på en vilkårlig tast for at annullere" << endl;
 }
 
-int brugerUI::mainMenu() const
+void brugerUI::mainMenu() const
 {
 	system("cls"); // clear screen
 
@@ -109,8 +86,6 @@ int brugerUI::mainMenu() const
 	cout << "	3. Vis status" << endl;
 	cout << "	4. Rediger sms-modtager" << endl;
 	cout << "	5. Tilføj / fjern enheder" << endl;
-
-	return 0;
 }
 
 int brugerUI::aktiverMenu() const

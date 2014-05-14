@@ -16,7 +16,6 @@ public:
 	hukommelse();				// læser den gemte hukommelse og initialisere members.
 	~hukommelse();
 	vector<string> getEnheder() const;	// funktion der returnere en vector med alle enheder og telefonnr.
-	void saveLogin(bool);				// funktion til at gemme login.
 	void saveStatus(string, int adresse);	// funktion til at ændre status på en pågældende enhed
 	int getNumber() const;				// funktion til at hente det gemte telefonnr.
 	bool saveNumber(int);				// funktion til at overwrite gemte telefonnr.

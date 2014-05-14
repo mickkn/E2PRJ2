@@ -33,11 +33,6 @@ hukommelse::~hukommelse()
 
 }
 
-void hukommelse::saveLogin(bool login)   // overflødig? bliver ikke gemt til hukommelsen, hvorfor sku den? 
-{
-	statusLogin_ = login;
-}
-
 void hukommelse::saveStatus(string status, int enhed)
 {
 	int move = ((enhed*3) - 2); 

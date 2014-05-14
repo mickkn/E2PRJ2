@@ -1,3 +1,4 @@
+#define NOMINMAX // fix til windows.h bug
 #pragma once
 
 #include "aktiver.h"
@@ -24,29 +25,40 @@ int main()
 	RS232IF * rsPtr = &rsObj;
 	login logObj(rsPtr, uiPtr);
 
-	char ch;
-	
+	//char ch;
+	int i;
+	bool testing = false;
+	uiObj.preLogin; // viser altid preLogin menu først
 
 	while(1)
 	{
-		logObj.loginValid();
-		uiObj.mainMenu();
-		while(!kbhit)
+		while(!testing)
 		{
-			int read = rsObj.read();
-			if(read == 2)
-			{
-				bool test = logObj.loginValid();
 
-				if(test == true) // break while når der er logget ind igen.
-					break;
+			cin >> i;
+
+			if(!cin) // Hvis brugeren indtaster nogeet der ikke er int
+			{
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(),'\n');
 			}
-			if(read == 3);
-				// BABY ALARM KALD ////////////////////////////////////
+
+			if(i == 1)	// login menu
+			{
+				testing = logObj.loginValid();
+			}
+
+			if(i == 2)
+			{
+				uiObj.visStatusMenu();
+			}
+			else
+				cin.clear();
 		}
 
-		int i;
+		
 		cin >> i;
+
 
 		//ch = getch();
 		//int i = (int)((char)ch - '0');
@@ -56,6 +68,11 @@ int main()
 		{
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(),'\n');
+		}
+
+		if(i == 2)	// login menu
+		{
+			logObj.loginValid();
 		}
 
 		if(i == 1)	// aktiver menu
@@ -81,6 +98,24 @@ int main()
 		if(i == 5)	// tilføj fjern menu
 		{
 			udtagObj.addRemoveUdtag();
+		}
+		else
+			cin.clear();
+
+		while(!kbhit)
+		{
+			int read = rsObj.read();
+			if(read == 2)
+			{
+				bool test = logObj.loginValid();
+
+				if(test == true) // break while når der er logget ind igen.
+					break;
+			}
+			if(read == 3)
+			{
+						// BABY ALARM KALD ////////////////////////////////////
+			}		
 		}
 	}
 }

@@ -5,9 +5,9 @@
 
 using namespace std;
 
-aktiver::aktiver(/*RS232IF *rs,*/ hukommelse *hu, brugerUI *ui)
+aktiver::aktiver(RS232IF *rs, hukommelse *hu, brugerUI *ui)
 {
-	//rsPtr = rs;
+	rsPtr = rs;
 	huPtr = hu;
 	uiPtr = ui;
 }
@@ -26,7 +26,11 @@ void aktiver::aktiverEnhed()
 		if(enhed == 100) // fail safe. bruger tastede noget ugyldigt.
 			test = false;
 
-		//bool test = rsPtr->aktiver(enhed);
+		vector<string> temp = huPtr->getEnheder;
+		int move = ((enhed*3) - 2); 
+		string adresse = temp[move];
+
+		bool test = rsPtr->aktiver(adresse);
 		if(/*test*/ test)
 		{
 			huPtr->saveStatus("true", enhed);
