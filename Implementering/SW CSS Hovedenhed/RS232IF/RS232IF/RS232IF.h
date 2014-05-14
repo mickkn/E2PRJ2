@@ -28,6 +28,8 @@ public:
 										// // 1: UC1 Login
 										// // 2: UC2 Aktiver
 										// // 3: UC3 Deaktiver
+										
+	void getAdresse(char *kommando, char *adresse);	// Hent adresse ud af kommando
 	
 	void loginStatus( bool status );	// Afsend login status
 	void adviser( );					// Alarmer PC om babyalarm

@@ -46,6 +46,19 @@ unsigned char RS232IF::getUC(char * kommando)
 	return ucNr;
 }
 
+// Returner adresse ud fra kommando
+void RS232IF::getAdresse(char * kommando, char * adresse)
+{
+	// Hvis den er wrapped med STX og ETX fjernes de først
+	if(kommando[0] == 's' || kommando[0] == 'S')
+		unwrapper(kommando, kommando);
+	
+	// Kopier adressen over
+	for(unsigned char i = 0; i < 4; i++)
+		adresse[i] = kommando[i + 1];
+	
+}
+
 // Retur svar fra loginValid
 void RS232IF::loginStatus( bool status )
 {
