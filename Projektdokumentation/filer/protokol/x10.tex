@@ -11,7 +11,7 @@ For alt kommunikation mellem CSS hovedenheden og X10 Udtagene gælder om STX (St
 		\hline 
 		\textbf{STX} & 'S' / 's' & 0x53 / 0x73 \\ 
 		\hline 
-		\textbf{ETX} & 'cr' & 0x0D \\ 
+		\textbf{ETX} & '\textbackslash r' & 0x0D \\ 
 		\hline 
 	\end{tabular} 
 	\label{table:X10StartStopBytes}
@@ -58,9 +58,11 @@ Bemærk at adresse "0000" ikke er gyldig.
 
 \textbf{Eksempler:}
 
-\textbf{"S0101A<cr>"}
+\textbf{"S0101A\textbackslash r"}
 Kommandoen aktiverer X10 udtaget med adresse ''0101''.
 
-\textbf{"s0101d<cr>"}
+\textbf{"s0101d\textbackslash r"}
 Kommandoen deaktiverer X10 udtaget med adresse ''0101''.
+
+Bemærk at \textbackslash r er ASCII karakteren for carriage return.
 
