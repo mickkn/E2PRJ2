@@ -30,10 +30,7 @@ RS232IF::~RS232IF()
 unsigned char RS232IF::getUC(char * kommando)
 {
 	// Afvent komplet flag fra UART
-	while(!commandReady)
-	{
-		PORTB = ~dataCount;
-	}
+	while(!commandReady);
 	
 	// Unwrap kommando
 	unwrapper(dataIn, kommando);
@@ -41,15 +38,12 @@ unsigned char RS232IF::getUC(char * kommando)
 	// Sænk komplet flag og nulstil buffer
 	commandReady = 0;
 	dataCount = 0;
-	
-	
-	PORTB = ~kommando[0];
 		
 	// Dekod protokol
-	//unsigned char ucNr = protokolUnwrap(kommando);
+	unsigned char ucNr = protokolUnwrap(kommando);
 
 	// Returner UC nummer
-	return 0xFF;
+	return ucNr;
 }
 
 // Retur svar fra loginValid
