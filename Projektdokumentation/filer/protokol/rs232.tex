@@ -13,21 +13,21 @@ I tabel \ref{table:RS232StartStopBytes} beskrives de fælles informationer som g
 		\hline 
 		\textbf{STX} & 'S' / 's' & 0x53 / 0x73 \\ 
 		\hline 
-		\textbf{ETX} & 'cr' & 0x0D \\ 
+		\textbf{ETX} & '\textbackslash r' & 0x0D \\ 
 		\hline 
 	\end{tabular} 
 	\label{table:RS232StartStopBytes}
 \end{table}
 
 
-Dataen formateres som vist i tabel \ref{table:RS232DataFormat}. <Data> blokken bruges kun i tilfælde af at der skal overføres en adresse.
+Dataen formateres som vist i tabel \ref{table:RS232DataFormat}. Alle frames er 7 byte.
 
 \begin{table}[h]
 	\caption{Data formatering for RS232 kommunikation}
 	\centering
 	\begin{tabular}{|l|c|c|c|c|}
 		\hline 
-		\textbf{Byte} & 0 & 1 & 2..5 & 2/6 \\ 
+		\textbf{Byte} & 0 & 1 & 2..5 & 6 \\ 
 		\hline 
 		\textbf{Indhold} & STX & <Kommando> & <Data> & ETX \\ 
 		\hline 
@@ -63,19 +63,19 @@ Kun kommandoerne beskrevet i tabel \ref{tabel:RS232Kommandoer} er gyldige. I til
 \end{table} 
 
 \textbf{Blokken <Data>}
-Ved alle kommandoer undtaget Aktiver- og Deaktiverkommandoerne bruges <Data> ikke.
+Ved alle kommandoer undtaget Aktiver- og Deaktiverkommandoerne inderholder <Data> "9999"
 
 For at bruge aktiver eller deaktiver kommandoerne er <Data> formateret som adressen. Denne adressering formateres som 4 byte, som hver består af ASCII karakterende '0' eller '1'. På den måde skriver man blot den adresse ind, som man har indstillet på sit X10 udtag. F.eks. "0100".
 Bemærk at adresse "0000" ikke er gyldig.
 
 \textbf{Eksempler:}
 
-\textbf{"SA0101<cr>"}
+\textbf{"SA0101\r"}
 Kommandoen aktiverer enheden med adresse "0101".
 
-\textbf{"SL<cr>"}
+\textbf{"SL\r"}
 Kommandoen beder CSS hovedenheden om at returnerer login status.
 
 CSS Hovedenheden vil returnerer et svar:
-\textbf{"ST<cr>"} for at brugeren er logget ind eller \textbf{"SF<cr>"} hvis brugeren ikke er logget ind.
+\textbf{"ST9999\textbackslash r"} for at brugeren er logget ind eller \textbf{"SF9999\textbackslash r"} hvis brugeren ikke er logget ind. Bemærk at \textbackslash r er ASCII karakteren for carriage return.
 
