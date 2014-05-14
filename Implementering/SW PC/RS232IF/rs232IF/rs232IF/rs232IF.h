@@ -3,7 +3,7 @@
 
 #include "Serial.h"
 
-#define port 3
+#define port 4
 #define commandSize 7
 
 class RS232IF

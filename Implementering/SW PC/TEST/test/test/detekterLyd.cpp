@@ -9,7 +9,7 @@ detekterLyd::detekterLyd(/*clickATellIF * click,*/ hukommelse * hu)
 
 void detekterLyd::lydDetekteret()
 {
-	int nummer = huPtr->getNumber;
+	int nummer = huPtr->getNumber();
 
 	//smsPtr->sendSMS(nummer);
 

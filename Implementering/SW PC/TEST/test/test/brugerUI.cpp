@@ -13,50 +13,6 @@ brugerUI::brugerUI(hukommelse *hu)
 	huPtr = hu;
 }
 
-void brugerUI::showMenu(int menu)
-{
-	while(1)
-	{
-		if(menu == 0)   // vis prelogin menu. Login og vis status kan vælges
-		{
-			menu = preLogin();
-		}
-
-		if(menu == 1)	// login menu. bruger skal login på DE2 eller tryk ESC
-		{
-			menu = login();
-		}
-
-		if(menu == 2)	// main menu. 
-		{
-			menu = mainMenu();
-		}
-
-		if(menu == 3) // vis status menu
-		{
-		
-		}
-
-		if(menu == 4)	// aktiver menu
-		{
-		
-		}
-
-		if(menu == 5)	// deaktiver menu
-		{
-		
-		}
-
-		if(menu == 6)	// rediger sms modtager menu
-		{}
-
-		if(menu == 7)	// tilføj / fjern enheder menu
-		{}
-
-	}
-
-
-}
 
 void brugerUI::preLogin() const
 {
@@ -143,7 +99,7 @@ int brugerUI::aktiverMenu() const
 	{
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		return 100;
+		return 0;
 	}
 
 	if(num == 27) // Controller loop bliver exited
@@ -160,7 +116,7 @@ int brugerUI::aktiverMenu() const
 		}
 	}
 // ikke ændret på noget da der er tastet forkert
-	return 100;               
+	return 2;               
 }
 	
 
@@ -381,22 +337,23 @@ int brugerUI::addRemoveMenu() const
 		cout << "Tast 27 for at annullere" << endl;
 		while(1)
 		{		
-			string retur;
-			getline(cin, retur,'\n');
-
+			cin.clear();
+			int retur;
+			//getline(cin, retur,'\n');
+			cin >> retur;
 
 			if(!cin) // Hvi brugeren indtaster nogeet der ikke er int
 			{
 				cin.clear();
 				cin.ignore(numeric_limits<streamsize>::max(),'\n');
 			}
-			if(retur == "1")
+			if(retur == 1)
 				return 0;
 		
-			if(retur == "27")
+			if(retur == 27)
 				return 27;
 
-			if(retur == "2");
+			if(retur == 2);
 				return 1;
 		}
 	}

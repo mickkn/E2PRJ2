@@ -26,7 +26,7 @@ void aktiver::aktiverEnhed()
 		if(enhed == 100) // fail safe. bruger tastede noget ugyldigt.
 			test = false;
 
-		vector<string> temp = huPtr->getEnheder;
+		vector<string> temp = huPtr->getEnheder();
 		int move = ((enhed*3) - 2); 
 		string adresse = temp[move];
 

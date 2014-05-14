@@ -73,8 +73,8 @@ bool hukommelse::saveNumber(int num)
 		
 	if (myFile)					// if filen er åben
 	{
-		GotoLine(myFile, 1);	 // gå til og skriv i linje 1.
-		int line1;
+		//GotoLine(myFile, 1);	 // gå til og skriv i linje 1.
+		//int line1;
 		myFile << num;
 
 		telefonNummer_ = num;

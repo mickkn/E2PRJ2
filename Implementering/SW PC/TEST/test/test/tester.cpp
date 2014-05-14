@@ -29,13 +29,13 @@ int main()
 	//char ch;
 	int i;
 	bool testing = false;
-	uiObj.preLogin; // viser altid preLogin menu først
 
 	while(1)
 	{
 		while(!testing)
 		{
-
+			uiObj.preLogin(); // viser altid preLogin menu først
+			cin.clear();
 			cin >> i;
 
 			if(!cin) // Hvis brugeren indtaster nogeet der ikke er int
@@ -46,7 +46,9 @@ int main()
 
 			if(i == 1)	// login menu
 			{
+				cin.clear();
 				testing = logObj.loginValid();
+				cin.clear();
 			}
 
 			if(i == 2)
@@ -57,7 +59,22 @@ int main()
 				cin.clear();
 		}
 
-		
+		while(!kbhit())
+		{
+			int read = rsObj.read();
+			if(read == 2)
+			{
+				bool test = logObj.loginValid();
+
+				if(test == true) // break while når der er logget ind igen.
+					break;
+			}
+			if(read == 3)
+			{
+						// BABY ALARM KALD ////////////////////////////////////
+				cout << " BABY ALARM OMG!" << endl;
+			}		
+		}
 		cin >> i;
 
 
@@ -69,11 +86,6 @@ int main()
 		{
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		}
-
-		if(i == 2)	// login menu
-		{
-			logObj.loginValid();
 		}
 
 		if(i == 1)	// aktiver menu
@@ -102,22 +114,5 @@ int main()
 		}
 		else
 			cin.clear();
-
-		while(!kbhit)
-		{
-			int read = rsObj.read();
-			if(read == 2)
-			{
-				bool test = logObj.loginValid();
-
-				if(test == true) // break while når der er logget ind igen.
-					break;
-			}
-			if(read == 3)
-			{
-						// BABY ALARM KALD ////////////////////////////////////
-				cout << " BABY ALARM OMG!" << endl;
-			}		
-		}
 	}
 }
