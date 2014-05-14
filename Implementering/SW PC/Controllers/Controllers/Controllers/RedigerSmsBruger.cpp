@@ -1,6 +1,7 @@
 
 #include "redigerSmsBruger.h"
 #include <iostream>
+#include <windows.h>
 
 using namespace std;
 
@@ -12,14 +13,27 @@ redigerSmsBruger::redigerSmsBruger(hukommelse * hu, brugerUI * ui)
 
 void redigerSmsBruger::redigerSMS()
 {
-	int nummer = huPtr->redigerSmsMenu();
-	bool test = huPtr->saveNumber(nummer);
+	bool test = true;
 
-	if(test)
-		cout << "nummeret blev gemt" << endl;
-	else
-		cout << "nummeret blev IKKE gemt" << endl;
+	while(test)
+	{
+		int nummer = uiPtr->redigerSmsMenu();
+		if(nummer == 0)
+			break;
 
-	uiPtr->mainMenu;
+		bool gemt = huPtr->saveNumber(nummer);
+
+		if(gemt)
+		{
+			int nr = huPtr->getNumber();
+			cout << endl << endl << int(nr) << " blev gemt" << endl;
+			Sleep(4000);
+			test = false;
+		}
+		else
+			cout << "nummeret blev IKKE gemt" << endl;
+	}
+
+	uiPtr->mainMenu();
 
 }

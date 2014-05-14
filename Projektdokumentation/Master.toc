@@ -42,21 +42,22 @@
 \contentsline {subsection}{\numberline {6.3.6}IBD Hovedenhed og Modtager}{36}{subsection.6.3.6}
 \contentsline {subsection}{\numberline {6.3.7}Signaltabel}{36}{subsection.6.3.7}
 \contentsline {subsubsection}{Hovedenhed}{36}{section*.8}
-\contentsline {subsubsection}{Modtager}{36}{section*.9}
-\contentsline {section}{\numberline {6.4}Software}{37}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Applikations model for PC}{37}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Klassebeskrivelse for PC}{41}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Applikations model for CSS hovedenhed}{47}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Klassediagram og beskrivelse for CSS hovednehed}{49}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Applications model for X10 modtager}{53}{subsection.6.4.5}
-\contentsline {subsection}{\numberline {6.4.6}Klassebeskrivels for X10 modtager}{55}{subsection.6.4.6}
+\contentsline {subsubsection}{Modtager}{37}{section*.9}
+\contentsline {section}{\numberline {6.4}Software}{38}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Applikations model for PC}{38}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Klassebeskrivelse for PC}{42}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Applikations model for CSS hovedenhed}{48}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Klassediagram og beskrivelse for CSS hovednehed}{50}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Applications model for X10 modtager}{54}{subsection.6.4.5}
+\contentsline {subsection}{\numberline {6.4.6}Klassebeskrivels for X10 modtager}{56}{subsection.6.4.6}
 \contentsline {chapter}{\chapternumberline {7}Hardware design}{59}{chapter.7}
-\contentsline {section}{\numberline {7.1}H\IeC {\o }jpasfilter}{59}{section.7.1}
-\contentsline {section}{\numberline {7.2}Zero Crossing Detector}{60}{section.7.2}
-\contentsline {section}{\numberline {7.3}B\IeC {\r a}ndpasfilter}{61}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Lavpasfilter}{61}{subsection.7.3.1}
-\contentsline {section}{\numberline {7.4}Buffer}{61}{section.7.4}
-\contentsline {section}{\numberline {7.5}Envelope Detector}{61}{section.7.5}
+\contentsline {section}{\numberline {7.1}Encoder}{59}{section.7.1}
+\contentsline {section}{\numberline {7.2}H\IeC {\o }jpasfilter}{59}{section.7.2}
+\contentsline {section}{\numberline {7.3}Zero Crossing Detector}{60}{section.7.3}
+\contentsline {section}{\numberline {7.4}B\IeC {\r a}ndpasfilter}{61}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Lavpasfilter}{61}{subsection.7.4.1}
+\contentsline {section}{\numberline {7.5}Buffer}{61}{section.7.5}
+\contentsline {section}{\numberline {7.6}Envelope Detector}{61}{section.7.6}
 \contentsline {chapter}{\chapternumberline {8}Software design}{63}{chapter.8}
 \contentsline {section}{\numberline {8.1}4+1}{63}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Data view}{63}{subsection.8.1.1}

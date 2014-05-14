@@ -42,7 +42,7 @@ De ligger på følgende måde: adresse, navn, status \\
 {\centering 
 \textbf{Login klasse}\par
 }
-
+\textbf{Ansvar:} at kontrollere forløbet under UC1 \\
 bool loginValid(); \\
 \textbf{Parametre:} ingen  \\
 \textbf{Returværdi:} returne true hvis login går godt. returnere false hvis brugeren annullere login forsøg. \\
@@ -99,7 +99,9 @@ void addRemoveUdtag(); \\
 \newline Hvis brugeren valgte tilføje skal han indtaste navn og adresse. Adressen skal valideres så den kun indholde 4 cifre som alle er enten 1 eller 0. Hvis det går godt skal det indtastede holdes op imod de allerede gemte adresse i hukommelsen. Hvis adressen allerede er brugt bedes bruger om at indtaste ny adresse indtil den er valideret. Når den er valideret sendes navn og adresse til hukommelsen vha saveAdresse(adresse, navn) metoden. Hvis saveAdresse returnere true skal der udskrives "Enhed tilføjet", ellers udskrives "Enhed blev ikke tilføjet".
 \newline Hvis brugeren valgte fjerne bedes brugeren om at angive den enhed som skal fjernes. bruger inputtet sendes til removeAdresse(input). Hvis den returnere true udskrives "Enhed fjernet", ellers udskrives "Enhed blev ikke fjernet"
 \newline Brugeren bliver efterfølgende præsenteret med et opdateret ui som igen giver ham mulighed for at tilføje, fjerne eller annullere. Dette looper indtil han vælger at annullere.\\
+
 \newpage
+
 {\centering 
 \textbf{ClickATellIF klasse}\par
 }
@@ -134,6 +136,8 @@ int read(); \\
 \textbf{Parametre:} ingen\\
 \textbf{Returværdi:} int fra 0-3 \\
 \textbf{Beskrivelse:} tjekker først om der er modtaget 7 eller flere bytes i bufferen. Hvis der ikke er, returneres 0. Hvis der er modtaget 7 eller flere læses 7 bytes. De tjekkes imod 3 parametre. Hvis t / T er det første bogstav den læste så returneres 1. Hvis f / F er det første bogstav den læste så returneres 2. Hvis b / B er det første bogstav den læste så returneres 3.  \\
+
+\newpage
 
 {\centering 
 \textbf{BrugerUI klasse}\par
@@ -170,6 +174,7 @@ int deaktiverMenu(); \\
 \textbf{Returværdi}: integer \\
 \textbf{Beskrivelse:} udskriver hvilke deaktive enheder der er og hvilke der er aktive, og altså kan deaktiveres. Skal tage imod bruger input som skal matche nummeret på enheden. Brugeren kan annullere ved at trykke 27. Hvis der annulleres returneres 27. Ellers returneres tallet på den valgte enheh. \\
 
+\newpage
 int redigerSmsMenu(); \\
 \textbf{Parametre:} ingen \\
 \textbf{Returværdi}: integer \\

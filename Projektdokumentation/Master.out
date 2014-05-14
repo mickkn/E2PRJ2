@@ -47,12 +47,13 @@
 \BOOKMARK [2][-]{subsection.6.4.5}{Applications model for X10 modtager}{section.6.4}% 47
 \BOOKMARK [2][-]{subsection.6.4.6}{Klassebeskrivels for X10 modtager}{section.6.4}% 48
 \BOOKMARK [0][-]{chapter.7}{Hardware design}{}% 49
-\BOOKMARK [1][-]{section.7.1}{H\370jpasfilter}{chapter.7}% 50
-\BOOKMARK [1][-]{section.7.2}{Zero Crossing Detector}{chapter.7}% 51
-\BOOKMARK [1][-]{section.7.3}{B\345ndpasfilter}{chapter.7}% 52
-\BOOKMARK [2][-]{subsection.7.3.1}{Lavpasfilter}{section.7.3}% 53
-\BOOKMARK [1][-]{section.7.4}{Buffer}{chapter.7}% 54
-\BOOKMARK [1][-]{section.7.5}{Envelope Detector}{chapter.7}% 55
-\BOOKMARK [0][-]{chapter.8}{Software design}{}% 56
-\BOOKMARK [1][-]{section.8.1}{4+1}{chapter.8}% 57
-\BOOKMARK [2][-]{subsection.8.1.1}{Data view}{section.8.1}% 58
+\BOOKMARK [1][-]{section.7.1}{Encoder}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.2}{H\370jpasfilter}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.3}{Zero Crossing Detector}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.4}{B\345ndpasfilter}{chapter.7}% 53
+\BOOKMARK [2][-]{subsection.7.4.1}{Lavpasfilter}{section.7.4}% 54
+\BOOKMARK [1][-]{section.7.5}{Buffer}{chapter.7}% 55
+\BOOKMARK [1][-]{section.7.6}{Envelope Detector}{chapter.7}% 56
+\BOOKMARK [0][-]{chapter.8}{Software design}{}% 57
+\BOOKMARK [1][-]{section.8.1}{4+1}{chapter.8}% 58
+\BOOKMARK [2][-]{subsection.8.1.1}{Data view}{section.8.1}% 59

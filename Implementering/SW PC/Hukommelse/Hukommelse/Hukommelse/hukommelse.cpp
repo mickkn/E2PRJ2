@@ -33,22 +33,18 @@ hukommelse::~hukommelse()
 
 }
 
-void hukommelse::saveLogin(bool login)   // overflødig? bliver ikke gemt til hukommelsen, hvorfor sku den? 
+void hukommelse::saveStatus(string status, int enhed)
 {
-	statusLogin_ = login;
-}
-
-void hukommelse::saveStatus(bool status, int enhed)
-{
-	memory_[enhed+2] = BoolToString(status); // ændre status i vectoren.
+	int move = ((enhed*3) - 2); 
+	memory_[move+2] = status; // ændre status i vectoren.
+	int size = memory_.size();
 
 	fstream myFile;
 	
 	myFile.open("hukommelse.txt", fstream::out | fstream::trunc);
-
 		while(myFile)
 		{
-			for(int i = 0; i<memory_.size(); i++)
+			for(int i = 0; i<size; i++)
 			{
 				string text = memory_[i];
 				myFile << text << "\n";
@@ -77,8 +73,8 @@ bool hukommelse::saveNumber(int num)
 		
 	if (myFile)					// if filen er åben
 	{
-		GotoLine(myFile, 1);	 // gå til og skriv i linje 1.
-		int line1;
+		//GotoLine(myFile, 1);	 // gå til og skriv i linje 1.
+		//int line1;
 		myFile << num;
 
 		telefonNummer_ = num;

@@ -1,0 +1,10 @@
+123455672
+0101
+2
+true
+0110
+hu
+true
+1111
+Buuluu
+false
