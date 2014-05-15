@@ -1,66 +1,98 @@
 Kommunikationen mellem CSS Hovedenhed og X10 Udtagene sker over strømnettet via et X10 interface.
 
-For alt kommunikation mellem CSS hovedenheden og X10 Udtagene gælder om STX (Start of text), start-byten, og ETX (End of text), slut-byten.
-
-\begin{table}[h]
-	\caption{Start og stop bytes for X10 kommunikation}
-	\centering
-	\begin{tabular}{|c|c|c|}
-		\hline 
-		& ASCII & Hex \\ 
-		\hline 
-		\textbf{STX} & 'S' / 's' & 0x53 / 0x73 \\ 
-		\hline 
-		\textbf{ETX} & 'cr' & 0x0D \\ 
-		\hline 
-	\end{tabular} 
-	\label{table:X10StartStopBytes}
-\end{table}
-
-Data formateres som vist i tabel \ref{table:X10DataFormat}.
+Den officielle X10 protokol bruges som udgangspunkt for denne arbitrerer X10 protokol.
+Afvigelserne fra den officielle X10 protokol ligger i hvilke gyldige kommandoer der er til rådighed. Kun kommandoerne i tabel \ref{tabel:X10Kommandoer} er gyldige. Se også tabel \ref{table:X10DataFormat} for hvordan en data frame er bygget op. Bemærk at   enheds adressen og kommando sendes i én pakke.
 
 \begin{table}[h]
 	\caption{Data formatering for X10 kommunikation}
 	\centering
-	\begin{tabular}{|r|c|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline 
-		\textbf{Byte} & 0 & 1..4 & 5 & 6 \\ 
-		\hline 
-		\textbf{Indhold} & STX & <Adresse> & <Kommando> & ETX \\ 
+		STX & <Kommando> & <Adresse> & ETX \\
 		\hline 
 	\end{tabular} 
 	\label{table:X10DataFormat}
 \end{table}
 
-\textbf{<Kommando>}
+I det følgende differentieres der mellem almindelige binære mønstre og X10 formaterede bit mønstre.
+Den officielle X10 protokol beskriver at det binære 0 sendes som 01 og binært 1 sendes som 10. Se \textbf{INDSÆT REFFERENCE TIL X10 PROTOKOLLEN} for yderligere detaljer.
 
-Kun kommandoerne beskrevet i tabel \ref{tabel:X10Kommandoer} er gyldige. I tilfælde af at kommandoen ikke genkendes er der intet svar. Bemærk at det er muligt at bruge både store og små karakterer.
+I tabel \ref{table:X10StartStopBytes} beskrives de fælles informationer som gælder mellem CSS hovedenheden.
+
+\begin{table}[h]
+	\caption{Start og stop bytes for X10 kommunikation}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline 
+		& \textbf{X10 kode} \\ 
+		\hline 
+		\textbf{STX} & 1110\\ 
+		\hline 
+		\textbf{ETX} & 000000 \\ 
+		\hline 
+	\end{tabular} 
+	\label{table:X10StartStopBytes}
+\end{table}
+
+\textbf{Blokken <Kommando>}
+
+Alle kommandoer sendes to gange med tre 50 Hz perioder i mellem hver. Dette håndteres med ETX koden.
+I tilfælde af at kommandoen ikke genkendes er der intet svar.
 
 \begin{table}[h]
 \caption{Kommandoer for X10 kommunikation}
 \centering
 \begin{tabular}{|c|c|c|}
 \hline 
-\textbf{ASCII} & \textbf{HEX} & \textbf{Funktion} \\ 
+\textbf{Binær} & \textbf{X10 kode} & \textbf{Funktion} \\ 
 \hline 
-'A' / 'a' & 0x41 / 0x61 & Aktiver enhed \\ 
+00101 & 0101100110 & Aktiver enhed \\ 
 \hline 
-'D' / 'd' & 0x44 / 0x64 & Deaktiver enhed \\ 
+00111 & 0101101010 & Deaktiver enhed \\ 
 \hline
 \end{tabular}
 \label{tabel:X10Kommandoer}
 \end{table} 
 
-\textbf{Aktiver- og Deaktiver kommandoerne}
+\textbf{Blokken <Adresse>}
 
-For at bruge aktiver eller deaktiver kommandoerne er <Adresse> formateret som adressen. Denne adressering formateres som 4 byte, som hver består af ASCII karakterende '0' eller '1'. På den måde skriver man blot den adresse ind, som man har indstillet på sit X10 udtag. F.eks. "0100".
-Bemærk at adresse "0000" ikke er gyldig.
+Adresserne modtages fra PCen binært. Denne kode omsættes til X10 formatet og afsendes uden videre formatering.
+I tabel \ref{tabel:X10Adresser} vises nogle eksempler på adresser.
 
-\textbf{Eksempler:}
+\begin{table}[h]
+\caption{Adresser formateret i X10 format}
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Binær} & \textbf{X10 kode} \\ 
+\hline 
+0001 & 01010110 \\ 
+\hline 
+0101 & 01100110 \\ 
+\hline
+0111 & 01101010 \\
+\hline
+\end{tabular}
+\label{tabel:X10Adresser}
+\end{table} 
 
-\textbf{"S0101A<cr>"}
-Kommandoen aktiverer X10 udtaget med adresse ''0101''.
+Bemærk at adresse ''0000'' ikke er gyldig.
 
-\textbf{"s0101d<cr>"}
-Kommandoen deaktiverer X10 udtaget med adresse ''0101''.
+\textbf{Eksempler}
 
+I tabel \ref{tabel:X10Eksempler} er vist to eksempler som aktiverer og deaktiverer et X10 udtag. Mellemrummende i X10 koden er indsat for at kunne se blokkende og vil ikke eksisterer i praksis.
+
+\begin{table}[h]
+\caption{Adresser formateret i X10 format}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Kommando} & \textbf{X10 kode} \\ 
+\hline 
+Tænd X10 udtag på adresse 0101 & 1110 0101100110 01100110 000000 \\ 
+\hline 
+Sluk X10 udtag på adresse 0011 & 1110 0101101010 01011010 000000 \\ 
+\hline
+\end{tabular}
+\label{tabel:X10Eksempler}
+\end{table} 
