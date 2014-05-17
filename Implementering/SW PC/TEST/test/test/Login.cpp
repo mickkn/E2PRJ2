@@ -27,7 +27,10 @@ bool login::loginValid()
 			{
 				int read = rsPtr->read();
 				if(read == 1)
+				{
 					return true;
+					uiPtr->mainMenu();
+				}
 			}
 		}
 	}

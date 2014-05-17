@@ -30,7 +30,6 @@ int main()
 	while(1)
 	{
 		logObj.loginValid();
-		uiObj.mainMenu();
 		while(!kbhit)
 		{
 			int read = rsObj.read();
