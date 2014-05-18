@@ -8,7 +8,7 @@
  */
 
 #pragma once
-#define X10_ARRAY_SIZE 4*26 // 4 kommandoer af 26 tegn
+#define X10_ARRAY_SIZE 4*29 // 4 kommandoer af 28 tegn plus kommando terminering
 
 class CircBuffer {
 
