@@ -1,8 +1,8 @@
-Kommunikationen mellem PC og CSS hovedenheden sker over seriel kommunikation på et RS232 interface.
+Kommunikationen mellem PC og CSS hovedenheden sker over seriel kommunikation på et RS232 interface.\\
 
-Det fysiske setup for RS232-interfacet er: 9600 kbps, ingen paritet, 8 bits, 1 stop bit.
+Det fysiske setup for RS232-interfacet er: 9600 kbps, ingen paritet, 8 bits, 1 stop bit.\\
 
-I tabel \ref{table:RS232StartStopBytes} beskrives de fælles informationer som gælder mellem computeren og CSS hovedenheden.
+I tabel \ref{table:RS232StartStopBytes} beskrives de fælles informationer som gælder mellem computeren og CSS hovedenheden.\\
 
 \begin{table}[h]
 	\caption{Start og stop bytes for RS232 kommunikation}
@@ -37,7 +37,7 @@ Dataen formateres som vist i tabel \ref{table:RS232DataFormat}. Alle frames er 7
 
 \textbf{Blokken <Kommando>}
 
-Kun kommandoerne beskrevet i tabel \ref{tabel:RS232Kommandoer} er gyldige. I tilfælde af at kommandoen ikke genkendes er der intet svar. Bemærk at det er muligt at bruge både store og små karakterer.
+Kun kommandoerne beskrevet i tabel \ref{tabel:RS232Kommandoer} er gyldige. I tilfælde af at kommandoen ikke genkendes er der intet svar. Bemærk at det er muligt at bruge både store og små karakterer.\\
 
 \begin{table}[h]
 \caption{Kommandoer for RS232 kommunikation}
@@ -69,7 +69,6 @@ For at bruge aktiver eller deaktiver kommandoerne er <Data> formateret som adres
 
 \textbf{Eksempler:}
 
-<<<<<<< HEAD
 \textbf{''SA0101\textbackslash r''}
 Kommandoen aktiverer enheden med adresse "0101".
 
@@ -78,7 +77,7 @@ Kommandoen beder CSS hovedenheden om at returnerer login status.
 
 CSS Hovedenheden vil returnerer et svar:
 \textbf{''ST9999\textbackslash r"} for at brugeren er logget ind eller \textbf{''SF9999\textbackslash r''} hvis brugeren ikke er logget ind. Bemærk at \textbackslash r er ASCII karakteren for carriage return.
-=======
+
 \textbf{"SA0101\r"}
 Kommandoen aktiverer enheden med adresse "0101".
 
@@ -88,4 +87,3 @@ Kommandoen beder CSS hovedenheden om at returnerer login status.
 CSS Hovedenheden vil returnerer et svar:
 \textbf{"ST9999\textbackslash r"} for at brugeren er logget ind eller \textbf{"SF9999\textbackslash r"} hvis brugeren ikke er logget ind. Bemærk at \textbackslash r er ASCII karakteren for carriage return.
 
->>>>>>> parent of fe63449... Git hub fucker. committer ALT i repos.
