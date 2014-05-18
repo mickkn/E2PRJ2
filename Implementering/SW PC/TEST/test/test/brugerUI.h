@@ -11,10 +11,11 @@ class brugerUI
 {
 public:
 	brugerUI(hukommelse *);
+	void showMenu(int);
 	void print() const;
-	void preLogin() const;
+	int preLogin() const;
 	void login() const;
-	void mainMenu() const;
+	int mainMenu() const;
 	int aktiverMenu() const;
 	int deaktiverMenu() const;
 	int visStatusMenu() const;

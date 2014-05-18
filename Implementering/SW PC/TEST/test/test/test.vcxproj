@@ -65,7 +65,6 @@
     <ClCompile Include="Aktiver.cpp" />
     <ClCompile Include="brugerUI.cpp" />
     <ClCompile Include="Deaktiver.cpp" />
-    <ClCompile Include="detekterLyd.cpp" />
     <ClCompile Include="hukommelse.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="RedigerSmsBruger.cpp" />
@@ -78,7 +77,6 @@
     <ClInclude Include="Aktiver.h" />
     <ClInclude Include="brugerUI.h" />
     <ClInclude Include="Deaktiver.h" />
-    <ClInclude Include="DetekterLyd.h" />
     <ClInclude Include="hukommelse.h" />
     <ClInclude Include="Login.h" />
     <ClInclude Include="RedigerSmsBruger.h" />

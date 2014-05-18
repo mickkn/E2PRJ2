@@ -83,13 +83,12 @@ void udtag::addRemoveUdtag()
 			else
 			{
 				cout << "Enhed blev ikke tilføjet" << endl;
-				Sleep(2500);
+				Sleep(3000);
 			}
 		}
 
 		if(resultat == 0)
 		{
-			cin.clear();
 			cout << "Angiv hvilken enhed der skal fjernes" << endl;
 			int nr;
 			cin >> nr;
@@ -97,7 +96,7 @@ void udtag::addRemoveUdtag()
 			if(test)
 			{
 				cout << "Enhed fjernet" << endl;
-				Sleep(2500);
+
 			}
 			else
 					cout << "Enhed blev ikke fjernet" << endl;

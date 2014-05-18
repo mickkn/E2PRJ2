@@ -31,23 +31,25 @@ bool RS232IF::validLogin()
 
 
 	
-bool RS232IF::aktiver(string adresse)
+bool RS232IF::aktiver(int a)
 {
 	string start = "SA";
+	string data = to_string(a);
 	char slut = '\r';
 
-	string message = start + adresse + slut;
+	string message = start + data + slut;
 	const char * c = message.c_str();
 	serial.SendData( c, commandSize);
 	return true;
 }
 	
-bool RS232IF::deaktiver(string adresse)
+bool RS232IF::deaktiver(int b)
 {
 	string start = "SD";
+	string data = to_string(b);
 	char slut = '\r';
 
-	string message = start + adresse + slut;
+	string message = start + data + slut;
 	const char * c = message.c_str();
 
 	serial.SendData( c, commandSize);
@@ -62,18 +64,20 @@ int RS232IF::read()
 	if(serial.ReadDataWaiting() >= 7)
 	{
 		serial.ReadData(ipBuffer, commandSize+1);
+		cout << "data was read" << endl;
 	}
 	string reading(ipBuffer, commandSize);
 
+	cout << reading << endl;
 	delete []ipBuffer;
 
-	if(reading[1] == 'b' || reading[1] == 'B') // Lyd detekteret
+	if(reading[0] == 'b' || reading[0] == 'B') // Lyd detekteret
 		return 3;
 
-	if(reading[1] == 't' || reading[1] == 'T') // Login 
+	if(reading[0] == 't' || reading[0] == 'T') // Login 
 		return 1;
 
-	if(reading[1] == 'f' || reading[1] == 'F') // Login udløbet
+	if(reading[0] == 'f' || reading[0] == 'F') // Login udløbet
 		return 2;
 
 	return 0;
