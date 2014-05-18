@@ -8,7 +8,11 @@ Afvigelserne fra den officielle X10 protokol ligger i hvilke gyldige kommandoer 
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline 
+<<<<<<< HEAD
 		STX & <Kommando> & <Adresse> & ETX \\
+=======
+		\textbf{ETX} & '\textbackslash r' & 0x0D \\ 
+>>>>>>> parent of fe63449... Git hub fucker. committer ALT i repos.
 		\hline 
 	\end{tabular} 
 	\label{table:X10DataFormat}
@@ -76,6 +80,7 @@ I tabel \ref{tabel:X10Adresser} vises nogle eksempler på adresser.
 \label{tabel:X10Adresser}
 \end{table} 
 
+<<<<<<< HEAD
 \textbf{Eksempler}
 
 I tabel \ref{tabel:X10Eksempler} er vist to eksempler som aktiverer og deaktiverer et X10 udtag. Mellemrummende i X10 koden er indsat for at kunne se blokkende og vil ikke eksisterer i praksis.
@@ -94,3 +99,13 @@ Sluk X10 udtag på adresse 0011 & 1110 0101101010 01011010 000000 \\
 \end{tabular}
 \label{tabel:X10Eksempler}
 \end{table} 
+=======
+\textbf{"S0101A\textbackslash r"}
+Kommandoen aktiverer X10 udtaget med adresse ''0101''.
+
+\textbf{"s0101d\textbackslash r"}
+Kommandoen deaktiverer X10 udtaget med adresse ''0101''.
+
+Bemærk at \textbackslash r er ASCII karakteren for carriage return.
+
+>>>>>>> parent of fe63449... Git hub fucker. committer ALT i repos.

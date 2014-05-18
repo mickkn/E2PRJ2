@@ -1,0 +1,59 @@
+\BOOKMARK [0][-]{chapter.1}{Indledning}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Ordliste}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Kravspecifikation}{}% 3
+\BOOKMARK [1][-]{section.3.1}{Akt\370rer}{chapter.3}% 4
+\BOOKMARK [2][-]{subsection.3.1.1}{Bruger}{section.3.1}% 5
+\BOOKMARK [2][-]{subsection.3.1.2}{Eksterne enheder}{section.3.1}% 6
+\BOOKMARK [2][-]{subsection.3.1.3}{Barn}{section.3.1}% 7
+\BOOKMARK [2][-]{subsection.3.1.4}{SMS modtager}{section.3.1}% 8
+\BOOKMARK [1][-]{section.3.2}{Usecases}{chapter.3}% 9
+\BOOKMARK [2][-]{subsection.3.2.1}{UC1: Login}{section.3.2}% 10
+\BOOKMARK [2][-]{subsection.3.2.2}{UC2: Aktiver}{section.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.2.3}{UC3: Deaktiver}{section.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.2.4}{UC4: Udl\346s status}{section.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.2.5}{UC5: Detekter lyd}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.6}{UC6: Rediger SMS-modtager}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.7}{UC7: Startops\346tning}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.8}{UC8: Tilf\370j/fjern X10 udtag}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{Ikke-funktionelle krav}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Begr\346nsninger}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.5}{HMI\(Human Machine Interface\)}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Forunders\370gelse}{}% 21
+\BOOKMARK [1][-]{section.4.1}{GSM}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.1.1}{GSM-valg}{section.4.1}% 23
+\BOOKMARK [1][-]{section.4.2}{L\345s}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.2.1}{L\345svalg}{section.4.2}% 25
+\BOOKMARK [1][-]{section.4.3}{Babyalarm}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.3.1}{Babyalarm sammenligning}{section.4.3}% 27
+\BOOKMARK [0][-]{chapter.5}{Accepttestspecifikation}{}% 28
+\BOOKMARK [0][-]{chapter.6}{System Arkitektur}{}% 29
+\BOOKMARK [1][-]{section.6.1}{Dom\346nemodel}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.2}{Protokol}{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.6.2.1}{Seriel kommunikation}{section.6.2}% 32
+\BOOKMARK [2][-]{subsection.6.2.2}{X10 kommunikation}{section.6.2}% 33
+\BOOKMARK [1][-]{section.6.3}{Hardware}{chapter.6}% 34
+\BOOKMARK [2][-]{subsection.6.3.1}{Hardware beskrivelse}{section.6.3}% 35
+\BOOKMARK [2][-]{subsection.6.3.2}{BDD Hardware}{section.6.3}% 36
+\BOOKMARK [2][-]{subsection.6.3.3}{BDD Hovedenhed}{section.6.3}% 37
+\BOOKMARK [2][-]{subsection.6.3.4}{BDD Modtager}{section.6.3}% 38
+\BOOKMARK [2][-]{subsection.6.3.5}{IBD Hardware}{section.6.3}% 39
+\BOOKMARK [2][-]{subsection.6.3.6}{IBD Hovedenhed og Modtager}{section.6.3}% 40
+\BOOKMARK [2][-]{subsection.6.3.7}{Signaltabel}{section.6.3}% 41
+\BOOKMARK [1][-]{section.6.4}{Software}{chapter.6}% 42
+\BOOKMARK [2][-]{subsection.6.4.1}{Applikations model for PC}{section.6.4}% 43
+\BOOKMARK [2][-]{subsection.6.4.2}{Klassebeskrivelse for PC}{section.6.4}% 44
+\BOOKMARK [2][-]{subsection.6.4.3}{Applikations model for CSS hovedenhed}{section.6.4}% 45
+\BOOKMARK [2][-]{subsection.6.4.4}{Klassediagram og beskrivelse for CSS hovednehed}{section.6.4}% 46
+\BOOKMARK [2][-]{subsection.6.4.5}{Applications model for X10 modtager}{section.6.4}% 47
+\BOOKMARK [2][-]{subsection.6.4.6}{Klassebeskrivels for X10 modtager}{section.6.4}% 48
+\BOOKMARK [0][-]{chapter.7}{Hardware design}{}% 49
+\BOOKMARK [1][-]{section.7.1}{Encoder}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.2}{H\370jpasfilter}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.3}{Zero Crossing Detector}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.4}{B\345ndpasfilter}{chapter.7}% 53
+\BOOKMARK [2][-]{subsection.7.4.1}{Lavpasfilter}{section.7.4}% 54
+\BOOKMARK [1][-]{section.7.5}{Buffer}{chapter.7}% 55
+\BOOKMARK [1][-]{section.7.6}{Envelope Detector}{chapter.7}% 56
+\BOOKMARK [0][-]{chapter.8}{Software design}{}% 57
+\BOOKMARK [1][-]{section.8.1}{4+1}{chapter.8}% 58
+\BOOKMARK [2][-]{subsection.8.1.1}{Data view}{section.8.1}% 59

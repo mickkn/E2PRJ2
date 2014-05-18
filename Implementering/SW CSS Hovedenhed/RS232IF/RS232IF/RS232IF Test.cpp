@@ -1,9 +1,11 @@
 /*
- * RS232IF.cpp
+ * Klasse RS232IF test applikation
  *
- * Created: 07-05-2014 20:25:00
- *  Author: Bjørn
- */ 
+ * Styrer kommunikation mellem PC og CSS hovedenhed over RS232 protokollen
+ *
+ * Af Bjørn Sørensen
+ *
+ */
 
 
 #include <avr/io.h>
@@ -45,19 +47,11 @@ int main()
 			
 		if(ucNr == 2 || ucNr == 3)
 		{
-			char adresseC[5] = {0};
-			
-			unsigned int adresseI;
-			
-			for(unsigned char i = 0; i < 4; i++)
-				adresseC[i] = kommando[i + 1];
-				
-			adresseC[4] = '\0';	// strtol terminering
-			adresseI = strtol(adresseC, NULL, 10);
-			
-			RS232UART.sendString(adresseC);
+			char adresse[5];
+			objekt.getAdresse(kommando, adresse);
+			adresse[4] = '\0';
+			RS232UART.sendString(adresse);
 		}
-		_delay_ms(1000);
 	}
 	
 	return 0;
