@@ -3,6 +3,26 @@
  *
  * Styrer kommunikation mellem CSS hovedenhed og X10 udtag over X10 protokollen
  *
+ * Opstilling:
+  * Fladkabel mellem PORTB og LEDS
+  * 2-ledet ledning mellem RS232 SPARE og PD0-PD1
+  * Ledning mellem SW0 og PD2
+ *
+ * Testforløb:
+  * Efter at have brændt programmet ned på STK500 kittet flyttes USB->RS232 converteren til RS232 SPARE porten på STK500.
+  * Et terminal vindue åbnes og indstilles til 9600 baud, 8 databits, 1 stopbit og 0 parititet.
+  *
+  * Tryk på Reset og følgende kode skal modtages på RS232 interfacet
+   * 0121110010110011001100110000000111001011001100110011000000011100101101010010110100000001110010110101001011010000000
+   * 012 Er antal kommandoer i kø udskrevet før, i mellem og efter at aktiver og deaktiver kommandoerne er kaldt.
+   * 1110010110011001100110000000 Er Aktiver kommandoen med adresse 0101
+   *									Denne er gentaget 2 gange iht. protokollen
+   * 1110010110101001011010000000 Er Deaktiver kommandoen med adresse 0011
+   *									Denne er også gentaget 2 gange.
+  * 
+  * Efter udskrifterne er det muligt at trykke på SW0 i 5 sekunder.
+  * Tryk eller slip på SW0 vil resulterer i at lysdioderne blinker i 0,25 sekunder
+ *
  * Af Bjørn Sørensen
  *
  */
