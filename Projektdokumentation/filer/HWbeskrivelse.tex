@@ -4,7 +4,6 @@
 \caption{BDD Hardware}
 \label{lab:bddhardware}
 \raggedright
-BDD diagrammet giver et overblik over hvad det samlede system består af. Vi ser en port beskrivelse som viser hvilke signaler hver blok består af.
 \end{figure}
 BDD diagrammet giver et overblik over hvad det samlede system består af. Vi ser en port beskrivelse som viser hvilke signaler hver blok består af.
 
@@ -14,7 +13,6 @@ BDD diagrammet giver et overblik over hvad det samlede system består af. Vi ser
 \caption{BDD Hovedenhed}
 \label{lab:bddhovedenhed}
 \raggedright
-BDD diagrammet giver et overblik over hvad CSS hovedenheden består af. Vi ser en portbeskrivelse for STK kittet og encoder samt et overblik over hvilke komponenter encoderen består af.
 \end{figure}
 BDD diagrammet giver et overblik over hvad CSS hovedenheden består af. Vi ser en portbeskrivelse for STK kittet og encoder samt et overblik over hvilke komponenter encoderen består af. 
 
@@ -24,7 +22,6 @@ BDD diagrammet giver et overblik over hvad CSS hovedenheden består af. Vi ser e
 \caption{BDD Modtager}
 \label{lab:bddmodtager}
 \raggedright
-BDD diagrammet giver et overblik over hvad X10 modtageren består af. Vi ser en portbeskrivelse for STK kittet og decoderen samt et overblik over hvilke komponenter decoderen består af.
 \end{figure}
 BDD diagrammet giver et overblik over hvad X10 modtageren består af. Vi ser en portbeskrivelse for STK kittet og decoderen samt et overblik over hvilke komponenter decoderen består af.
 
@@ -34,7 +31,6 @@ BDD diagrammet giver et overblik over hvad X10 modtageren består af. Vi ser en 
 \caption{IBD Hardware}
 \label{lab:ibdhardware}
 \raggedright
-IBD diagrammet giver et internt overblik over hvordan hele vores system er forbundet. Vi ser hvilke type signaler der bliver sendt imellem vores forskellige blokke.
 \end{figure}
 IBD diagrammet giver et internt overblik over hvordan hele vores system er forbundet. Vi ser hvilke type signaler der bliver sendt imellem vores forskellige blokke.
 
@@ -44,34 +40,9 @@ IBD diagrammet giver et internt overblik over hvordan hele vores system er forbu
 \caption{IBD Hovedenhed og Modtager}
 \label{lab:ibdhovedenhedmodtager}
 \raggedright
-IBD diagrammet giver et internt overblik over hvordan vores X10 hovedenhed og X10 modtager er forbundet. Vi ser hvilke type signaler der bliver sendt imellem vores forskellige blokke.
 \end{figure}
 IBD diagrammet giver et internt overblik over hvordan vores X10 hovedenhed og X10 modtager er forbundet. Vi ser hvilke type signaler der bliver sendt imellem vores forskellige blokke.
 
-\subsection{Signaltabel}
-
-\subsubsection{Hovedenhed}
-\begin{tabular}{|p{3cm}|p{2,4cm}|p{2,4cm}|p{2,4cm}|p{2,4cm}|}
-\hline 
-\textbf{Funktion} &\textbf{Område} &\textbf{Signaltype} &\textbf{Terminal 1} &\textbf{Terminal 2} \\ 
-\hline 
-\multicolumn{5}{|l|}{\textbf{:Encoder}} \\ 
-\hline 
-X10 data &databit &data &HE1 &HSTK4\\ 
-\hline 
-Send kommando ud på 18 V nettet &18 VAC \newline 120KHz &?? &HE2 &18 VAC\\ 
-\hline 
-\multicolumn{5}{|l|}{\textbf{:STK500}} \\ 
-\hline 
-RS232 datainput &RS232 &?? &HSTK1 &Computer\\ 
-\hline 
-Password bool  &0-5 V TTL &bool &HSTK2 &DE2\\ 
-\hline 
-Høj ved lyddektektion &0-5 V TTL &bool &HSTK3 &Lyddektektor\\ 
-\hline 
-X10 data &databit &data &HSTK4 &HE1\\ 
-\hline 
-\end{tabular} 
 
 \clearpage
 \newpage
@@ -83,6 +54,8 @@ For at opnå forståelse for signaler mellem blokkene laves en grænseflade der 
 \subsubsection{Blok beskrivelse}
 Til at beskrive blokkene nærmere er anvendt tabeller som ses herunder. Her er hvert signal i en respektiv blok kommenteret og blokkens funktion er kort beskrevet. 
 
+\caption{Tabel med beskrivelse af respektive blokke}
+\begin{small}
 \begin{tabular}{|p{3,3cm}|p{3,3cm}|p{3,3cm}|p{3,3cm}|}
 \hline
 \textbf{Bloknavn} & \textbf{Funktion} & \textbf{Signaler} & \textbf{Kommentar} \\ \hline
@@ -102,40 +75,30 @@ Decoder & Modtager 120 kHz og decoder til X10 data & 120 kHz & 120 kHz ind \\ \c
 STK 500 Decoder & Modtager burst og detekterer på zero-crossing & X10 data & X10 data ind \\ \cline{3-4}
 && Bool & Power I/O ekstern enhed \\ \hline 
 \end{tabular}
+\end{small}
+\label{table:Bloktabel}
 \end{table}
 
 \begin{table}[htbp]
 \subsubsection{Signal beskrivelse}
 For at fuldende beskrivelsen af grænsefladen er der lavet en signaltabel som kan ses herunder. Hvert signal er beskrevet og tilknyttet en kort kommentar. Området et signal er defineret under er også beskrevet. Blok og terminal indgår også. 
-
+\caption{Tabel over signaler med terminaler}
+\begin{small}
 \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2,2cm}|}
 \hline
 \textbf{Signal-navn} & \textbf{Funktion} & \textbf{Område} & \textbf{Port 1} & \textbf{Port 2} & \textbf{Kommentar} \\ \hline
 
 120 kHz & sende kommando på 18V nettet & & Encoder, HE2 & Decoder, DM1 & \\ \hline
 
-X10 data & kommando & & STK500, HSTK4 & Encoder, HE1 & \\
+X10 data & kommando & & STK500, HSTK4 & Encoder, HE1 & \\ \cline{4-5}
 &&& Decoder, MD2 & STK500, MSTK500 &\\ \hline
+
+bool & digital signal & 5V/0V & DE2, N/A & STK500, HSTK2 & \\ \cline{4-5}
+&&& Lyddetektor, N/A & STK500, HSTK3 & \\ \cline{4-5}
+&&& STK500, MSTK2 & Udtag, N/A & \\ \hline
 \end{tabular}
+\end{small}
+\label{table:Signaltabel}
 \end{table}
 
-\begin{table}[htbp]
-\subsubsection{Modtager}
-\begin{tabular}{|p{3cm}|p{2,4cm}|p{2,4cm}|p{2,4cm}|p{2,4cm}|}
-\hline 
-\textbf{Funktion} &\textbf{Område} &\textbf{Signaltype} &\textbf{Terminal 1} &\textbf{Terminal 2} \\ 
-\hline 
-\multicolumn{5}{|l|}{\textbf{:Decoder}} \\ 
-\hline 
-Modtager kommando fra 18 V nettet &18 VAC \newline 120KHz &?? &MD1 &18 VAC\\ 
-\hline 
-X10 data &databit &data &MD2 &MSTK1\\ 
-\hline 
-\multicolumn{5}{|l|}{\textbf{:STK500}} \\ 
-\hline 
-X10 data &databit &data &MSTK1 &MD2\\ 
-\hline 
-Kommando signal til udtag  &0-5 V TTL &bool &MSTK2 &Udtag\\ 
-\hline 
-\end{tabular}
-\end{table}
+
