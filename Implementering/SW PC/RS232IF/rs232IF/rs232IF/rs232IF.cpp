@@ -31,23 +31,25 @@ bool RS232IF::validLogin()
 
 
 	
-bool RS232IF::aktiver(string adresse)
+bool RS232IF::aktiver(int a)
 {
 	string start = "SA";
+	string data = to_string(a);
 	char slut = '\r';
 
-	string message = start + adresse + slut;
+	string message = start + data + slut;
 	const char * c = message.c_str();
 	serial.SendData( c, commandSize);
 	return true;
 }
 	
-bool RS232IF::deaktiver(string adresse)
+bool RS232IF::deaktiver(int b)
 {
 	string start = "SD";
+	string data = to_string(b);
 	char slut = '\r';
 
-	string message = start + adresse + slut;
+	string message = start + data + slut;
 	const char * c = message.c_str();
 
 	serial.SendData( c, commandSize);
@@ -65,6 +67,7 @@ int RS232IF::read()
 	}
 	string reading(ipBuffer, commandSize);
 
+	cout << "bufferen read message :" << reading << endl;
 	delete []ipBuffer;
 
 	if(reading[1] == 'b' || reading[1] == 'B') // Lyd detekteret
@@ -77,4 +80,15 @@ int RS232IF::read()
 		return 2;
 
 	return 0;
+}
+
+bool RS232IF::tester(string a)
+{
+	char slut = '\r';
+
+	string message = a + slut;
+	const char * c = message.c_str();
+
+	serial.SendData( c, commandSize);
+	return true;
 }
