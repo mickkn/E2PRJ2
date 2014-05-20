@@ -18,13 +18,13 @@ ISR (INT0_vect) {
 		
 		// Vent 1 ms hvis bit 0
 		if(ch == '0')
-			_delay_ms(1000);
+			_delay_ms(1);
 			
 		// Tænd timer på 120 kHz hvis bit er 1
 		else if(ch == '1')
 		{
 			timer.start();
-			_delay_ms(1000);
+			_delay_ms(1);
 			timer.stop();
 			
 		// Træk en fra kommandoer i kø hvis det er sidst tegn
