@@ -18,3 +18,5 @@ public:
 	void start();	// Start timer på 120 kHz
 	void stop();	// Stop timer
 };
+
+extern Timer timer;

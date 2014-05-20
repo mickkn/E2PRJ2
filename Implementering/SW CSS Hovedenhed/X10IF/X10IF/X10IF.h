@@ -38,3 +38,5 @@ private:
 	void sendKommando(char *wrapped);			// Indskriver X10 kommando i bufferen
 	char * formatX10(char *plads, char bit);	// Indskriver komplimentær X10 bit værdi på plads og returnerer pointer til næste plads
 };
+
+extern X10IF X10;
