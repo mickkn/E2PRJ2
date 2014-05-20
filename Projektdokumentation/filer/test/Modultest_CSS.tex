@@ -1,0 +1,48 @@
+Alle klasser i CSS hovedenhedspakken er testet. De enkelte tests er beskrevet i det følgende afsnit.
+Se det statiske klassediagram for at se sammenhængen mellem klasserne i figur \ref{fig:CSS_hovedenhed_Class_Static}.
+
+% Timer
+\subsection{Timer}
+Timer klassen er testet med programmet "Timer Test.cpp" som ligger i kildekoden til klassen.
+Programmet opretter et objekt af Timer typen og starter et endeløst loop som tænder timeren i 1 sekund og slukker den i 1 sekund.
+
+\textbf{Opstilling}
+
+En oscilloscope probe sættes på PD5 på et STK500 kit som har programmet kørende.
+
+
+%På figur \ref{fig:Test_CSS_Timer_scope} vises et oscilloscope billede målt på udgangen af timeren PD5.
+
+%\begin{figure}[!htb]
+%     {\includegraphics[width=\textwidth]{billeder/SWTest/CSS_Timer_scope}}
+%     \caption{Oscilloscope måling på udgangen af Timer1 på STK500 kit.}
+%     \label{fig:Test_CSS_Timer_scope}
+%\end{figure}
+
+% UART
+\subsection{UART}
+UART klassen er testet med programmet "UART Test.cpp" som ligger i kildekoden til klassen.
+Programmet starter med at sende en streng over RS232 interfacet. Her efter afventer den at modtage en hel kommando. Når denne er modtaget sendes den retur.
+
+\textbf{Opstilling}
+
+Test programmet ligges på et STK500 kit.
+En computer forbindes med STK500 kittet over RS232 Spare porten (Sub-D).
+En jumper forbinder headeren RXD med PD0 og TXD med PD1.
+Start et terminalprogram op indstillet til 9600 buad, 8 databit, 1 stopbit og ingen paritet.
+Reset STK500. Først modtages strengen ''CSS hovedenhed\textbackslash r\textbackslash n''.
+Send igennem terminal her efter, én karakter af gangen: ''A0101\textbackslash r''. Dette modtages igen som svar.
+Send igen, én karakter af gange: ''D0011\textbackslash r''. Dette modtages igen som svar.
+
+% X10IF
+\subsection{X10IF}
+
+
+% RS232IF
+\subsection{RS232IF}
+
+% CircBuffer
+\subsection{CircBuffer}
+
+% ZeroCrossInt
+\subsection{ZeroCrossInt}
