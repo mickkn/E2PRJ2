@@ -15,90 +15,67 @@
 
 int main(void)
 {
-	// Sæt LED outputs
-	DDRB = 0xFF;
-	
-	// Sluk LEDer
-	PORTB = ~0x00;
-
-	// Opret objekt
+	// Opret objekter
 	CircBuffer objekt;
 	UART RS232(9600, 8);
 
-	// Output next og current index
-	/*PORTB = ~objekt.getNextIndex();
-	_delay_ms(2000);
-	
-	PORTB = ~0xFF;
-	_delay_ms(1000);
-	
-	PORTB = ~objekt.getCurrentIndex();
-	_delay_ms(2000);*/
-
-
-	// Indsæt bits
-	char i = '0';
+	// Variabel og Ptr til indsættelse i buffer
+	char i = 'A';
 	char *iPtr = &i;
 	
-	/*objekt.insert(iPtr);
-	
-	// Output next og current index
-	PORTB = ~objekt.getNextIndex();
-	_delay_ms(5000);
-	
-	PORTB = ~0xFF;
-	_delay_ms(1000);
-	
-	PORTB = ~objekt.getCurrentIndex();
-	_delay_ms(5000);
-	
-	PORTB = ~objekt.get();
-	_delay_ms(5000);*/
-	
-	// Fyld array 1.5 gange
-	for(unsigned int j = 0; j < X10_ARRAY_SIZE*1.4; j++)
-	{
-		objekt.insert(iPtr);
-
-	}
-	// Output next og current index
-	//PORTB = ~objekt.getNextIndex();
-	RS232.sendChar(objekt.getNextIndex());
-	_delay_ms(5000);
-	
-	PORTB = ~0xFF;
-	_delay_ms(1000);
-	
-// 	RS232.sendChar(objekt.getNextIndex());
-// 	_delay_ms(5000);
-	RS232.sendChar(objekt.getCurrentIndex());
-	
-
-	// Læs data ud fra array
-	for(unsigned char j = 0; j < X10_ARRAY_SIZE*1.4; j++)
-	{
-		//PORTB = ~objekt.get();
-		_delay_ms(100); RS232.sendChar(objekt.get());
-		
-
-	}
-	RS232.sendChar('\r');
+	// Send NextIndex og CurrentIndex som ASCII tal (+48)
+	RS232.sendChar((char)(objekt.getNextIndex()+48));
+	RS232.sendChar(' ');
+	RS232.sendChar((char)(objekt.getCurrentIndex()+48));
 	RS232.sendChar('\n');
-	_delay_ms(2000);
 	
-	// Output next og current index
-	//PORTB = ~objekt.getNextIndex();
-	//_delay_ms(5000);
-	RS232.sendChar(objekt.getNextIndex());
+	// Indsæt værdi i buffer
+	objekt.insert(iPtr);
 	
-	PORTB = 0xAA;
-	_delay_ms(1000);
+	// Send NextIndex og CurrentIndex som ASCII tal (+48)
+	RS232.sendChar((char)(objekt.getNextIndex()+48));
+	RS232.sendChar(' ');
+	RS232.sendChar((char)(objekt.getCurrentIndex()+48));
+	RS232.sendChar('\n');
 	
-	//PORTB = ~objekt.getCurrentIndex();
-	//_delay_ms(5000);
-	RS232.sendChar(objekt.getCurrentIndex());
-	while(1)
+	RS232.sendChar(objekt.get());
+	RS232.sendChar('\n');
+	RS232.sendChar((char)(objekt.getNextIndex()+48));
+	RS232.sendChar(' ');
+	RS232.sendChar((char)(objekt.getCurrentIndex()+48));
+	RS232.sendChar('\n');
+
+	// Fyld array 1.5 gange med 'B'
+	i = 'B';
+	for(unsigned int j = 0; j < X10_ARRAY_SIZE*1.5; j++)
+		objekt.insert(iPtr);
+	
+	// Indsæt 'C'
+	i = 'C';
+	objekt.insert(iPtr);
+	
+	// Send NextIndex og CurrentIndex som ASCII tal (+48)
+	RS232.sendChar((char)(objekt.getNextIndex()+48));
+	RS232.sendChar(' ');
+	RS232.sendChar((char)(objekt.getCurrentIndex()+48));
+	RS232.sendChar('\n');	
+
+	// Læs data ud fra array indtil 'C' rammes
+	char ch;
+	do 
 	{
+		ch = objekt.get();
+		RS232.sendChar(ch);
+	} while (ch != 'C');
 		
-	}
+
+	RS232.sendChar('\n');
+	
+	// Send NextIndex og CurrentIndex som ASCII tal (+48)
+	RS232.sendChar((char)(objekt.getNextIndex()));
+	RS232.sendChar(' ');
+	RS232.sendChar((char)(objekt.getCurrentIndex()));
+	RS232.sendChar('\n');
+
+	while(1);
 }
