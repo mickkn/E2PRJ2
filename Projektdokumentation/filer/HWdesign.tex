@@ -1,58 +1,63 @@
 \chapter{Hardware design}
 
-\section{Encoder}
-
-\section{Højpasfilter}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/HP_UV.png}
-	\caption{Højpasfilter uden værdier.}
-	\label{fig:HP_UV}
-\end{figure}
-
-
-\begin{align}
-\label{eq: HP_networkfunction}T(s) = \frac{R}{R+\frac{1}{C \cdot s}} = \frac{\frac{1}{R \cdot C}}{\frac{1}{R \cdot C}+S} \cdot \frac{s}{\frac{1}{R \cdot C}} = \frac{\alpha}{s + \alpha} \cdot \frac{s}{K}         , K= \alpha
-\end{align}
-
-\begin{align}
-	\omega_c = knækfrekvens \Rightarrow \omega_c = 120000 \cdot 2 \pi = 240000\pi 
-\end{align} 
-
-	Kondensatoren C vælges til 0,1$\mu$F  = 0,1 $\cdot$  $10^-6$ F
-
-\begin{align}
-	\frac{1}{R \cdot C} < 240000\pi \Rightarrow R > \frac{1}{240000\pi \cdot 0,1 \cdot 10^-6}
-	\Rightarrow R > 13,62 \Omega
-\end{align}
-	R vælges til 14 $\Omega$
-
-\begin{align}
-	f_c (R=14\Omega) = \frac{\frac{1}{14 \cdot 0,1 \cdot 10^-6}}{2 \cdot \pi} =112,2kHz
-\end{align}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/HP_MV.png}
-	\caption{Højpasfilter med værdier.}
-	\label{fig:HP_MV}
-\end{figure}
-
-\newpage
-
 \section{Zero Crossing Detector}
 
 \newpage
 
 \section{Båndpasfilter}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/BAANDPAS_UV.png}
+	\caption{Båndpas uden værdier}
+	\label{fig:BAANDPAS_UV}
+\end{figure}
+
+Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHZ fra samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende OpAmp med modstande, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_UV}.
+
+Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således at knækfrekvensen udregnes til 110 kHz, og for lavpasfilteret beregnes en knækfrekvens på 130 kHz. 
+
+\begin{align}
+R = \frac{1}{2 \cdot \pi \cdot f_c \cdot C } 
+\end{align}
+
+Fælles for begge filtre vælges en kondensator med en værdi på 1,0 nF. Med denne værdig kan de to modstande i henholdsvis lavpas- og højpasfilteret beregnes.
+
+Højpasfilterets modstand:
+\begin{align}
+R_1 = \frac{1}{2 \cdot \pi \cdot 130000 \cdot 1,0 \cdot 10^{-9}} = 1447 \Omega
+\rightarrow R_1 > 1447 \Omega
+\end{align}
+$R_1$ vælges da til 1,6 k$\Omega$
+
+
+Lavpasfilterets modstand:
+\begin{align}
+R_2 = \frac{1}{2 \cdot \pi \cdot \ 110000 \cdot 1,0 \cdot 10^{-9}} = 1225 \Omega
+\rightarrow R_2 < 1224 \Omega
+\end{align}
+$R_2$ vælges da til 1,1 k$\Omega$
+
+Da det ikke kan undgås at 120 kHz signalet bliver dæmpet både gennem højpasfilteret og lavpasfilteret er det nødvendigt at forstærke signalet ved hjælp af en LF353 OpAmp.
+Ligningen for udregning af udgangsspændingen er som følgende:
+\begin{align}
+V_{out} = (1 + \frac{R_3}{R_4}) \cdot V_{in}
+\end{align} 
+
+Ved at vælge $R_4$ til 10 k$\Omega$ kan forstærkningen nemt reguleres med $R_3$.
+Ved målinger på indgangssignalet før operationsforstærkeren kan vi fastslå indgangsamplituden til at være 8,0 V. Da udgangssignalet ledes gennem en diode der fjerner de negative halvperioder vil amplituden blive halveret gennem denne, og der vil derfor være brug for en fordobling i forstærkeren. 
+
+\begin{align}
+R_4 = (\beta - 1) \cdot R_3
+\end{align} 
+
+\newpage
 
 \subsection{Lavpasfilter}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/LP_UV.png}
-	\caption{Lavpasfilter uden værdier.}
+	\caption{Lavpasfilter uden værdier}
 	\label{fig:LP_UV}
 \end{figure}
 
@@ -81,7 +86,7 @@ Kondensatoren C vælges til 0,1$\mu$F  = 0,1 $\cdot$  $10^-6$ F
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/LP_MV.png}
-	\caption{Lavpasfilter med værdier.}
+	\caption{Lavpasfilter med værdier}
 	\label{fig:LP_MV}
 \end{figure}
 
