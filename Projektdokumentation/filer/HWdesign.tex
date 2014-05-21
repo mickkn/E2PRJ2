@@ -1,17 +1,18 @@
 \chapter{Hardware design}
-Generelt kan det overordnede hardware design beskrives som noget elektronik der sender information ud på det nettet, som sendes og analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som encoder og decoder.  
+Generelt kan det overordnede hardware design beskrives som noget elektronik der sender information ud på nettet, som sendes og analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som encoder og decoder.  
 
-
-\begin{large}
-TODO::Beskrivelse af hardware design overordnet
-\end{large}
 
 \section{Encoder}
 Encoderen, også omtalt som senderenhed, er den del af systemet der genererer X10 kommandoen og sender den ud på det eksisterende el-net. Et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, udgør sammen med en zero crossing detector hele hardwaren for encoderen.
 
-\begin{large}
-TODO:: billede af burst ud på nettet!!
-\end{large} 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/X10_BURST}
+	\caption{120 kHz burst i zero crossing}
+	\label{fig:X10_BURST}
+\end{figure}
+
+Ideen med at sende burst ud på nettet i zero crossing kan ses illustreret på figur \ref{fig:X10_BURST}
 
 \newpage
 
@@ -28,7 +29,7 @@ TODO:: billede af burst ud på nettet!!
   \begin{minipage}{0.45\textwidth}
     \centering
       \includegraphics[width=\textwidth]{billeder/HWdesign/HP_KURVE}
-      \caption{Kurvekarakteristik for højpas filter}
+      \caption{Kurvekarakteristik for højpasfilter}
     \label{fig:HP_KURVE}
   \end{minipage}
 \end{figure}
@@ -103,7 +104,7 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 \newpage
 
 \section{Decoder}
-Decoderen som er den del i systemet der omdanner burst fra encoderen til X10 kommando er bygget op af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret. Dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
+Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 kommando, er opbygget af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret, og dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
 
 \begin{large}
 TODO: Billede af burst ind og TTL signal efter envelope..
