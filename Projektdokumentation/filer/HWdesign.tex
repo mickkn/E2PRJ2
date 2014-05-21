@@ -1,13 +1,19 @@
 \chapter{Hardware design}
 
-\section{Zero Crossing Detector}
+\section{Encoder}
+
+\subsection{Højpasfilter}
+
+\subsection{Zero Crossing Detector}
 
 \newpage
 
-\section{Båndpasfilter}
+\section{Decoder}
+
+\subsection{Båndpasfilter}
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/BAANDPAS_UV.png}
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/BAANDPAS_UV.png}
 	\caption{Båndpas uden værdier}
 	\label{fig:BAANDPAS_UV}
 \end{figure}
@@ -49,47 +55,20 @@ Ved målinger på indgangssignalet før operationsforstærkeren kan vi fastslå 
 \begin{align}
 R_4 = (\beta - 1) \cdot R_3 = (3 - 1) \cdot 10000 = 20000 \Omega
 \end{align} 
+$R_4$ er valgt til 20000 $\Omega$ så signalet derved bliver forstærket 3 gange.
+
+Der er som nævnt valgt en LF353 OpAmp. Denne er valgt ud fra at den har en bred båndbredte, en hurtig sætte tid og lav støj på indgangene. 
+
+Med alle de beregnede komponentværdier kan det endelige schematic designes. Det endelige design er vist på figur \ref{fig:BAANDPAS_MV} 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/BAANDPAS_MV.png}
+	\caption{Båndpas uden værdier}
+	\label{fig:BAANDPAS_MV}
+\end{figure}
+ 
 
 \newpage
 
-\subsection{Lavpasfilter}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/LP_UV.png}
-	\caption{Lavpasfilter uden værdier}
-	\label{fig:LP_UV}
-\end{figure}
-
-
-\begin{align}
-\label{eq: LP_networkfunction}T(s) = \frac{\frac{1}{C \cdot s}}{\frac{1}{C \cdot s} + R} = \frac{\frac{1}{R \cdot C}}{\frac{1}{R \cdot C}+S}  = \frac{\alpha}{s + \alpha} , K= \alpha
-\end{align}
-
-\begin{align}
-	\omega_c = knækfrekvens \Rightarrow \omega_c = 120000 \cdot 2 \pi = 240000\pi 
-\end{align} 
-
-Kondensatoren C vælges til 0,1$\mu$F  = 0,1 $\cdot$  $10^-6$ F
-
-\begin{align}
-	\frac{1}{R \cdot C} > 240000\pi \Rightarrow R < \frac{1}{240000\pi \cdot 0,1 \cdot 10^-6}
-	\Rightarrow R < 13,62 \Omega
-\end{align}
-	R vælges til 13 $\Omega$
-	
-\begin{align}
-	f_c (R=13\Omega) = \frac{\frac{1}{13 \cdot 0,1 \cdot 10^-6}}{2 \cdot \pi} =120,8kHz
-\end{align}	
-	
-	
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/LP_MV.png}
-	\caption{Lavpasfilter med værdier}
-	\label{fig:LP_MV}
-\end{figure}
-
-\section{Buffer}
-
-\section{Envelope Detector}
+\subsection{Envelope Detector}
