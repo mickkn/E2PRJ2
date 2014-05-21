@@ -24,19 +24,37 @@ Timer::Timer()
 
 Timer::~Timer()
 {
+	// Afbryd forbindelse til timer
+	TCCR1A = 0b00000000;
+	
 	// Stop Timer 1
 	TCCR1B = 0b00001000;
+	
+	// Sæt output lavt
+	PORTB &= 0b11011111;
 	
 }
 
 void Timer::start()
 {
+	// Sæt forbindelse til timer
+	TCCR1A = 0b01000000;
+
 	// Start Timer 1 på 120 kHz
 	TCCR1B = 0b00001001;
 }
 
 void Timer::stop()
 {
+	// Afbryd forbindelse til timer
+	TCCR1A = 0b00000000;
+
 	// Stop Timer 1
 	TCCR1B = 0b00001000;
+
+	// Sæt output lavt
+	PORTB &= 0b11011111;
 }
+
+// Globalt objekt
+Timer timer = Timer();
