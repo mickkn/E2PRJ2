@@ -1,14 +1,60 @@
 \chapter{Hardware design}
+\begin{large}
+TODO::Beskrivelse af hardware design overordnet
+\end{large}
 
 \section{Encoder}
+Encoderen, også omtalt som senderenhed, er den del af systemet der genererer X10 kommandoen og sender den ud på det eksisterende el-net. Et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, udgør sammen med en zero crossing detector hele hardwaren for encoderen.
+
+\begin{large}
+TODO:: billede af burst ud på nettet!!
+\end{large} 
+
+\newpage
 
 \subsection{Højpasfilter}
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/HP_UV.png}
+	\caption{Højpasfilter uden værdier}
+	\label{fig:HP_UV}
+\end{figure}
+For at sende X10 kommandoer ud på det eksisterende 50 Hz el-net er det nødvendigt at koble elektroniken direkte herpå og eftersom det elektronik ikke tåler de høje spændinger fra nettet, er det nødvendigt at blokere det signal, men stadig at kunne sende de 120 kHz ud. Dette løses med et højpasfilter.
+
+Den ønskede knækfrekvens skal ligge omkring de 120 kHz for at opnå mindst dæmpning herpå. Ved denne knækfrekvens skulle 50 Hz signalet være ubetydelig lille efter filteret. 
+
+Kondensatoren forudbestemmes for beregningerne til en værdi på 0,1 nF.
+
+\begin{align}
+R_1 = \frac{1}{2 \cdot \pi \cdot f_c \cdot C } = \frac{1}{2 \cdot \pi \cdot 120000 \cdot 0,1 \cdot 10^{-6}} = 13,26 \Omega
+\rightarrow R_1 > 13,26 \Omega
+\end{align}
+$R_1$ vælges da til 14 $\Omega$
+
+Med den beregnede modstands værdi er det endelige schematic færdigt som det ses på figur \ref{fig:HP_MV}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/HP_MV.png}
+	\caption{Højpasfilter med værdier}
+	\label{fig:HP_MV}
+\end{figure}
+
+\newpage
+  
 \subsection{Zero Crossing Detector}
 
 \newpage
 
 \section{Decoder}
+Decoderen som er den del i systemet der omdanner burst fra encoderen til X10 kommando er bygget op af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret. Dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
+
+\begin{large}
+TODO: Billede af burst ind og TTL signal efter envelope..
+\end{large}
+
+\newpage
 
 \subsection{Båndpasfilter}
 \begin{figure}[htbp]
@@ -30,7 +76,7 @@ Fælles for begge filtre vælges en kondensator med en værdi på 1,0 nF. Med de
 
 Højpasfilterets modstand:
 \begin{align}
-R_1 = \frac{1}{2 \cdot \pi \cdot 130000 \cdot 1,0 \cdot 10^{-9}} = 1447 \Omega
+R_1 = \frac{1}{2 \cdot \pi \cdot 110000 \cdot 1,0 \cdot 10^{-9}} = 1447 \Omega
 \rightarrow R_1 > 1447 \Omega
 \end{align}
 $R_1$ vælges da til 1,6 k$\Omega$
@@ -38,7 +84,7 @@ $R_1$ vælges da til 1,6 k$\Omega$
 
 Lavpasfilterets modstand:
 \begin{align}
-R_2 = \frac{1}{2 \cdot \pi \cdot \ 110000 \cdot 1,0 \cdot 10^{-9}} = 1225 \Omega
+R_2 = \frac{1}{2 \cdot \pi \cdot \ 130000 \cdot 1,0 \cdot 10^{-9}} = 1225 \Omega
 \rightarrow R_2 < 1224 \Omega
 \end{align}
 $R_2$ vælges da til 1,1 k$\Omega$
