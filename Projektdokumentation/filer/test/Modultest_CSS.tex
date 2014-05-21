@@ -2,7 +2,7 @@ Alle klasser i CSS hovedenhedspakken er testet. De enkelte tests er beskrevet i 
 Se det statiske klassediagram for at se sammenhængen mellem klasserne i figur \ref{fig:CSS_hovedenhed_Class_Static}.
 
 % Timer
-\subsection{Timer}
+\subsubsection{Timer}
 Timer klassen er testet med programmet ''Timer Test.cpp'' som ligger i kildekoden til klassen.
 Programmet opretter et objekt af Timer typen og starter et endeløst loop som tænder timeren i 1 sekund og slukker den i 1 sekund.
 
@@ -21,7 +21,7 @@ En oscilloscope probe sættes på PD5 på et STK500 kit som har programmet køre
 %\end{figure}
 
 % UART
-\subsection{UART}
+\subsubsection{UART}
 UART klassen er testet med programmet ''UART Test.cpp'' som ligger i kildekoden til klassen.
 Programmet starter med at sende en streng over RS232 interfacet. Her efter afventer den at modtage en hel kommando. Når denne er modtaget sendes den retur.
 
@@ -38,7 +38,7 @@ Send igennem terminal her efter, én karakter af gangen: ''A0101\textbackslash r
 Send igen, én karakter af gange: ''D0011\textbackslash r''. Dette modtages igen som svar.
 
 % CircBuffer
-\subsection{CircBuffer}
+\subsubsection{CircBuffer}
 CircBuffer klassen er testet med programmet ''CircBuffer Test.cpp'' som ligger i kildekoden til klassen.
 
 \textbf{Opstilling}
@@ -56,7 +56,7 @@ Bufferen fyldes til sidste med 'B' 1.5 gange, altså overfyldes den. Den afslutt
 Til sidst udskrives index tallende. Da de er castede fra ints til chars modtages ''6 6'' hvilket svare til 54.
 
 % RS232IF
-\subsection{RS232IF}
+\subsubsection{RS232IF}
 RS232IF klassen er testet med programmet ''RS232IF Test.cpp'' som ligger i kildekoden til klassen.
 
 \textbf{Opstilling}
@@ -90,7 +90,7 @@ Testes med kommandoerne i tabel \ref{table:Test_RS232IF_kommandoer} og svar modt
 \end{table}
 
 % X10IF
-\subsection{X10IF}
+\subsubsection{X10IF}
 X10IF klassen er testet med programmet ''X10IF Test.cpp'' som ligger i kildekoden til klassen.
 
 \textbf{Opstilling}
@@ -106,7 +106,7 @@ Her efter tømmes bufferen og alle værdier sendes. Disse er formateret i X10 fo
 Interrupt delen testes når LED7 lyser. Her er det muligt, ved tryk på SW0 at få alle dioderne til at lyse i 0,25 sekunder.
  
 % ZeroCrossInt
-\subsection{ZeroCrossInt}
+\subsubsection{ZeroCrossInt}
 ZeroCrossInt ISR er testet med programmet ''ZeroCrossInt Test.cpp'' som ligger i kildekoden til funktionen.
 
 \textbf{Opstilling}
