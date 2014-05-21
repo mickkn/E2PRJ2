@@ -26,8 +26,10 @@ int main()
 	// Opret objekt
 	RS232IF objekt;
 
-	// Metoderne adviser() og loginStatus(true/false) testes
+	// Adviser test
 	objekt.adviser();
+
+	// Loginstatus
 	objekt.loginStatus(true);
 	objekt.loginStatus(false);
 
@@ -39,10 +41,10 @@ int main()
 		
 	while(1)
 	{
-		// Hent kommando
 		ucNr = objekt.getUC(kommando);
-		PORTB = ~ucNr;
-
+		PORTB = ucNr;
+		_delay_ms(1000);	
+			
 		if(ucNr == 2 || ucNr == 3)
 		{
 			char adresse[5];

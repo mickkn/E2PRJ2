@@ -3,6 +3,26 @@
  *
  * Styrer kommunikation mellem CSS hovedenhed og X10 udtag over X10 protokollen
  *
+ * Opstilling:
+  * Fladkabel mellem PORTB og LEDS
+  * 2-ledet ledning mellem RS232 SPARE og PD0-PD1
+  * Ledning mellem SW0 og PD2
+ *
+ * Testforløb:
+  * Efter at have brændt programmet ned på STK500 kittet flyttes USB->RS232 converteren til RS232 SPARE porten på STK500.
+  * Et terminal vindue åbnes og indstilles til 9600 baud, 8 databits, 1 stopbit og 0 parititet.
+  *
+  * Tryk på Reset og følgende kode skal modtages på RS232 interfacet
+   * 0121110010110011001100110000000111001011001100110011000000011100101101010010110100000001110010110101001011010000000
+   * 012 Er antal kommandoer i kø udskrevet før, i mellem og efter at aktiver og deaktiver kommandoerne er kaldt.
+   * 1110010110011001100110000000 Er Aktiver kommandoen med adresse 0101
+   *									Denne er gentaget 2 gange iht. protokollen
+   * 1110010110101001011010000000 Er Deaktiver kommandoen med adresse 0011
+   *									Denne er også gentaget 2 gange.
+  * 
+  * Efter udskrifterne er det muligt at trykke på SW0 i 5 sekunder.
+  * Tryk eller slip på SW0 vil resulterer i at lysdioderne blinker i 0,25 sekunder
+ *
  * Af Bjørn Sørensen
  *
  */
@@ -24,23 +44,20 @@ int main()
 	// Hent antal kommandoer i kø og udskriv
 	char afventer = X10Obj.getAfventer() + 48;	// Convert to ASCII '0' etc.
 	UARTObj.sendChar(afventer);
-	UARTObj.sendChar(' ');
 	
 	// Sæt aktiver kommando i kø
 	X10Obj.aktiver("0101");
 	
 	// Hent antal kommandoer i kø og udskriv
-	afventer = X10Obj.getAfventer() + 48;	// Konverter til ASCII tal.
+	afventer = X10Obj.getAfventer() + 48;	// Convert to ASCII '0' etc.
 	UARTObj.sendChar(afventer);
-	UARTObj.sendChar(' ');
 	
 	// Sæt deaktiver kommando i kø
 	X10Obj.deaktiver("0011");
 	
-	// Hetn antal kommandoer i kø og udskriv
-	afventer = X10Obj.getAfventer() + 48;	// Konverter til ASCII tal.
+	// Hen antal kommandoer i kø og udskriv
+	afventer = X10Obj.getAfventer() + 48;	// Convert to ASCII '0' etc.
 	UARTObj.sendChar(afventer);
-	UARTObj.sendChar('\n');
 		
 	// Udskriv alle kommandoer i bufferen
 	char ch;
@@ -51,36 +68,27 @@ int main()
 		
 		// Hvis terminering
 		if(ch == '\0')
-		{
 			// Afbryd hvis der ikke er flere kommandoer i kø
 			if(X10Obj.getAfventer() == 0)
 				break;
 			else
 				// Sænt antallet af kommandoer i kø
 				X10Obj.decreaseAfventer();
-				
-			// Udskriv ny linje
-			UARTObj.sendChar('\n');
-		}
 		else
 			// Udskriv bit værdi på UART
 			UARTObj.sendChar(ch);
 	}
 	
 	// Test af enableInt0() og disableInt0()
-	// Sæt LED output og sluk dem på nær bit 7
+	// Sæt LED output og sluk dem
 	DDRB = 0xFF;
-	PORTB = 0x7F;
+	PORTB = 0xFF;
 	
 	// Aktiver interrupts i 5 sekunder
 	// Det er muligt at få dioderne til at blinke inden for tidsrammen ved at trykke på SW0
 	X10Obj.enableInt0();
 	_delay_ms(5000);
 	X10Obj.disableInt0();
-	
-	// Sluk dioder
-	PORTB = 0xFF;
-	
 	
 	while(1);
 }
@@ -90,5 +98,5 @@ ISR (INT0_vect) {
 	
 	PORTB = 0x00;
 	_delay_ms(250);
-	PORTB = 0x7F;
+	PORTB = 0xFF;
 }
