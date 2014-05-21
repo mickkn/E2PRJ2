@@ -14,12 +14,22 @@ TODO:: billede af burst ud på nettet!!
 
 \subsection{Højpasfilter}
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/HP_UV.png}
-	\caption{Højpasfilter uden værdier}
-	\label{fig:HP_UV}
+\begin{figure}[htb]
+  \begin{minipage}{0.45\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{billeder/HWdesign/HP_UV}
+      \caption{Højpasfilter uden værdier}
+    \label{fig:HP_UV}
+  \end{minipage}
+  \hspace{0.1\textwidth}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{billeder/HWdesign/HP_KURVE}
+      \caption{Kurvekarakteristik for højpas filter}
+    \label{fig:HP_KURVE}
+  \end{minipage}
 \end{figure}
+
 For at sende X10 kommandoer ud på det eksisterende 50 Hz el-net er det nødvendigt at koble elektroniken direkte herpå og eftersom det elektronik ikke tåler de høje spændinger fra nettet, er det nødvendigt at blokere det signal, men stadig at kunne sende de 120 kHz ud. Dette løses med et højpasfilter.
 
 Den ønskede knækfrekvens skal ligge omkring de 120 kHz for at opnå mindst dæmpning herpå. Ved denne knækfrekvens skulle 50 Hz signalet være ubetydelig lille efter filteret. 
@@ -54,7 +64,7 @@ Med den beregnede modstands værdi er det endelige schematic færdigt som det se
   \hspace{0.1\textwidth}
   \begin{minipage}{0.45\textwidth}
     \centering
-      %\includegraphics[width=\textwidth]{billeder/HWtest/Encoder/Encoder_zerocross}
+      \includegraphics[width=\textwidth]{billeder/HWTest/Encoder/Encoder_zerocross}
       \caption{Scope billede af Zero crossing detector, CH1(indgangssignal), CH2(Udgangssignal)}
     \label{fig:Encoder_Zerocross}
   \end{minipage}
