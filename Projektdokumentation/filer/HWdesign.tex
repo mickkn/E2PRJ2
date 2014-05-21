@@ -44,6 +44,48 @@ Med den beregnede modstands værdi er det endelige schematic færdigt som det se
 \newpage
   
 \subsection{Zero Crossing Detector}
+\begin{figure}[htb]
+  \begin{minipage}{0.45\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{billeder/HWdesign/ZC_UV}
+      \caption{Zero crossing detector uden værdier}
+    \label{fig:ZC_UV}
+  \end{minipage}
+  \hspace{0.1\textwidth}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+      %\includegraphics[width=\textwidth]{billeder/HWtest/Encoder/Encoder_zerocross}
+      \caption{Scope billede af Zero crossing detector, CH1(indgangssignal), CH2(Udgangssignal)}
+    \label{fig:Encoder_Zerocross}
+  \end{minipage}
+\end{figure}
+
+Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en Zero crossing detector både på Encoderen og Decoderen, da begge disse består af et STK-kit der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_UV}, vi har anvendt en operationsforstærker af type LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
+
+Modstanden $R_7$ sidder der bl.a. for at beskytte Zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen opdagede vi at der kom støj ind på Zero crossing detectoren, og dette problem løste lavpasfilteret. 
+
+Da vi ønsker at dæmpe 120 kHz signalet, designes lavpasfilteret ud fra en knækfrekvens på 1,0 kHz. 
+
+\begin{align}
+R = \frac{1}{2 \cdot \pi \cdot f_c \cdot C } 
+\end{align}
+
+Der vælges en kondensator med en værdi på 150 nF. Med denne værdig kan modstanden i lavpasfilteret beregnes. 
+
+Lavpasfilterets modstand:
+\begin{align}
+R_7 = \frac{1}{2 \cdot \pi \cdot \ 1000 \cdot 150 \cdot 10^{-9}} = 1061 \Omega
+\end{align}
+$R_7$ vælges da til 1,0 k$\Omega$
+
+Med alle de beregnede komponentværdier kan det endelige schematic designes. Det endelige design er vist på figur \ref{fig:ZC_MV} 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/ZC_MV}
+	\caption{Zero crossing med værdier}
+	\label{fig:ZC_MV}
+\end{figure}
 
 \newpage
 
@@ -110,7 +152,7 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/BAANDPAS_MV.png}
-	\caption{Båndpas uden værdier}
+	\caption{Båndpas med værdier}
 	\label{fig:BAANDPAS_MV}
 \end{figure}
  
