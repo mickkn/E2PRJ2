@@ -174,3 +174,36 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 \newpage
 
 \subsection{Envelope Detector}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/ED_MV.png}
+	\caption{Envelope detector}
+	\label{fig:ED_MV}
+\end{figure}
+
+Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL (0-5V) signal som STK-kitten kan aflæse.
+
+Den er opbygget af en diode, et RC-led og en schmitt trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og udgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. Kondensatoren er med til at udglatte signalet da den ikke kan nå at aflades på en periode.
+
+Modstanden $R_8$ er en afladningsmodstand, og den bestemmer for hurtigt kredsløbet skal aflades, jo højere modstand jo langsommere går det med at aflade. Vi har beregnet modstanden på følgende måde.
+
+Tidskonstanten beregnes til.
+
+\begin{align}
+\tau = 120000^{-1} Hz = 8,33 \cdot 10^{-6} s
+\end{align}
+
+
+Kondensatoren bestemmes til at være 1 nF, og modstand $R_8$ kan derfor beregnes ud fra denne formel.
+\begin{align}
+\tau = R \cdot C 
+\end{align}
+
+\begin{align}
+R = \frac{\tau}{C} = \frac{8,33 \cdot 10^{-6}}{1 \cdot 10^{-9}} = 83 k\Omega
+\end{align}
+
+efter forsøg i laboratoritet kunne det konstateres at $R_8$ afladede for hurtigt, der er istedet anvendt en $300 k\Omega$. 
+
+Der er anvendt en schmitt trigger til at lave signalet om til et firkantet signal som STK-kitten kan aflæses. Grunden til at der er brugt 2 er fordi de er inverterende. 
