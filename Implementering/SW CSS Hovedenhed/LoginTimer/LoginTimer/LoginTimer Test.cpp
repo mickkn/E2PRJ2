@@ -10,7 +10,8 @@
 
 int main( )
 {
-	
+
+	loginTimer.start();
 	
 	while(1);
 }

@@ -16,11 +16,12 @@
 #include <stdlib.h>
 #include <util/delay.h>
 
+
 #include "UART.h"
 
 class RS232IF {
 public:
-	RS232IF( );
+	RS232IF( );	// Indsæt som første parameter:  UC1Login * UC1Ptr, UC2Aktiver * UC2Ptr, UC3Deaktiver * UC3Ptr,
 	~RS232IF();
 
 	unsigned char getUC(char *);	// Henter fuld kommando, unwrapper og dekoder protokollen, returnerer nummer på næste UC kald:
@@ -35,9 +36,9 @@ public:
 
 private:
 	// Referencer
-// 	UC1Login * UC1Ptr_;
-// 	UC2Aktiver * UC2Ptr_;
-// 	UC3Deaktiver * UC3Ptr_;
+	/*UC1Login * UC1Ptr_;
+	UC2Aktiver * UC2Ptr_;
+	UC3Deaktiver * UC3Ptr_;*/
 	
 	
 	// Kommandowrapper (STX og ETX)

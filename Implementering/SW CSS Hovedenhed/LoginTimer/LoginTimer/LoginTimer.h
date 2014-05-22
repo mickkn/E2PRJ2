@@ -9,6 +9,9 @@
 
 #pragma once
 
+#define LOGIN_TIMOUT 56 // 60 sekunder: 843, 5 minutter: 4218
+#include "DE2IF.h"
+
 class LoginTimer
 {
 public:
@@ -20,7 +23,7 @@ public:
 	void inc( );	// Inkrementer overflow tæller
 	
 private:
-	unsigned int ovfCount;
+	unsigned int ovfCount_;
 };
 
-extern LoginTimer;
+extern LoginTimer loginTimer;

@@ -15,3 +15,10 @@
 #include <util/delay.h>
 #include "Timer.h"
 #include "X10IF.h"
+
+class ZeroCrossInt
+{
+public:
+	ZeroCrossInt();
+	~ZeroCrossInt();
+};

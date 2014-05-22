@@ -12,8 +12,12 @@
 #define STX 'S'
 #define ETX '\r'
 
-RS232IF::RS232IF( )
+RS232IF::RS232IF( )	// Indsæt som første parameter:  UC1Login * UC1Ptr, UC2Aktiver * UC2Ptr, UC3Deaktiver * UC3Ptr,
 {
+	// Init referencer
+	 /*UC1Ptr_ = UC1Ptr;
+	 UC2Ptr_ = UC2Ptr;
+	 UC3Ptr_ = UC3Ptr;*/
 	
 }
 
