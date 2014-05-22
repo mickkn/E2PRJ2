@@ -147,7 +147,15 @@ Diodens opgave er at ensrette signalet. Figur \ref{fig:Decoder_diode} viser sign
 
 Outputtet af modtageren er et 18Vac/50Hz udtag. Dette udtag er enten aktiveret eller deaktiveret. Hvis udtaget ønskes aktivt skal softwaren fungere således at PD7 på modtagerens STK-500 kit sættes høj, herved aktiveret relæet og der er gennemgang for de 18Vac/50Hz fra forsyningsnettet. Figurene herover XX og XX viser at udtaget enten er aktiveret eller deaktiveret. Denne test er udført ved at aktivere relæet blot fra 5V forsyningen.   
 
+\section{DE2-kodelås}
 
+DE2 1 ms bit målt med oscilloscope på DE2 GPIO1\_D9 ift. stel. Med funktionen Trigger Single Sweep. Målingerne viser et 1 ms signal på 3.3Vpp, som ønsket.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.50\textwidth]{billeder/HWTest/DE2/DE2_1ms_pulse}
+	\caption{1 ms bit fra DE2-kodelås}
+	\label{code:de2_test}
+\end{figure}
 
 \clearpage

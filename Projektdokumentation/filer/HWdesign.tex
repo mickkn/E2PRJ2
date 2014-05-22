@@ -215,3 +215,34 @@ R = \frac{\tau}{C} = \frac{8,33 \cdot 10^{-6}}{1 \cdot 10^{-9}} = 83 k\Omega
 Modstanden $R_8$ er rundet op til en modstandstørrelse på $100 k\Omega$, dette gør at vi er helt sikre på at kondensatoren ikke aflader for hurtigt. 
 
 Der er anvendt en schmitt trigger til at lave signalet om til et firkantet signal som STK-kitten kan aflæses. Grunden til at der er brugt 2 er fordi de er inverterende. 
+
+\section{DE2-kodelås}
+
+DE2 Boardet bliver brugt som kodelås til CSS Hovedenheden. DE2 Boardet er programmeret i E2DSD Exercise 7 \textbf{[HENVISNING TIL KODE I BILAG]} som en Statemachine. Der er dog blevet ændret i koden fra øvelsen, da der kun er brug for et enkelt bit til CSS Hovedenheden og ikke en konstant høj. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/code_lock_counter}
+	\caption{Lock Counter}
+	\label{code:code_lock}
+\end{figure}
+
+Figur \ref{code:code_lock} viser en unsigned ved navn lock\_counter, som ligger i state\_reg processen. Den tæller op, når programmet befinder sig i s\_unlocked staten.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/code_lock_s_unlocked_state}
+	\caption{s\_unlocked}
+	\label{code:s_unlocked}
+\end{figure}
+
+Figur \ref{code:s_unlocked} viser koden, der fortæller, hvor længe man skal befinde sig i s\_unlocked staten, som sætter LOCK outputtet høj. I dette tilfælde er der valgt 1 ms. Efter 1 ms vil programmet nulstille error-counteren og gå til s\_idle state - klar til nyt input.
+
+Outputtet er sat til GPIO1 JP2 D9 (PIN\_M25), vist i Figur \ref{code:code_lock_pinout}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.40\textwidth]{billeder/HWdesign/code_lock_pinout}
+	\caption{DE2-kodelås pinout}
+	\label{code:code_lock_pinout}
+\end{figure}
