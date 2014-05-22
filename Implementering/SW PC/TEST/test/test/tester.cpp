@@ -15,34 +15,38 @@ int main()
 {
 	hukommelse huObj;
 	hukommelse * huPtr = &huObj;
-	brugerUI uiObj(huPtr);
-	brugerUI * uiPtr = &uiObj;
-	aktiver aktiverObj(huPtr, uiPtr);
-	deaktiver deaktiverObj(huPtr, uiPtr);
-	udtag udtagObj(huPtr, uiPtr);
-	redigerSmsBruger smsObj(huPtr, uiPtr);
 	RS232IF rsObj;
 	RS232IF * rsPtr = &rsObj;
+	brugerUI uiObj(huPtr);
+	brugerUI * uiPtr = &uiObj;
+	aktiver aktiverObj(rsPtr, huPtr, uiPtr);
+	deaktiver deaktiverObj(rsPtr, huPtr, uiPtr);
+	udtag udtagObj(huPtr, uiPtr);
+	redigerSmsBruger smsObj(huPtr, uiPtr);
 	login logObj(rsPtr, uiPtr);
 
 	char ch;
 	
+	logObj.loginValid();
 
 	while(1)
 	{
-		logObj.loginValid();
-		while(!kbhit)
+		while(!kbhit())
 		{
 			int read = rsObj.read();
-			if(read == 2)
+			if(read == 2) // Hvis login udløbet
 			{
 				bool test = logObj.loginValid();
 
 				if(test == true) // break while når der er logget ind igen.
 					break;
 			}
-			if(read == 3);
+			if(read == 3)
+			{
 				// BABY ALARM KALD ////////////////////////////////////
+				cout << "BABYALARM!!!! OMG OMG OMG!!!" << endl;
+			}
+				
 		}
 
 		int i;

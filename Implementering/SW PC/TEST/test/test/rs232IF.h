@@ -2,6 +2,9 @@
 #pragma once
 
 #include "Serial.h"
+#include <string>
+
+using namespace std;
 
 #define port 3
 #define commandSize 7
@@ -12,8 +15,8 @@ public:
 	RS232IF();
 	~RS232IF();
 	bool validLogin();
-	bool aktiver(int);
-	bool deaktiver(int);
+	bool aktiver(string);
+	bool deaktiver(string);
 	int read();
 
 private:

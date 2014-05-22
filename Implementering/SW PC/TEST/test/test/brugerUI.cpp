@@ -24,7 +24,8 @@ void brugerUI::showMenu(int menu)
 
 		if(menu == 1)	// login menu. bruger skal login på DE2 eller tryk ESC
 		{
-			menu = login();
+			
+			login();
 		}
 
 		if(menu == 2)	// main menu. 
@@ -75,7 +76,7 @@ int brugerUI::preLogin() const
 		getline(cin, retur,'\n');
 
 
-		if(!cin) // Hvi brugeren indtaster nogeet der ikke er int
+		if(!cin) // Hvis brugeren indtaster nogeet der ikke er int
 		{
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(),'\n');
@@ -95,8 +96,8 @@ void brugerUI::login() const
 	system("cls"); // clear screen
 
 	cout << "CSS: Child Security System" << endl << endl;
-	cout << "	Login på DE2 boardet" << endl << endl << endl << endl;
-	cout << "	Tryk på en vilkårlig tast for at annullere" << endl;
+	cout << "	Login paa DE2 boardet" << endl << endl << endl << endl;
+	cout << "	Tryk paa en vilkaarlig tast for at annullere" << endl;
 }
 
 int brugerUI::mainMenu() const
@@ -108,7 +109,7 @@ int brugerUI::mainMenu() const
 	cout << "	2. Deaktiver enheder" << endl;
 	cout << "	3. Vis status" << endl;
 	cout << "	4. Rediger sms-modtager" << endl;
-	cout << "	5. Tilføj / fjern enheder" << endl;
+	cout << "	5. Tilfoej / fjern enheder" << endl;
 
 	return 0;
 }
@@ -119,7 +120,7 @@ int brugerUI::aktiverMenu() const
 
 	string temp;
 
-	cout << "Følgende enheder er aktiveret:" << endl << endl;
+	cout << "Foelgende enheder er aktiveret:" << endl << endl;
 
 	int myArray[15] = {0};
 
@@ -140,7 +141,7 @@ int brugerUI::aktiverMenu() const
 			}			
 		}
 	
-		cout << endl << "følgende enheder kan aktiveres: " << endl << endl;
+		cout << endl << "Foelgende enheder kan aktiveres: " << endl << endl;
 
 		int counter2 = 0;
 
@@ -159,7 +160,7 @@ int brugerUI::aktiverMenu() const
 			}			
 		}
 
-	cout << endl << "Tast 27 for at gå tilbage til hovedemenuen" << endl;
+	cout << endl << "Tast 27 for at gaa tilbage til hovedemenuen" << endl;
 
 	int num;
 
@@ -189,17 +190,14 @@ int brugerUI::aktiverMenu() const
 }
 	
 
-			
-			
 
-	
 int brugerUI::deaktiverMenu() const
 {
 	system("cls"); // clear screen
 
 	string temp;
 
-	cout << "Følgende enheder er deaktiveret:" << endl << endl;
+	cout << "Foelgende enheder er deaktiveret:" << endl << endl;
 
 	int myArray[15] = {0};
 
@@ -220,7 +218,7 @@ int brugerUI::deaktiverMenu() const
 			}			
 		}
 	
-		cout << endl << "følgende enheder kan deaktiveres: " << endl << endl;
+		cout << endl << "Foelgende enheder kan deaktiveres: " << endl << endl;
 
 		int counter2 = 0;
 
@@ -239,7 +237,7 @@ int brugerUI::deaktiverMenu() const
 			}			
 		}
 
-	cout << endl << "Tast 27 for at gå tilbage til hovedemenuen" << endl;
+	cout << endl << "Tast 27 for at gaa tilbage til hovedemenuen" << endl;
 
 	int num;
 
@@ -274,7 +272,7 @@ int brugerUI::visStatusMenu() const
 
 	vector<string> tempVector = huPtr->getEnheder();
 
-	cout << "Enhederne har følgende status" << endl << endl;
+	cout << "Enhederne har foelgende status" << endl << endl;
 
 	int size = (tempVector.size() - 1) / 3;
 	int counter;
@@ -290,7 +288,7 @@ int brugerUI::visStatusMenu() const
 	
 	}
 
-	cout << endl << "Tast 27 for at gå tilbage til hovedemenuen" << endl;
+	cout << endl << "Tast 27 for at gaa tilbage til hovedemenuen" << endl;
 	int num;
 
 	cin >> num;
@@ -313,10 +311,10 @@ int brugerUI::redigerSmsMenu() const
 
 	int num = huPtr->getNumber();
 
-	cout << "sms modtager:" << endl;
+	cout << "SMS modtager:" << endl;
 	cout << "Tlf nr: " << num << endl << endl;
-	cout << "Tryk 1. for at ændre tlf nr." << endl << endl;
-	cout << "Tryk 27 for at gå tilbage til hovedmenu" << endl << endl;
+	cout << "Tryk 1. for at aendre tlf nr." << endl << endl;
+	cout << "Tryk 27 for at gaa tilbage til hovedmenu" << endl << endl;
 
 	int retur;
 	cin >> retur;
@@ -348,7 +346,7 @@ int brugerUI::redigerSmsMenu() const
 				return 0;
 
 			if(retur > 99999999 || retur <10000000)
-				cout << "nummer er invalid. skal være mindre end 99999999 og større end 10000000" << endl;
+				cout << "Nummer er ikke rigtigt. Det skal være mindre end 99999999 og stoerre end 10000000" << endl;
 
 		}while(retur > 99999999 || retur <10000000);
 	}
@@ -363,7 +361,7 @@ int brugerUI::addRemoveMenu() const
 	vector<string> tempVector = huPtr->getEnheder();
 	int move;
 
-	cout << endl << "Du har følgende enheder:" << endl << endl;
+	cout << endl << "Du har foelgende enheder:" << endl << endl;
 
 	for(int i = 1; i<=(tempVector.size()-1)/3; i++)
 	{
@@ -378,8 +376,8 @@ int brugerUI::addRemoveMenu() const
 
 	int retur;
 	if(tempVector.size() >= 46)
-	{	cout << "Der kan ikke tilføjes flere enheder" << endl <<
-				"Slet nogle enheder hvis der ønskes at tilføje nye" << endl;
+	{	cout << "Der kan ikke tilfoejes flere enheder" << endl <<
+				"Slet nogle enheder hvis der oenskes at tilfoeje nye" << endl;
 		cout << endl <<  "Tryk 1 for fjern enhed" << endl << endl;
 		cout << "Tast 27 for at annullere" << endl;
 		while(1)
@@ -400,28 +398,34 @@ int brugerUI::addRemoveMenu() const
 	}
 	else
 	{
-		cout << "Ønsker du at tilføje eller fjerne udtag?" << endl << endl;
+		cout << "Oensker du at tilfoeje eller fjerne udtag?" << endl << endl;
 		cout << "Tast 1 for fjerne enhed" << endl;
-		cout << "Tast 2 for tilføje enhed." << endl << endl;
+		cout << "Tast 2 for tilfoeje enhed." << endl << endl;
 		cout << "Tast 27 for at annullere" << endl;
 		while(1)
 		{		
-			string retur;
-			getline(cin, retur,'\n');
 
+			int retur;
+			cin >> retur;
+
+			if(!cin) // Hvis brugeren indtaster nogeet der ikke er int
+			{
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(),'\n');
+			}
 
 			if(!cin) // Hvi brugeren indtaster nogeet der ikke er int
 			{
 				cin.clear();
 				cin.ignore(numeric_limits<streamsize>::max(),'\n');
 			}
-			if(retur == "1")
+			if(retur == 1)
 				return 0;
 		
-			if(retur == "27")
+			if(retur == 27)
 				return 27;
 
-			if(retur == "2");
+			if(retur == 2);
 				return 1;
 		}
 	}

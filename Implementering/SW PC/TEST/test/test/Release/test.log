@@ -1,0 +1,51 @@
+﻿Build started 22-05-2014 13:46:56.
+     1>Project "Z:\PRJ2 GitHub\Implementering\SW PC\TEST\test\test\test.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Aktiver.cpp brugerUI.cpp Deaktiver.cpp hukommelse.cpp Login.cpp RedigerSmsBruger.cpp rs232IF.cpp Serial.cpp tester.cpp Udtag.cpp
+         Aktiver.cpp
+         brugerUI.cpp
+     1>brugerUI.cpp(70): warning C4101: 'temp' : unreferenced local variable
+     1>brugerUI.cpp(130): warning C4018: '<' : signed/unsigned mismatch
+     1>brugerUI.cpp(148): warning C4018: '<' : signed/unsigned mismatch
+     1>brugerUI.cpp(207): warning C4018: '<' : signed/unsigned mismatch
+     1>brugerUI.cpp(225): warning C4018: '<' : signed/unsigned mismatch
+     1>brugerUI.cpp(366): warning C4018: '<=' : signed/unsigned mismatch
+     1>brugerUI.cpp(429): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>brugerUI.cpp(362): warning C4101: 'move' : unreferenced local variable
+         Deaktiver.cpp
+         hukommelse.cpp
+     1>hukommelse.cpp(101): warning C4018: '<' : signed/unsigned mismatch
+     1>hukommelse.cpp(124): warning C4018: '<' : signed/unsigned mismatch
+     1>hukommelse.cpp(132): warning C4018: '<' : signed/unsigned mismatch
+     1>hukommelse.cpp(145): warning C4018: '<' : signed/unsigned mismatch
+         Login.cpp
+     1>Login.cpp(27): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\conio.h(133) : see declaration of 'kbhit'
+         RedigerSmsBruger.cpp
+         rs232IF.cpp
+         Serial.cpp
+         tester.cpp
+     1>tester.cpp(34): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\conio.h(133) : see declaration of 'kbhit'
+     1>tester.cpp(28): warning C4101: 'ch' : unreferenced local variable
+         Udtag.cpp
+     1>Udtag.cpp(58): warning C4018: '<=' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\PRJ2 GitHub\Implementering\SW PC\TEST\test\Release\test.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Z:\PRJ2 GitHub\Implementering\SW PC\TEST\test\Release\test.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\PRJ2 GitHub\Implementering\SW PC\TEST\test\Release\test.lib" /MACHINE:X86 /SAFESEH Release\Aktiver.obj
+         Release\brugerUI.obj
+         Release\Deaktiver.obj
+         Release\hukommelse.obj
+         Release\Login.obj
+         Release\RedigerSmsBruger.obj
+         Release\rs232IF.obj
+         Release\Serial.obj
+         Release\tester.obj
+         Release\Udtag.obj
+         Generating code
+         Finished generating code
+         test.vcxproj -> Z:\PRJ2 GitHub\Implementering\SW PC\TEST\test\Release\test.exe
+     1>Done Building Project "Z:\PRJ2 GitHub\Implementering\SW PC\TEST\test\test\test.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.85
