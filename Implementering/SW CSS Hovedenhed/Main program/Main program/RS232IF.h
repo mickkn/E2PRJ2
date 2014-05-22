@@ -34,12 +34,6 @@ public:
 	void adviser( );					// Alarmer PC om babyalarm
 
 private:
-	// Referencer
-// 	UC1Login * UC1Ptr_;
-// 	UC2Aktiver * UC2Ptr_;
-// 	UC3Deaktiver * UC3Ptr_;
-	
-	
 	// Kommandowrapper (STX og ETX)
 	void wrapper(const char *kommando, char *wrapped);
 	void unwrapper(const char *wrapped, char *kommando);

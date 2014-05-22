@@ -9,7 +9,7 @@
 
 #pragma once
 
-#define LOGIN_TIMOUT 4218 // 60 sekunder: 843, 5 minutter: 4218
+#define LOGIN_TIMOUT 843 // 60 sekunder: 843, 5 minutter: 4218
 #include "DE2IF.h"
 
 class LoginTimer

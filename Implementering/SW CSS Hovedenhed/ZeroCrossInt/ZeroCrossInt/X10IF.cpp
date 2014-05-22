@@ -178,4 +178,4 @@ char * X10IF::formatX10(char *plads, char bit)
 }
 
 // Globalt objekt
-X10IF X10 = X10IF();
+X10IF X10IFObj = X10IF();

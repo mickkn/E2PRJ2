@@ -106,7 +106,8 @@ char UART::readChar() {
 }
 
 // Afventer afsendelses buffer klar og afsender char
-void UART::sendChar(char tegn) {
+void UART::sendChar(char tegn)
+{
 	
 	while(!((1 << UDRE) & UCSRA));
 	

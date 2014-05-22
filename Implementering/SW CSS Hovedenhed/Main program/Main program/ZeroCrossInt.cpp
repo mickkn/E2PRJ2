@@ -44,7 +44,7 @@ ISR (INT0_vect) {
 		else if(ch == '1')
 		{
 			timer.start();
-			_delay_ms(1000);
+			_delay_ms(1);
 			timer.stop();
 			
 		// Træk en fra kommandoer i kø hvis det er sidst tegn
