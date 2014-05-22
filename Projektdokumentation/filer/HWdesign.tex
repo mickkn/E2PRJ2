@@ -113,14 +113,24 @@ TODO: Billede af burst ind og TTL signal efter envelope..
 \newpage
 
 \subsection{Båndpasfilter}
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/BAANDPAS_UV.png}
-	\caption{Båndpas uden værdier}
-	\label{fig:BAANDPAS_UV}
+
+\begin{figure}[htb]
+  \begin{minipage}{0.45\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{billeder/HWdesign/BAANDPAS_UV}
+      \caption{Båndpasfilter uden værdier}
+    \label{fig:BAANDPAS_UV}
+  \end{minipage}
+  \hspace{0.1\textwidth}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{billeder/HWdesign/BAANDPAS_KURVE}
+      \caption{Kurvekarakteristik for båndpasfilter}
+    \label{fig:BAANDPAS_KURVE}
+  \end{minipage}
 \end{figure}
 
-Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHZ fra samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende OpAmp med modstande, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_UV}.
+Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHZ fra samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende OpAmp med modstande, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_UV}. Kurvekarakteristikken er illustreret på figur \ref{fig:BAANDPAS_KURVE}.
 
 Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således at knækfrekvensen udregnes til 110 kHz, og for lavpasfilteret beregnes en knækfrekvens på 130 kHz. 
 
