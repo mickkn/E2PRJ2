@@ -84,7 +84,7 @@ Decoderen er testet uden STK-500 kittet. Det vil sige der er testet uden softwar
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.50\textwidth]{billeder/HWTest/Decoder/Decoder_zerocross}
-	\caption{CH1: Toggle for hvert zero cross. CH2: 18Vac/50Hz med burst for hver zero cross}
+	\caption{CH1: Zero crossing firkantsignal. CH2: 18Vac/50Hz med burst for hver zero cross}
 	\label{fig:Decoder_ZC}
 \end{figure}
 
@@ -143,9 +143,25 @@ Diodens opgave er at ensrette signalet. Figur \ref{fig:Decoder_diode} viser sign
 % Scop billede - forklaring - hvad sendes ud 
 % Relæ, det aktiverer/deaktiverer udgangen via STK-500 signal 
 
+\begin{figure}[htb]
+  \begin{minipage}{0.45\textwidth}
+    \centering
+	\includegraphics[width=\textwidth]{billeder/HWTest/Decoder/Decoder_relay_open}
+		\caption{Deaktivt udtag}
+	\label{fig:relay_open}
+  \end{minipage}
+  \hspace{0.1\textwidth}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+	\includegraphics[width=\textwidth]{billeder/HWTest/Decoder/Decoder_relay_closed}
+		\caption{Aktivt udtag}
+	\label{fig:relay_closed}
+  \end{minipage}
+\end{figure}
 
+Outputtet af modtageren er et 18Vac/50Hz udtag. Dette udtag er enten aktiveret eller deaktiveret. Hvis udtaget ønskes aktivt skal softwaren fungerer således at PD7 på modtager STK500 kittet sættes høj, herved aktiveres relæet og der er gennemgang for de 18Vac/50Hz fra forsyningsnettet. Figurene herover \ref{fig:relay_open} og \ref{fig:relay_closed} viser at udtaget enten er aktiveret eller deaktiveret. Denne test er udført ved at aktivere relæet blot fra 5V forsyningen.
 
-Outputtet af modtageren er et 18Vac/50Hz udtag. Dette udtag er enten aktiveret eller deaktiveret. Hvis udtaget ønskes aktivt skal softwaren fungere således at PD7 på modtagerens STK-500 kit sættes høj, herved aktiveret relæet og der er gennemgang for de 18Vac/50Hz fra forsyningsnettet. Figurene herover XX og XX viser at udtaget enten er aktiveret eller deaktiveret. Denne test er udført ved at aktivere relæet blot fra 5V forsyningen.   
+SKAL OMSKRIVES HVIS MODTAGER SW KOMMER PÅ!
 
 \section{DE2-kodelås}
 
