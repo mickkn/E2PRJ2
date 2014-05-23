@@ -13,15 +13,12 @@
 					
 				\item Bruger vælger ''Aktiver'' i hovedmenu
 										
-				\item \label{uc2menu}UI viser mulige enheder samt ''Vælg alle'', ''Aktiver'' og ''Tilbage''
-												
-				\item Bruger markerer ønskede enheder til aktivering
+				\item \label{uc2menu}UI viser mulige enheder samt ''Aktiver'' og ''Tilbage''
 												
 				\item \label{uc2act} Bruger vælger ''Aktiver''\newline
 					\textbf{[Undtagelse \ref{uc2act}a]} Bruger vælger ''Tilbage''
 												
-				\item \label{uc2sysact} Systemet aktiverer valgte enheder \newline
-					\textbf{[Undtagelse \ref{uc2sysact}a]} Ingen valgte enheder
+				\item \label{uc2sysact} Systemet aktiverer valgte enheder
 				
 				\item UI viser besked om at enheder, er aktiverede
 																	
@@ -33,10 +30,6 @@
 		
 		&\begin{enumerate}[label= \ref{uc2act}a.]
 			\item UI returnerer til hovedmenu og UC2 afbrydes
-		\end{enumerate}						
-							
-		\begin{enumerate}[label= \ref{uc2sysact}a.]
-			\item Hvis ingen unit er valgt udskrives en fejl på skærmen og beder brugeren om at vælge en unit og går til UC2.\ref{uc2menu}
 		\end{enumerate} \\\hline
 											
 		%\textbf{Version}		&1.2 \\\hline
