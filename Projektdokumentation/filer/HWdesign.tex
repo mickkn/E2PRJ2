@@ -14,6 +14,12 @@ Encoderen, også omtalt som senderenhed, er den del af systemet der genererer X1
 
 Ideen med at sende burst ud på nettet i zero crossing kan ses illustreret på figur \ref{fig:X10_BURST}
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/Encoder}
+	\caption{Samlet Encoder}
+	\label{fig:Encoder}
+\end{figure}
 \newpage
 
 \subsection{Højpasfilter}
@@ -74,11 +80,11 @@ Med den beregnede modstands værdi er det endelige schematic færdigt som det se
   \end{minipage}
 \end{figure}
 
-Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en Zero crossing detector både på Encoderen og Decoderen, da begge disse består af et STK-kit der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_UV}, vi har anvendt en operationsforstærker af type LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
+Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en Zero crossing detector både på Encoderen og Decoderen, da begge disse består af et STK-kit der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_UV}, der er anvendt en operationsforstærker af typen LM358N\footnote{Se bilag ??? for datablad}, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
 
-Modstanden $R_7$ sidder der bl.a. for at beskytte Zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen opdagede vi at der kom støj ind på Zero crossing detectoren, og dette problem løste lavpasfilteret. 
+Modstanden $R_7$ sidder der bl.a. for at beskytte Zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på Zero crossing detectoren, og dette problem løste lavpasfilteret. 
 
-Da vi ønsker at dæmpe 120 kHz signalet, designes lavpasfilteret ud fra en knækfrekvens på 1,0 kHz. 
+Der ønskes at dæmpe 120 kHz signalet, derfor designes lavpasfilteret ud fra en knækfrekvens på 1,0 kHz. 
 
 \begin{align}
 R = \frac{1}{2 \cdot \pi \cdot f_c \cdot C } 
@@ -106,9 +112,17 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 \section{Decoder}
 Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 kommando, er opbygget af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret, og dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/Decoder}
+	\caption{Samlet Decoder}
+	\label{fig:Decoder}
+\end{figure}
+
 \begin{large}
 TODO: Billede af burst ind og TTL signal efter envelope..
 \end{large}
+
 
 \newpage
 
@@ -215,6 +229,69 @@ R = \frac{\tau}{C} = \frac{8,33 \cdot 10^{-6}}{1 \cdot 10^{-9}} = 83 k\Omega
 Modstanden $R_8$ er rundet op til en modstandstørrelse på $100 k\Omega$, dette gør at vi er helt sikre på at kondensatoren ikke aflader for hurtigt. 
 
 Der er anvendt en schmitt trigger til at lave signalet om til et firkantet signal som STK-kitten kan aflæses. Grunden til at der er brugt 2 er fordi de er inverterende. 
+
+\newpage
+\subsection{Komponentliste}
+
+De efterfølgende tabeller viser en oversigt over hvilke komponenter der er anvendt, den beskriver navn, type og størrelse på hver enkelt komponent.
+
+
+\begin{table}[htbp] \centering
+\caption{Komponentliste over Encoder}
+\begin{small}
+    \begin{tabular}{|p{2cm}|p{4cm}|p{2cm}|}
+    \hline
+    \textbf{Navn}    & \textbf{Type}                 & \textbf{Størrelse} \\ \hline
+    BC547BP    & Transistor           & ~         \\ \hline
+    $R_a$      & Modstand             & 14 $\Omega$    \\ \hline
+    $R_2$      & Modstand             & 1 M$\Omega$    \\ \hline
+    $R_1$      & Modstand             & 1 k$\Omega$    \\ \hline
+    $C_1$      & Kondensator          & 0.1 uF    \\ \hline
+    $C_2$      & Kondensator          & 150 nF    \\ \hline
+    $C_6$      & Kondesator           & 100 nF    \\ \hline
+    LM358N     & Operationsforstærker & ~         \\ \hline
+    \end{tabular}
+   \end{small}
+\label{table:Komponentliste encoder}
+\end{table}
+
+\begin{table}[htbp] \centering
+\caption{Komponentliste over Decoder}
+\begin{small}
+    \begin{tabular}{|p{2cm}|p{4cm}|p{2cm}|}
+    \hline
+    \textbf{Navn}    & \textbf{Type}                 & \textbf{Størrelse} \\ \hline
+   
+    $R_1$      & Modstand             & 1.6 k$\Omega$    \\ \hline
+    $R_2$      & Modstand             & 1.1 k$\Omega$    \\ \hline
+    $R_3$      & Modstand             & 10 k$\Omega$    \\ \hline
+    $R_4$      & Modstand             & 20 k$\Omega$    \\ \hline
+    $R_5$      & Modstand             & 10 k$\Omega$    \\ \hline
+    $R_6$      & Modstand             & 10 k$\Omega$    \\ \hline
+    $R_7$      & Modstand             & 1 k$\Omega$    \\ \hline
+    $R_8$      & Modstand             & 100 k$\Omega$    \\ \hline
+    $R_9$      & Modstand             & 10 k$\Omega$    \\ \hline
+    $R_{10}$     & Modstand             & 10 k$\Omega$    \\ \hline
+    $C_1$      & Kondensator          & 150 uF    \\ \hline
+    $C_3$      & Kondensator          & 1 nF    \\ \hline
+    $C_4$      & Kondensator          & 1 nF    \\ \hline
+    $C_5$      & Kondensator          & 1 nF    \\ \hline
+    $C_6$      & Kondensator          & 100 nF    \\ \hline
+    LM358N     & Operationsforstærker & ~         \\ \hline
+    LF353D     & Operationsforstærker & ~         \\ \hline
+    2NO2NC     & Relæ				  & ~         \\ \hline
+    74HC14N    & Schmitt trigger	  & ~         \\ \hline
+    DIP1       & Kontakt	          & ~         \\ \hline
+    DIP2       & Kontakt	          & ~         \\ \hline
+    DIP3       & Kontakt	          & ~         \\ \hline
+    DIP4       & Kontakt	          & ~         \\ \hline
+   
+    \end{tabular}
+   \end{small}
+\label{table:Komponentliste Decoder}
+\end{table}
+
+
 
 \section{DE2-kodelås}
 
