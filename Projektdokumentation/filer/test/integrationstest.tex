@@ -1,6 +1,54 @@
 \section{Integrationstest}
+Ved integrationstesten samkobles alt hardware. Integrationstesten er alle modultests samlet under en. 
 
 \subsection{Opstilling og forbindelser}
+Hardwaren er afhængig af: +-12V, 5V, Fælles ground og 18Vac/50Hz. Desuden skal STK500 kittet DE2boarded forsynes med spænding fra deres tilhørende 230V transformere. Ved 18Vac/50Hz spændingskilden benyttes den tilgængelige 230V transformer. 
 
+Enkoderen skal forsynes med 5V, dette gøres direkte fra labratorietsforsyning.
+Decoderen indeholder en operationsforstærker, hvis forsyning skal være +- 12V. Resten af decoderen skal forsynes med 5V. Dette gøres via en spændingsregulator på decoder printet.   
+
+\begin{figure}[htb]
+  \begin{minipage}{0.45\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{billeder/IntTest/forsyning}
+      \caption{Opkobling af forsyning}
+    \label{fig:opkobling_forsyning}
+  \end{minipage}
+  \hspace{0.1\textwidth}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{billeder/IntTest/system}
+      \caption{Overbliksbillede af samlet opsætning}
+    \label{fig:system_sammensat}
+  \end{minipage}
+\end{figure}
+
+Spændingsforsyningen i labratoriet har 2 variable udgange (én til venstre og én til højre), samt én fast 5 V forsyning (midten). Begge variable udgange indstilles til 12V. 
+Som det ses af \ref{fig:opkobling_forsyning} er + udgangen af udgangen til venstre kortsluttet med - udgangen af udgangen til højre. Dette skaber et 0 punkt, fællesground. Herved opnås -12V i den venstre -udgang, samt +12V i den højre + udgang. 0 punktet forbindes til - udgangen på den faste 5V forsyning, for at skabe fælles ground på hele forsyningen. På encoderprintet er der skabt fællesground mellem forsyningen og 18Vac/50Hz.
+
+Encoderen tilsluttes +5V og ground.
+Decoderen tilsluttes +-12V.
+
+18Vac/50Hz skaber forbindelse mellem encoder og decoder.
+
+Hovedenhedens STK500 kit tilsluttes PC'en via RS232 til USB.
+
+** 
+Encoder til STK - 10 pin harwin?
+
+PD0, PD1 for at benytte uart.
+
+DE2 til PB2 og ground
+**
 
 \subsection{Resultat}
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{billeder/IntTest/Modtager_0101_ON}
+	\caption{.}
+	\label{fig:Modtager_0101_ON}
+\end{figure}
+
+
