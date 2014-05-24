@@ -64,6 +64,7 @@
   <ItemGroup>
     <ClCompile Include="Aktiver.cpp" />
     <ClCompile Include="brugerUI.cpp" />
+    <ClCompile Include="ClickATellIF.cpp" />
     <ClCompile Include="Deaktiver.cpp" />
     <ClCompile Include="hukommelse.cpp" />
     <ClCompile Include="Login.cpp" />
@@ -76,6 +77,7 @@
   <ItemGroup>
     <ClInclude Include="Aktiver.h" />
     <ClInclude Include="brugerUI.h" />
+    <ClInclude Include="ClickATellIF.h" />
     <ClInclude Include="Deaktiver.h" />
     <ClInclude Include="hukommelse.h" />
     <ClInclude Include="Login.h" />

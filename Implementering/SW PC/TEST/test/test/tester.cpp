@@ -8,6 +8,7 @@
 #include "redigerSmsBruger.h"
 #include "udtag.h"
 #include "Login.h"
+#include "ClickATellIF.h"
 
 #include <conio.h>
 
@@ -24,6 +25,7 @@ int main()
 	udtag udtagObj(huPtr, uiPtr);
 	redigerSmsBruger smsObj(huPtr, uiPtr);
 	login logObj(rsPtr, uiPtr);
+	clickATellIF SMSObj;
 
 	char ch;
 	
@@ -43,8 +45,8 @@ int main()
 			}
 			if(read == 3)
 			{
-				// BABY ALARM KALD ////////////////////////////////////
-				cout << "BABYALARM!!!! OMG OMG OMG!!!" << endl;
+				// BABY ALARM KALD 
+				SMSObj.sendSMS(huObj.getNumber());
 			}
 				
 		}
