@@ -18,58 +18,60 @@
 		\textbf{Hovedforløb}					
 			&\begin{enumerate}
 				
-		\item Bruger vælger menupunkt ''Tilføj/fjern X10 udtag'' (UC1 gennemføres) og programmet udskriver i forvejen indstillede X10 udtag og mulighed for at vælge tilføj eller fjern
+		\item \label{uc8start} Bruger vælger menupunkt ''Tilføj / fjern enheder'' og programmet udskriver i forvejen indstillede X10 udtag og mulighed for at vælge tilføj eller fjern samt mulighed for at returnerer til hoveskærmen.
 					
-				\subitem \textbf{Tilføj valgt}			
-				\begin{enumerate}
-				\item \label{uc8indstilAdresse} Bruger indstiller adresseswitchen til en adresse på X10 udtaget
+\item Tilføj valgt		
+\begin{enumerate}
+  \item \label{uc8indstilNavn} Programmet udskriver beskeden ''Navngiv venligst enheden''
+  \item \label{uc8navn} Bruger indtaster et selvvalgt navn for X10 udtaget efterfulgt af tryk på ''Enter'' knappen
 
-				\item \label{uc8adresse} Bruger indtaster den fire cifrede kombination som er indstillet på X10 udtaget efterfulgt af ''Enter''\newline
-						\textbf{[Undtagelse \ref{uc8adresse}.a]} Adressen er ikke unik\newline
-						\textbf{[Undtagelse \ref{uc8adresse}.b]} Adressen har ikke den rette længde
+  \item \label{uc8indstilAdresse} Programmet udskriver beskeden ''Angiv venligst valid adresse kode''
 				
-					\item \label{uc8indstilNavn} Programmet udskriver beskeden "Indtast navn"
+  \item Bruger indstiller adresseswitchen til en adresse på X10 udtaget
+
+  \item \label{uc8adresse} Bruger indtaster den fire cifrede kombination som er indstillet på X10 udtaget efterfulgt af tryk på ''Enter''
+    \newline
+    \textbf{[Undtagelse \ref{uc8adresse}.a]} Adressen er ikke unik
+    \newline
+    \textbf{[Undtagelse \ref{uc8adresse}.b]} Adressen er ikke den rette længde
+						
+  \item Programmet udskriver beskeden ''Enhed tilføjet'' og opdaterer listen med enheder
 				
-					\item \label{uc8navn} Bruger indtaster et selvvalgt navn for X10 udtaget efterfulgt af "enter"\newline
-						\textbf{[Undtagelse \ref{uc8navn}.a]} Navnet har ikke den rette længde
+  \item Bruger sætter X10 udtaget i det ønskede 230 Vac udtag
+\end{enumerate}
+
+\item Fjern valgt
+\begin{enumerate}
+  \item Programmet udskriver beskeden ''Angiv hvilken enhed der skal fjernes''
+					
+  \item Bruger indtaster nummer på den enhed der ønskes fjernet
+
+  \item Programmet udskriver beskeden ''Enhed fjernet'' og opdaterer listen med enheder
+\end{enumerate}						
+
+\item Annuller valgt
+\begin{enumerate}
+  \item Programmet går til hovedmenuen
+\end{enumerate}
 				
-					\item Bruger sætter X10 udtaget i det ønskede 230 Vac udtag
-				
-				\end{enumerate}
-				\subitem \textbf{Fjern valgt}
-				\begin{enumerate}
-					\item Den ønskede enhed markeres og der trykkes Fjern
-				\end{enumerate}						
-	
-				\item Programmet returnerer til hovedskærmen
-				
-																																	
-			\end{enumerate}\\\hline
+\item Gå til UC8.\ref{uc8start}
+							
+\end{enumerate} \\\hline
 		
 		\textbf{Undtagelser}					
 		&\begin{enumerate}[label=\ref{uc8adresse}.a.]
-			\item Programmet udskriver fejlmeddellelsen "Adressen er ikke unik. Vælg en ny."
+			\item Programmet udskriver fejlmeddellelsen ''Adressen er allerede brugt, vælgt en anden''
 			
 			\subitem Gå til UC8.\ref{uc8indstilAdresse}
 		\end{enumerate}
-		
-	
 		
 		\begin{enumerate}[label= \ref{uc8adresse}.b.]
-			\item Programmet udskriver fejlmeddellelsen "Adressen har ikke den rette længde. Vælg en ny."
-			
-			\subitem Gå til UC8.\ref{uc8indstilAdresse}
-		\end{enumerate}
-		
-		
-		
-		\begin{enumerate}[label= \ref{uc8navn}.a.]
-			\item Programmet udskriver fejlmeddellelsen "Navnet skal minimum have to og maximum 50 karaktere"
-			
-			\subitem Gå til UC8.\ref{uc8indstilNavn}
-		\end{enumerate} \\ \hline
+			\item Gå til UC8.\ref{uc8indstilAdresse}
+		\end{enumerate} \\\hline
 											
-		%\textbf{Version}		&1.0: 2014-03-23 Oprettet \\\hline
+		\textbf{Version}		&1.0: 2014-03-23 Oprettet \newline
+								 1.1: 2014-05-24 Meddelelser opdateret \\\hline
+				
 
 	\end{longtable}
 	\label{UC8} 
