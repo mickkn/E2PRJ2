@@ -1,0 +1,10 @@
+﻿Build started 24-05-2014 18:08:49.
+     1>Project "C:\Users\jeppestaerk\Dropbox\GitHub\E2PRJ2GRP1\Implementering\SW PC\ClickATellIF\ClickATellIF\ClickATellIF\ClickATellIF.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jeppestaerk\Dropbox\GitHub\E2PRJ2GRP1\Implementering\SW PC\ClickATellIF\ClickATellIF\Debug\ClickATellIF.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jeppestaerk\Dropbox\GitHub\E2PRJ2GRP1\Implementering\SW PC\ClickATellIF\ClickATellIF\Debug\ClickATellIF.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jeppestaerk\Dropbox\GitHub\E2PRJ2GRP1\Implementering\SW PC\ClickATellIF\ClickATellIF\Debug\ClickATellIF.lib" /MACHINE:X86 Debug\ClickATellIF.obj
+     1>LINK : fatal error LNK1561: entry point must be defined
+     1>Done Building Project "C:\Users\jeppestaerk\Dropbox\GitHub\E2PRJ2GRP1\Implementering\SW PC\ClickATellIF\ClickATellIF\ClickATellIF\ClickATellIF.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.38
