@@ -65,7 +65,7 @@ int brugerUI::preLogin() const
 	
 	cout << "CSS: Child Security System" << endl << endl;
 	cout << "	1. Login" << endl;
-	cout << "	2. Vis status" << endl;
+	cout << "	2. Udlaes status" << endl;
 
 	char temp;
 
@@ -107,7 +107,7 @@ int brugerUI::mainMenu() const
 	cout << "CSS: Child Security System" << endl << endl;
 	cout << "	1. Aktiver enheder" << endl;
 	cout << "	2. Deaktiver enheder" << endl;
-	cout << "	3. Vis status" << endl;
+	cout << "	3. Udlaes status" << endl;
 	cout << "	4. Rediger sms-modtager" << endl;
 	cout << "	5. Tilfoej / fjern enheder" << endl;
 

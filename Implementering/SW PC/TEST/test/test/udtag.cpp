@@ -60,7 +60,7 @@ void udtag::addRemoveUdtag()
 								int move = ((i*3) - 2);
 								if(tempVector[move] == adresse)
 								{
-									cout << endl << "adressen er allerede brugt, vælg en anden" << endl << endl;
+									cout << endl << "Adressen er allerede brugt, vaelg en anden" << endl << endl;
 									//i = 100;
 									tasting = false;
 									break;
@@ -77,12 +77,12 @@ void udtag::addRemoveUdtag()
 			}
 			if(test)
 			{
-				cout << "Enhed tilføjet" << endl;
+				cout << "Enhed tilfoejet" << endl;
 				Sleep(3000);
 			}
 			else
 			{
-				cout << "Enhed blev ikke tilføjet" << endl;
+				cout << "Enhed blev ikke tilfoejet" << endl;
 				Sleep(2500);
 			}
 		}
