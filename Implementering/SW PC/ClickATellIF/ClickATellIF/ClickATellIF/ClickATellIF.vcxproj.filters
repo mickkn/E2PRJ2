@@ -18,6 +18,9 @@
     <ClCompile Include="ClickATellIF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="clickATellIF_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClickATellIF.h">
