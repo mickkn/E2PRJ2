@@ -1,54 +1,5 @@
-﻿Build started 25-05-2014 12:42:40.
-     1>Project "C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Main program\Main program\Main program.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt aktiver.cpp brugerUI.cpp ClickATellIF.cpp deaktiver.cpp detekterLyd.cpp hukommelse.cpp Login.cpp "Main program.cpp" redigerSmsBruger.cpp rs232IF.cpp Serial.cpp udtag.cpp
-         udtag.cpp
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\udtag.cpp(58): warning C4018: '<=' : signed/unsigned mismatch
-         Serial.cpp
-         rs232IF.cpp
-         redigerSmsBruger.cpp
-         Main program.cpp
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\main program.cpp(36): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
-                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(133) : see declaration of 'kbhit'
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\main program.cpp(30): warning C4101: 'ch' : unreferenced local variable
-         Login.cpp
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\login.cpp(27): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
-                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(133) : see declaration of 'kbhit'
-         hukommelse.cpp
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\hukommelse.cpp(101): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\hukommelse.cpp(124): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\hukommelse.cpp(132): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\hukommelse.cpp(145): warning C4018: '<' : signed/unsigned mismatch
-         detekterLyd.cpp
-         deaktiver.cpp
-         ClickATellIF.cpp
-         brugerUI.cpp
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\brugerui.cpp(70): warning C4101: 'temp' : unreferenced local variable
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\brugerui.cpp(130): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\brugerui.cpp(148): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\brugerui.cpp(207): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\brugerui.cpp(225): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\brugerui.cpp(366): warning C4018: '<=' : signed/unsigned mismatch
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\brugerui.cpp(429): warning C4390: ';' : empty controlled statement found; is this the intent?
-     1>c:\users\jesper\documents\github\e2prj2grp1\implementering\sw pc\main program\main program\brugerui.cpp(362): warning C4101: 'move' : unreferenced local variable
-         aktiver.cpp
-         Generating Code...
-       Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Main program\Debug\Main program.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Main program\Debug\Main program.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Main program\Debug\Main program.lib" /MACHINE:X86 Debug\aktiver.obj
-         Debug\brugerUI.obj
-         Debug\ClickATellIF.obj
-         Debug\deaktiver.obj
-         Debug\detekterLyd.obj
-         Debug\hukommelse.obj
-         Debug\Login.obj
-         "Debug\Main program.obj"
-         Debug\redigerSmsBruger.obj
-         Debug\rs232IF.obj
-         Debug\Serial.obj
-         Debug\udtag.obj
-         Main program.vcxproj -> C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Main program\Debug\Main program.exe
-     1>Done Building Project "C:\Users\jesper\Documents\GitHub\E2PRJ2GRP1\Implementering\SW PC\Main program\Main program\Main program.vcxproj" (Build target(s)).
+﻿Build started 25-05-2014 12:57:21.
 
 Build succeeded.
 
-Time Elapsed 00:00:06.72
+Time Elapsed 00:00:00.17
