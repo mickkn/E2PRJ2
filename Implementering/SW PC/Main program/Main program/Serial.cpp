@@ -1,5 +1,5 @@
 // Serial.cpp
-
+#define NOMINMAX // fix til windows.h bug
 //#include "stdafx.h"
 #include "Serial.h"
 
