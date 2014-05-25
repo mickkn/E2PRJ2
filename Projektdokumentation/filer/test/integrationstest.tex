@@ -31,15 +31,11 @@ Decoderen tilsluttes +-12V.
 
 18Vac/50Hz skaber forbindelse mellem encoder og decoder.
 
-Hovedenhedens STK500 kit tilsluttes PC'en via RS232 til USB.
+Hovedenhedens STK500 kit tilsluttes PC'en via RS232 til USB. For at PC'en kan kommunikere med mikrocontrolleren skal PD0 tilsluttes RDX pinnen på STK500 og PD1 skal tilsluttes TDX pinnen på STK500. 
 
-** 
-Encoder til STK - 10 pin harwin?
+Hele port D fra STK500 kittet overføres til encoder printet. Yderligere information omkring forbinderserne i port D findes i hardwadre design for encoderen ***HENVISNING***
 
-PD0, PD1 for at benytte uart.
-
-DE2 til PB2 og ground
-**
+DE2 forbindelsen til STK500 *****
 
 \subsection{Resultat}
 
@@ -50,5 +46,13 @@ DE2 til PB2 og ground
 	\caption{.}
 	\label{fig:Modtager_0101_ON}
 \end{figure}
+
+Ovenstående \ref{fig:Modtager_0101_ON} viser hvad decoderen ville sende til modtager STK500 kittet, hvis dette var implementeret. Fra PC'en er kommandoen for at aktivere udtag med adresse "0101" sendt afsted.
+"1110 0101100110 01100110 000000" er den modtagede X10 kode, netop den kode som aktiverer udtaget med adresse "0101". Det er her op til modtager softwaren at arbejde med denne kode og herved sætte PD7 høj. Herved vil relæet klikke og 18Vac/50Hz udtaget er aktivt. 
+
+
+
+
+
 
 
