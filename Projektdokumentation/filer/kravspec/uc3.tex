@@ -1,7 +1,13 @@
-\begin{table}[H] \centering
-	\label{tab:UC3}
-\begin{tabular}{|p{6cm}|p{8cm}|}
+\begin{center} \centering
+	\begin{longtable}{|p{6cm}|p{8cm}|}
 	\hline
+		\multicolumn{2}{|l|}{\textbf{UC3: Deaktiver}} \\\hline
+		\endfirsthead
+		
+		\multicolumn{2}{l}{...fortsat fra forrige side} \\ \hline 
+		\multicolumn{2}{|l|}{\textbf{UC3: Deaktiver}} \\\hline
+		\endhead	
+
 		\textbf{Mål}						&At Bruger kan deaktivere enkelte eller alle enheder, i systemet. \\\hline
 		\textbf{Initialisering} 			&Bruger vælger ''Deaktiver'' \\ \hline
 		\textbf{Aktører og Stakeholders}	&Bruger(Primær), Eksterne enheder(Sekundær)\\ \hline
@@ -16,15 +22,12 @@
 					
 				\item Bruger vælger ''Deaktiver'' i hovedmenu
 										
-				\item \label{uc3menu}UI viser mulige enheder samt ''Vælg alle'', ''Deaktiver''  og ''Tilbage''
-												
-				\item Bruger markerer ønskede enheder til deaktivering
+				\item \label{uc3menu}UI viser mulige enheder samt ''Deaktiver''  og ''Tilbage''
 												
 				\item \label{uc3deact} Bruger vælger ''Deaktiver''\newline
 					\textbf{[Undtagelse \ref{uc3deact}a]} Bruger vælger ''Tilbage''
 												
-				\item \label{uc3sysdeact} Systemet deaktiverer valgte enheder \newline
-					\textbf{[Undtagelse \ref{uc3sysdeact}a]} Ingen valgte enheder
+				\item \label{uc3sysdeact} Systemet deaktiverer valgte enheder
 				
 				\item UI viser besked om at enheder, er deaktiverede
 																	
@@ -36,13 +39,12 @@
 		
 		&\begin{enumerate}[label= \ref{uc3deact}a.]
 			\item UI returnerer til hovedmenu og UC3 afbrydes
-		\end{enumerate}						
-							
-		\begin{enumerate}[label= \ref{uc3sysdeact}a.]
-			\item Hvis ingen enheder er valgt udskrives en fejl på skærmen og beder brugeren om at vælge en enhed og går til UC3.\ref{uc3menu}
-		\end{enumerate} \\\hline
+		\end{enumerate}	
+		
+		\\ \hline					
 											
 		%\textbf{Version}		&1.2 \\\hline
 		
-	\end{tabular} 
-\end{table}
+	\end{longtable} 
+	\label{UC3}
+\end{center}
