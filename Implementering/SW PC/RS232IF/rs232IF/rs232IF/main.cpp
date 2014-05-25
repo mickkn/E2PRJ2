@@ -14,40 +14,42 @@ int main()
 
 	while(testing)
 	{
-		cout << "Aktiver kaldes og sender SA1111. read() læser og udskriver beskeden og returnere 0: " << endl;
+		cout << "Aktiver kaldes og sender SA1111." << endl << "read() læser og udskriver beskeden og returnere 0: " << endl;
 		objRS.aktiver(1111);
-		int test = objRS.read();
-		cout << "read() returnerede: " << test << endl << endl;
+		int test1 = objRS.read();
+		cout << "read returnerede: " << test1 << endl << endl;
 		
 		Sleep(2000);
 
-		cout << "Deaktiver kaldes og sender SD1111. read() læser og udskriver beskeden og returnere 0: " << endl;
+		cout << "Deaktiver kaldes og sender SD1111. " << endl << "read() læser og udskriver beskeden og returnere 0: " << endl;
 		objRS.deaktiver(1111);
-		int test = objRS.read();
-		cout << "read() returnerede: " << test << endl << endl;
+		int test2 = objRS.read();
+		cout << "read returnerede: " << test2 << endl << endl;
 
 		Sleep(2000);
 
 		cout << "Test af returværdi for read() metode" << endl << endl;
-		cout << "ST9999 sendes og read() skal gerne returnere 1: " << endl;
-		bool tester("ST999");
-		int test = objRS.read();
-		cout << "read() returnerede: " << test << endl << endl;
+		cout << "ST9999 sendes og read skal gerne returnere 1: " << endl;
+		objRS.tester("ST9999");
+		int test3 = objRS.read();
+		cout << "read returnerede: " << test3 << endl << endl;
 
 		Sleep(2000);
 
 		cout << "SF9999 sendes og read() skal gerne returnere 2: " << endl;
-		bool tester("SF999");
-		int test = objRS.read();
-		cout << "read() returnerede: " << test << endl << endl;
+		objRS.tester("SF9999");
+		int test4 = objRS.read();
+		cout << "read returnerede: " << test4 << endl << endl;
 
 		Sleep(2000);
 
 		cout << "SB9999 sendes og read() skal gerne returnere 3: " << endl;
-		bool tester("SB999");
-		int test = objRS.read();
-		cout << "read() returnerede: " << test << endl << endl;
+		objRS.tester("SB9999");
+		int test5 = objRS.read();
+		cout << "read returnerede: " << test5 << endl << endl;
 		
+
+		cout << "Test done!";
 		testing = false;
 
 	}

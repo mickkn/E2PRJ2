@@ -2,9 +2,12 @@
 #pragma once
 
 #include "Serial.h"
+#include <string>
 
-#define port 3
+#define port 4
 #define commandSize 7
+
+using namespace std;
 
 class RS232IF
 {
