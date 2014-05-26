@@ -226,9 +226,23 @@ Kondensatoren bestemmes til at være 1 nF, og modstand $R_8$ kan derfor beregnes
 R = \frac{\tau}{C} = \frac{8,33 \cdot 10^{-6}}{1 \cdot 10^{-9}} = 83 k\Omega
 \end{align}
 
-Modstanden $R_8$ er rundet op til en modstandstørrelse på $100 k\Omega$, dette gør at vi er helt sikre på at kondensatoren ikke aflader for hurtigt. 
+Modstanden $R_8$ er rundet op til $100 k\Omega$, dette gør at vi er helt sikre på at kondensatoren ikke aflader for hurtigt. 
 
 Der er anvendt en schmitt trigger til at lave signalet om til et firkantet signal som STK-kitten kan aflæses. Grunden til at der er brugt 2 er fordi de er inverterende. 
+
+\newpage
+\subsection{Dipswitch}
+For at en X10-kommando bliver udført af det korrekte udtag medsendes en adresse på fire bit.
+Til at simulere adresseringen for et udtag, er der lavet fire dipswitches der er forsynet med 5 V og forbundet til STK-500 modtageren, som det er illustreret på figur \ref{fig:DIPSWITCH}.
+
+En åben kontakt vil give 0 og en lukket kontakt vil resultere i 1
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/DIPSWITCH}
+	\caption{Dipswitch for adressering af udtag}
+	\label{fig:DIPSWITCH}
+\end{figure}
 
 \newpage
 \subsection{Komponentliste}
@@ -290,8 +304,7 @@ De efterfølgende tabeller viser en oversigt over hvilke komponenter der er anve
    \end{small}
 \label{table:Komponentliste Decoder}
 \end{table}
-
-
+\newpage
 
 \section{DE2-kodelås}
 
@@ -323,3 +336,4 @@ Outputtet er sat til GPIO1 JP2 D9 (PIN\_M25), vist i Figur \ref{code:code_lock_p
 	\caption{DE2-kodelås pinout}
 	\label{code:code_lock_pinout}
 \end{figure}
+\newpage
