@@ -1,4 +1,4 @@
-Her følger klassebeskrivelser for alle klasser til CSS hovedenheden. \\
+Her følger klassebeskrivelser for alle klasser til CSS-hovedenheden. \\
 
 %
 % RS232IF
@@ -6,7 +6,7 @@ Her følger klassebeskrivelser for alle klasser til CSS hovedenheden. \\
 {\centering
 \textbf{RS232IF}\par
 }
-\textbf{Ansvar:} At varetage kommunikation mellem CSS hovedenhed og PC over RS232 protokollen. \\
+\textbf{Ansvar:} At varetage kommunikation mellem CSS-hovedenhed og PC over RS232 protokollen. \\
 \textbf{Attributer:} Ingen \\
 \textbf{Metoder:} \\
 void adviser(); \\
@@ -22,27 +22,27 @@ void loginStatus( bool status ); \\
 unsigned char getUC( char * kommando ); \\
 \textbf{Parametre:} Pointer med plads til den modtagende RS232 kommando \\
 \textbf{Returværdi:} Nummer på UC som tal \\
-\textbf{Beskrivelse:} Afventer en fuld data pakke på RS232 forbindelsen. Gemmer den ud fra pointeren. Dekoder kommandoen iht. RS232 protokollen og returnerer UC nummeret \\
+\textbf{Beskrivelse:} Afventer en fuld data pakke på RS232-forbindelsen. Gemmer den ud fra pointeren. Dekoder kommandoen iht. RS232 protokollen og returnerer UC nummeret \\
 
 void getAdresse( char * kommando, char * adresse); \\
-\textbf{Parametre:} Pointer til den modtagede kommando. Pointer med plads til adressen. \\
+\textbf{Parametre:} Pointer til den modtaget kommando. Pointer med plads til adressen. \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Hvis kommandoen er formateret med STX og ETX fjernes disse og adressen skrives over i adresse pointeren \\
 
 void wrapper( const char * kommando, char * wrapped); \\
 \textbf{Parametre:} Pointer til rå kommando data uden STX og ETX. Pointer med plads til den fulde kommando inkl. STX og ETX \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Indsætter STX og ETX karaktere iht. RS232 protokollen\\
+\textbf{Beskrivelse:} Indsætter STX og ETX karakterer iht. RS232 protokollen\\
 
 void unWrapper( const char * wrapped, char * kommando); \\
 \textbf{Parametre:} Pointer til rå kommando data inkl. STX og ETX. Pointer med plads til kommandoen uden STX og ETX \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Fjerner STX og ETX karaktere iht. RS232 protokollen\\
+\textbf{Beskrivelse:} Fjerner STX og ETX karaktere iht. RS232-protokollen\\
 
 unsigned char protokolUnwrap( char * kommando); \\
 \textbf{Parametre:} Pointer til rå kommando data uden STX og ETX \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Returnerer et tal svarende til UC nummeret ud fra RS232 protokollen \\
+\textbf{Beskrivelse:} Returnerer et tal svarende til UC nummeret ud fra RS232-protokollen \\
 
 void sendKommando( char * wrapped ); \\
 \textbf{Parametre:} Pointer til rå kommando data inkl. STX og ETX \\
@@ -65,7 +65,7 @@ void loginFalse(); \\
 {\centering
 \textbf{UC1Login}\par
 }
-\textbf{Ansvar:} At varetage UC1 Login forløbet. \\
+\textbf{Ansvar:} At varetage UC1: Login forløbet. \\
 \textbf{Attributer:}
 \begin{itemize}
 	\item \textbf{DE2IF * DE2Ptr\_} \\
@@ -90,7 +90,7 @@ void loginStatus( bool status ); \\
 {\centering
 \textbf{UC2Aktiver}\par
 }
-\textbf{Ansvar:} At varetage UC2 Aktiver forløbet. \\
+\textbf{Ansvar:} At varetage UC2: Aktiver forløbet. \\
 \textbf{Attributer:}
 \begin{itemize}
 	\item \textbf{X10IF * X10IFPtr\_} \\
@@ -100,7 +100,7 @@ void loginStatus( bool status ); \\
 void aktiver( char * adresse ); \\
 \textbf{Parametre:} Pointer til adressen på enhed \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Kalder aktiver() metoden i X10IF objektet med den modtagede adresse \\
+\textbf{Beskrivelse:} Kalder aktiver() metoden i X10IF objektet med den modtaget adresse \\
 
 %
 % UC3Deaktiver
@@ -108,7 +108,7 @@ void aktiver( char * adresse ); \\
 {\centering
 \textbf{UC3Deaktiver}\par
 }
-\textbf{Ansvar:} At varetage UC3 Deaktiver forløbet. \\
+\textbf{Ansvar:} At varetage UC3: Deaktiver forløbet. \\
 \textbf{Attributer:}
 \begin{itemize}
 	\item \textbf{X10IF * X10IFPtr\_} \\
@@ -118,7 +118,7 @@ void aktiver( char * adresse ); \\
 void deaktiver( char * adresse ); \\
 \textbf{Parametre:} Pointer til adressen på enhed \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Kalder deaktiver() metoden i X10IF objektet med den modtagede adresse \\
+\textbf{Beskrivelse:} Kalder deaktiver() metoden i X10IF objektet med den modtaget adresse \\
 
 %
 % UC5DetekterLyd
@@ -126,7 +126,7 @@ void deaktiver( char * adresse ); \\
 {\centering
 \textbf{UC5DetekterLyd}\par
 }
-\textbf{Ansvar:} At varetage UC5 Detekter Lyd. \\
+\textbf{Ansvar:} At varetage UC5: Detekter Lyd. \\
 \textbf{Attributer:}
 \begin{itemize}
 	\item \textbf{RS232IF * RS232Ptr\_} \\
@@ -144,7 +144,7 @@ void detekterLyd(); \\
 {\centering
 \textbf{DE2IF}\par
 }
-\textbf{Ansvar:} At holde styr på aktuel loginstatus på DE2 boardet.
+\textbf{Ansvar:} At holde styr på aktuel login-status på DE2-boardet.
 
 Dette er en global klasse da ISR for INT2 benet kalder setLoginStatus() metoden. Det globale objekt hedder DE2IFObj. \\
 \textbf{Attributer:}
@@ -160,7 +160,7 @@ Dette er en global klasse da ISR for INT2 benet kalder setLoginStatus() metoden.
 void setLoginStatus( bool status ); \\
 \textbf{Parametre:} True hvis logget ind, False hvis logget ud \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Sætter attribut loginStatus\_ til aktuel status på DE2 board og kalder endten start()- eller stop()-metoden i det globale loginTimer objekt hvis status er hendholdsvis true eller false \\
+\textbf{Beskrivelse:} Sætter attribut loginStatus\_ til aktuel status på DE2-board og kalder enten start()- eller stop()-metoden i det globale loginTimer objekt hvis status er henholdsvis true eller false \\
 
 bool getLoginStatus(); \\
 \textbf{Parametre:} Ingen \\
@@ -184,10 +184,10 @@ ISR( INT2\_vect ); \\
 {\centering
 \textbf{X10IF}\par
 }
-\textbf{Ansvar:} At varetage kommunikation mellem CSS hovedenhed og X10 modtager over X10 protokollen.
+\textbf{Ansvar:} At varetage kommunikation mellem CSS-hovedenhed og X10-udtaget over X10-protokollen.
 
 Dette er en global klasse da ISR for INT0 tilgår buffer\_ objektet. Det globale objekt hedder X10IFObj. \\
-\textbf{Attributer:}
+\textbf{Attributter:}
 \begin{itemize}
 	\item \textbf{CircBuffer buffer\_} \\
 	CircBuffer obejkt til at holde kommandoer inden afsendelse
@@ -203,7 +203,7 @@ void aktiver( char * adresse ); \\
 void deaktiver( char * adresse ); \\
 \textbf{Parametre:} Pointer til adresse på enhed der skal deaktiveres \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Afsend kommandoen ''SDXXXX\textbackslash r'', hvor XXXX er adressen på enheden der skal deaktiveres, over X10 forbindelsen ved brug af sendKommando() metoden \\
+\textbf{Beskrivelse:} Afsend kommandoen ''SDXXXX\textbackslash r'', hvor XXXX er adressen på enheden der skal deaktiveres, over X10-forbindelsen ved brug af sendKommando() metoden \\
 
 unsigned char getAfventer( ); \\
 \textbf{Parametre:} Ingen \\
@@ -213,7 +213,7 @@ unsigned char getAfventer( ); \\
 void decreaseAfventer( ); \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Hvis afventer\_ ikker er 0 trækkes 1 fra \\
+\textbf{Beskrivelse:} Hvis afventer\_ ikke er 0 trækkes 1 fra \\
 
 void enableInt0( ); \\
 \textbf{Parametre:} Ingen \\
@@ -228,22 +228,22 @@ void disableInt0( ); \\
 char getBit( ); \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Hent næste karakter i buffer\_ objektet med metogen get() \\
+\textbf{Beskrivelse:} Hent næste karakter i buffer\_ objektet med metoden get() \\
 
 void wrap( char * unwrapped, char * wrapped ); \\
-\textbf{Parametre:} Pointer til rå kommando uden STX og ETX. Pointer med plads til X10 formateret kommando \\
+\textbf{Parametre:} Pointer til rå kommando uden STX og ETX. Pointer med plads til X10-formateret kommando \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Omskriv kommando fra RS232 format (''SAXXXX\textbackslash r'') til X10 format inkl. STX og ETX iht. X10 protokollen \\
+\textbf{Beskrivelse:} Omskriv kommando fra RS232 format (''SAXXXX\textbackslash r'') til X10-format inkl. STX og ETX iht. X10-protokollen \\
 
 void sendKommando( char * unwrapped ); \\
 \textbf{Parametre:} Pointer til kommando i RS232 format (''SAXXXX\textbackslash r'') uden STX og ETX \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Omformater kommando til X10 format og indsæt i buffer\_ objektet. Terminer bufferen med '\textbackslash n'. Forøg afventer\_ attributen og aktiver interrupts på INT0 \\
+\textbf{Beskrivelse:} Omformater kommando til X10-format og indsæt i buffer\_ objektet. Terminer bufferen med '\textbackslash n'. Forøg afventer\_ attributen og aktiver interrupts på INT0 \\
 
 char * formatX10( char * plads, char bit ); \\
 \textbf{Parametre:} Pointer med plads til X10 formateret bit (2 char plader). Char som skal formateres fra. Kun '0' og '1' gyldige. \\
 \textbf{Returværdi:} Pointer til næste plads i X10 kommando \\
-\textbf{Beskrivelse:} Formaterer bit om til X10 formaterede bits iht. X10 protokollen og returnerer *plads + 2 \\
+\textbf{Beskrivelse:} Formaterer bit om til X10-formateret bits iht. X10-protokollen og returnerer *plads + 2 \\
 
 %
 % CircBuffer
@@ -266,17 +266,17 @@ char * formatX10( char * plads, char bit ); \\
 CircBuffer( ); (Constructor)\\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Initialiser attributter til 0. Fyld array med '\textbackslash 0' \\
+\textbf{Beskrivelse:} Initialisere attributter til 0. Fyld array med '\textbackslash 0' \\
 
 CircBuffer \& insert( char * bit ); \\
 \textbf{Parametre:} Pointer til bit der skal indsættes i bufferen \\
 \textbf{Returværdi:} Reference til objektet (this) \\
-\textbf{Beskrivelse:} Indsætter værdi i bufferen og ligger en til nextIndex\_ atributten. Hvis denne er større end arrayets størrelse startes fra 0\\
+\textbf{Beskrivelse:} Indsætter værdi i bufferen og ligger en til nextIndex\_ attributten. Hvis denne er større end arrayets størrelse startes fra 0\\
 
 char get( ); \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Udlæst bit fra arrayet \\
-\textbf{Beskrivelse:} Udlæser bit fra arrayet. Ligger en til currentIndex\_ atributten. Hvis denne er større end arrayets størrelse startes fra 0\\
+\textbf{Beskrivelse:} Udlæser bit fra arrayet. Ligger en til currentIndex\_ attributten. Hvis denne er større end arrayets størrelse startes fra 0\\
 
 unsigned char getNextIndex( ); \\
 \textbf{Parametre:} Ingen \\
@@ -294,7 +294,7 @@ unsigned char getCurrentIndex( ); \\
 {\centering
 \textbf{SensorIF}\par
 }
-\textbf{Ansvar:} At holde styr på aktuel lyd detektering og give besked over RS232 forbindelsen hvis lyd registreres.
+\textbf{Ansvar:} At holde styr på aktuel lyddetektering og give besked over RS232-forbindelsen hvis lyd registreres.
 
 Dette er en global klasse da ISR for INT1 tilgår alarmer() metoden. Det globale objekt hedder SensorIFObj. \\
 \textbf{Attributer:}
@@ -325,7 +325,7 @@ ISR( INT1\_vect ); \\
 {\centering
 \textbf{ZeroCrossInt}\par
 }
-\textbf{Ansvar:} At detekterer ZeroCross signalet og afsende X10 kommandoer ud fra dette.\\
+\textbf{Ansvar:} At detekterer ZeroCross signalet og afsende X10-kommandoer ud fra dette.\\
 \textbf{Attributer:} Ingen
 \textbf{Metoder:} \\
 ZeroCrossInt( ); (Constructor) \\
@@ -341,7 +341,7 @@ ZeroCrossInt( ); (Constructor) \\
 ISR( INT0\_vect ); \\
 \textbf{Parametre:} Adresse til INT0 vector \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Hvis der er data i køen på X10IFObj objektet udhentes et bit fra den. Bittet afsendes ved at tænde for det globale Timer objekt iht. X10 protokollen. Hvis kommando termineringen udtages fra bufferen tælles køen ned. Hvis køen er tom deaktiveres interruptet ved at kalde disbaleInt0() metoden i X10IFObj objektet. \\
+\textbf{Beskrivelse:} Hvis der er data i køen på X10IFObj objektet udhentes et bit fra den. Bit'et afsendes ved at tænde for det globale Timer objekt iht. X10-protokollen. Hvis kommando termineringen udtages fra bufferen tælles køen ned. Hvis køen er tom deaktiveres interruptet ved at kalde disableInt0() metoden i X10IFObj objektet. \\
 
 %
 % UART
@@ -349,7 +349,7 @@ ISR( INT0\_vect ); \\
 {\centering
 \textbf{UART}\par
 }
-\textbf{Ansvar:} At interface med USART hardwaren på atMega32 processoren på STK500 kittet.
+\textbf{Ansvar:} At interface med USART hardwaren på ATmega32-processoren på STK500-kittet.
 
 Dette er en global klasse og det globale objekt hedder RS232UART \\
 \textbf{Attributer:}
@@ -365,7 +365,7 @@ Dette er en global klasse og det globale objekt hedder RS232UART \\
 UART( unsigned long BaudRate, unsigned char databit ); (Constructor) \\
 \textbf{Parametre:} Buadrate. Mellem 110 og 115200. Antallet af databits. Mellem 5 og 9. \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Sæt de hardwarenære registre til kommunikation med USART delen af atMega32 processoren samt modtage interrupts \\
+\textbf{Beskrivelse:} Sæt de hardwarenære registre til kommunikation med USART delen af ATmega32 processoren samt modtage interrupts \\
 
 \textasciitilde UART( ); (Destructor) \\
 \textbf{Parametre:} Ingen \\
@@ -395,7 +395,7 @@ void sendString( char * streng ); \\
 ISR( USART\_RXC\_vect ); \\
 \textbf{Parametre:} Adresse til USART modtagnings vector \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Læs modtaget data ind i dataIn[] arrayet. Registrer om en fuldt modtaget og termineret kommando er modtaget. Hvis det er tilfældet nulstilles dataCount og commandReady flaget sættes. Hvis der er modtaget flerer karakterer end kommandolængeden og de ikke har rigtige STX og ETX nulstilles bufferen. Hvis intet af ovenstående udføres, øges dataCount med 1\\
+\textbf{Beskrivelse:} Læs modtaget data ind i dataIn[] arrayet. Registrer om en fuldt modtaget og termineret kommando er modtaget. Hvis det er tilfældet nulstilles dataCount og commandReady flaget sættes. Hvis der er modtaget flere karakterer end kommandolængden og de ikke har rigtige STX og ETX nulstilles bufferen. Hvis intet af ovenstående udføres, øges dataCount med 1\\
 
 %
 % Timer
@@ -411,22 +411,22 @@ Dette er en global klasse da ISR for INT0 kan tilgå start() og stop() metoderne
 Timer( ); (Constructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Sæt output port og indstil hardware registrer til timer1 på atMega32 processoren til at genererer 120 kHz firkant signal \\
+\textbf{Beskrivelse:} Sæt output port og indstil hardware registrer til Timer1 på ATmega32 processoren til at genererer 120 kHz firkant signal \\
 
 \textasciitilde Timer( ); (Destructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Afbryd hardware forbindelse til timeren og stop den. Sæt ouput ben lavt \\
+\textbf{Beskrivelse:} Afbryd hardware forbindelse til timeren og stop den. Sæt output-ben lavt \\
 
 void start( ); \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Sæt hardware forbindelse til output ben og start timer1 \\
+\textbf{Beskrivelse:} Sæt hardware forbindelse til output ben og start Timer1 \\
 
 void stop( ); \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Afbryd hardware forbindelse til timeren og stop den. Sæt ouput ben lavt \\
+\textbf{Beskrivelse:} Afbryd hardware forbindelse til timeren og stop den. Sæt output ben lavt \\
 
 %
 % LoginTimer
@@ -434,9 +434,9 @@ void stop( ); \\
 {\centering
 \textbf{LoginTimer}\par
 }
-\textbf{Ansvar:} At holde styr på tiden siden sidste validerede login med den interne timer0 i atMega32 processoren.
+\textbf{Ansvar:} At holde styr på tiden siden sidste validerede login med den interne Timer0 i atMega32 processoren.
 
-Dette er en global klasse da ISR for timer0 overflows tilgår objektet. Det globale objekt hedder loginTimer. \\
+Dette er en global klasse da ISR for Timer0 overflows tilgår objektet. Det globale objekt hedder loginTimer. \\
 \textbf{Attributer:}
 \begin{itemize}
 	\item \textbf{unsigned int ovfCount\_} \\
@@ -446,7 +446,7 @@ Dette er en global klasse da ISR for timer0 overflows tilgår objektet. Det glob
 Timer( ); (Constructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Initialiser ovfCount\_ atributten til 0 og kald stop() metoden \\
+\textbf{Beskrivelse:} Initialiser ovfCount\_ attributten til 0 og kald stop() metoden \\
 
 \textasciitilde Timer( ); (Destructor) \\
 \textbf{Parametre:} Ingen \\

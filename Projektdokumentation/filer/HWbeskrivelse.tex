@@ -5,16 +5,16 @@
 \label{lab:bddhardware}
 \raggedright
 \end{figure}
-BDD diagrammet giver et overblik over hvad det samlede system består af. Vi ser en portbeskrivelse som viser hvilke signaler hver blok består af.
+BDD diagrammet giver et overblik over hvad det samlede system består af. Man ser en portbeskrivelse som viser hvilke signaler hver blok består af.
 
 \begin{figure}[H] \centering
-\subsection{BDD Hovedenhed}
+\subsection{BDD CSS-hovedenhed}
 {\includegraphics[width=0.9\textwidth]{billeder/diagrammer/BDD_Hovedenhed}}
 \caption{BDD Hovedenhed}
 \label{lab:bddhovedenhed}
 \raggedright
 \end{figure}
-BDD diagrammet giver et overblik over hvad CSS-hovedenheden består af. Vi ser en portbeskrivelse for STK-kittet og encoder. 
+BDD diagrammet giver et overblik over hvad CSS-hovedenheden består af. Man ser en portbeskrivelse for STK500-kittet og X10-encoderen. 
 
 \begin{figure}[H] \centering
 \subsection{BDD X10-udtag}
@@ -23,16 +23,7 @@ BDD diagrammet giver et overblik over hvad CSS-hovedenheden består af. Vi ser e
 \label{lab:bddmodtager}
 \raggedright
 \end{figure}
-BDD diagrammet giver et overblik over hvad X10-udtaget består af. Vi ser en portbeskrivelse for STK-kittet og decoderen.
-
-\begin{figure}[H] \centering
-\subsection{Plantegning over HW}
-{\includegraphics[width=0.9\textwidth]{billeder/diagrammer/Plantegning_over_HW}}
-\caption{Plantegning over HW}
-\label{lab:Plantegning over HW}
-\raggedright
-\end{figure}
-Plantegningen over hardwaren giver et overblik over hvordan CSS-hovedenheden og X10-udtaget er forbundet, samt hvilke type signaler der bliver sendt imellem dem.
+BDD diagrammet giver et overblik over hvad X10-udtaget består af. Vi ser en portbeskrivelse for STK500-kittet og X10-decoderen.
 
 \begin{figure}[H] \centering
 \subsection{IBD Hardware}
@@ -50,8 +41,16 @@ IBD diagrammet giver et internt overblik over hvordan hele vores system er forbu
 \label{lab:ibdhovedenhedmodtager}
 \raggedright
 \end{figure}
-IBD diagrammet giver et internt overblik over hvordan X10-hovedenheden og X10-udtaget er forbundet. Vi ser hvilke type signaler der bliver sendt imellem de forskellige blokke.
+IBD diagrammet giver et internt overblik over hvordan CSS-hovedenheden og X10-udtaget er forbundet. Vi ser hvilke type signaler der bliver sendt imellem de forskellige blokke.
 
+\begin{figure}[H] \centering
+\subsection{Plantegning over HW}
+{\includegraphics[width=0.9\textwidth]{billeder/diagrammer/Plantegning_over_HW}}
+\caption{Plantegning over HW}
+\label{lab:Plantegning over HW}
+\raggedright
+\end{figure}
+Plantegningen over hardwaren giver et overblik over hvordan CSS-hovedenheden og X10-udtaget er forbundet, samt hvilke type signaler der bliver sendt imellem dem.
 
 \clearpage
 \newpage
@@ -69,7 +68,7 @@ Til at beskrive blokkene nærmere er anvendt tabeller som ses herunder. Her er h
 \hline
 \textbf{Bloknavn} & \textbf{Funktion} & \textbf{Signaler} & \textbf{Kommentar} \\ \hline
 
-X10-encoder & Modtager kommandoer og encoder til 120 kHz bursts & 120 kHz & Data ud \\ \cline{3-4}	
+X10-encoder & Modtager kommandoer og encoder til 120 kHz bursts & 120 kHz & Data burst ud på 18Vac-nettet \\ \cline{3-4}	
 & & X10 data & X10 data kommando ind \\ \hline
 
 CSS-hovedenhed & Genererer X10-data og detekterer på zero-crossing & RS232 & Laptop forbindelse \\ \cline{3-4}
@@ -97,14 +96,14 @@ For at fuldende beskrivelsen af grænsefladen er der lavet en signaltabel som ka
 \hline
 \textbf{Signal-navn} & \textbf{Funktion} & \textbf{Område} & \textbf{Port 1} & \textbf{Port 2} & \textbf{Kommentar} \\ \hline
 
-120 kHz & sende kommando på 18Vac-nettet & & Encoder, HE2 & Decoder, DM1 & \\ \hline
+120 kHz & Sende X10-kommando ud på 18Vac-nettet & & X10-encoder, HE2 & X10-decoder, DM1 & \\ \hline
 
-X10-data & kommando & & STK500, HSTK4 & Encoder, HE1 & \\ \cline{4-5}
-&&& Decoder, MD2 & STK500, MSTK1 &\\ \hline
+X10-data & kommando & & STK500, HSTK4 & X10-encoder, HE1 & \\ \cline{4-5}
+&&& X10-decoder, MD2 & STK500, MSTK1 &\\ \hline
 
-bool & digital signal & 5V/0V & DE2, N/A & STK500, HSTK2 & \\ \cline{4-5}
-&&& Lyddetektor, N/A & STK500, HSTK3 & \\ \cline{4-5}
-&&& STK500, MSTK2 & Udtag, N/A & \\ \hline
+bool & digital signal & 5V/0V & DE2, PB2 & STK500, HSTK2 & \\ \cline{4-5}
+&&& Lyddetektor, PD3 & STK500, HSTK3 & \\ \cline{4-5}
+&&& STK500, MSTK2 & X10-udtag, Relæ & \\ \hline
 \end{tabular}
 \end{small}
 \label{table:Signaltabel}

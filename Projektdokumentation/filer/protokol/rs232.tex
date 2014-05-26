@@ -1,11 +1,11 @@
-Kommunikationen mellem PC og CSS hovedenheden sker over seriel kommunikation på et RS232 interface.\\
+Kommunikationen mellem PC og CSS hovedenheden sker over seriel kommunikation på et RS232-interface.\\
 
 Det fysiske setup for RS232-interfacet er: 9600 kbps, ingen paritet, 8 bits, 1 stop bit.\\
 
-I tabel \ref{table:RS232StartStopBytes} beskrives de fælles informationer som gælder mellem computeren og CSS hovedenheden.\\
+I tabel \ref{table:RS232StartStopBytes} beskrives de fælles informationer som gælder mellem computeren og CSS-hovedenheden.\\
 
 \begin{table}[h]
-	\caption{Start og stop bytes for RS232 kommunikation}
+	\caption{Start og stop bytes for RS232-kommunikation}
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline 
@@ -63,9 +63,9 @@ Kun kommandoerne beskrevet i tabel \ref{tabel:RS232Kommandoer} er gyldige. I til
 \end{table} 
 
 \textbf{Blokken <Data>}
-Ved alle kommandoer undtaget Aktiver- og Deaktiverkommandoerne inderholder <Data> "9999"
+Ved alle kommandoer undtaget Aktiver- og Deaktiver-kommandoerne indeholder <Data> "9999"
 
-For at bruge aktiver eller deaktiver kommandoerne er <Data> formateret som adressen. Denne adressering formateres som 4 byte, som hver består af ASCII karakterende '0' eller '1'. På den måde skriver man blot den adresse ind, som man har indstillet på sit X10 udtag. F.eks. "0100".
+For at bruge aktiver eller deaktiver kommandoerne er <Data> formateret som adressen. Denne adressering formateres som 4 byte, som hver består af ASCII karakterende '0' eller '1'. På den måde skriver man blot den adresse ind, som man har indstillet på sit X10-udtag. F.eks. "0100".
 
 \textbf{Eksempler:}
 
@@ -73,7 +73,7 @@ For at bruge aktiver eller deaktiver kommandoerne er <Data> formateret som adres
 Kommandoen aktiverer enheden med adresse "0101".
 
 \textbf{''SL\textbackslash r''}
-Kommandoen beder CSS hovedenheden om at returnerer login status.
+Kommandoen beder CSS-hovedenheden om at returnerer login status.
 
 CSS Hovedenheden vil returnerer et svar:
 \textbf{''ST9999\textbackslash r"} for at brugeren er logget ind eller \textbf{''SF9999\textbackslash r''} hvis brugeren ikke er logget ind. Bemærk at \textbackslash r er ASCII karakteren for carriage return.
