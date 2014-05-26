@@ -16,19 +16,17 @@ Encoderen skal forsynes med 5VDC, dette gøres direkte fra laboratoriets forsyni
 Decoderen indeholder en operationsforstærker, hvis forsyning skal være +/-12VDC. Resten af decoderen skal forsynes med 5V. Dette gøres via en spændingsregulator på decoderprintet.   
 
 \begin{figure}[H]
-  \begin{minipage}{0.45\textwidth}
-    \centering
-      \includegraphics[width=\textwidth]{billeder/IntTest/forsyning}
-      \caption{Opkobling af forsyning}
+	\centering
+	\includegraphics[width=\textwidth]{billeder/IntTest/forsyning}
+	\caption{Opkobling af forsyning}
     \label{fig:opkobling_forsyning}
-  \end{minipage}
-  \hspace{0.1\textwidth}
-  \begin{minipage}{0.45\textwidth}
-    \centering
-      \includegraphics[width=\textwidth]{billeder/IntTest/system}
-      \caption{Overbliksbillede af samlet opsætning}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{billeder/IntTest/system}
+	\caption{Overbliksbillede af samlet opsætning}
     \label{fig:system_sammensat}
-  \end{minipage}
 \end{figure}
 
 Spændingsforsyningen i laboratoriet har 2 variable udgange (én til venstre og én til højre), samt én fast 5VDC forsyning (midten). Begge variable udgange indstilles til 12V. 
@@ -62,4 +60,4 @@ DE2 forbindelsen til STK500 se figur \ref{fig:integration_tabel}.
 \end{figure}
 
 Ovenstående figur \ref{fig:Modtager_0101_ON} viser hvad decoderen ville sende til modtager STK500 kittet. Fra PC'en er kommandoen for at aktivere udtag med adresse "0101" sendt afsted.
-"1110 0101100110 01100110 000000" er den modtagede X10 kode, netop den kode som aktiverer udtaget med adresse "0101". Det er her op til modtager softwaren at arbejde med denne kode og herved sætte PD7 høj. Herved vil relæet klikke og 18Vac/50Hz udtaget er aktivt. 
+"1110 0101100110 01100110 000000" er den modtaget X10-kode, netop den kode som aktiverer udtaget med adresse "0101". Det er her op til modtager softwaren at arbejde med denne kode og herved sætte PD7 høj. Herved vil relæet klikke og 18Vac/50Hz udtaget er aktivt. 
