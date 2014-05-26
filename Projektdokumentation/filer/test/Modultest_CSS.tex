@@ -1,4 +1,4 @@
-Alle klasser i CSS hovedenhedspakken er testet. De enkelte tests er beskrevet i det følgende afsnit.
+Alle klasser i CSS-hovedenhedspakken er testet. De enkelte tests er beskrevet i det følgende afsnit.
 Se det statiske klassediagram for at se sammenhængen mellem klasserne i figur \ref{fig:CSS_hovedenhed_Class_Static}.
 
 % Timer
@@ -27,7 +27,7 @@ Programmet starter med at sende en streng over RS232 interfacet. Her efter afven
 
 \textbf{Opstilling}
 
-Test programmet ligges på et STK500 kit.
+Testprogrammet ligges på et STK500 kit.
 En computer forbindes med STK500 kittet over RS232 Spare porten (Sub-D).
 En jumper forbinder headeren RXD med PD0 og TXD med PD1.
 Start et terminalprogram op indstillet til 9600 buad, 8 databit, 1 stopbit og ingen paritet.
@@ -43,17 +43,17 @@ CircBuffer klassen er testet med programmet ''CircBuffer Test.cpp'' som ligger i
 
 \textbf{Opstilling}
 
-Test programmet ligges på et STK500 kit.
-En computer forbindes med STK500 kittet over RS232 Spare porten (Sub-D).
+Test programmet ligges på et STK500-kit.
+En computer forbindes med STK500-kittet over RS232 Spare porten (Sub-D).
 En jumper forbinder headeren RXD med PD0 og TXD med PD1.
 Start et terminalprogram op indstillet til 9600 buad, 8 databit, 1 stopbit og ingen paritet.
 Reset STK500 og programmet starter.
 
-Det sender først de to index fra klassen som peger på den næste plads og den plads som skal aflæses næste gang adskildt af mellemrum.
-Denne forventes at være ''0 0''. Her efter indsættes en karakter ('A') og index tallende udskrives igen. Denne gang forventes det at NextIndex er steget, så ''1 0''. Karakteren læses så ud igen med get()-metoden og denne sendes efterfulgt af index tallende. Disse forventes nu at være ''1 1''.
+Det sender først de to index fra klassen som peger på den næste plads og den plads som skal aflæses næste gang adskilt af mellemrum.
+Denne forventes at være ''0 0''. Her efter indsættes en karakter ('A') og index tallene udskrives igen. Denne gang forventes det at NextIndex er steget, så ''1 0''. Karakteren læses så ud igen med get()-metoden og denne sendes efterfulgt af index tallene. Disse forventes nu at være ''1 1''.
 
-Bufferen fyldes til sidste med 'B' 1.5 gange, altså overfyldes den. Den afsluttes med et 'C'. Her efter sendes alle værdier i bufferen retur indtil den rammer 'B'et. Der forventes at komme 52 'B'er ud og et 'C'. Dette viser at det er en circulær buffer da de ældste værdi er overskrevet.
-Til sidst udskrives index tallende. Da de er castede fra ints til chars modtages ''6 6'' hvilket svare til 54.
+Bufferen fyldes til sidste med 'B' 1.5 gange, altså overfyldes den. Den afsluttes med et 'C'. Her efter sendes alle værdier i bufferen retur indtil den rammer 'B'et. Der forventes at komme 52 'B'er ud og et 'C'. Dette viser at det er en cirkulær buffer da de ældste værdi er overskrevet.
+Til sidst udskrives index tallene. Da de er castede fra ints til chars modtages ''6 6'' hvilket svare til 54.
 
 % RS232IF
 \subsubsection{RS232IF}
@@ -63,13 +63,13 @@ RS232IF klassen er testet med programmet ''RS232IF Test.cpp'' som ligger i kilde
 
 Test programmet ligges på et STK500 kit.
 En computer forbindes med STK500 kittet over RS232 Spare porten (Sub-D).
-En jumper forbinder headeren RXD med PD0 og TXD med PD1. Et 8-ledet fladkabel sættes mellem LEDS og PORTB på STK500 kittet.
+En jumper forbinder headeren RXD med PD0 og TXD med PD1. Et 8-ledet fladkabel sættes mellem LEDS og PORTB på STK500-kittet.
 Start et terminalprogram op indstillet til 9600 buad, 8 databit, 1 stopbit og ingen paritet.
 Reset STK500 og programmet starter.
 
 Først afsender programmet de tre kommandoer som kan sendes til computeren. Hhv. advisering om babyalarm og svar på loginstatus.
 Forventet modtages ''SB9999\textbackslash r'', ''ST9999\textbackslash r'' og ''SF9999\textbackslash r''.
-Her efter afventer programmet en fuld kommando. Hvis den stemmer overens med en af de mulige UC udskrives nummeret binært på LEDerne på STK500 kittet og den sender den modtagende adresse retur.
+Her efter afventer programmet en fuld kommando. Hvis den stemmer overens med en af de mulige UC udskrives nummeret binært på LEDerne på STK500-kittet og den sender den modtagende adresse retur.
 Testes med kommandoerne i tabel \ref{table:Test_RS232IF_kommandoer} og svar modtages. Bemærk at i Atmels terminal miljø skal karakterende sendes enkeltvis.
 
 \begin{table}[h]
@@ -96,13 +96,13 @@ X10IF klassen er testet med programmet ''X10IF Test.cpp'' som ligger i kildekode
 \textbf{Opstilling}
 
 Test programmet ligges på et STK500 kit.
-En computer forbindes med STK500 kittet over RS232 Spare porten (Sub-D).
+En PC forbindes med STK500-kittet over RS232 Spare porten (Sub-D).
 En jumper forbinder headeren RXD med PD0 og TXD med PD1. Et 8-ledet fladkabel sættes mellem LEDS og PORTB på STK500 kittet. Jumper forbinder SW0 med PD2.
 Start et terminalprogram op indstillet til 9600 buad, 8 databit, 1 stopbit og ingen paritet.
 Reset STK500 og programmet starter.
 
 Først sendes antallet af kommandoer i kø som ASCII tal. Der efter indsættes kommandoen aktiver i køen og antallet sendes igen. Dette gentages for deaktiver kommandoen. Der forventes udskrevet ''0 1 2''.
-Her efter tømmes bufferen og alle værdier sendes. Disse er formateret i X10 formatet og kontrolleres i hendhold til protokol beskrivelsen.
+Her efter tømmes bufferen og alle værdier sendes. Disse er formateret i X10 formatet og kontrolleres i henhold til protokol beskrivelsen.
 Interrupt delen testes når LED7 lyser. Her er det muligt, ved tryk på SW0 at få alle dioderne til at lyse i 0,25 sekunder.
  
 % ZeroCrossInt
@@ -122,7 +122,7 @@ Med scopet kan så måles de rette bursts ud fra kommandoerne. På figur \ref{fi
 På figur \ref{fig:Test_CSS_ZeroCross_sender2} kan man se både aktiver og deaktiver kommandoen.
 Bursts signalet skal være på 120 kHz. 
 
-Figur \ref{fig:Test_CSS_ZeroCross_Bursts} kan man se bursts signalet. Bemærk at frekvensen er lidt højerer end forventet (134 kHz). Dette skyldes at den interne timer i STK500 kittet ikke kan komme 120 kHz nærmerer.
+Figur \ref{fig:Test_CSS_ZeroCross_Bursts} kan man se bursts signalet. Bemærk at frekvensen er lidt højerer end forventet (134 kHz). Dette skyldes at den interne timer i STK500-kittet ikke kan komme 120 kHz nærmere.
 Reaktionstiden for programmet er målt i figur \ref{fig:Test_CSS_ZeroCross_Delay}. Her kan det konstateres at fra der kommer et toggle på INT0 indgangen går der 32 us før burstet sendes afsted.
 
 \begin{figure}[!htb]
