@@ -1,38 +1,3 @@
 % SW design
 \section{Software design}
 
-Med udgangspunkt i domænemodellen udviklet i arkitekturfasen er der udviklet applikationsmodeller for hver computer i systemet. Dette giver overblik over de funktionaliteter som skal implementeres på de forskellige platforme.
-
-Applikationsmodellen består af at beskrive hvordan information fordeles i hvert UC. Dette opnåes med tre diagram typer. Sekvensdiagrammer som viser hvordan information bevæger sig sekventielt igennem systemets klasser, et klassediagram som sammenfatter de metoder og relationer som er fundet i sekvensdiagrammet og et tilstandsmaskinediagram som viser et systems forskellige tilstande. Det sidste er udeladt da det ikke er aktuelt for det opbyggede system.
-
-I det følgende vises applikationsmodellen for X10 udtaget. For modeller over CSS hovedenhed og PC henvises til projektdokumentationen.
-
-\subsection{Applikationsmodel for X10 udtag}
-Først er der lavet en detaljeret domænemodel for X10 udtaget. Denne er vist i figur \ref{fig:X10_udtag_domaenemodel}. Denne laves ved at gennemgå UC beskrivelserne og finde de ting som har indflydelse på netop denne del af systemet.
-
-\begin{figure}[!htb]
-     \centering
-     { \includegraphics[width=0.9\textwidth]{Billeder/UML/X10_modtager_Domain}}
-     \caption{Domænemodel for X10 udtag}
-     \label{fig:X10_udtag_domaenemodel}
-\end{figure}
-
-Med dette udgangspunkt laves der sekvensdiagrammer for hvert UC. Disse er vist i figur \ref{fig:X10_udtag_sd}. De viser hvordan metodekald i mellem de konceptuelle klasser og giver et overblik over den basale funktionalitet.
-
-\begin{figure}[!htb]
-     \centering
-     { \includegraphics[width=0.9\textwidth]{Billeder/UML/X10_modtager_SD}}
-     \caption{Sekvensdiagram for X10 udtag}
-     \label{fig:X10_udtag_sd}
-\end{figure}
-
-Dette resulterer i et klassediagram med grundfunktionaliteten beskrevet, se figure \ref{fig:X10_udtag_class}. Denne bruges under implementeringen og ender ud i et statisk klassediagram som beskriver det endelige program med alle hjælpemetoder.
-
-\begin{figure}[!htb]
-     \centering
-     { \includegraphics[width=0.9\textwidth]{Billeder/UML/X10_modtager_Class}}
-     \caption{Klassediagram for X10 udtag}
-     \label{fig:X10_udtag_class}
-\end{figure}
-
-Denne analyse af funktionalitet giver et klart overblik til implementeringsfasen.
