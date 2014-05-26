@@ -2,7 +2,7 @@ Her følger en beskrivelse af kildekode fil strukturen og hvordan denne omsætte
 
 \subsection{Filstruktur}
 På figur \ref{fig:filstruktur1} er filstrukturen vist for software implementeringen.
-De er delt op i tre mapper: PC, CSS hovedenhed og X10 udtag.
+De er delt op i tre mapper: PC, CSS-hovedenhed og X10-udtag.
 
 \begin{figure}[!htb]
      \centering
@@ -11,7 +11,7 @@ De er delt op i tre mapper: PC, CSS hovedenhed og X10 udtag.
      \label{fig:filstruktur1}
 \end{figure}
 
-I hver mappe ligger de rå kildekoder, et projekt i det tilhørende udviklingsprojekt og de rå programmer som bruges på hver platform, hhv. .exe og .hex til PC og CSS hovedenhed og X10 udtag.
+I hver mappe ligger de rå kildekoder, et projekt i det tilhørende udviklingsprojekt og de rå programmer som bruges på hver platform, hhv. .exe og .hex til PC og CSS-hovedenhed og X10-udtag.
 I tabel \ref{table:Udviklingsprogrammer} er vist hvilke udviklingsværktøjer der er brugt til de forskellige platforme.
 
 \begin{table}[htb]
@@ -32,12 +32,12 @@ I tabel \ref{table:Udviklingsprogrammer} er vist hvilke udviklingsværktøjer de
 \end{table}
 
 \subsubsection{PC}
-Det medfølgende program ''CSS.exe'' i mappen Programel, under PC, er compileret til at kommunikerer på COM3 porten. Hvis dette ikke er den aktuelle kommunikationsport kan dette ændres i filen ''rs232.h'', linje 9. For at finde den aktulle kommunikationsport i Microsoft Windows. Højreklik på Computer i Start menuen og vælg Administrer. I kolonnen til venstre vælges Enhedshåndtering. Tryk på pilen ud for Porte (COM og LPT). Her kommer de tilgængelige porte frem. Find nummeret på den der skal bruges til at kommunikerer med CSS hovedenheden.
+Det medfølgende program ''CSS.exe'' i mappen Programel, under PC, er kompileret til at kommunikerer på COM3 porten. Hvis dette ikke er den aktuelle kommunikationsport kan dette ændres i filen ''rs232.h'', linje 9. For at finde den aktuelle kommunikationsport i Microsoft Windows. Højreklik på Computer i Start menuen og vælg Administrer. I kolonnen til venstre vælges Enhedshåndtering. Tryk på pilen ud for Porte (COM og LPT). Her kommer de tilgængelige porte frem. Find nummeret på den der skal bruges til at kommunikerer med CSS-hovedenheden.
 
-Efter ændringen skal projektet recompileres. Se Microsoft Visual Studio 2012 online hjælp for detaljer om denne process. Efter compileringen oprettes en ny .exe fil. Denne ender i Release mappen. Bemærk at ''hukommelse.txt'' SKAL ligge i samme mappe som .exe filen. Hvis dette ikke er tilfældet kan man manuelt oprette en fil eller kopierer den fra Kildekode mappen.
+Efter ændringen skal projektet rekompileres. Se Microsoft Visual Studio 2012 online hjælp for detaljer om denne process. Efter kompileringen oprettes en ny .exe fil. Denne ender i Release-mappen. Bemærk at ''hukommelse.txt'' SKAL ligge i samme mappe som .exe filen. Hvis dette ikke er tilfældet kan man manuelt oprette en fil eller kopierer den fra Kildekode mappen.
 
 \subsubsection{CSS hovedenhed}
-I mappen Programel, under CSS hovedenhed, ligger ''Main program.hex''. Denne fil er compileret til et Atmel STK500 kit med en atMega32 processor. Denne skal downloades ned på processoren. Dette kan for eksempel gøres med Atmel Studio 6.1 projektet. Se Atmels online hjælp for detaljer om denne process.
+I mappen Programel, under CSS-hovedenhed, ligger ''Main program.hex''. Denne fil er kompileret til et Atmel STK500 kit med en atMega32 processor. Denne skal downloades ned på processoren. Dette kan for eksempel gøres med Atmel Studio 6.1 projektet. Se Atmels online hjælp for detaljer om denne process.
 
 \subsubsection{X10 udtag}
-I mappen Programel, under X10 udtag, ligger ''Main program.hex''. Denne fil er compileret til et Atmel STK500 kit med en atMega32 processor. Denne skal downloades ned på processoren. Dette kan for eksempel gøres med Atmel Studio 6.1 projektet. Se Atmels online hjælp for detaljer om denne process.
+I mappen Programel, under X10 udtag, ligger ''Main program.hex''. Denne fil er kompileret til et Atmel STK500 kit med en ATmega32 processor. Denne skal downloades ned på processoren. Dette kan for eksempel gøres med Atmel Studio 6.1 projektet. Se Atmels online hjælp for detaljer om denne process.

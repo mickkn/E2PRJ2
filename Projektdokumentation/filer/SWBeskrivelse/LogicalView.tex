@@ -4,11 +4,11 @@
      \label{fig:State_machine_pc}
 \end{figure}
 
-Diagrammet ovenfor skal illustrere hvordan forløbet er fra PC opstart. Hvor man møder Pre-login menuen som kun giver en mulighed for at få vist login menu eller vis status menu. Efter der er logget ind vil den stå og føle på input bufferen, på den port hvor PC'en er forbundet med CSS hovedenheden. Det gør den for at en evt. babyalarm kan afbryde forløbet og blive sendt. Desuden kan CSS hovedenheden give besked om at der ikke længere er logget ind, hvilket sender brugeren til pre-login menuen igen.
+Diagrammet ovenfor skal illustrere hvordan forløbet er fra PC opstart. Hvor man møder Pre-login menuen som kun giver en mulighed for at få vist login menu eller vis status menu. Efter der er logget ind vil den stå og føle på input bufferen, på den port hvor PC'en er forbundet med CSS hovedenheden. Det gør den for at en evt. babyalarm kan afbryde forløbet og blive sendt. Desuden kan CSS-hovedenheden give besked om at der ikke længere er logget ind, hvilket sender brugeren til pre-login menuen igen.
 
 \medskip
 
-Når brugeren så trykker på en tast og trykker enter vil han blive sendt til en af de 5 menuer. Dog stadig under forudsætning af at han valgte en værdi imellem 1-5 for den pågældende menu. Ved forkert tast sker der ingenting. Fra hver af de 5 sub-menuer har bruger mulighed for at annullere og komme tilbage til main menuen. Dette gør han ved at taste 27 og enter.
+Når brugeren så trykker på en tast og trykker enter vil han blive sendt til en af de 5 menuer. Dog stadig under forudsætning af at han valgte en værdi imellem 1-5 for den pågældende menu. Ved forkert tast sker der ingenting. Fra hver af de 5 sub-menuer har Brugeren mulighed for at annullere og komme tilbage til main menuen. Dette gør denne ved at taste 27 og enter.
 
 
 \clearpage
@@ -35,7 +35,7 @@ Figuren ovenfor viser de forskellige pakker man kan inddele CSS hovedenheds klas
 % CircBuffer
 \subsection{Klasse CircBuffer}
 Efter som X10 kommunikationen er meget langsom (50 bits/s) bruges en buffer til at holde på kommandoerne ind til de er klar til at blive afsendt. Dette er CircBuffer klassens opgave.
-Denne er udformet som en circulær buffer som kan holde 2 fulde kommandoer. Bemærk at i følge X10 protokollen skal alle kommandoer afsendes to gange. Så der er plads til 4 kommandoer, hvor to af dem altid er de samme.
+Denne er udformet som en cirkulær buffer som kan holde 2 fulde kommandoer. Bemærk at i følge X10-protokollen skal alle kommandoer afsendes to gange. Så der er plads til 4 kommandoer, hvor to af dem altid er de samme.
 
 Klassen er bygget til selv at holde styr på hvilket bit der skal sendes næste gang. Dette forenkler brugen væsentligt, da udtagning af data fra bufferen sker fra en interrupt service rutine (ISR). Denne rutine er beskrevet i detaljer senere.
 
@@ -43,9 +43,9 @@ Alle kommandoer termineres med '\textbackslash 0' karakteren.
 
 % X10IF klasse design
 \subsection{Klasse X10IF}
-En af de kritiske og avancerede klasser er X10IF klasserne på hhv. CSS Hovedenheden og X10 Udtaget. I designfasen er der udviklet sekvensdiagrammer som beskriver nogle af metoderne og sammenspillet til andre klasser.
+En af de kritiske og avancerede klasser er X10IF klasserne på hhv. CSS-hovedenheden og X10 Udtaget. I designfasen er der udviklet sekvensdiagrammer som beskriver nogle af metoderne og sammenspillet til andre klasser.
 
-Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS hovedenheden, har som ansvar at afsende en fuld X10 kommando, iht. protokollen, ud fra en parameter formateret som vist i tabel \ref{table:X10_sendKommando_format}.
+Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS-hovedenheden, har som ansvar at afsende en fuld X10-kommando, iht. protokollen, ud fra en parameter formateret som vist i tabel \ref{table:X10_sendKommando_format}.
 
 \begin{table}[h]
 	\caption{Parameter opbygning til sendKommando() metoden i X10IF}
@@ -59,7 +59,7 @@ Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS hovedenhede
 	\label{table:X10_sendKommando_format}
 \end{table}
 
-Metoden skal først omskrive den modtagende kommando til en X10 bit streng. Her efter indsættes alle bitsende i en buffer, hvorfra de afsendes når der detekteres et zerocross. 
+Metoden skal først omskrive den modtagende kommando til en X10 bit streng. Her efter indsættes alle bit's i en buffer, hvorfra de afsendes når der detekteres et zero cross. 
 Sekvensen er vist i figur \ref{fig:X10_sendKommando_sd}.
 
 \begin{figure}[!htb]
@@ -70,7 +70,7 @@ Sekvensen er vist i figur \ref{fig:X10_sendKommando_sd}.
 
 % ZeroCrossInt ISR
 \subsection{ZeroCrossInt funktion}
-I tilfælde af et interrupt signal på INT0 benet på CSS hovedenheden køres en bestemt funktion i microcontrolleren. Dette er kaldet en ISR. Forløbet for denne er beskrevet i sekvensdiagrammet på figur \ref{fig:ZeroCrossISR}.
+I tilfælde af et interrupt signal på INT0 benet på CSS-hovedenheden køres en bestemt funktion i microcontrolleren. Dette er kaldet en ISR. Forløbet for denne er beskrevet i sekvensdiagrammet på figur \ref{fig:ZeroCrossISR}.
 Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den det næste bit der skal afsendes fra bufferen. Ud fra værdien bestemmer den om der skal tændes for 120 kHz frekvensen i timeren. Når en kommando er helt sendt nedskriver den køen og hvis køen er tom slår den interruptet fra.
 
 \begin{figure}[!htb]
