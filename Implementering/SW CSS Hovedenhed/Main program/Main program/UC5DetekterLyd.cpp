@@ -1,5 +1,5 @@
 ﻿/*
- * Controller UC3Deaktiver
+ * Controller UC5 Detekter Lyd
  *
  * Af Bjørn Sørensen
  */ 
@@ -12,7 +12,7 @@ UC5DetekterLyd::UC5DetekterLyd(RS232IF *Ptr)
 	RS232Ptr_ = Ptr;
 }
 	
-void UC5DetekterLyd::detekterLyd( )
+void UC5DetekterLyd::detekterLyd( )	
 {
 	RS232Ptr_->adviser( );
 }
