@@ -110,7 +110,6 @@ Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og
 Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således at knækfrekvensen udregnes til 110 kHz, og for lavpasfilteret beregnes en knækfrekvens på 130 kHz.
 
 \subsection{Envelope Detector}
-
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/ED_MV.png}
@@ -125,5 +124,17 @@ Den er opbygget af en diode, et RC-led og en schmitt trigger. Dioden har til opg
 Modstanden $R_8$ er en afladningsmodstand, og den bestemmer hvor hurtigt kredsløbet skal aflades, jo højere modstand jo langsommere går det med at aflade.
 
 Der er anvendt en schmitt trigger til at lave signalet om til et firkantet signal som STK-kitten kan aflæses. Grunden til at der er brugt 2 er fordi de er inverterende.
-\newpage
+
+\subsection{Dipswitch}
+For at en X10-kommando bliver udført af det korrekte udtag medsendes en adresse på fire bit.
+Til at simulere adresseringen for et udtag, er der lavet fire dipswitches der er forsynet med 5 V og forbundet til STK-500 modtageren, som det er illustreret på figur \ref{fig:DIPSWITCH}.
+
+En åben kontakt vil give 0 og en lukket kontakt vil resultere i 1
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/DIPSWITCH}
+	\caption{Dipswitch for adressering af udtag}
+	\label{fig:DIPSWITCH}
+\end{figure}
 
