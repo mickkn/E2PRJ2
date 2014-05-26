@@ -1,10 +1,10 @@
 %
-% UC1Login
+% X10IF
 %
 {\centering
-\textbf{UC1Login}\par
+\textbf{X10IF}\par
 }
-\textbf{Ansvar:} At varetage UC1 Login forløbet. \\
+\textbf{Ansvar:} At varetage kommunikation mellem CSS hovedenhed og X10 udtag \\
 \textbf{Attributer:}
 \begin{itemize}
 	\item \textbf{DE2IF * DE2Ptr\_} \\
@@ -15,3 +15,65 @@ bool loginValid(); \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Kalder getLoginStatus() metoden i DE2IF og returnerer værdien her fra \\
+
+%
+% UC2Aktiver
+%
+{\centering
+\textbf{UC2Aktiver}\par
+}
+\textbf{Ansvar:} At varetage UC2 Aktiver forløbet \\
+\textbf{Attributer:}
+\begin{itemize}
+	\item \textbf{AdresseIF * AIFPtr\_} \\
+	Pointer til associeret AdresseIF objekt
+	\item \textbf{UdtagIF * UIFPtr\_} \\
+	Pointer til associeret UdtagIF objekt
+\end{itemize}
+\textbf{Metoder:} \\
+void aktiver( char * adresse ); \\
+\textbf{Parametre:} Pointer til array med adresse \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Kontrollerer adresse ift. AdresseIF og aktiverer udtag hvis de er identiske \\
+
+%
+% UC3Deaktiver
+%
+{\centering
+\textbf{UC3Deaktiver}\par
+}
+\textbf{Ansvar:} At varetage UC3 Deaktiver forløbet \\
+\textbf{Attributer:}
+\begin{itemize}
+	\item \textbf{AdresseIF * AIFPtr\_} \\
+	Pointer til associeret AdresseIF objekt
+	\item \textbf{UdtagIF * UIFPtr\_} \\
+	Pointer til associeret UdtagIF objekt
+\end{itemize}
+\textbf{Metoder:} \\
+void deaktiver( char * adresse ); \\
+\textbf{Parametre:} Pointer til array med adresse \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Kontrollerer adresse ift. AdresseIF og deaktiverer udtag hvis de er identiske \\
+
+%
+% AdresseIF
+%
+{\centering
+\textbf{AdresseIf}\par
+}
+\textbf{Ansvar:} At kontrollerer modtaget adresse fra X10 interface og indstillet adresse på X10 udtag \\
+\textbf{Attributer:}
+\begin{itemize}
+	\item \textbf{AdresseIF * AIFPtr\_} \\
+	Pointer til associeret AdresseIF objekt
+	\item \textbf{UdtagIF * UIFPtr\_} \\
+	Pointer til associeret UdtagIF objekt
+\end{itemize}
+\textbf{Metoder:} \\
+void aktiver( char * adresse ); \\
+\textbf{Parametre:} Pointer til array med adresse \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Kontrollerer adresse ift. AdresseIF og aktiverer udtag hvis de er identiske \\
+
+
