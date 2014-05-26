@@ -78,3 +78,9 @@ Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den d
      \caption{Sekvensdiagram for INT0 ISR på CSS hovedenheden}
      \label{fig:ZeroCrossISR}
 \end{figure}
+
+% ClickATell
+\subsection{Klasse ClickATell}
+For at kunne afsende SMSer i tilfælde af babyalarm bruges en API som kan afsende beskeder via internettet.
+ClickATell\textsuperscript{\circledR}\footnote{Online SMS service: http://www.clickatell.com/} er en online service som kan afsende SMSer til et valgfrit telefonnummer ved at kalde en URL adresse.
+Ved at bruge Microsoft Windows Shell API\footnote{Microsoft MSDN: http://tinyurl.com/d99m9dz} er det muligt at starte applikationer fra Windows miljøet. Dette bruges til at starte et Internet Explorer-browservindue med en predefineret URL adresse som skaber forbindelse til ClickATell\textsuperscript{\circledR} APIen. 
