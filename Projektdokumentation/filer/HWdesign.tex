@@ -1,30 +1,29 @@
 \chapter{Hardware design}
-Generelt kan det overordnede hardware design beskrives som noget elektronik der sender information ud på nettet, som sendes og analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som encoder og decoder.  
+Generelt kan det overordnede hardware design beskrives som noget elektronik der sender information ud på nettet, som sendes og analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som X10-encoder og X10-decoder.  
 
 
 \section{X10-encoder}
-Encoderen, også omtalt som senderenhed, er den del af systemet der genererer X10 kommandoen og sender den ud på det eksisterende el-net. Et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, udgør sammen med en zero crossing detector hele hardwaren for encoderen.
+X10-encoderen, er den del af systemet der genererer X10-bitstrømmen og sender den ud på det eksisterende el-net. Et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, udgør sammen med en zero crossing detector hele hardwaren for X10-encoderen.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.50\textwidth]{billeder/HWdesign/X10_BURST}
 	\caption{120 kHz burst i zero crossing}
 	\label{fig:X10_BURST}
 \end{figure}
 
-Ideen med at sende burst ud på nettet i zero crossing kan ses illustreret på figur \ref{fig:X10_BURST}
+Ideen med at sende burst ud på nettet ved zero crossing kan ses illustreret på figur \ref{fig:X10_BURST}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/Encoder}
-	\caption{Samlet Encoder}
+	\caption{Samlet X10-encoder}
 	\label{fig:Encoder}
 \end{figure}
-\newpage
 
 \subsection{Højpasfilter}
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{minipage}{0.45\textwidth}
     \centering
       \includegraphics[width=\textwidth]{billeder/HWdesign/HP_UV}
@@ -52,7 +51,7 @@ R_1 = \frac{1}{2 \cdot \pi \cdot f_c \cdot C } = \frac{1}{2 \cdot \pi \cdot 1200
 \end{align}
 $R_1$ vælges da til 14 $\Omega$
 
-Med den beregnede modstands værdi er det endelige schematic færdigt som det ses på figur \ref{fig:HP_MV}
+Med den beregnede modstandsværdi er det endelige schematic færdigt som det ses på figur \ref{fig:HP_MV}. På figur \ref{fig:Encoder} ses der en 1M$\Omega$ modstand i højpasfilteret. Denne bruges som afladning til kondensatoren.
 
 \begin{figure}[htbp]
 	\centering
@@ -80,9 +79,9 @@ Med den beregnede modstands værdi er det endelige schematic færdigt som det se
   \end{minipage}
 \end{figure}
 
-Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en Zero crossing detector både på Encoderen og Decoderen, da begge disse består af et STK-kit der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_UV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
+Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10-protokollen kan virke. Der er placeret en zero crossing detector både på X10-encoderen og X10-decoderen, da begge disse består af et STK500-kit der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_UV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
 
-Modstanden $R_7$ sidder der bl.a. for at beskytte Zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på Zero crossing detectoren, og dette problem løste lavpasfilteret. 
+Modstanden $R_7$ sidder der bl.a. for at beskytte zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på zero crossing detectoren, og dette problem løste lavpasfilteret. 
 
 Der ønskes at dæmpe 120 kHz signalet, derfor designes lavpasfilteret ud fra en knækfrekvens på 1,0 kHz. 
 
@@ -110,7 +109,7 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 \newpage
 
 \section{X10-decoder}
-Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 kommando, er opbygget af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret, og dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
+X10-decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 bits, er opbygget af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret, og dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detectoren som omdanner burstet til et TTL signal.
 
 \begin{figure}[htbp]
 	\centering
@@ -140,7 +139,7 @@ Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 ko
   \end{minipage}
 \end{figure}
 
-Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHZ fra samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende OpAmp med modstande, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_UV}. Kurvekarakteristikken er illustreret på figur \ref{fig:BAANDPAS_KURVE}.
+Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHz fra, samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende Op-Amp med modstande, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_UV}. Kurvekarakteristikken er illustreret på figur \ref{fig:BAANDPAS_KURVE}.
 
 Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således at knækfrekvensen udregnes til 110 kHz, og for lavpasfilteret beregnes en knækfrekvens på 130 kHz. 
 
@@ -179,7 +178,7 @@ R_4 = (\beta - 1) \cdot R_3 = (3 - 1) \cdot 10000 = 20000 \Omega
 \end{align} 
 $R_4$ er valgt til 20000 $\Omega$ så signalet derved bliver forstærket 3 gange.
 
-Der er som nævnt valgt en LF353 OpAmp. Denne er valgt ud fra at den har en bred båndbredte, en hurtig sætte tid og lav støj på indgangene. 
+Der er som nævnt valgt en LF353 OpAmp. Denne er valgt ud fra at den har en bred båndbredde, en hurtig sættetid og lav støj på indgangene. 
 
 Med alle de beregnede komponentværdier kan det endelige schematic designes. Det endelige design er vist på figur \ref{fig:BAANDPAS_MV} 
 
@@ -204,7 +203,7 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 
 Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL (0-5V) signal som STK-kittet kan aflæse.
 
-Den er opbygget af en diode, et RC-led og en schmitt-trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og undgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. Kondensatoren er med til at udglatte signalet da den ikke kan nå at aflades på en periode.
+Den er opbygget af en diode, et RC-led og en schmitt-trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og undgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. RC-leddet udglatter signalet da det ikke kan nå at aflade på en periode.
 
 Modstanden $R_8$ er en afladningsmodstand, og den bestemmer hvor hurtigt kredsløbet skal aflades, jo højere modstand jo langsommere går det med at aflade. Vi har beregnet modstanden på følgende måde.
 
@@ -224,7 +223,7 @@ R = \frac{\tau}{C} = \frac{8,33 \cdot 10^{-6}}{1 \cdot 10^{-9}} = 83 k\Omega
 
 Modstanden $R_8$ er rundet op til $100 k\Omega$, dette gør at vi er helt sikre på at kondensatoren ikke aflader for hurtigt. 
 
-Der er anvendt en schmitt-trigger til at lave signalet om til et firkantet signal som STK-kittet kan aflæse. Grunden til at der er brugt 2 er fordi de er inverterende. 
+Der er anvendt en schmitt-trigger til at lave signalet om til et firkantet signal som STK500-kittet kan aflæse. Grunden til at der er brugt 2 er fordi de er inverterende. 
 
 \newpage
 \subsection{Dipswitch}
