@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rs232IF", "rs232IF\rs232IF.vcxproj", "{CC5AC725-905F-41CF-98F9-A83854F5B945}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC5AC725-905F-41CF-98F9-A83854F5B945}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC5AC725-905F-41CF-98F9-A83854F5B945}.Debug|Win32.Build.0 = Debug|Win32
+		{CC5AC725-905F-41CF-98F9-A83854F5B945}.Release|Win32.ActiveCfg = Release|Win32
+		{CC5AC725-905F-41CF-98F9-A83854F5B945}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
