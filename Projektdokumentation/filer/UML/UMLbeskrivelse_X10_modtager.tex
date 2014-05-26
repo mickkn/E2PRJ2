@@ -1,20 +1,68 @@
+Her følger klassebeskrivelse som beskriver alle klasser, metoder og attributter i klasserne for X10-udtaget.
+
 %
 % X10IF
 %
 {\centering
 \textbf{X10IF}\par
 }
-\textbf{Ansvar:} At varetage kommunikation mellem CSS hovedenhed og X10 udtag \\
+\textbf{Ansvar:} At varetage kommunikation mellem CSS hovedenhed og X10 udtag.
+
+Dette er en global klasse da ISR for INT1 tilgår insertX10bit()-metoden i objektet. Det globale objekt hedder X10IFObj. \\
 \textbf{Attributer:}
 \begin{itemize}
-	\item \textbf{DE2IF * DE2Ptr\_} \\
-	Pointer til associeret DE2 objekt
+	\item \textbf{char X10Array\_[ ]} \\
+	Array til midlertidigt at holde modtaget X10 formateret kommando
+	\item \textbf{char X10Kommando\_[ ]} \\
+	Array til at holde X10 formateret kommando	
+	\item \textbf{X10Adresse\_[ ]} \\
+	Array til at holde X10 dekodet adresse
+	\item \textbf{X10ArrayPlads\_} \\
+	Index til næste plads i det midlertidige kommando array
+	\item \textbf{X10KommandoPlads\_} \\
+	Index til næste plads i kommando array
+	\item \textbf{X10AdressePlads\_} \\
+	Index til næste plads i adresse array
+	\item \textbf{UC2Aktiver * UC2Ptr\_} \\
+	Pointer til associeret UC2Aktiver objekt
+	\item \textbf{UC3Deaktiver * UC3Ptr\_} \\
+	Pointer til associeret UC3Deaktiver objekt
 \end{itemize}
 \textbf{Metoder:} \\
-bool loginValid(); \\
+X10IF(); (Constructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Kalder getLoginStatus() metoden i DE2IF og returnerer værdien her fra \\
+\textbf{Beskrivelse:} Initialiserer indgange og initialiserer alle members med 0 \\
+
+void setPointer(UC2Aktiver * UC2Ptr, UC3Deaktiver * UC3Ptr); \\
+\textbf{Parametre:} Pointer til associeret UC2Aktiver objekt, Poiner til associeret UC3Deaktiver objekt \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Initialiserer pointer members til associerede objekter \\
+
+void aktiverINT1( ); \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Aktiverer INT1 ved toggle og aktiverer global interrupt \\
+
+void deaktiverINT1( ); \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Deaktiver INT1 \\
+
+void insertX10bit( char X10bit ); \\
+\textbf{Parametre:} Gyldige værdier 0 og 1. Bemærk ikke ASCII værdier \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Indsætter X10bit i X10Array\_[], kontrollerer STX. Hvis STX er gyldigt hentes en fuld kommando ind og denne dekodes med metoden unwrapX10Array() \\
+
+void unwrapX10Array( char * X10Array ); \\
+\textbf{Parametre:} Pointer til fuld X10 formateret kommando \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Kontrollerer STX og ETX. Hvis disse er godkendt udledes kommando og adresse. Hvis kommando er aktiver eller deaktiver kaldes hhv. aktiver()-metoden i UC2Aktiver objektet eller deaktiver()-metoden i UC3Deaktiver. Her efter nulstilles index attributter. \\
+
+ISR( INT1\_vect ); \\
+\textbf{Parametre:} Adresse til INT1 vektor \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Deaktiverer interrupts. Venter et øjeblik og udlæser værdien på data indgangen. Gemme den læste data med insertX10bit()-metoden i det globale X10IF objekt. Aktiverer interrupt igen. \\
 
 %
 % UC2Aktiver
@@ -30,11 +78,16 @@ bool loginValid(); \\
 	\item \textbf{UdtagIF * UIFPtr\_} \\
 	Pointer til associeret UdtagIF objekt
 \end{itemize}
+UC2Aktiver( AdresseIF * AIFPtr, UdtagIF * UIFPtr ); (Constructor) \\
+\textbf{Parametre:} Pointer til associeret AdresseIF objekt, Pointer til associeret UdtagIF objekt \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Initialiser pointerer til associerede objekter \\
+
 \textbf{Metoder:} \\
 void aktiver( char * adresse ); \\
 \textbf{Parametre:} Pointer til array med adresse \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Kontrollerer adresse ift. AdresseIF og aktiverer udtag hvis de er identiske \\
+\textbf{Beskrivelse:} Kontroller adresse med adresseTjek()-metoden i AdresseIF objektet og aktiver udtag hvis de er identiske \\
 
 %
 % UC3Deaktiver
@@ -51,10 +104,15 @@ void aktiver( char * adresse ); \\
 	Pointer til associeret UdtagIF objekt
 \end{itemize}
 \textbf{Metoder:} \\
+UC3Deaktiver( AdresseIF * AIFPtr, UdtagIF * UIFPtr ); (Constructor) \\
+\textbf{Parametre:} Pointer til associeret AdresseIF objekt, Pointer til associeret UdtagIF objekt \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Initialiser pointerer til associerede objekter \\
+
 void deaktiver( char * adresse ); \\
 \textbf{Parametre:} Pointer til array med adresse \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Kontrollerer adresse ift. AdresseIF og deaktiverer udtag hvis de er identiske \\
+\textbf{Beskrivelse:} Kontroller adresse med adresseTjek()-metoden i AdresseIF objektet og deaktiver udtag hvis de er identiske \\
 
 %
 % AdresseIF
@@ -62,18 +120,44 @@ void deaktiver( char * adresse ); \\
 {\centering
 \textbf{AdresseIf}\par
 }
-\textbf{Ansvar:} At kontrollerer modtaget adresse fra X10 interface og indstillet adresse på X10 udtag \\
+\textbf{Ansvar:} At kontrollerer modtaget adresse fra X10 interface og indstillet adresse på X10-udtag \\
 \textbf{Attributer:}
 \begin{itemize}
-	\item \textbf{AdresseIF * AIFPtr\_} \\
-	Pointer til associeret AdresseIF objekt
-	\item \textbf{UdtagIF * UIFPtr\_} \\
-	Pointer til associeret UdtagIF objekt
+	\item \textbf{adresse\_[ ]} \\
+	Array til X10-udtag adresse
 \end{itemize}
 \textbf{Metoder:} \\
-void aktiver( char * adresse ); \\
-\textbf{Parametre:} Pointer til array med adresse \\
+AdresseIF( ); (Constructor) \\
+\textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
-\textbf{Beskrivelse:} Kontrollerer adresse ift. AdresseIF og aktiverer udtag hvis de er identiske \\
+\textbf{Beskrivelse:} Indstil indgange og initialiser array med 0. \\
+
+bool adresseTjek( char * adresse ); \\
+\textbf{Parametre:} Pointer til array med adresse \\
+\textbf{Returværdi:} True hvis adresser er ens, ellers false \\
+\textbf{Beskrivelse:} Kontrollerer adresse og returnerer bool med status \\
 
 
+%
+% UdtagIF
+%
+{\centering
+\textbf{UdtagIF}\par
+}
+\textbf{Ansvar:} At styre udtaget \\
+\textbf{Attributer:} Ingen \\
+\textbf{Metoder:} \\
+UdtagIF( ); (Constructor) \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Indstil udgang \\
+
+void aktiver( ); \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Sætter udgang til 1 \\
+
+void deaktiver( ); \\
+\textbf{Parametre:} Ingen \\
+\textbf{Returværdi:} Ingen \\
+\textbf{Beskrivelse:} Sætter udgang til 0 \\
