@@ -5,7 +5,7 @@
 \label{lab:bddhardware}
 \raggedright
 \end{figure}
-BDD diagrammet giver et overblik over hvad det samlede system består af. Vi ser en port beskrivelse som viser hvilke signaler hver blok består af.
+BDD diagrammet giver et overblik over hvad det samlede system består af. Vi ser en portbeskrivelse som viser hvilke signaler hver blok består af.
 
 \begin{figure}[!htbp] \centering
 \subsection{BDD Hovedenhed}
@@ -14,16 +14,16 @@ BDD diagrammet giver et overblik over hvad det samlede system består af. Vi ser
 \label{lab:bddhovedenhed}
 \raggedright
 \end{figure}
-BDD diagrammet giver et overblik over hvad CSS hovedenheden består af. Vi ser en portbeskrivelse for STK kittet og encoder. 
+BDD diagrammet giver et overblik over hvad CSS-hovedenheden består af. Vi ser en portbeskrivelse for STK-kittet og encoder. 
 
 \begin{figure}[!htbp] \centering
-\subsection{BDD Modtager}
+\subsection{BDD X10-udtag}
 {\includegraphics[width=0.9\textwidth]{billeder/diagrammer/BDD_Modtager}}
-\caption{BDD Modtager}
+\caption{BDD X10-udtag}
 \label{lab:bddmodtager}
 \raggedright
 \end{figure}
-BDD diagrammet giver et overblik over hvad X10 modtageren består af. Vi ser en portbeskrivelse for STK kittet og decoderen.
+BDD diagrammet giver et overblik over hvad X10-udtaget består af. Vi ser en portbeskrivelse for STK-kittet og decoderen.
 
 \begin{figure}[!htbp] \centering
 \subsection{Plantegning over HW}
@@ -32,7 +32,7 @@ BDD diagrammet giver et overblik over hvad X10 modtageren består af. Vi ser en 
 \label{lab:Plantegning over HW}
 \raggedright
 \end{figure}
-Plantegningen over HW giver et overblik over hvordan CSS hovedenheden og X10 modtager er forbundet, samt hvilken type signaler der bliver sendt imellem dem.
+Plantegningen over hardwaren giver et overblik over hvordan CSS-hovedenheden og X10-udtaget er forbundet, samt hvilke type signaler der bliver sendt imellem dem.
 
 \begin{figure}[!htbp] \centering
 \subsection{IBD Hardware}
@@ -41,16 +41,16 @@ Plantegningen over HW giver et overblik over hvordan CSS hovedenheden og X10 mod
 \label{lab:ibdhardware}
 \raggedright
 \end{figure}
-IBD diagrammet giver et internt overblik over hvordan hele vores system er forbundet. Vi ser hvilke type signaler der bliver sendt imellem vores forskellige blokke.
+IBD diagrammet giver et internt overblik over hvordan hele vores system er forbundet. Vi ser hvilke type signaler der bliver sendt imellem de forskellige blokke.
 
 \begin{figure}[!htbp] \centering
-\subsection{IBD Hovedenhed og Modtager}
+\subsection{IBD CSS-hovedenhed og X10-udtag}
 {\includegraphics[width=0.9\textwidth]{billeder/diagrammer/IBD_Hovedenhed_Modtager}}
-\caption{IBD Hovedenhed og Modtager}
+\caption{IBD CSS-hovedenhed og X10-udtag}
 \label{lab:ibdhovedenhedmodtager}
 \raggedright
 \end{figure}
-IBD diagrammet giver et internt overblik over hvordan vores X10 hovedenhed og X10 modtager er forbundet. Vi ser hvilke type signaler der bliver sendt imellem vores forskellige blokke.
+IBD diagrammet giver et internt overblik over hvordan X10-hovedenheden og X10-udtaget er forbundet. Vi ser hvilke type signaler der bliver sendt imellem de forskellige blokke.
 
 
 \clearpage
@@ -58,7 +58,7 @@ IBD diagrammet giver et internt overblik over hvordan vores X10 hovedenhed og X1
 
 \begin{table}[htbp] %% Blok og Signal Tabel
 \subsection{Grænseflade}
-For at opnå forståelse for signaler mellem blokkene laves en grænseflade der beskriver de enkelte blokkes porte og hvilke signaler der løber mellem disse.
+For at opnå forståelse for signalerne mellem blokkene laves en grænseflade der beskriver de enkelte blokkes porte og hvilke signaler der løber imellem disse.
 
 \subsubsection{Blok beskrivelse}
 Til at beskrive blokkene nærmere er anvendt tabeller som ses herunder. Her er hvert signal i en respektiv blok kommenteret og blokkens funktion er kort beskrevet. 
@@ -69,19 +69,19 @@ Til at beskrive blokkene nærmere er anvendt tabeller som ses herunder. Her er h
 \hline
 \textbf{Bloknavn} & \textbf{Funktion} & \textbf{Signaler} & \textbf{Kommentar} \\ \hline
 
-Encoder & modtage kommando og encode til 120 kHz bursts & 120 kHz & Data ud \\ \cline{3-4}	
+X10-encoder & Modtager kommandoer og encoder til 120 kHz bursts & 120 kHz & Data ud \\ \cline{3-4}	
 & & X10 data & X10 data kommando ind \\ \hline
 
-STK500 Hovedenhed & Genererer burst og detekterer på zero-crossing & RS232 & Laptop forbindelse \\ \cline{3-4}
+CSS-hovedenhed & Genererer X10-data og detekterer på zero-crossing & RS232 & Laptop forbindelse \\ \cline{3-4}
 & & X10 data & X10 data kommando linje \\ \cline{3-4}
 & & Bool & lyd detektion \\ \cline{3-4}
 & & Bool & Password accept \\ \hline
 
-Decoder & Modtager 120 kHz og decoder til X10 data & 120 kHz & 120 kHz ind \\ \cline{3-4}
+X10-decoder & Modtager 120 kHz og decoder til X10 data & 120 kHz & 120 kHz ind \\ \cline{3-4}
 & & X10 data & Kommando linje \\ \cline{3-4}
 & & 120 kHz & 120 kHz data ind \\ \hline
 
-STK 500 Decoder & Modtager burst og detekterer på zero-crossing & X10 data & X10 data ind \\ \cline{3-4}
+X10-udtag & Modtager X10 TTL pulser og detekterer på zero-crossing & X10 data & X10 data ind \\ \cline{3-4}
 && Bool & Power I/O ekstern enhed \\ \hline 
 \end{tabular}
 \end{small}
@@ -90,16 +90,16 @@ STK 500 Decoder & Modtager burst og detekterer på zero-crossing & X10 data & X1
 
 \begin{table}[htbp]
 \subsubsection{Signal beskrivelse}
-For at fuldende beskrivelsen af grænsefladen er der lavet en signaltabel som kan ses herunder. Hvert signal er beskrevet og tilknyttet en kort kommentar. Området et signal er defineret under er også beskrevet. Blok og terminal indgår også. 
+For at fuldende beskrivelsen af grænsefladen er der lavet en signaltabel som kan ses herunder. Hvert signal er beskrevet og tilknyttet en kort kommentar. Området, et signal er defineret under, er også beskrevet. Blok og terminal indgår også. 
 \caption{Tabel over signaler med terminaler}
 \begin{small}
 \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2,2cm}|}
 \hline
 \textbf{Signal-navn} & \textbf{Funktion} & \textbf{Område} & \textbf{Port 1} & \textbf{Port 2} & \textbf{Kommentar} \\ \hline
 
-120 kHz & sende kommando på 18V nettet & & Encoder, HE2 & Decoder, DM1 & \\ \hline
+120 kHz & sende kommando på 18Vac-nettet & & Encoder, HE2 & Decoder, DM1 & \\ \hline
 
-X10 data & kommando & & STK500, HSTK4 & Encoder, HE1 & \\ \cline{4-5}
+X10-data & kommando & & STK500, HSTK4 & Encoder, HE1 & \\ \cline{4-5}
 &&& Decoder, MD2 & STK500, MSTK1 &\\ \hline
 
 bool & digital signal & 5V/0V & DE2, N/A & STK500, HSTK2 & \\ \cline{4-5}
