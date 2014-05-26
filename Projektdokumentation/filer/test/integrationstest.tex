@@ -2,12 +2,20 @@
 Ved integrationstesten samkobles alt hardware. Integrationstesten er alle modultests samlet under en. 
 
 \subsection{Opstilling og forbindelser}
-Hardwaren er afhængig af: +-12V, 5V, Fælles ground og 18Vac/50Hz. Desuden skal STK500 kittet DE2boarded forsynes med spænding fra deres tilhørende 230V transformere. Ved 18Vac/50Hz spændingskilden benyttes den tilgængelige 230V transformer. 
 
-Enkoderen skal forsynes med 5V, dette gøres direkte fra labratorietsforsyning.
-Decoderen indeholder en operationsforstærker, hvis forsyning skal være +- 12V. Resten af decoderen skal forsynes med 5V. Dette gøres via en spændingsregulator på decoder printet.   
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{billeder/IntTest/Integration_oversigt}
+	\caption{Oversigt og forbindelserne}
+	\label{fig:integration_oversigt}
+\end{figure}
 
-\begin{figure}[htb]
+Hardwaren er afhængig af: +/-12VDC, 5VDC, Fælles ground og 18Vac/50Hz. Desuden skal STK500 kittet DE2-boardet forsynes med spænding fra deres tilhørende 230Vac transformere. Ved 18Vac/50Hz spændingskilden benyttes den tilgængelige 230Vac transformer. 
+
+Encoderen skal forsynes med 5VDC, dette gøres direkte fra laboratoriets forsyning.
+Decoderen indeholder en operationsforstærker, hvis forsyning skal være +/-12VDC. Resten af decoderen skal forsynes med 5V. Dette gøres via en spændingsregulator på decoderprintet.   
+
+\begin{figure}[H]
   \begin{minipage}{0.45\textwidth}
     \centering
       \includegraphics[width=\textwidth]{billeder/IntTest/forsyning}
@@ -23,24 +31,30 @@ Decoderen indeholder en operationsforstærker, hvis forsyning skal være +- 12V.
   \end{minipage}
 \end{figure}
 
-Spændingsforsyningen i labratoriet har 2 variable udgange (én til venstre og én til højre), samt én fast 5 V forsyning (midten). Begge variable udgange indstilles til 12V. 
-Som det ses af \ref{fig:opkobling_forsyning} er + udgangen af udgangen til venstre kortsluttet med - udgangen af udgangen til højre. Dette skaber et 0 punkt, fællesground. Herved opnås -12V i den venstre -udgang, samt +12V i den højre + udgang. 0 punktet forbindes til - udgangen på den faste 5V forsyning, for at skabe fælles ground på hele forsyningen. På encoderprintet er der skabt fællesground mellem forsyningen og 18Vac/50Hz.
+Spændingsforsyningen i laboratoriet har 2 variable udgange (én til venstre og én til højre), samt én fast 5VDC forsyning (midten). Begge variable udgange indstilles til 12V. 
+Som det ses af figur \ref{fig:opkobling_forsyning} er + udgangen af udgangen til venstre kortsluttet med - udgangen af udgangen til højre. Dette skaber et 0 punkt, fælles ground. Herved opnås -12V i den venstre -12V udgang, samt +12V i den højre + udgang. 0 punktet forbindes til -5VDC udgangen på den faste 5VDC forsyning, for at skabe fælles ground på hele forsyningen. På encoderprintet er der skabt fællesground mellem forsyningen og 18Vac/50Hz.
 
-Encoderen tilsluttes +5V og ground.
-Decoderen tilsluttes +-12V.
+Encoderen tilsluttes +5VDC og ground.
+Decoderen tilsluttes +/-12VDC.
 
 18Vac/50Hz skaber forbindelse mellem encoder og decoder.
 
-Hovedenhedens STK500 kit tilsluttes PC'en via RS232 til USB. For at PC'en kan kommunikere med mikrocontrolleren skal PD0 tilsluttes RDX pinnen på STK500 og PD1 skal tilsluttes TDX pinnen på STK500. 
+Hovedenhedens STK500-kit tilsluttes PC'en via en USB-til-RS232 adapter. For at PC'en kan kommunikere med microcontrolleren skal PD0 tilsluttes RDX-benet på STK500 og PD1 skal tilsluttes TDX-benet på STK500. 
 
-Hele port D fra STK500 kittet overføres til encoder printet. Yderligere information omkring forbinderserne i port D findes i hardwadre design for encoderen ***HENVISNING***
+Hele port D fra STK500 kittet overføres til encoderprintet. Yderligere information omkring forbinderserne i port D findes i hardwadre design for encoderen
 
-DE2 forbindelsen til STK500 *****
+DE2 forbindelsen til STK500 se figur \ref{fig:Integration_tabel}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{billeder/IntTest/Integration_oversigt}
+	\caption{Oversigt og forbindelserne}
+	\label{fig:integration_oversigt}
+\end{figure}
 
 \subsection{Resultat}
 
-
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{billeder/IntTest/Modtager_0101_ON}
 	\caption{.}
