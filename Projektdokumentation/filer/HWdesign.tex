@@ -2,7 +2,7 @@
 Generelt kan det overordnede hardware design beskrives som noget elektronik der sender information ud på nettet, som sendes og analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som encoder og decoder.  
 
 
-\section{Encoder}
+\section{X10-encoder}
 Encoderen, også omtalt som senderenhed, er den del af systemet der genererer X10 kommandoen og sender den ud på det eksisterende el-net. Et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, udgør sammen med en zero crossing detector hele hardwaren for encoderen.
 
 \begin{figure}[htbp]
@@ -40,7 +40,7 @@ Ideen med at sende burst ud på nettet i zero crossing kan ses illustreret på f
   \end{minipage}
 \end{figure}
 
-For at sende X10 kommandoer ud på det eksisterende 50 Hz el-net er det nødvendigt at koble elektroniken direkte herpå og eftersom det elektronik ikke tåler de høje spændinger fra nettet, er det nødvendigt at blokere det signal, men stadig at kunne sende de 120 kHz ud. Dette løses med et højpasfilter.
+For at sende X10 kommandoer ud på det eksisterende 50 Hz el-net er det nødvendigt at koble elektronikken direkte herpå og eftersom det elektronik ikke tåler de høje spændinger fra nettet, er det nødvendigt at blokere det signal, men stadig at kunne sende de 120 kHz ud. Dette løses med et højpasfilter.
 
 Den ønskede knækfrekvens skal ligge omkring de 120 kHz for at opnå mindst dæmpning herpå. Ved denne knækfrekvens skulle 50 Hz signalet være ubetydelig lille efter filteret. 
 
@@ -109,7 +109,7 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 
 \newpage
 
-\section{Decoder}
+\section{X10-decoder}
 Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 kommando, er opbygget af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret, og dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
 
 \begin{figure}[htbp]
@@ -202,9 +202,9 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 	\label{fig:ED_MV}
 \end{figure}
 
-Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL (0-5V) signal som STK-kitten kan aflæse.
+Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL (0-5V) signal som STK-kittet kan aflæse.
 
-Den er opbygget af en diode, et RC-led og en schmitt trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og undgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. Kondensatoren er med til at udglatte signalet da den ikke kan nå at aflades på en periode.
+Den er opbygget af en diode, et RC-led og en schmitt-trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og undgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. Kondensatoren er med til at udglatte signalet da den ikke kan nå at aflades på en periode.
 
 Modstanden $R_8$ er en afladningsmodstand, og den bestemmer hvor hurtigt kredsløbet skal aflades, jo højere modstand jo langsommere går det med at aflade. Vi har beregnet modstanden på følgende måde.
 
@@ -224,14 +224,14 @@ R = \frac{\tau}{C} = \frac{8,33 \cdot 10^{-6}}{1 \cdot 10^{-9}} = 83 k\Omega
 
 Modstanden $R_8$ er rundet op til $100 k\Omega$, dette gør at vi er helt sikre på at kondensatoren ikke aflader for hurtigt. 
 
-Der er anvendt en schmitt trigger til at lave signalet om til et firkantet signal som STK-kitten kan aflæses. Grunden til at der er brugt 2 er fordi de er inverterende. 
+Der er anvendt en schmitt-trigger til at lave signalet om til et firkantet signal som STK-kittet kan aflæse. Grunden til at der er brugt 2 er fordi de er inverterende. 
 
 \newpage
 \subsection{Dipswitch}
-For at en X10-kommando bliver udført af det korrekte udtag medsendes en adresse på fire bit.
+For at en X10-kommando bliver udført af det korrekte X10-udtag, medsendes en adresse på fire bit.
 Til at simulere adresseringen for et udtag, er der lavet fire dipswitches der er forsynet med 5 V og forbundet til STK-500 modtageren, som det er illustreret på figur \ref{fig:DIPSWITCH}.
 
-En åben kontakt vil give 0 og en lukket kontakt vil resultere i 1
+En åben kontakt vil give LAV(0V) og en lukket kontakt vil resultere i HØJ(5V)
 
 \begin{figure}[htbp]
 	\centering
@@ -243,7 +243,7 @@ En åben kontakt vil give 0 og en lukket kontakt vil resultere i 1
 \newpage
 \subsection{Komponentliste}
 
-De efterfølgende tabeller viser en oversigt over hvilke komponenter der er anvendt, den beskriver navn, type og størrelse på hver enkelt komponent\footnote{Datablade for komponenterne kan findes i mappen "Datablade" på CD'en•}. 
+De efterfølgende tabeller viser en oversigt over hvilke komponenter der er anvendt, den beskriver navn, type og størrelse på hver enkelt komponent\footnote{Datablade for komponenterne kan findes i mappen "Datablade" på CD'en}. 
 
 
 \begin{table}[htbp] \centering
@@ -304,7 +304,7 @@ De efterfølgende tabeller viser en oversigt over hvilke komponenter der er anve
 
 \section{DE2-kodelås}
 
-DE2 Boardet bliver brugt som kodelås til CSS Hovedenheden. DE2 Boardet er programmeret i E2DSD Exercise 7\footnote{Se code\_lock.vhd i bilag} som en Statemachine. Der er dog blevet ændret i koden fra øvelsen, da der kun er brug for et enkelt bit til CSS Hovedenheden og ikke en konstant høj. 
+DE2-boardet bliver brugt som kodelås til CSS-hovedenheden. DE2-boardet er programmeret i E2DSD\footnote{2. Semester kursus på IHA - Digital Systemdesign} Exercise 7\footnote{Se code\_lock.vhd i bilag} som en Statemachine. Der er dog blevet ændret i koden fra øvelsen, da der kun er brug for et enkelt bit til CSS-hovedenheden og ikke en konstant høj. 
 
 \begin{figure}[H]
 	\centering
