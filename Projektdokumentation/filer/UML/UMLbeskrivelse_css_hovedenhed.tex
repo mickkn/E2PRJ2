@@ -333,7 +333,7 @@ ZeroCrossInt( ); (Constructor) \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Aktiver interrupts for INT0 og aktiver det globale interrupt flag \\
 
-\~ZeroCrossInt( ); (Destructor) \\
+\textasciitilde ZeroCrossInt( ); (Destructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Deaktiver interrupts for INT0 \\
@@ -367,7 +367,7 @@ UART( unsigned long BaudRate, unsigned char databit ); (Constructor) \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Sæt de hardwarenære registre til kommunikation med USART delen af atMega32 processoren samt modtage interrupts \\
 
-\~UART( ); (Destructor) \\
+\textasciitilde UART( ); (Destructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Deaktiver USART afsendelse og modtagelse samt modtage interrupt \\
@@ -406,14 +406,14 @@ ISR( USART\_RXC\_vect ); \\
 \textbf{Ansvar:} At genererer 120 kHz firkant signal med intern hardware timer.
 
 Dette er en global klasse da ISR for INT0 kan tilgå start() og stop() metoderne. Det globale objekt hedder timer. \\
-\textbf{Attributer:} Ingen
+\textbf{Attributer:} Ingen \\
 \textbf{Metoder:} \\
 Timer( ); (Constructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Sæt output port og indstil hardware registrer til timer1 på atMega32 processoren til at genererer 120 kHz firkant signal \\
 
-\~ZeroCrossInt( ); (Destructor) \\
+\textasciitilde Timer( ); (Destructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Afbryd hardware forbindelse til timeren og stop den. Sæt ouput ben lavt \\
@@ -448,7 +448,7 @@ Timer( ); (Constructor) \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Initialiser ovfCount\_ atributten til 0 og kald stop() metoden \\
 
-\~ZeroCrossInt( ); (Destructor) \\
+\textasciitilde Timer( ); (Destructor) \\
 \textbf{Parametre:} Ingen \\
 \textbf{Returværdi:} Ingen \\
 \textbf{Beskrivelse:} Kald stop() metoden \\
