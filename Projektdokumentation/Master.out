@@ -1,0 +1,84 @@
+\BOOKMARK [0][-]{chapter.1}{Ordliste}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Kravspecifikation}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Indledning}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Akt\370rer}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.2.1}{Bruger}{section.2.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.2}{Eksterne enheder}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.3}{Barn}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.4}{SMS-modtager}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.5}{DE2-board}{section.2.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Usecases}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.3.1}{UC1: Login}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.2}{UC2: Aktiver}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.3}{UC3: Deaktiver}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.4}{UC4: Udl\346s status}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.5}{UC5: Detekter lyd}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.6}{UC6: Rediger SMS-modtager}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.7}{UC7: Startops\346tning}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.8}{UC8: Tilf\370j/fjern X10 udtag}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{Ikke-funktionelle krav}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.5}{Begr\346nsninger}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.6}{HMI\(Human Machine Interface\)}{chapter.2}% 21
+\BOOKMARK [0][-]{chapter.3}{Forunders\370gelse}{}% 22
+\BOOKMARK [1][-]{section.3.1}{GSM \(JSA\)}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.1.1}{GSM-valg}{section.3.1}% 24
+\BOOKMARK [1][-]{section.3.2}{L\345s \(PO\)}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.2.1}{L\345svalg}{section.3.2}% 26
+\BOOKMARK [1][-]{section.3.3}{Babyalarm \(JC\)}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.1}{Babyalarm sammenligning}{section.3.3}% 28
+\BOOKMARK [0][-]{chapter.4}{System Arkitektur}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Dom\346nemodel \(JS\)}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Hardware beskrivelse}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.2.1}{BDD Hardware \(HW\)}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.2}{BDD CSS-hovedenhed \(HW\)}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.3}{BDD X10-udtag \(HW\)}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.4}{IBD Hardware \(HW\)}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.5}{IBD CSS-hovedenhed og X10-udtag \(HW\)}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.6}{Plantegning over HW \(HW\)}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.7}{Gr\346nseflade \(HW\)}{section.4.2}% 38
+\BOOKMARK [1][-]{section.4.3}{Software}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.3.1}{Applikations model for PC \(JC\)}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.2}{Klassebeskrivelse for PC \(JC\)}{section.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.3.3}{Applikations model for CSS-hovedenhed \(BS\)}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.4}{Klassediagram og beskrivelse for CSS-hovednehed \(BS\)}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.5}{Applikations model for X10-udtag \(SW\)}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.6}{Klassebeskrivels for X10-udtag \(BS\)}{section.4.3}% 45
+\BOOKMARK [1][-]{section.4.4}{Protokol}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.1}{Seriel kommunikation \(BS\)}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.2}{X10 kommunikation \(BS\)}{section.4.4}% 48
+\BOOKMARK [0][-]{chapter.5}{Hardware design}{}% 49
+\BOOKMARK [1][-]{section.5.1}{X10-encoder}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.1.1}{H\370jpasfilter \(JS\)}{section.5.1}% 51
+\BOOKMARK [2][-]{subsection.5.1.2}{Zero Crossing Detector \(SK\)}{section.5.1}% 52
+\BOOKMARK [1][-]{section.5.2}{X10-decoder}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.2.1}{B\345ndpasfilter \(JS\)}{section.5.2}% 54
+\BOOKMARK [2][-]{subsection.5.2.2}{Envelope Detector \(SK\)}{section.5.2}% 55
+\BOOKMARK [2][-]{subsection.5.2.3}{Dipswitch \(JS\)}{section.5.2}% 56
+\BOOKMARK [2][-]{subsection.5.2.4}{Komponentliste \(SK\)}{section.5.2}% 57
+\BOOKMARK [1][-]{section.5.3}{DE2-kodel\345s \(MK\)}{chapter.5}% 58
+\BOOKMARK [0][-]{chapter.6}{Software design}{}% 59
+\BOOKMARK [1][-]{section.6.1}{Logical View}{chapter.6}% 60
+\BOOKMARK [2][-]{subsection.6.1.1}{Bruger gr\346nseflade \(JC\)}{section.6.1}% 61
+\BOOKMARK [2][-]{subsection.6.1.2}{Software packages \(JC\)}{section.6.1}% 62
+\BOOKMARK [2][-]{subsection.6.1.3}{Klasse CircBuffer \(BS\)}{section.6.1}% 63
+\BOOKMARK [2][-]{subsection.6.1.4}{Klasse X10IF \(BS\)}{section.6.1}% 64
+\BOOKMARK [2][-]{subsection.6.1.5}{ZeroCrossInt funktion \(BS\)}{section.6.1}% 65
+\BOOKMARK [2][-]{subsection.6.1.6}{Klasse ClickATell \(BS\)}{section.6.1}% 66
+\BOOKMARK [2][-]{subsection.6.1.7}{Klasse X10IF-Udtag \(JSA\)}{section.6.1}% 67
+\BOOKMARK [1][-]{section.6.2}{Deployment View \(JC\)}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.3}{Implementation View \(BS\)}{chapter.6}% 69
+\BOOKMARK [2][-]{subsection.6.3.1}{Filstruktur}{section.6.3}% 70
+\BOOKMARK [1][-]{section.6.4}{Data view \(JC\)}{chapter.6}% 71
+\BOOKMARK [0][-]{chapter.7}{Modultest}{}% 72
+\BOOKMARK [1][-]{section.7.1}{Hardware Modultest \(MK, PO\)}{chapter.7}% 73
+\BOOKMARK [2][-]{subsection.7.1.1}{CSS-hovedenhed}{section.7.1}% 74
+\BOOKMARK [2][-]{subsection.7.1.2}{X10-udtag}{section.7.1}% 75
+\BOOKMARK [2][-]{subsection.7.1.3}{DE2-kodel\345s}{section.7.1}% 76
+\BOOKMARK [1][-]{section.7.2}{SW Modultest}{chapter.7}% 77
+\BOOKMARK [2][-]{subsection.7.2.1}{PC RS232IF \(JC\)}{section.7.2}% 78
+\BOOKMARK [2][-]{subsection.7.2.2}{CSS-hovedenhed klasser \(BS\)}{section.7.2}% 79
+\BOOKMARK [0][-]{chapter.8}{Interfrationstest \(MK, PO\)}{}% 80
+\BOOKMARK [1][-]{section.8.1}{Opstilling og forbindelser}{chapter.8}% 81
+\BOOKMARK [1][-]{section.8.2}{Resultat}{chapter.8}% 82
+\BOOKMARK [0][-]{chapter.9}{Accepttestspecifikation}{}% 83
+\BOOKMARK [0][-]{chapter.10}{Bilags-CD indhold}{}% 84
