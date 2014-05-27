@@ -19,7 +19,7 @@ Når brugeren så trykker på en tast og trykker enter vil han blive sendt til e
      \label{fig:PC_package}
 \end{figure}
 
-Figuren ovenfor viser de forskellige pakker man kan indlede PC klasserne i. Alle controllers som har UI pointers er smidt i UI pakken sammen med BrugerUI. STK Connector pakken indeholder RS232IF og så har den et CSerial \footnote{CSerial klassen er fundet på www.codeguru.com. Klassen og den fulde URL adresse ligger desuden på CD'en i Reference mappen} objekt som er en klasse der har de 5 mest basale metoder til at sende og læse på en seriel port.
+Figuren ovenfor viser de forskellige pakker man kan indlede PC klasserne i. Alle controllers som har UI pointers er smidt i UI pakken sammen med BrugerUI. STK Connector pakken indeholder RS232IF og så har den et CSerial \footnote{CSerial klassen er fra http://www.codeguru.com/. Klassen og den fulde URL adresse ligger desuden på CD'en i Reference mappen} objekt som er en klasse der har de 5 mest basale metoder til at sende og læse på en seriel port.
 
 
 \clearpage
@@ -33,7 +33,7 @@ Figuren ovenfor viser de forskellige pakker man kan indlede PC klasserne i. Alle
 Figuren ovenfor viser de forskellige pakker man kan inddele CSS hovedenheds klasser i.
 
 % CircBuffer
-\subsection{Klasse CircBuffer}
+\subsection{Klasse CircBuffer (BS)}
 Efter som X10 kommunikationen er meget langsom (50 bits/s) bruges en buffer til at holde på kommandoerne ind til de er klar til at blive afsendt. Dette er CircBuffer klassens opgave.
 Denne er udformet som en cirkulær buffer som kan holde 2 fulde kommandoer. Bemærk at i følge X10-protokollen skal alle kommandoer afsendes to gange. Så der er plads til 4 kommandoer, hvor to af dem altid er de samme.
 
@@ -42,7 +42,7 @@ Klassen er bygget til selv at holde styr på hvilket bit der skal sendes næste 
 Alle kommandoer termineres med '\textbackslash 0' karakteren. 
 
 % X10IF klasse design
-\subsection{Klasse X10IF}
+\subsection{Klasse X10IF (BS)}
 En af de kritiske og avancerede klasser er X10IF klasserne på hhv. CSS-hovedenheden og X10 Udtaget. I designfasen er der udviklet sekvensdiagrammer som beskriver nogle af metoderne og sammenspillet til andre klasser.
 
 Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS-hovedenheden, har som ansvar at afsende en fuld X10-kommando, iht. protokollen, ud fra en parameter formateret som vist i tabel \ref{table:X10_sendKommando_format}.
@@ -69,7 +69,7 @@ Sekvensen er vist i figur \ref{fig:X10_sendKommando_sd}.
 \end{figure}
 
 % ZeroCrossInt ISR
-\subsection{ZeroCrossInt funktion}
+\subsection{ZeroCrossInt funktion (BS)}
 I tilfælde af et interrupt signal på INT0 benet på CSS-hovedenheden køres en bestemt funktion i microcontrolleren. Dette er kaldet en ISR. Forløbet for denne er beskrevet i sekvensdiagrammet på figur \ref{fig:ZeroCrossISR}.
 Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den det næste bit der skal afsendes fra bufferen. Ud fra værdien bestemmer den om der skal tændes for 120 kHz frekvensen i timeren. Når en kommando er helt sendt nedskriver den køen og hvis køen er tom slår den interruptet fra.
 
@@ -80,7 +80,7 @@ Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den d
 \end{figure}
 
 % ClickATell
-\subsection{Klasse ClickATell}
+\subsection{Klasse ClickATell (BS)}
 For at kunne afsende SMSer i tilfælde af babyalarm bruges en API som kan afsende beskeder via internettet.
 ClickATell\textsuperscript{\circledR}\footnote{Online SMS service: http://www.clickatell.com/} er en online service som kan afsende SMSer til et valgfrit telefonnummer ved at kalde en URL adresse.
 Ved at bruge Microsoft Windows Shell API\footnote{Microsoft MSDN: http://tinyurl.com/d99m9dz} er det muligt at starte applikationer fra Windows miljøet. Dette bruges til at starte et Internet Explorer-browservindue med en predefineret URL adresse som skaber forbindelse til ClickATell\textsuperscript{\circledR} APIen. 
