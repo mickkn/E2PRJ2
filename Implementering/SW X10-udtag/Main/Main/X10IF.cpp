@@ -1,7 +1,6 @@
 /*
  * X10IF.cpp
  *
- * Created: 26-05-2014 13:17:01
  *  Author: jeppestaerk
  */ 
 
@@ -55,7 +54,19 @@ void X10IF::insertX10bit(char X10bit)
 {
 	X10Array_[X10ArrayPlads_] = X10bit;			// Indsætter "bit" på "X10plads" i X10array
 	
-	if (X10ArrayPlads_ == 3 && X10Array_[0] != 1 && X10Array_[1] != 1 && X10Array_[2] != 1 && X10Array_[3] != 0)	// Kontroller X10Array_ for STX kommando
+	if (X10ArrayPlads_ == 0 && X10Array_[0] != 1)	// Kontroller X10Array_ for STX kommando bit[0]
+	{
+		X10ArrayPlads_ = 0;						// Nulstiller X10ArrayPlads_ til 0
+	}	
+	else if (X10ArrayPlads_ == 1 && X10Array_[0] != 1 && X10Array_[1])	// Kontroller X10Array_ for STX kommando bit[0] & [1]
+	{
+		X10ArrayPlads_ = 0;						// Nulstiller X10ArrayPlads_ til 0
+	}	
+	else if (X10ArrayPlads_ == 2 && X10Array_[0] != 1 && X10Array_[1] != 1 && X10Array_[2])	// Kontroller X10Array_ for STX kommando bit[0], [1] & [2]
+	{
+		X10ArrayPlads_ = 0;						// Nulstiller X10ArrayPlads_ til 0
+	}
+	else if (X10ArrayPlads_ == 3 && X10Array_[0] != 1 && X10Array_[1] != 1 && X10Array_[2] != 1 && X10Array_[3] != 0)	// Kontroller X10Array_ for STX kommando bit[0], [1], [2] & [3]
 	{
 		X10ArrayPlads_ = 0;						// Nulstiller X10ArrayPlads_ til 0
 	}
