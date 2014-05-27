@@ -7,13 +7,13 @@ Herunder er de forskellige dele af softwaren kort beskrevet.
 
 \subsection{PC (JC)}
 
-Softwaren til PC'en, er brugerens grænseflade til at kontrollere systemet. Her kan han manurære rundt i de forskellige menuer og udføre de forskellige ting som er beskrevet i UC beskrivelserne.
+Softwaren til PCen, er brugerens grænseflade til at kontrollere systemet. Her kan brugeren manøvrere rundt i de forskellige menuer og udføre de forskellige ting som er beskrevet i UC beskrivelserne.
 
-Nedenfor er der illustreret hvordan man kommer frem og tilbage i brugerinterfacet. Udover bruger input så kan CSS-hovedenheden give PC'en besked om at der ikke længere er logget ind hvilket vil sende brugeren fra main menu og tilbage til pre-login menuen. Kun så længe brugeren står i main menu og ikke har trykket på keyboardet, er det muligt for programmet at afsende en sms eller sende brugeren til pre-login menu pga. udløbet login.
+Nedenfor er der illustreret hvordan man kommer frem og tilbage i brugerinterfacet. Udover bruger input så kan CSS-hovedenheden give PCen besked om at der ikke længere er logget ind hvilket vil sende brugeren fra main menu og tilbage til pre-login menuen. Kun så længe brugeren står i main menu og ikke har trykket på keyboardet, er det muligt for programmet at afsende en sms eller sende brugeren til pre-login menu pga. udløbet login.
 
 \begin{figure}[htbp] \centering
 {\includegraphics[width=\textwidth]{billeder/uml/state_machine_main}}
-\caption{State machine diagram over brugerflade}
+\caption{State-machine diagram over brugerflade}
 \label{fig:State machine diagram over brugerflade}
 \end{figure}
 
@@ -21,7 +21,7 @@ Nedenfor er der illustreret hvordan man kommer frem og tilbage i brugerinterface
 
 \clearpage
 
-En vigtig del af PC software er at vi kunne gemme alle de enheder brugeren har og hvilket telefonnummer brugeren har. Dette håndtere Hukommelse klassen som gemmer alt i en text fil og henter dataen ind under opstart. Således kan brugeren lukke programmet, åbne det igen og stadig have de samme enheder samt deres status og adresse. \ref{fig:Hukommelses header og udklip af text filen} Illustrere hvordan enhederne og telefonnummeret er gemt i text filen.
+En vigtig del af PC softwaren er at vi kunne gemme alle de enheder brugeren har og hvilket telefonnummer brugeren har. Dette håndtere Hukommelse klassen som gemmer alt i en text fil og henter dataen ind under opstart. Således kan brugeren lukke programmet, åbne det igen og stadig have de samme enheder samt deres status og adresse. \ref{fig:Hukommelses header og udklip af text filen} Illustrerer hvordan enhederne og telefonnummeret er gemt i tekst filen.
 
 \begin{figure}[htbp] \centering
 {\includegraphics[width=\textwidth]{billeder/uml/pc_dataview}}
@@ -59,7 +59,7 @@ Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS-hovedenhede
 	\label{table:X10_sendKommando_format}
 \end{table}
 
-Metoden skal først omskrive den modtagende kommando til en X10 bit streng. Her efter indsættes alle bit's i en buffer, hvorfra de afsendes når der detekteres et zero cross. 
+Metoden skal først omskrive den modtagende kommando til en X10 bit streng. Her efter indsættes alle bits i en buffer, hvorfra de afsendes når der detekteres et zero cross. 
 Sekvensen er vist i figur \ref{fig:X10_sendKommando_sd}.
 
 \begin{figure}[!htb]

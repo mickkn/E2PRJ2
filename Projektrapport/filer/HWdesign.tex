@@ -1,11 +1,11 @@
-\section{Hardware design}
+\section{Hardwaredesign}
 
 % HW design
-Generelt kan det overordnede hardware design beskrives som noget elektronik der sender information ud på nettet, som sendes og analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som encoder og decoder\footnote{For yderlige beregninger se projektdokumentation afsnit HW-design}.  
+Generelt kan det overordnede hardwaredesign beskrives som noget elektronik der sender information ud på el-nettet og og modtages og analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som encoder og decoder\footnote{For yderlige beregninger se projektdokumentation afsnit HW-design}.  
 
 
-\section{Encoder}
-X10-encoderen, er en del af CSS hovedenheden. CSS hovedenheden genererer X10-bitstrømmen og sender den ud på det eksisterende el-net. Encoderen består af et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, og en zero crossing detector der detekterer nulgennemgang.
+\section{Encoder (JS)}
+X10-encoderen, er en del af CSS hovedenheden. CSS-hovedenheden genererer X10-bitstrømmen og sender den ud på det eksisterende el-net. Encoderen består af et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, og en zero crossing detector der detekterer nulgennemgang.
 
 \begin{figure}[htbp]
 	\centering
@@ -24,7 +24,7 @@ Ideen med at sende burst ud på nettet i zero crossing kan ses illustreret på f
 \end{figure}
 \newpage
 
-\subsection{Højpasfilter}
+\subsection{Højpasfilter (JS)}
 
 \begin{figure}[htb]
   \begin{minipage}{0.45\textwidth}
@@ -42,7 +42,7 @@ Ideen med at sende burst ud på nettet i zero crossing kan ses illustreret på f
   \end{minipage}
 \end{figure}
 
-For at sende X10 kommandoer ud på det eksisterende 50 Hz el-net er det nødvendigt at koble elektronikken direkte herpå og eftersom det elektronik ikke tåler de høje spændinger fra nettet, er det nødvendigt at blokere det signal, men stadig at kunne sende de 120 kHz ud. Dette løses med et højpasfilter.
+For at sende X10 kommandoer ud på det eksisterende 50 Hz el-net er det nødvendigt at koble elektroniken direkte herpå og eftersom det elektronik ikke tåler de høje spændinger fra nettet, er det nødvendigt at blokere det signal, men stadig at kunne sende de 120 kHz ud. Dette løses med et højpasfilter.
 
 Den ønskede knækfrekvens skal ligge omkring de 120 kHz for at opnå mindst dæmpning herpå. Ved denne knækfrekvens skulle 50 Hz signalet være ubetydelig lille efter filteret. 
 
@@ -63,18 +63,18 @@ Kondensatoren forudbestemmes for beregningerne til en værdi på 0,1 nF.
   \begin{minipage}{0.45\textwidth}
     \centering
       \includegraphics[width=\textwidth]{billeder/HWTest/Encoder/Encoder_zerocross}
-      \caption{Scope billede af Zero crossing detector, CH1(indgangssignal), CH2(Udgangssignal)}
+      \caption{Scope billede af Zero crossing detector, CH1 (udgangssignal), CH2 (inggangssignal)}
     \label{fig:Encoder_Zerocross}
   \end{minipage}
 \end{figure}
 
-Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en Zero crossing detector både på Encoderen og Decoderen, da begge disse består af et STK-kit der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_UV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
+Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en zero crossing detector både på encoderen og decoderen, da begge disse består af et STK500 der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_UV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
 
-Modstanden $R_7$ sidder der bl.a. for at beskytte Zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på Zero crossing detectoren, og dette problem løste lavpasfilteret. 
+Modstanden $R_7$ sidder der bl.a. for at beskytte zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på zero crossing detectoren, og dette problem løste lavpasfilteret. 
 
 Der ønskes at dæmpe 120 kHz signalet, derfor designes lavpasfilteret ud fra en knækfrekvens på 1,0 kHz.
 
-\section{Decoder}
+\section{Decoder (JS)}
 Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 kommando, er opbygget af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret, og dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
 
 \begin{figure}[htbp]
@@ -87,7 +87,7 @@ Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 ko
 
 \newpage
 
-\subsection{Båndpasfilter}
+\subsection{Båndpasfilter (JS)}
 
 \begin{figure}[htb]
   \begin{minipage}{0.45\textwidth}
@@ -117,24 +117,25 @@ Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således 
 	\label{fig:ED_MV}
 \end{figure}
 
-Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL (0-5V) signal som STK-kitten kan aflæse.
+Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL signal som STK500 kan aflæse.
 
-Den er opbygget af en diode, et RC-led og en schmitt trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og undgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. Kondensatoren er med til at udglatte signalet da den ikke kan nå at aflades på en periode.
+Den er opbygget af en diode, et RC-led og en schmitt-trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og undgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. Kondensatoren er med til at udglatte signalet da den ikke kan nå at aflades på en periode.
 
-Modstanden $R_8$ er en afladningsmodstand, og den bestemmer hvor hurtigt kredsløbet skal aflades, jo højere modstand jo langsommere går det med at aflade.
+Modstanden $R_8$ er en afladnings modstand, og den bestemmer hvor hurtigt kredsløbet skal aflades, jo højere modstand jo langsommere går det med at aflade.
 
-Der er anvendt en schmitt trigger til at lave signalet om til et firkantet signal som STK-kitten kan aflæses. Grunden til at der er brugt 2 er fordi de er inverterende.
+Der er anvendt en schmitt-trigger til at lave signalet om til et firkantet signal som STK500 kan aflæses. Grunden til at der er brugt 2 er fordi de er inverterende.
 
-\subsection{Dipswitch}
+\newpage
+\subsection{Dipswitch (JS)}
 For at en X10-kommando bliver udført af det korrekte udtag medsendes en adresse på fire bit.
-Til at simulere adresseringen for et udtag, er der lavet fire dipswitches der er forsynet med 5 V og forbundet til STK-500 modtageren, som det er illustreret på figur \ref{fig:DIPSWITCH}.
+Til at angive den korrekte adresseringen for et udtag, er der lavet fire dipswitches der er forsynet med 5 V og forbundet til STK500 på X10-udtaget, som det er illustreret på figur \ref{fig:DIPSWITCH}.
 
-En åben kontakt vil give 0 og en lukket kontakt vil resultere i 1
+En åben kontakt vil give LAV(0V) og en lukket kontakt vil resultere i HØJ(5V)
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/DIPSWITCH}
-	\caption{Dipswitch for adressering af udtag}
+	\caption{Dipswitch for adressering af X10-udtag}
 	\label{fig:DIPSWITCH}
 \end{figure}
 
