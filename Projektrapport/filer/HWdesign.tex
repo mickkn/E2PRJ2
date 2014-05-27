@@ -5,7 +5,7 @@ Generelt kan det overordnede hardware design beskrives som noget elektronik der 
 
 
 \section{Encoder}
-Encoderen, også omtalt som senderenhed, er den del af systemet der genererer X10 kommandoen og sender den ud på det eksisterende el-net. Et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, udgør sammen med en zero crossing detector hele hardwaren for encoderen.
+X10-encoderen, er en del af CSS hovedenheden. CSS hovedenheden genererer X10-bitstrømmen og sender den ud på det eksisterende el-net. Encoderen består af et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, og en zero crossing detector der detekterer nulgennemgang.
 
 \begin{figure}[htbp]
 	\centering
@@ -51,7 +51,7 @@ Kondensatoren forudbestemmes for beregningerne til en værdi på 0,1 nF.
 
 \newpage
   
-\subsection{Zero Crossing Detector}
+\subsection{Zero Crossing Detector (SK)}
 \begin{figure}[htb]
   \begin{minipage}{0.45\textwidth}
     \centering
@@ -109,7 +109,7 @@ Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og
 
 Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således at knækfrekvensen udregnes til 110 kHz, og for lavpasfilteret beregnes en knækfrekvens på 130 kHz.
 
-\subsection{Envelope Detector}
+\subsection{Envelope Detector (SK)}
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/ED_MV.png}
