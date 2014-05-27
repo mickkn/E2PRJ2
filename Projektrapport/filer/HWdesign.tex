@@ -63,12 +63,12 @@ Kondensatoren forudbestemmes for beregningerne til en værdi på 0,1 nF.
   \begin{minipage}{0.45\textwidth}
     \centering
       \includegraphics[width=\textwidth]{billeder/HWTest/Encoder/Encoder_zerocross}
-      \caption{Scope billede af Zero crossing detector, CH1 (udgangssignal), CH2 (inggangssignal)}
+      \caption{Scope billede af Zero crossing detector, CH1 (udgangssignal), CH2 (indgangssignal)}
     \label{fig:Encoder_Zerocross}
   \end{minipage}
 \end{figure}
 
-Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en zero crossing detector både på encoderen og decoderen, da begge disse består af et STK500 der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_UV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
+Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en zero crossing detector både på encoderen og decoderen, da begge disse består af et STK500 der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_MV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
 
 Modstanden $R_7$ sidder der bl.a. for at beskytte zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på zero crossing detectoren, og dette problem løste lavpasfilteret. 
 
@@ -105,7 +105,7 @@ Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 ko
   \end{minipage}
 \end{figure}
 
-Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHZ fra samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende OpAmp med modstande, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_UV}. Kurvekarakteristikken er illustreret på figur \ref{fig:BAANDPAS_KURVE}.
+Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHZ fra samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende OpAmp med modstande, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_MV}. Kurvekarakteristikken er illustreret på figur \ref{fig:BAANDPAS_KURVE}.
 
 Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således at knækfrekvensen udregnes til 110 kHz, og for lavpasfilteret beregnes en knækfrekvens på 130 kHz.
 
