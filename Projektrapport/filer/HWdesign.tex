@@ -105,9 +105,9 @@ Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 ko
   \end{minipage}
 \end{figure}
 
-Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHZ fra samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende OpAmp med modstande, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_MV}. Kurvekarakteristikken er illustreret på figur \ref{fig:BAANDPAS_KURVE}.
+Båndpasfilteret har til opgave at filtrere alle signaler med frekvenser over og under 120 kHZ fra samtidig med at det forstærker signalet i båndpasset. Forstærkningen opnås ved at koble en ikke inverterende operationsforstærker med modstande forbundet på tilbagekoblingen, hvis størrelse afhænger af den ønskede forstærkning, mellem et højpasfilter og lavpasfilter som illustreret på figur \ref{fig:BAANDPAS_MV}. Kurvekarakteristikken er illustreret på figur \ref{fig:BAANDPAS_KURVE}.
 
-Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således at knækfrekvensen udregnes til 110 kHz, og for lavpasfilteret beregnes en knækfrekvens på 130 kHz.
+Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således at knækfrekvensen udregnes til 110 kHz, og for lavpasfilteret beregnes en knækfrekvens til 130 kHz.
 
 \subsection{Envelope Detector (SK)}
 \begin{figure}[htbp]
