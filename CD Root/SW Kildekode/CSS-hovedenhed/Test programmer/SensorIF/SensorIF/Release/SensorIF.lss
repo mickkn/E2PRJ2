@@ -1,0 +1,466 @@
+
+SensorIF.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000364  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000012  00800060  00000364  000003f8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          0000000c  00800072  00800072  0000040a  2**0
+                  ALLOC
+  3 .stab         000006cc  00000000  00000000  0000040c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000097  00000000  00000000  00000ad8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .comment      0000002f  00000000  00000000  00000b6f  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2e 00 	jmp	0x5c	; 0x5c <__dtors_end>
+   4:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+   8:	0c 94 c3 00 	jmp	0x186	; 0x186 <__vector_2>
+   c:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  10:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  14:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  18:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  1c:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  20:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  24:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  28:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  2c:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  30:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  34:	0c 94 23 01 	jmp	0x246	; 0x246 <__vector_13>
+  38:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  3c:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  40:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  44:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  48:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  4c:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+  50:	0c 94 56 00 	jmp	0xac	; 0xac <__bad_interrupt>
+
+00000054 <__ctors_start>:
+  54:	e9 00       	.word	0x00e9	; ????
+  56:	6d 01       	movw	r12, r26
+
+00000058 <__ctors_end>:
+  58:	ed 00       	.word	0x00ed	; ????
+  5a:	76 01       	movw	r14, r12
+
+0000005c <__dtors_end>:
+  5c:	11 24       	eor	r1, r1
+  5e:	1f be       	out	0x3f, r1	; 63
+  60:	cf e5       	ldi	r28, 0x5F	; 95
+  62:	d8 e0       	ldi	r29, 0x08	; 8
+  64:	de bf       	out	0x3e, r29	; 62
+  66:	cd bf       	out	0x3d, r28	; 61
+
+00000068 <__do_copy_data>:
+  68:	10 e0       	ldi	r17, 0x00	; 0
+  6a:	a0 e6       	ldi	r26, 0x60	; 96
+  6c:	b0 e0       	ldi	r27, 0x00	; 0
+  6e:	e4 e6       	ldi	r30, 0x64	; 100
+  70:	f3 e0       	ldi	r31, 0x03	; 3
+  72:	02 c0       	rjmp	.+4      	; 0x78 <__do_copy_data+0x10>
+  74:	05 90       	lpm	r0, Z+
+  76:	0d 92       	st	X+, r0
+  78:	a2 37       	cpi	r26, 0x72	; 114
+  7a:	b1 07       	cpc	r27, r17
+  7c:	d9 f7       	brne	.-10     	; 0x74 <__do_copy_data+0xc>
+
+0000007e <__do_clear_bss>:
+  7e:	20 e0       	ldi	r18, 0x00	; 0
+  80:	a2 e7       	ldi	r26, 0x72	; 114
+  82:	b0 e0       	ldi	r27, 0x00	; 0
+  84:	01 c0       	rjmp	.+2      	; 0x88 <.do_clear_bss_start>
+
+00000086 <.do_clear_bss_loop>:
+  86:	1d 92       	st	X+, r1
+
+00000088 <.do_clear_bss_start>:
+  88:	ae 37       	cpi	r26, 0x7E	; 126
+  8a:	b2 07       	cpc	r27, r18
+  8c:	e1 f7       	brne	.-8      	; 0x86 <.do_clear_bss_loop>
+
+0000008e <__do_global_ctors>:
+  8e:	10 e0       	ldi	r17, 0x00	; 0
+  90:	c8 e5       	ldi	r28, 0x58	; 88
+  92:	d0 e0       	ldi	r29, 0x00	; 0
+  94:	04 c0       	rjmp	.+8      	; 0x9e <__do_global_ctors+0x10>
+  96:	22 97       	sbiw	r28, 0x02	; 2
+  98:	fe 01       	movw	r30, r28
+  9a:	0e 94 a1 01 	call	0x342	; 0x342 <__tablejump__>
+  9e:	c4 35       	cpi	r28, 0x54	; 84
+  a0:	d1 07       	cpc	r29, r17
+  a2:	c9 f7       	brne	.-14     	; 0x96 <__do_global_ctors+0x8>
+  a4:	0e 94 a7 00 	call	0x14e	; 0x14e <main>
+  a8:	0c 94 a5 01 	jmp	0x34a	; 0x34a <__do_global_dtors>
+
+000000ac <__bad_interrupt>:
+  ac:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000b0 <_ZN7RS232IFC1Ev>:
+  b0:	08 95       	ret
+
+000000b2 <_ZN7RS232IF7wrapperEPKcPc>:
+  b2:	fa 01       	movw	r30, r20
+  b4:	83 e5       	ldi	r24, 0x53	; 83
+  b6:	81 93       	st	Z+, r24
+  b8:	db 01       	movw	r26, r22
+  ba:	80 e0       	ldi	r24, 0x00	; 0
+  bc:	9d 91       	ld	r25, X+
+  be:	91 93       	st	Z+, r25
+  c0:	8f 5f       	subi	r24, 0xFF	; 255
+  c2:	85 30       	cpi	r24, 0x05	; 5
+  c4:	d9 f7       	brne	.-10     	; 0xbc <_ZN7RS232IF7wrapperEPKcPc+0xa>
+  c6:	8d e0       	ldi	r24, 0x0D	; 13
+  c8:	fa 01       	movw	r30, r20
+  ca:	86 83       	std	Z+6, r24	; 0x06
+  cc:	08 95       	ret
+
+000000ce <_ZN7RS232IF12sendKommandoEPc>:
+  ce:	1f 93       	push	r17
+  d0:	cf 93       	push	r28
+  d2:	df 93       	push	r29
+  d4:	eb 01       	movw	r28, r22
+  d6:	17 e0       	ldi	r17, 0x07	; 7
+  d8:	69 91       	ld	r22, Y+
+  da:	84 e7       	ldi	r24, 0x74	; 116
+  dc:	90 e0       	ldi	r25, 0x00	; 0
+  de:	0e 94 1f 01 	call	0x23e	; 0x23e <_ZN4UART8sendCharEc>
+  e2:	11 50       	subi	r17, 0x01	; 1
+  e4:	c9 f7       	brne	.-14     	; 0xd8 <_ZN7RS232IF12sendKommandoEPc+0xa>
+  e6:	df 91       	pop	r29
+  e8:	cf 91       	pop	r28
+  ea:	1f 91       	pop	r17
+  ec:	08 95       	ret
+
+000000ee <_ZN7RS232IF7adviserEv>:
+  ee:	0f 93       	push	r16
+  f0:	1f 93       	push	r17
+  f2:	cf 93       	push	r28
+  f4:	df 93       	push	r29
+  f6:	cd b7       	in	r28, 0x3d	; 61
+  f8:	de b7       	in	r29, 0x3e	; 62
+  fa:	2d 97       	sbiw	r28, 0x0d	; 13
+  fc:	0f b6       	in	r0, 0x3f	; 63
+  fe:	f8 94       	cli
+ 100:	de bf       	out	0x3e, r29	; 62
+ 102:	0f be       	out	0x3f, r0	; 63
+ 104:	cd bf       	out	0x3d, r28	; 61
+ 106:	8c 01       	movw	r16, r24
+ 108:	86 e0       	ldi	r24, 0x06	; 6
+ 10a:	e0 e6       	ldi	r30, 0x60	; 96
+ 10c:	f0 e0       	ldi	r31, 0x00	; 0
+ 10e:	de 01       	movw	r26, r28
+ 110:	18 96       	adiw	r26, 0x08	; 8
+ 112:	01 90       	ld	r0, Z+
+ 114:	0d 92       	st	X+, r0
+ 116:	8a 95       	dec	r24
+ 118:	e1 f7       	brne	.-8      	; 0x112 <_ZN7RS232IF7adviserEv+0x24>
+ 11a:	ae 01       	movw	r20, r28
+ 11c:	4f 5f       	subi	r20, 0xFF	; 255
+ 11e:	5f 4f       	sbci	r21, 0xFF	; 255
+ 120:	be 01       	movw	r22, r28
+ 122:	68 5f       	subi	r22, 0xF8	; 248
+ 124:	7f 4f       	sbci	r23, 0xFF	; 255
+ 126:	c8 01       	movw	r24, r16
+ 128:	0e 94 59 00 	call	0xb2	; 0xb2 <_ZN7RS232IF7wrapperEPKcPc>
+ 12c:	be 01       	movw	r22, r28
+ 12e:	6f 5f       	subi	r22, 0xFF	; 255
+ 130:	7f 4f       	sbci	r23, 0xFF	; 255
+ 132:	c8 01       	movw	r24, r16
+ 134:	0e 94 67 00 	call	0xce	; 0xce <_ZN7RS232IF12sendKommandoEPc>
+ 138:	2d 96       	adiw	r28, 0x0d	; 13
+ 13a:	0f b6       	in	r0, 0x3f	; 63
+ 13c:	f8 94       	cli
+ 13e:	de bf       	out	0x3e, r29	; 62
+ 140:	0f be       	out	0x3f, r0	; 63
+ 142:	cd bf       	out	0x3d, r28	; 61
+ 144:	df 91       	pop	r29
+ 146:	cf 91       	pop	r28
+ 148:	1f 91       	pop	r17
+ 14a:	0f 91       	pop	r16
+ 14c:	08 95       	ret
+
+0000014e <main>:
+ 14e:	cf 93       	push	r28
+ 150:	df 93       	push	r29
+ 152:	1f 92       	push	r1
+ 154:	cd b7       	in	r28, 0x3d	; 61
+ 156:	de b7       	in	r29, 0x3e	; 62
+ 158:	ce 01       	movw	r24, r28
+ 15a:	01 96       	adiw	r24, 0x01	; 1
+ 15c:	0e 94 58 00 	call	0xb0	; 0xb0 <_ZN7RS232IFC1Ev>
+ 160:	ff cf       	rjmp	.-2      	; 0x160 <main+0x12>
+
+00000162 <_ZN8SensorIFC1Ev>:
+ 162:	8b 98       	cbi	0x11, 3	; 17
+ 164:	8b b7       	in	r24, 0x3b	; 59
+ 166:	80 68       	ori	r24, 0x80	; 128
+ 168:	8b bf       	out	0x3b, r24	; 59
+ 16a:	85 b7       	in	r24, 0x35	; 53
+ 16c:	8c 60       	ori	r24, 0x0C	; 12
+ 16e:	85 bf       	out	0x35, r24	; 53
+ 170:	78 94       	sei
+ 172:	08 95       	ret
+
+00000174 <_ZN8SensorIFD1Ev>:
+ 174:	8b b7       	in	r24, 0x3b	; 59
+ 176:	8f 77       	andi	r24, 0x7F	; 127
+ 178:	8b bf       	out	0x3b, r24	; 59
+ 17a:	08 95       	ret
+
+0000017c <_ZN8SensorIF7alarmerEv>:
+ 17c:	fc 01       	movw	r30, r24
+ 17e:	80 81       	ld	r24, Z
+ 180:	91 81       	ldd	r25, Z+1	; 0x01
+ 182:	0c 94 78 01 	jmp	0x2f0	; 0x2f0 <_ZN14UC5DetekterLyd11detekterLydEv>
+
+00000186 <__vector_2>:
+ 186:	1f 92       	push	r1
+ 188:	0f 92       	push	r0
+ 18a:	0f b6       	in	r0, 0x3f	; 63
+ 18c:	0f 92       	push	r0
+ 18e:	11 24       	eor	r1, r1
+ 190:	2f 93       	push	r18
+ 192:	3f 93       	push	r19
+ 194:	4f 93       	push	r20
+ 196:	5f 93       	push	r21
+ 198:	6f 93       	push	r22
+ 19a:	7f 93       	push	r23
+ 19c:	8f 93       	push	r24
+ 19e:	9f 93       	push	r25
+ 1a0:	af 93       	push	r26
+ 1a2:	bf 93       	push	r27
+ 1a4:	ef 93       	push	r30
+ 1a6:	ff 93       	push	r31
+ 1a8:	82 e7       	ldi	r24, 0x72	; 114
+ 1aa:	90 e0       	ldi	r25, 0x00	; 0
+ 1ac:	0e 94 be 00 	call	0x17c	; 0x17c <_ZN8SensorIF7alarmerEv>
+ 1b0:	ff 91       	pop	r31
+ 1b2:	ef 91       	pop	r30
+ 1b4:	bf 91       	pop	r27
+ 1b6:	af 91       	pop	r26
+ 1b8:	9f 91       	pop	r25
+ 1ba:	8f 91       	pop	r24
+ 1bc:	7f 91       	pop	r23
+ 1be:	6f 91       	pop	r22
+ 1c0:	5f 91       	pop	r21
+ 1c2:	4f 91       	pop	r20
+ 1c4:	3f 91       	pop	r19
+ 1c6:	2f 91       	pop	r18
+ 1c8:	0f 90       	pop	r0
+ 1ca:	0f be       	out	0x3f, r0	; 63
+ 1cc:	0f 90       	pop	r0
+ 1ce:	1f 90       	pop	r1
+ 1d0:	18 95       	reti
+
+000001d2 <_GLOBAL__sub_I__ZN8SensorIFC2Ev>:
+ 1d2:	82 e7       	ldi	r24, 0x72	; 114
+ 1d4:	90 e0       	ldi	r25, 0x00	; 0
+ 1d6:	0c 94 b1 00 	jmp	0x162	; 0x162 <_ZN8SensorIFC1Ev>
+
+000001da <_GLOBAL__sub_D__ZN8SensorIFC2Ev>:
+ 1da:	82 e7       	ldi	r24, 0x72	; 114
+ 1dc:	90 e0       	ldi	r25, 0x00	; 0
+ 1de:	0c 94 ba 00 	jmp	0x174	; 0x174 <_ZN8SensorIFD1Ev>
+
+000001e2 <_ZN4UARTC1Emh>:
+ 1e2:	db 01       	movw	r26, r22
+ 1e4:	ca 01       	movw	r24, r20
+ 1e6:	8e 56       	subi	r24, 0x6E	; 110
+ 1e8:	91 09       	sbc	r25, r1
+ 1ea:	a1 09       	sbc	r26, r1
+ 1ec:	b1 09       	sbc	r27, r1
+ 1ee:	83 39       	cpi	r24, 0x93	; 147
+ 1f0:	91 4c       	sbci	r25, 0xC1	; 193
+ 1f2:	a1 40       	sbci	r26, 0x01	; 1
+ 1f4:	b1 05       	cpc	r27, r1
+ 1f6:	10 f5       	brcc	.+68     	; 0x23c <_ZN4UARTC1Emh+0x5a>
+ 1f8:	25 50       	subi	r18, 0x05	; 5
+ 1fa:	25 30       	cpi	r18, 0x05	; 5
+ 1fc:	f8 f4       	brcc	.+62     	; 0x23c <_ZN4UARTC1Emh+0x5a>
+ 1fe:	9a 01       	movw	r18, r20
+ 200:	ab 01       	movw	r20, r22
+ 202:	84 e0       	ldi	r24, 0x04	; 4
+ 204:	22 0f       	add	r18, r18
+ 206:	33 1f       	adc	r19, r19
+ 208:	44 1f       	adc	r20, r20
+ 20a:	55 1f       	adc	r21, r21
+ 20c:	8a 95       	dec	r24
+ 20e:	d1 f7       	brne	.-12     	; 0x204 <_ZN4UARTC1Emh+0x22>
+ 210:	60 e0       	ldi	r22, 0x00	; 0
+ 212:	70 e4       	ldi	r23, 0x40	; 64
+ 214:	88 e3       	ldi	r24, 0x38	; 56
+ 216:	90 e0       	ldi	r25, 0x00	; 0
+ 218:	0e 94 7d 01 	call	0x2fa	; 0x2fa <__udivmodsi4>
+ 21c:	21 50       	subi	r18, 0x01	; 1
+ 21e:	31 09       	sbc	r19, r1
+ 220:	41 09       	sbc	r20, r1
+ 222:	51 09       	sbc	r21, r1
+ 224:	bb 27       	eor	r27, r27
+ 226:	57 fd       	sbrc	r21, 7
+ 228:	ba 95       	dec	r27
+ 22a:	a5 2f       	mov	r26, r21
+ 22c:	94 2f       	mov	r25, r20
+ 22e:	83 2f       	mov	r24, r19
+ 230:	80 bd       	out	0x20, r24	; 32
+ 232:	29 b9       	out	0x09, r18	; 9
+ 234:	8c e9       	ldi	r24, 0x9C	; 156
+ 236:	8a b9       	out	0x0a, r24	; 10
+ 238:	86 e8       	ldi	r24, 0x86	; 134
+ 23a:	80 bd       	out	0x20, r24	; 32
+ 23c:	08 95       	ret
+
+0000023e <_ZN4UART8sendCharEc>:
+ 23e:	5d 9b       	sbis	0x0b, 5	; 11
+ 240:	fe cf       	rjmp	.-4      	; 0x23e <_ZN4UART8sendCharEc>
+ 242:	6c b9       	out	0x0c, r22	; 12
+ 244:	08 95       	ret
+
+00000246 <__vector_13>:
+ 246:	1f 92       	push	r1
+ 248:	0f 92       	push	r0
+ 24a:	0f b6       	in	r0, 0x3f	; 63
+ 24c:	0f 92       	push	r0
+ 24e:	11 24       	eor	r1, r1
+ 250:	8f 93       	push	r24
+ 252:	ef 93       	push	r30
+ 254:	ff 93       	push	r31
+ 256:	e0 91 76 00 	lds	r30, 0x0076
+ 25a:	8c b1       	in	r24, 0x0c	; 12
+ 25c:	f0 e0       	ldi	r31, 0x00	; 0
+ 25e:	e9 58       	subi	r30, 0x89	; 137
+ 260:	ff 4f       	sbci	r31, 0xFF	; 255
+ 262:	80 83       	st	Z, r24
+ 264:	80 91 77 00 	lds	r24, 0x0077
+ 268:	83 35       	cpi	r24, 0x53	; 83
+ 26a:	11 f0       	breq	.+4      	; 0x270 <__vector_13+0x2a>
+ 26c:	83 37       	cpi	r24, 0x73	; 115
+ 26e:	41 f5       	brne	.+80     	; 0x2c0 <__vector_13+0x7a>
+ 270:	80 91 7d 00 	lds	r24, 0x007D
+ 274:	8d 30       	cpi	r24, 0x0D	; 13
+ 276:	21 f5       	brne	.+72     	; 0x2c0 <__vector_13+0x7a>
+ 278:	80 91 76 00 	lds	r24, 0x0076
+ 27c:	86 30       	cpi	r24, 0x06	; 6
+ 27e:	d0 f4       	brcc	.+52     	; 0x2b4 <__vector_13+0x6e>
+ 280:	1f c0       	rjmp	.+62     	; 0x2c0 <__vector_13+0x7a>
+ 282:	10 92 77 00 	sts	0x0077, r1
+ 286:	10 92 78 00 	sts	0x0078, r1
+ 28a:	10 92 79 00 	sts	0x0079, r1
+ 28e:	10 92 7a 00 	sts	0x007A, r1
+ 292:	10 92 7b 00 	sts	0x007B, r1
+ 296:	10 92 7c 00 	sts	0x007C, r1
+ 29a:	10 92 7d 00 	sts	0x007D, r1
+ 29e:	10 92 76 00 	sts	0x0076, r1
+ 2a2:	10 92 75 00 	sts	0x0075, r1
+ 2a6:	11 c0       	rjmp	.+34     	; 0x2ca <__vector_13+0x84>
+ 2a8:	80 91 76 00 	lds	r24, 0x0076
+ 2ac:	8f 5f       	subi	r24, 0xFF	; 255
+ 2ae:	80 93 76 00 	sts	0x0076, r24
+ 2b2:	0b c0       	rjmp	.+22     	; 0x2ca <__vector_13+0x84>
+ 2b4:	81 e0       	ldi	r24, 0x01	; 1
+ 2b6:	80 93 75 00 	sts	0x0075, r24
+ 2ba:	10 92 76 00 	sts	0x0076, r1
+ 2be:	05 c0       	rjmp	.+10     	; 0x2ca <__vector_13+0x84>
+ 2c0:	80 91 76 00 	lds	r24, 0x0076
+ 2c4:	86 30       	cpi	r24, 0x06	; 6
+ 2c6:	e8 f6       	brcc	.-70     	; 0x282 <__vector_13+0x3c>
+ 2c8:	ef cf       	rjmp	.-34     	; 0x2a8 <__vector_13+0x62>
+ 2ca:	ff 91       	pop	r31
+ 2cc:	ef 91       	pop	r30
+ 2ce:	8f 91       	pop	r24
+ 2d0:	0f 90       	pop	r0
+ 2d2:	0f be       	out	0x3f, r0	; 63
+ 2d4:	0f 90       	pop	r0
+ 2d6:	1f 90       	pop	r1
+ 2d8:	18 95       	reti
+
+000002da <_GLOBAL__sub_I__ZN4UARTC2Emh>:
+ 2da:	28 e0       	ldi	r18, 0x08	; 8
+ 2dc:	40 e8       	ldi	r20, 0x80	; 128
+ 2de:	55 e2       	ldi	r21, 0x25	; 37
+ 2e0:	60 e0       	ldi	r22, 0x00	; 0
+ 2e2:	70 e0       	ldi	r23, 0x00	; 0
+ 2e4:	84 e7       	ldi	r24, 0x74	; 116
+ 2e6:	90 e0       	ldi	r25, 0x00	; 0
+ 2e8:	0c 94 f1 00 	jmp	0x1e2	; 0x1e2 <_ZN4UARTC1Emh>
+
+000002ec <_GLOBAL__sub_D__ZN4UARTC2Emh>:
+ 2ec:	1a b8       	out	0x0a, r1	; 10
+ 2ee:	08 95       	ret
+
+000002f0 <_ZN14UC5DetekterLyd11detekterLydEv>:
+ 2f0:	fc 01       	movw	r30, r24
+ 2f2:	80 81       	ld	r24, Z
+ 2f4:	91 81       	ldd	r25, Z+1	; 0x01
+ 2f6:	0c 94 77 00 	jmp	0xee	; 0xee <_ZN7RS232IF7adviserEv>
+
+000002fa <__udivmodsi4>:
+ 2fa:	a1 e2       	ldi	r26, 0x21	; 33
+ 2fc:	1a 2e       	mov	r1, r26
+ 2fe:	aa 1b       	sub	r26, r26
+ 300:	bb 1b       	sub	r27, r27
+ 302:	fd 01       	movw	r30, r26
+ 304:	0d c0       	rjmp	.+26     	; 0x320 <__udivmodsi4_ep>
+
+00000306 <__udivmodsi4_loop>:
+ 306:	aa 1f       	adc	r26, r26
+ 308:	bb 1f       	adc	r27, r27
+ 30a:	ee 1f       	adc	r30, r30
+ 30c:	ff 1f       	adc	r31, r31
+ 30e:	a2 17       	cp	r26, r18
+ 310:	b3 07       	cpc	r27, r19
+ 312:	e4 07       	cpc	r30, r20
+ 314:	f5 07       	cpc	r31, r21
+ 316:	20 f0       	brcs	.+8      	; 0x320 <__udivmodsi4_ep>
+ 318:	a2 1b       	sub	r26, r18
+ 31a:	b3 0b       	sbc	r27, r19
+ 31c:	e4 0b       	sbc	r30, r20
+ 31e:	f5 0b       	sbc	r31, r21
+
+00000320 <__udivmodsi4_ep>:
+ 320:	66 1f       	adc	r22, r22
+ 322:	77 1f       	adc	r23, r23
+ 324:	88 1f       	adc	r24, r24
+ 326:	99 1f       	adc	r25, r25
+ 328:	1a 94       	dec	r1
+ 32a:	69 f7       	brne	.-38     	; 0x306 <__udivmodsi4_loop>
+ 32c:	60 95       	com	r22
+ 32e:	70 95       	com	r23
+ 330:	80 95       	com	r24
+ 332:	90 95       	com	r25
+ 334:	9b 01       	movw	r18, r22
+ 336:	ac 01       	movw	r20, r24
+ 338:	bd 01       	movw	r22, r26
+ 33a:	cf 01       	movw	r24, r30
+ 33c:	08 95       	ret
+
+0000033e <__tablejump2__>:
+ 33e:	ee 0f       	add	r30, r30
+ 340:	ff 1f       	adc	r31, r31
+
+00000342 <__tablejump__>:
+ 342:	05 90       	lpm	r0, Z+
+ 344:	f4 91       	lpm	r31, Z
+ 346:	e0 2d       	mov	r30, r0
+ 348:	09 94       	ijmp
+
+0000034a <__do_global_dtors>:
+ 34a:	10 e0       	ldi	r17, 0x00	; 0
+ 34c:	c8 e5       	ldi	r28, 0x58	; 88
+ 34e:	d0 e0       	ldi	r29, 0x00	; 0
+ 350:	04 c0       	rjmp	.+8      	; 0x35a <__do_global_dtors+0x10>
+ 352:	fe 01       	movw	r30, r28
+ 354:	0e 94 a1 01 	call	0x342	; 0x342 <__tablejump__>
+ 358:	22 96       	adiw	r28, 0x02	; 2
+ 35a:	cc 35       	cpi	r28, 0x5C	; 92
+ 35c:	d1 07       	cpc	r29, r17
+ 35e:	c9 f7       	brne	.-14     	; 0x352 <__do_global_dtors+0x8>
+ 360:	f8 94       	cli
+
+00000362 <__stop_program>:
+ 362:	ff cf       	rjmp	.-2      	; 0x362 <__stop_program>
