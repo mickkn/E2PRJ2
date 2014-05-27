@@ -46,7 +46,7 @@ For at sende X10 kommandoer ud på det eksisterende 50 Hz el-net er det nødvend
 
 Den ønskede knækfrekvens skal ligge omkring de 120 kHz for at opnå mindst dæmpning herpå. Ved denne knækfrekvens skulle 50 Hz signalet være ubetydelig lille efter filteret. 
 
-Kondensatoren forudbestemmes for beregningerne til en værdi på 0,1 nF.
+Kondensatoren forudbestemmes via beregningerne til en værdi på 0,1 nF.
 
 
 \newpage
@@ -70,16 +70,16 @@ Kondensatoren forudbestemmes for beregningerne til en værdi på 0,1 nF.
 
 Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en zero crossing detector både på encoderen og decoderen, da begge disse består af et STK500 der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_MV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
 
-Modstanden $R_7$ sidder der bl.a. for at beskytte zero crossing detectoren mod 18 VAC nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på zero crossing detectoren, og dette problem løste lavpasfilteret. 
+Modstanden $R_7$ sidder der bl.a. for at beskytte zero crossing detectoren mod 18 Vac nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på zero crossing detectoren, og dette problem løste lavpasfilteret. 
 
 Der ønskes at dæmpe 120 kHz signalet, derfor designes lavpasfilteret ud fra en knækfrekvens på 1,0 kHz.
 
 \section{Decoder (JS)}
-Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 kommando, er opbygget af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret, og dette blokerer for 50 Hz nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
+Decoderen, som er den del i systemet der omdanner burst fra encoderen til X10 kommando, er opbygget af et båndpasfilter, zero crossing detector og en envelope detector. I starten af kredsløbet sidder båndpasfilteret, og dette blokerer for el-nettet og forstærker 120 kHz signalet der kommer fra encoderen. Herefter ledes signalet gennem envelope detector som omdanner burstet til et TTL signal.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.70\textwidth]{billeder/HWdesign/Decoder}
+	\includegraphics[width=\textwidth]{billeder/HWdesign/Decoder}
 	\caption{Samlet Decoder}
 	\label{fig:Decoder}
 \end{figure}

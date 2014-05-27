@@ -42,7 +42,7 @@ Klassen er bygget til selv at holde styr på hvilket bit der skal sendes næste 
 Alle kommandoer termineres med '\textbackslash 0' karakteren. 
 
 % X10IF klasse design
-\subsection{Klasse X10IF (BS)}
+\subsubsection{Klasse X10IF (BS)}
 En af de kritiske og avancerede klasser er X10IF klasserne på hhv. CSS-hovedenheden og X10-udtaget. I designfasen er der udviklet sekvensdiagrammer som beskriver nogle af metoderne og sammenspillet til andre klasser.
 
 Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS-hovedenheden, har som ansvar at afsende en fuld X10-kommando, iht. protokollen, ud fra en parameter formateret som vist i tabel \ref{table:X10_sendKommando_format}.
@@ -59,7 +59,7 @@ Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS-hovedenhede
 	\label{table:X10_sendKommando_format}
 \end{table}
 
-Metoden skal først omskrive den modtagende kommando til en X10 bit streng. Her efter indsættes alle bits i en buffer, hvorfra de afsendes når der detekteres et zero cross. 
+Metoden skal først omskrive den modtagende kommando til en X10 bit-streng. Her efter indsættes alle bits i en buffer, hvorfra de afsendes når der detekteres et zero cross. 
 Sekvensen er vist i figur \ref{fig:X10_sendKommando_sd}.
 
 \begin{figure}[!htb]
@@ -105,7 +105,7 @@ void X10IF::sendKommando(char *unwrapped)
 
 
 % ZeroCrossInt ISR
-\subsection{ZeroCrossInt funktion (BS)}
+\subsubsection{ZeroCrossInt funktion (BS)}
 I tilfælde af et interrupt signal på INT0 benet på CSS-hovedenheden køres en bestemt funktion i microcontrolleren. Dette er kaldet en ISR. Forløbet for denne er beskrevet i sekvensdiagrammet på figur \ref{fig:ZeroCrossISR}.
 Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den det næste bit der skal afsendes fra bufferen. Ud fra værdien bestemmer den om der skal tændes for 120 kHz frekvensen i timeren. Når en kommando er helt sendt nedskriver den køen og hvis køen er tom slår den interruptet fra.
 
@@ -117,9 +117,9 @@ Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den d
 
 \subsection{X10-udtag (JSA)}
 
-Objektorienteret programmeret software der styre X10-udtaget hvorfra der læses zero cross og signal input fra hardwaren og herefter udføre funktioner som beskrevet i use case beskrivelserne.
+Objektorienteret programmeret software der styrer X10-udtaget hvorfra der læses zero cross og signal input fra hardwaren og herefter udføre funktioner som beskrevet i use case beskrivelserne.
 
-Når der læses et zero cross signal på interrupt INT1 benet køres en interrupt service rutinen som læser et højt- (logisk '1') eller lavt- (logisk '0') signal input på PD5 benet. Det modtaget bit bliver sendt til insertX10bit funktionen, som er vist i kodeudsnit figur \ref{fig:X10IF_insertX10bit}, som lager de modtaget bit løbende i et char array kaldet X10Array\_, funktion kontroller løbende de fire første pladser i arrayet for STX kommandoen, som er X10 signalets start kommando, når funktionen detekter at der er modtaget en STX kommando lager den de næste 24 bit der bliver modtaget i array\'et som derefter bliver sendt til funktionen unwrapX10Array. 
+Når der læses et zero cross signal på interrupt INT1 benet køres en interrupt service rutinen som læser et højt- (logisk '1') eller lavt- (logisk '0') signal input på PD5 benet. Det modtaget bit bliver sendt til insertX10bit funktionen, som er vist i kodeudsnit figur \ref{fig:X10IF_insertX10bit}, som lager de modtaget bit løbende i et char array kaldet X10Array\_, funktionen kontroller løbende de fire første pladser i arrayet for STX kommandoen, som er X10 signalets start kommando, når funktionen detekterer at der er modtaget en STX kommando lagrer den de næste 24 bit der bliver modtaget i array\'et som derefter bliver sendt til funktionen unwrapX10Array. 
 
 \begin{figure}[!htb]
 \lstset{language=C++}
@@ -161,7 +161,7 @@ void X10IF::insertX10bit(char X10bit)
 \label{fig:X10IF_insertX10bit}
 \end{figure}
 
-I sekvens diagrammet, som vist i figur \ref{fig:X10_udtag_unwrapX10Array_SD}, er der vist hvordan unwrapX10Array funktionen dekoder det modtaget array. Metoden dekoder den modtaget X10 formateret kommando og adresse. Og sender herefter den dekodet adresse via den matchet dekodet kommando til den tilhørende controller.
+I sekvensdiagrammet, som vist i figur \ref{fig:X10_udtag_unwrapX10Array_SD}, er der vist hvordan unwrapX10Array funktionen dekoder det modtaget array. Metoden dekoder den modtaget X10 formateret kommando og adresse. Og sender herefter den dekodet adresse via den matchet dekodet kommando til den tilhørende controller.
 
 \begin{figure}[!htb]
      {\includegraphics[width=\textwidth]{billeder/uml/X10-Udtag_unwrapX10Array_SD}}
