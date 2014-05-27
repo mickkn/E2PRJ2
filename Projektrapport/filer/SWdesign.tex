@@ -5,7 +5,7 @@
 
 Herunder er de forskellige dele af softwaren kort beskrevet. 
 
-\subsection{PC delen (JC)}
+\subsection{PC (JC)}
 
 Softwaren til PC'en, er brugerens grænseflade til at kontrollere systemet. Her kan han manurære rundt i de forskellige menuer og udføre de forskellige ting som er beskrevet i UC beskrivelserne.
 
@@ -25,7 +25,93 @@ En vigtig del af PC software er at vi kunne gemme alle de enheder brugeren har o
 \label{fig:Hukommelses header og udklip af text filen}
 \end{figure}
 
-\subsection{X10-udtag delen (JSA)}
+\subsection{CSS-hovedenhed (BS)}
+Her følger beskrivelse af to hovedfunktionaliteter for CSS-hovedenheden. For at se resten af implementeringen henvises til kildekoden på den vedlagt CD.
+
+% CircBuffer
+\subsubsection{Klasse CircBuffer (BS)}
+Efter som X10 kommunikationen er meget langsom (50 bits/s) bruges en buffer til at holde på kommandoerne ind til de er klar til at blive afsendt. Dette er CircBuffer klassens opgave.
+Denne er udformet som en cirkulær buffer som kan holde 2 fulde kommandoer. Bemærk at i følge X10-protokollen skal alle kommandoer afsendes to gange. Så der er plads til 4 kommandoer, hvor to af dem altid er de samme.
+
+Klassen er bygget til selv at holde styr på hvilket bit der skal sendes næste gang. Dette forenkler brugen væsentligt, da udtagning af data fra bufferen sker fra en interrupt service rutine (ISR). Denne rutine er beskrevet i detaljer senere.
+
+Alle kommandoer termineres med '\textbackslash 0' karakteren. 
+
+% X10IF klasse design
+\subsection{Klasse X10IF (BS)}
+En af de kritiske og avancerede klasser er X10IF klasserne på hhv. CSS-hovedenheden og X10-udtaget. I designfasen er der udviklet sekvensdiagrammer som beskriver nogle af metoderne og sammenspillet til andre klasser.
+
+Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS-hovedenheden, har som ansvar at afsende en fuld X10-kommando, iht. protokollen, ud fra en parameter formateret som vist i tabel \ref{table:X10_sendKommando_format}.
+
+\begin{table}[h]
+	\caption{Parameter opbygning til sendKommando() metoden i X10IF}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		\textbf{Byte} & 0 & 1..4 \\ \hline
+		\textbf{Data} & Kommando & Adresse \\ 
+		\hline 
+	\end{tabular} 
+	\label{table:X10_sendKommando_format}
+\end{table}
+
+Metoden skal først omskrive den modtagende kommando til en X10 bit streng. Her efter indsættes alle bit's i en buffer, hvorfra de afsendes når der detekteres et zero cross. 
+Sekvensen er vist i figur \ref{fig:X10_sendKommando_sd}.
+
+\begin{figure}[!htb]
+     {\includegraphics[width=\textwidth]{billeder/uml/CSS_X10IF_sendKommando_SD}}
+     \caption{Sekvensdiagram for metoden sendKommando() i X10IF klassen på CSS hovedenheden}
+     \label{fig:X10_sendKommando_sd}
+\end{figure}
+
+I figur \ref{list:X10_sendkommando_source} er vist kildekoden for sendKommando()-metoden.
+
+\begin{figure}[!htb]
+\lstset{language=C++}
+\begin{lstlisting}
+// Indskriver X10 kommando i bufferen
+void X10IF::sendKommando(char *unwrapped)
+{
+	// Indeholder kommando i X10 format
+	char wrapped[X10_COMMAND_LENGHT];
+	wrap(unwrapped, wrapped);
+	
+	// Indsaet bits i bufferen 2 gange
+	for(unsigned char j = 0; j < 2; j++)
+	{
+		// Indsaet bits
+		for(char i = 0; i < X10_COMMAND_LENGHT; i++)
+			buffer_.insert(wrapped + i);
+	}
+	
+	// Terminer bufferen
+	char termChar = '\0';
+	buffer_.insert(&termChar);
+	
+	// Foroeg antallet af kommandoer der venter paa at blive sendt
+	afventer_++;
+	
+	// Aktiver ZeroCrossInt interrupt
+	enableInt0();
+}
+\end{lstlisting}
+\caption{Kodeudsnit for sendKommando()-metoden fra X10IF klassen}
+\label{list:X10_sendkommando_source}
+\end{figure}
+
+
+% ZeroCrossInt ISR
+\subsection{ZeroCrossInt funktion (BS)}
+I tilfælde af et interrupt signal på INT0 benet på CSS-hovedenheden køres en bestemt funktion i microcontrolleren. Dette er kaldet en ISR. Forløbet for denne er beskrevet i sekvensdiagrammet på figur \ref{fig:ZeroCrossISR}.
+Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den det næste bit der skal afsendes fra bufferen. Ud fra værdien bestemmer den om der skal tændes for 120 kHz frekvensen i timeren. Når en kommando er helt sendt nedskriver den køen og hvis køen er tom slår den interruptet fra.
+
+\begin{figure}[!htb]
+     {\includegraphics[width=\textwidth]{billeder/uml/CSS_ZeroCrossInt_SD}}
+     \caption{Sekvensdiagram for INT0 ISR på CSS-hovedenheden}
+     \label{fig:ZeroCrossISR}
+\end{figure}
+
+\subsection{X10-udtag (JSA)}
 
 Objektorienteret programmeret software der styre X10-udtaget hvorfra der læses zero cross og signal input fra hardwaren og herefter udføre funktioner som beskrevet i use case beskrivelserne.
 
