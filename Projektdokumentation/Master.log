@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.24)  27 MAY 2014 15:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.24)  27 MAY 2014 15:54
 entering extended mode
 **Master.tex
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\Master.tex
@@ -1621,7 +1621,29 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 ))
-(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\Master.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\Master.aux
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/undersk
+rifter.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/ordlist
+e.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
+c.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/forunde
+rsoegelse.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/systema
+rkitektur.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/HWdesig
+n.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/SWdesig
+n.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/test/Mo
+dultest.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/test/in
+tegrationstest.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
+est/accepttest.aux)
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/cdindho
+ld.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
@@ -1636,8 +1658,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 3.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
@@ -1758,26 +1779,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--5
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\Master.toc
 [2
 
 ]
+Overfull \hbox (1.88837pt too wide) detected at line 100
+ \T1/cmr/bx/n/10.95 103
+ []
+
+[3]
+Overfull \hbox (1.88837pt too wide) detected at line 103
+ \T1/cmr/bx/n/10.95 107
+ []
+
+
+Overfull \hbox (1.88837pt too wide) detected at line 104
+ \T1/cmr/bx/n/10.95 115
+ []
+
+) [4]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/ordlist
-e.tex) [3
+e.tex) [5
 
 
 ]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
-c.tex [4
+c.tex [6
 
 
 
 ]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/indledn
-ing.tex [5]
-<billeder/Installationsoversigt.png, id=367, 1361.085pt x 583.17876pt>
+ing.tex [7]
+<billeder/Installationsoversigt.png, id=310, 1361.085pt x 583.17876pt>
 File: billeder/Installationsoversigt.png Graphic file (type png)
 
 <use billeder/Installationsoversigt.png>
@@ -1789,18 +1823,14 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-<billeder/Oversigt.png, id=368, 4430.5525pt x 3356.54pt>
+<billeder/Oversigt.png, id=311, 4430.5525pt x 3356.54pt>
 File: billeder/Oversigt.png Graphic file (type png)
 
 <use billeder/Oversigt.png>
 Package pdftex.def Info: billeder/Oversigt.png used on input line 46.
 (pdftex.def)             Requested size: 276.8974pt x 209.73201pt.
-
-
-LaTeX Warning: Reference `fig:plan_oversigt' on page 6 undefined on input line 
-52.
-
-) <billeder/diagrammer/Kontekst_Diagram.png, id=370, 306.4248pt x 135.6267pt>
+)
+<billeder/diagrammer/Kontekst_Diagram.png, id=314, 306.4248pt x 135.6267pt>
 File: billeder/diagrammer/Kontekst_Diagram.png Graphic file (type png)
 
 <use billeder/diagrammer/Kontekst_Diagram.png>
@@ -1808,51 +1838,29 @@ Package pdftex.def Info: billeder/diagrammer/Kontekst_Diagram.png used on input
  line 18.
 (pdftex.def)             Requested size: 383.3974pt x 169.70471pt.
 
-<billeder/diagrammer/Usecase_Diagram.png, id=371, 576.7146pt x 487.8225pt>
+<billeder/diagrammer/Usecase_Diagram.png, id=315, 576.7146pt x 487.8225pt>
 File: billeder/diagrammer/Usecase_Diagram.png Graphic file (type png)
 
 <use billeder/diagrammer/Usecase_Diagram.png>
 Package pdftex.def Info: billeder/diagrammer/Usecase_Diagram.png used on input 
 line 73.
 (pdftex.def)             Requested size: 426.0pt x 360.3503pt.
- [6 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
+ [8 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
 Installationsoversigt.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projekt
-dokumentation/billeder/Oversigt.png>] [7 <C:/Users/Jesper/Documents/GitHub/E2PR
-J2GRP1/Projektdokumentation/billeder/diagrammer/Kontekst_Diagram.png>] [8
+dokumentation/billeder/Oversigt.png>] [9 <C:/Users/Jesper/Documents/GitHub/E2PR
+J2GRP1/Projektdokumentation/billeder/diagrammer/Kontekst_Diagram.png>] [10
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/dia
 grammer/Usecase_Diagram.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
-c/uc1.tex
-
-LaTeX Warning: Reference `UC2und1' on page 9 undefined on input line 39.
-
-
-LaTeX Warning: Reference `UC2und1' on page 9 undefined on input line 48.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.1 on input line 54.
-
-)
+c/uc1.tex)
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
 c/uc2.tex
-
-LaTeX Warning: Reference `uc2act' on page 9 undefined on input line 26.
-
-
-LaTeX Warning: Reference `uc2act' on page 9 undefined on input line 39.
-
-
 Underfull \hbox (badness 2452) in paragraph at lines 39--40
 []\T1/cmr/m/n/10.95 UI returnerer til hovedmenu og UC2
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.2 on input line 44.
-
-[9
+[11
 
 ])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
@@ -1862,70 +1870,24 @@ Underfull \hbox (badness 1412) in paragraph at lines 11--11
  []
 
 
-LaTeX Warning: Reference `uc3deact' on page 10 undefined on input line 28.
-
-
-LaTeX Warning: Reference `uc3deact' on page 10 undefined on input line 41.
-
-
 Underfull \hbox (badness 2452) in paragraph at lines 41--42
 []\T1/cmr/m/n/10.95 UI returnerer til hovedmenu og UC3
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.3 on input line 48.
-
-[10])
-(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
-c/uc4.tex
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.4 on input line 36.
-
 )
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
-c/uc5.tex
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.5 on input line 43.
-
-)
+c/uc4.tex [12])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
-c/uc6.tex
-
-LaTeX Warning: Reference `UC6und1' on page 11 undefined on input line 37.
-
-
-LaTeX Warning: Reference `UC6und1' on page 11 undefined on input line 44.
-
-[11]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.6 on input line 50.
-
-)
+c/uc5.tex)
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
-c/uc7.tex
-
-LaTeX Warning: Reference `uc7tilfoj' on page 12 undefined on input line 33.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.7 on input line 40.
-
-[12])
+c/uc6.tex [13])
+(C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
+c/uc7.tex [14])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
 c/uc8.tex
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 []\T1/cmr/m/n/10.95 Programmet ud-skri-ver be-ske-den
  []
-
-
-LaTeX Warning: Reference `uc8adresse' on page 13 undefined on input line 34.
-
-
-LaTeX Warning: Reference `uc8adresse' on page 13 undefined on input line 36.
 
 
 Underfull \hbox (badness 1484) in paragraph at lines 40--41
@@ -1938,35 +1900,14 @@ Underfull \hbox (badness 1874) in paragraph at lines 47--48
  []
 
 
-LaTeX Warning: Reference `uc8start' on page 13 undefined on input line 57.
-
-
-LaTeX Warning: Reference `uc8adresse' on page 13 undefined on input line 63.
-
-
 Underfull \hbox (badness 7308) in paragraph at lines 63--64
 []\T1/cmr/m/n/10.95 Programmet ud-skri-ver fejl-med-del-lel-sen
  []
 
-
-LaTeX Warning: Reference `uc8indstilAdresse' on page 13 undefined on input line
- 65.
-
-
-LaTeX Warning: Reference `uc8adresse' on page 13 undefined on input line 69.
-
-
-LaTeX Warning: Reference `uc8indstilAdresse' on page 13 undefined on input line
- 69.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.8 on input line 72.
-
-[13] [14])
+[15] [16])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/kravspe
-c/ikkefunktionellekrav.tex [15]) [16]
-<billeder/cmdprompt/CSS_pre_login_menu.png, id=525, 511.15968pt x 258.21469pt>
+c/ikkefunktionellekrav.tex [17]) [18]
+<billeder/cmdprompt/CSS_pre_login_menu.png, id=484, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_pre_login_menu.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_pre_login_menu.png>
@@ -1974,7 +1915,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_pre_login_menu.png used on inpu
 t line 141.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_login.png, id=526, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_login.png, id=485, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_login.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_login.png>
@@ -1982,7 +1923,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_login.png used on input line 14
 7.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_menu.png, id=527, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_menu.png, id=486, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_menu.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_menu.png>
@@ -1990,18 +1931,18 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_menu.png used on input line 153
 .
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_aktiver.png, id=528, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_aktiver.png, id=487, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_aktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_aktiver.png>
 Package pdftex.def Info: billeder/cmdprompt/CSS_aktiver.png used on input line 
 159.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
- [17 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [19 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /cmdprompt/CSS_pre_login_menu.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1
 /Projektdokumentation/billeder/cmdprompt/CSS_login.png> <C:/Users/Jesper/Docume
 nts/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/cmdprompt/CSS_menu.png>]
-<billeder/cmdprompt/CSS_deaktiver.png, id=536, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_deaktiver.png, id=496, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_deaktiver.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_deaktiver.png>
@@ -2009,7 +1950,7 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_deaktiver.png used on input lin
 e 165.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_vis_status.png, id=537, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_vis_status.png, id=497, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_vis_status.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_vis_status.png>
@@ -2017,21 +1958,21 @@ Package pdftex.def Info: billeder/cmdprompt/CSS_vis_status.png used on input li
 ne 171.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
 
-<billeder/cmdprompt/CSS_advisering.png, id=538, 511.15968pt x 258.21469pt>
+<billeder/cmdprompt/CSS_advisering.png, id=498, 511.15968pt x 258.21469pt>
 File: billeder/cmdprompt/CSS_advisering.png Graphic file (type png)
 
 <use billeder/cmdprompt/CSS_advisering.png>
 Package pdftex.def Info: billeder/cmdprompt/CSS_advisering.png used on input li
 ne 177.
 (pdftex.def)             Requested size: 319.5pt x 161.3956pt.
- [18 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [20 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /cmdprompt/CSS_aktiver.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projek
 tdokumentation/billeder/cmdprompt/CSS_deaktiver.png> <C:/Users/Jesper/Documents
 /GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/cmdprompt/CSS_vis_status.png>]
-) [19 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
+) [21 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
 r/cmdprompt/CSS_advisering.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/forunde
-rsoegelse.tex [20
+rsoegelse.tex [22
 
 
 
@@ -2052,75 +1993,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 \T1/cmr/m/n/10.95 http://dk.farnell.com/cinterion/tc65i/mod-
  []
 
-<billeder/GSM_TC65I.png, id=556, 215.80624pt x 200.75pt>
+<billeder/GSM_TC65I.png, id=515, 215.80624pt x 200.75pt>
 File: billeder/GSM_TC65I.png Graphic file (type png)
 
 <use billeder/GSM_TC65I.png>
 Package pdftex.def Info: billeder/GSM_TC65I.png used on input line 15.
 (pdftex.def)             Requested size: 91.76088pt x 85.35826pt.
 
-<billeder/GSM_Clickatell.png, id=557, 1003.75pt x 366.36874pt>
+<billeder/GSM_Clickatell.png, id=516, 1003.75pt x 366.36874pt>
 File: billeder/GSM_Clickatell.png Graphic file (type png)
 
 <use billeder/GSM_Clickatell.png>
 Package pdftex.def Info: billeder/GSM_Clickatell.png used on input line 35.
 (pdftex.def)             Requested size: 233.84425pt x 85.35826pt.
- [21 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [23 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /GSM_TC65I.png>]
-<billeder/GSM_Arduino.png, id=563, 451.6875pt x 285.065pt>
+<billeder/GSM_Arduino.png, id=522, 451.6875pt x 285.065pt>
 File: billeder/GSM_Arduino.png Graphic file (type png)
 
 <use billeder/GSM_Arduino.png>
 Package pdftex.def Info: billeder/GSM_Arduino.png used on input line 53.
 (pdftex.def)             Requested size: 135.24538pt x 85.35826pt.
-) [22 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
+) [24 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
 r/GSM_Clickatell.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokum
 entation/billeder/GSM_Arduino.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/forunde
-rsoegelse/laas.tex <billeder/TFS-A21.png, id=570, 528.97626pt x 449.17813pt>
+rsoegelse/laas.tex <billeder/TFS-A21.png, id=529, 528.97626pt x 449.17813pt>
 File: billeder/TFS-A21.png Graphic file (type png)
 
 <use billeder/TFS-A21.png>
 Package pdftex.def Info: billeder/TFS-A21.png used on input line 15.
 (pdftex.def)             Requested size: 100.52267pt x 85.35826pt.
 
-<billeder/magnetic.png, id=571, 1606.0pt x 611.28375pt>
+<billeder/magnetic.png, id=530, 1606.0pt x 611.28375pt>
 File: billeder/magnetic.png Graphic file (type png)
 
 <use billeder/magnetic.png>
 Package pdftex.def Info: billeder/magnetic.png used on input line 33.
 (pdftex.def)             Requested size: 224.25034pt x 85.35826pt.
-) [23 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
+) [25 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
 r/TFS-A21.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentatio
 n/billeder/magnetic.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/forunde
 rsoegelse/Babyalarm.tex
-<billeder/SCD505.png, id=577, 383.18156pt x 255.20343pt>
+<billeder/SCD505.png, id=537, 383.18156pt x 255.20343pt>
 File: billeder/SCD505.png Graphic file (type png)
 
 <use billeder/SCD505.png>
 Package pdftex.def Info: billeder/SCD505.png used on input line 14.
 (pdftex.def)             Requested size: 128.16344pt x 85.35826pt.
 
-<billeder/Supernova.png, id=578, 459.21562pt x 366.61969pt>
+<billeder/Supernova.png, id=538, 459.21562pt x 366.61969pt>
 File: billeder/Supernova.png Graphic file (type png)
 
 <use billeder/Supernova.png>
 Package pdftex.def Info: billeder/Supernova.png used on input line 30.
 (pdftex.def)             Requested size: 99.78749pt x 79.6678pt.
-)) [24 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billed
+)) [26 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billed
 er/SCD505.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentatio
 n/billeder/Supernova.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/systema
 rkitektur.tex
-<billeder/diagrammer/Domain_Model.png, id=583, 502.0356pt x 362.0727pt>
+<billeder/diagrammer/Domain_Model.png, id=543, 502.0356pt x 362.0727pt>
 File: billeder/diagrammer/Domain_Model.png Graphic file (type png)
 
 <use billeder/diagrammer/Domain_Model.png>
 Package pdftex.def Info: billeder/diagrammer/Domain_Model.png used on input lin
 e 8.
 (pdftex.def)             Requested size: 426.0pt x 307.23286pt.
- [25
+ [27
 
 
 
@@ -2128,7 +2069,7 @@ e 8.
 grammer/Domain_Model.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/HWbeskr
 ivelse.tex
-<billeder/diagrammer/BDD_Hardware.png, id=590, 585.6279pt x 254.3904pt>
+<billeder/diagrammer/BDD_Hardware.png, id=549, 585.6279pt x 254.3904pt>
 File: billeder/diagrammer/BDD_Hardware.png Graphic file (type png)
 
 <use billeder/diagrammer/BDD_Hardware.png>
@@ -2136,7 +2077,7 @@ Package pdftex.def Info: billeder/diagrammer/BDD_Hardware.png used on input lin
 e 3.
 (pdftex.def)             Requested size: 383.3974pt x 166.54347pt.
 
-<billeder/diagrammer/BDD_Hovedenhed.png, id=591, 481.0773pt x 304.9794pt>
+<billeder/diagrammer/BDD_Hovedenhed.png, id=550, 481.0773pt x 304.9794pt>
 File: billeder/diagrammer/BDD_Hovedenhed.png Graphic file (type png)
 
 <use billeder/diagrammer/BDD_Hovedenhed.png>
@@ -2144,14 +2085,14 @@ Package pdftex.def Info: billeder/diagrammer/BDD_Hovedenhed.png used on input l
 ine 12.
 (pdftex.def)             Requested size: 383.3974pt x 243.05779pt.
 
-<billeder/diagrammer/BDD_Modtager.png, id=592, 523.2348pt x 294.3798pt>
+<billeder/diagrammer/BDD_Modtager.png, id=551, 523.2348pt x 294.3798pt>
 File: billeder/diagrammer/BDD_Modtager.png Graphic file (type png)
 
 <use billeder/diagrammer/BDD_Modtager.png>
 Package pdftex.def Info: billeder/diagrammer/BDD_Modtager.png used on input lin
 e 21.
 (pdftex.def)             Requested size: 383.3974pt x 215.70848pt.
- [26 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [28 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /diagrammer/BDD_Hardware.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Proj
 ektdokumentation/billeder/diagrammer/BDD_Hovedenhed.png>]
 Underfull \hbox (badness 1521) in paragraph at lines 26--27
@@ -2159,7 +2100,7 @@ Underfull \hbox (badness 1521) in paragraph at lines 26--27
 år af. Vi ser en
  []
 
-<billeder/diagrammer/IBD_Hardware.png, id=599, 539.1342pt x 295.8252pt>
+<billeder/diagrammer/IBD_Hardware.png, id=558, 539.1342pt x 295.8252pt>
 File: billeder/diagrammer/IBD_Hardware.png Graphic file (type png)
 
 <use billeder/diagrammer/IBD_Hardware.png>
@@ -2167,24 +2108,24 @@ Package pdftex.def Info: billeder/diagrammer/IBD_Hardware.png used on input lin
 e 30.
 (pdftex.def)             Requested size: 383.3974pt x 210.37138pt.
 
-<billeder/diagrammer/IBD_Hovedenhed_Modtager.png, id=600, 576.7146pt x 359.9046
+<billeder/diagrammer/IBD_Hovedenhed_Modtager.png, id=559, 576.7146pt x 359.9046
 pt>
 File: billeder/diagrammer/IBD_Hovedenhed_Modtager.png Graphic file (type png)
  <use billeder/diagrammer/IBD_Hovedenhed_Modtager.png>
 Package pdftex.def Info: billeder/diagrammer/IBD_Hovedenhed_Modtager.png used o
 n input line 39.
 (pdftex.def)             Requested size: 383.3974pt x 239.27313pt.
- [27 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [29 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /diagrammer/BDD_Modtager.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Proj
 ektdokumentation/billeder/diagrammer/IBD_Hardware.png>]
-<billeder/diagrammer/Plantegning_over_HW.png, id=607, 637.6623pt x 341.1144pt>
+<billeder/diagrammer/Plantegning_over_HW.png, id=566, 637.6623pt x 341.1144pt>
 File: billeder/diagrammer/Plantegning_over_HW.png Graphic file (type png)
 
 <use billeder/diagrammer/Plantegning_over_HW.png>
 Package pdftex.def Info: billeder/diagrammer/Plantegning_over_HW.png used on in
 put line 48.
 (pdftex.def)             Requested size: 383.3974pt x 205.097pt.
- [28 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [30 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /diagrammer/IBD_Hovedenhed_Modtager.png> <C:/Users/Jesper/Documents/GitHub/E2PR
 J2GRP1/Projektdokumentation/billeder/diagrammer/Plantegning_over_HW.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 71--71
@@ -2316,55 +2257,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--110
 [][]
  []
 
-[29
+[31
 
-]) [30]
+]) [32]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/UML/app
 licationsmodel_pc.tex
-
-LaTeX Warning: Reference `fig:PC_SD1' on page 31 undefined on input line 2.
-
-
-LaTeX Warning: Reference `fig:PC_SD2' on page 31 undefined on input line 2.
-
-<billeder/uml/PC_SD1.png, id=627, 551.9019pt x 748.9581pt>
+<billeder/uml/PC_SD1.png, id=589, 551.9019pt x 748.9581pt>
 File: billeder/uml/PC_SD1.png Graphic file (type png)
 
 <use billeder/uml/PC_SD1.png>
 Package pdftex.def Info: billeder/uml/PC_SD1.png used on input line 5.
 (pdftex.def)             Requested size: 383.3974pt x 520.31294pt.
- [31
+ [33
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
 /PC_SD1.png>]
-<billeder/uml/PC_SD2.png, id=634, 551.9019pt x 571.4148pt>
+<billeder/uml/PC_SD2.png, id=596, 551.9019pt x 571.4148pt>
 File: billeder/uml/PC_SD2.png Graphic file (type png)
 
 <use billeder/uml/PC_SD2.png>
 Package pdftex.def Info: billeder/uml/PC_SD2.png used on input line 12.
 (pdftex.def)             Requested size: 383.3974pt x 396.97083pt.
- [32
+ [34
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
 /PC_SD2.png>]
-<billeder/uml/PC_Class.png, id=640, 498.4221pt x 414.1071pt>
+<billeder/uml/PC_Class.png, id=601, 498.4221pt x 414.1071pt>
 File: billeder/uml/PC_Class.png Graphic file (type png)
 
 <use billeder/uml/PC_Class.png>
 Package pdftex.def Info: billeder/uml/PC_Class.png used on input line 23.
 (pdftex.def)             Requested size: 426.0pt x 353.94519pt.
- [33
+ [35
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
 /PC_Class.png>]
-<billeder/uml/PC_Class_static.png, id=646, 561.5379pt x 572.1375pt>
+<billeder/uml/PC_Class_static.png, id=607, 561.5379pt x 572.1375pt>
 File: billeder/uml/PC_Class_static.png Graphic file (type png)
 
 <use billeder/uml/PC_Class_static.png>
 Package pdftex.def Info: billeder/uml/PC_Class_static.png used on input line 31
 .
 (pdftex.def)             Requested size: 426.0pt x 434.0433pt.
-) [34
+) [36
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
 /PC_Class_static.png>]
@@ -2404,7 +2339,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--33
 
  []
 
-[35
+[37
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 36--41
@@ -2431,7 +2366,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--69
 
  []
 
-[36]
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
@@ -2461,7 +2396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--102
 
  []
 
-[37]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -2491,7 +2426,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--134
 
  []
 
-[38]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
@@ -2526,7 +2461,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--176
 
  []
 
-[39]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
  []
@@ -2536,18 +2471,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--187
 
  []
 
-) [40]
+) [42]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/UML/app
 licationsmodel_css_hovedenhed.tex
-
-LaTeX Warning: Reference `fig:CSS_hovedenhed_SD' on page 41 undefined on input 
-line 2.
-
-
-LaTeX Warning: Reference `fig:CSS_hovedenhed_Class' on page 41 undefined on inp
-ut line 3.
-
-<billeder/uml/CSS_hovedenhed_SD.png, id=679, 425.4294pt x 443.4969pt>
+<billeder/uml/CSS_hovedenhed_SD.png, id=642, 425.4294pt x 443.4969pt>
 File: billeder/uml/CSS_hovedenhed_SD.png Graphic file (type png)
 
 <use billeder/uml/CSS_hovedenhed_SD.png>
@@ -2555,7 +2482,7 @@ Package pdftex.def Info: billeder/uml/CSS_hovedenhed_SD.png used on input line
 7.
 (pdftex.def)             Requested size: 426.0pt x 444.11163pt.
 
-<billeder/uml/CSS_hovedenhed_Class.png, id=680, 396.7623pt x 362.0727pt>
+<billeder/uml/CSS_hovedenhed_Class.png, id=643, 396.7623pt x 362.0727pt>
 File: billeder/uml/CSS_hovedenhed_Class.png Graphic file (type png)
 
 <use billeder/uml/CSS_hovedenhed_Class.png>
@@ -2563,20 +2490,15 @@ Package pdftex.def Info: billeder/uml/CSS_hovedenhed_Class.png used on input li
 ne 13.
 (pdftex.def)             Requested size: 340.8013pt x 311.01181pt.
 
-
-LaTeX Warning: Reference `fig:CSS_hovedenhed_Class_Static' on page 41 undefined
- on input line 18.
-
-
-<billeder/uml/CSS_hovedenhed_Class_Static.png, id=681, 523.2348pt x 615.0177pt>
+<billeder/uml/CSS_hovedenhed_Class_Static.png, id=645, 523.2348pt x 615.0177pt>
 File: billeder/uml/CSS_hovedenhed_Class_Static.png Graphic file (type png)
 <use billeder/uml/CSS_hovedenhed_Class_Static.png>
 Package pdftex.def Info: billeder/uml/CSS_hovedenhed_Class_Static.png used on i
 nput line 21.
 (pdftex.def)             Requested size: 426.0pt x 500.73293pt.
-) [41 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
-r/uml/CSS_hovedenhed_SD.png>] [42 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/
-Projektdokumentation/billeder/uml/CSS_hovedenhed_Class.png>] [43 <C:/Users/Jesp
+) [43 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
+r/uml/CSS_hovedenhed_SD.png>] [44 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/
+Projektdokumentation/billeder/uml/CSS_hovedenhed_Class.png>] [45 <C:/Users/Jesp
 er/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml/CSS_hovedenhed
 _Class_Static.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/UML/UML
@@ -2615,7 +2537,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[44
+[46
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 42--46
@@ -2647,7 +2569,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
-[45]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 99--104
 
  []
@@ -2662,7 +2584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--140
 
  []
 
-[46]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 159--164
 
  []
@@ -2687,7 +2609,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--202
 
  []
 
-[47]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 203--207
 
  []
@@ -2722,7 +2644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
-[48]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 238--242
 
  []
@@ -2747,7 +2669,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--280
 
  []
 
-[49]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 281--285
 
  []
@@ -2777,7 +2699,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--335
 
  []
 
-[50]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 336--340
 
  []
@@ -2802,7 +2724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--379
 
  []
 
-[51]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 380--384
 
  []
@@ -2832,7 +2754,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--420
 
  []
 
-[52]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 421--425
 
  []
@@ -2862,7 +2784,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--465
 
  []
 
-[53]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 466--470
 
  []
@@ -2872,22 +2794,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 471--475
 
  []
 
-) [54]
+) [56]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/UML/app
 licationsmodel_x10_udtag.tex
-
-LaTeX Warning: Reference `fig:X10_udtag_domain' on page 55 undefined on input l
-ine 2.
-
-
-LaTeX Warning: Reference `fig:X10_udtag_SD' on page 55 undefined on input line 
-3.
-
-
-LaTeX Warning: Reference `fig:X10_udtag_Class' on page 55 undefined on input li
-ne 4.
-
-<billeder/uml/X10_modtager_Domain.png, id=743, 253.6677pt x 262.8219pt>
+<billeder/uml/X10_modtager_Domain.png, id=711, 253.6677pt x 262.8219pt>
 File: billeder/uml/X10_modtager_Domain.png Graphic file (type png)
 
 <use billeder/uml/X10_modtager_Domain.png>
@@ -2895,7 +2805,7 @@ Package pdftex.def Info: billeder/uml/X10_modtager_Domain.png used on input lin
 e 8.
 (pdftex.def)             Requested size: 255.6026pt x 264.83443pt.
 
-<billeder/uml/X10_modtager_SD.png, id=744, 479.6319pt x 287.6346pt>
+<billeder/uml/X10_modtager_SD.png, id=712, 479.6319pt x 287.6346pt>
 File: billeder/uml/X10_modtager_SD.png Graphic file (type png)
 
 <use billeder/uml/X10_modtager_SD.png>
@@ -2903,29 +2813,24 @@ Package pdftex.def Info: billeder/uml/X10_modtager_SD.png used on input line 14
 .
 (pdftex.def)             Requested size: 426.0pt x 255.47168pt.
 
-<billeder/uml/X10_modtager_Class.png, id=745, 469.0323pt x 235.6002pt>
+<billeder/uml/X10_modtager_Class.png, id=713, 469.0323pt x 235.6002pt>
 File: billeder/uml/X10_modtager_Class.png Graphic file (type png)
 
 <use billeder/uml/X10_modtager_Class.png>
 Package pdftex.def Info: billeder/uml/X10_modtager_Class.png used on input line
  20.
 (pdftex.def)             Requested size: 426.0pt x 213.99745pt.
-
-
-LaTeX Warning: Reference `fig:X10_udtag_Class_Staric' on page 55 undefined on i
-nput line 26.
-
-[55 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
-uml/X10_modtager_Domain.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Proje
-ktdokumentation/billeder/uml/X10_modtager_SD.png>]
-<billeder/uml/X10_modtager_Class_Static.png, id=753, 514.0806pt x 284.5029pt>
+ [57 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+/uml/X10_modtager_Domain.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Proj
+ektdokumentation/billeder/uml/X10_modtager_SD.png>]
+<billeder/uml/X10_modtager_Class_Static.png, id=722, 514.0806pt x 284.5029pt>
 File: billeder/uml/X10_modtager_Class_Static.png Graphic file (type png)
 
 <use billeder/uml/X10_modtager_Class_Static.png>
 Package pdftex.def Info: billeder/uml/X10_modtager_Class_Static.png used on inp
 ut line 30.
 (pdftex.def)             Requested size: 426.0pt x 235.76399pt.
-) [56 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
+) [58 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
 r/uml/X10_modtager_Class.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Proj
 ektdokumentation/billeder/uml/X10_modtager_Class_Static.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/UML/UML
@@ -2949,7 +2854,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--51
 
  []
 
-[57
+[59
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 52--56
@@ -2982,7 +2887,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--91
 
  []
 
-[58]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 106--111
 
  []
@@ -3007,7 +2912,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--154
 
  []
 
-[59]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 155--159
 
  []
@@ -3017,7 +2922,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--52
 
  []
 
-[60]
+[62]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/protoko
 l/rs232.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
@@ -3030,28 +2935,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
  []
 
 
-LaTeX Warning: Reference `table:RS232StartStopBytes' on page 61 undefined on in
-put line 5.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
-
-
-LaTeX Warning: Reference `table:RS232DataFormat' on page 61 undefined on input 
-line 23.
-
-
-LaTeX Warning: Reference `tabel:RS232Kommandoer' on page 61 undefined on input 
-line 40.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[61])
+[63])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/protoko
 l/x10.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
@@ -3059,34 +2952,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
  []
 
 
-LaTeX Warning: Reference `tabel:X10Kommandoer' on page 62 undefined on input li
-ne 4.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `table:X10DataFormat' on page 62 undefined on input li
-ne 4.
-
-
-LaTeX Warning: Reference `table:X10StartStopBytes' on page 62 undefined on inpu
-t line 20.
-
-
-LaTeX Warning: Reference `tabel:X10Adresser' on page 62 undefined on input line
- 60.
+Underfull \hbox (badness 2150) in paragraph at lines 81--82
+[]\T1/cmr/m/n/10.95 I tabel [][]4.10[][] er vist to eksempler som aktiverer og 
+deaktiverer et X10 udtag.
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `tabel:X10Eksempler' on page 62 undefined on input lin
-e 81.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[62]) [63])
+[64]) [65])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/HWdesig
-n.tex [64
+n.tex [66
 
 
 
@@ -3096,7 +2975,7 @@ Underfull \hbox (badness 1087) in paragraph at lines 6--7
 n genererer X10-
  []
 
-<billeder/HWdesign/X10_BURST.png, id=803, 391.4625pt x 173.64874pt>
+<billeder/HWdesign/X10_BURST.png, id=779, 391.4625pt x 173.64874pt>
 File: billeder/HWdesign/X10_BURST.png Graphic file (type png)
 
 <use billeder/HWdesign/X10_BURST.png>
@@ -3104,26 +2983,22 @@ Package pdftex.def Info: billeder/HWdesign/X10_BURST.png used on input line 10.
 
 (pdftex.def)             Requested size: 213.0pt x 94.48433pt.
 
-
-LaTeX Warning: Reference `fig:X10_BURST' on page 65 undefined on input line 15.
-
-
-<billeder/HWdesign/Encoder.png, id=805, 611.28375pt x 469.755pt>
+<billeder/HWdesign/Encoder.png, id=782, 611.28375pt x 469.755pt>
 File: billeder/HWdesign/Encoder.png Graphic file (type png)
 
 <use billeder/HWdesign/Encoder.png>
 Package pdftex.def Info: billeder/HWdesign/Encoder.png used on input line 19.
 (pdftex.def)             Requested size: 298.1987pt x 229.15695pt.
- [65 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [67 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWdesign/X10_BURST.png>]
-<billeder/HWdesign/HP_UV.png, id=812, 283.0575pt x 149.05687pt>
+<billeder/HWdesign/HP_UV.png, id=790, 283.0575pt x 149.05687pt>
 File: billeder/HWdesign/HP_UV.png Graphic file (type png)
 
 <use billeder/HWdesign/HP_UV.png>
 Package pdftex.def Info: billeder/HWdesign/HP_UV.png used on input line 29.
 (pdftex.def)             Requested size: 191.6987pt x 100.9502pt.
 
-<billeder/HWdesign/HP_KURVE.png, id=813, 593.21625pt x 593.21625pt>
+<billeder/HWdesign/HP_KURVE.png, id=791, 593.21625pt x 593.21625pt>
 File: billeder/HWdesign/HP_KURVE.png Graphic file (type png)
 
 <use billeder/HWdesign/HP_KURVE.png>
@@ -3134,25 +3009,19 @@ Overfull \hbox (4.84323pt too wide) in paragraph at lines 27--40
 []$[]$   $[]$ 
  []
 
-[66 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
+[68 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
 HWdesign/Encoder.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokum
 entation/billeder/HWdesign/HP_UV.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2G
 RP1/Projektdokumentation/billeder/HWdesign/HP_KURVE.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:HP_MV' on page 67 undefined on input line 54.
-
-
-LaTeX Warning: Reference `fig:Encoder' on page 67 undefined on input line 54.
-
-<billeder/HWdesign/HP_MV.png, id=825, 306.39468pt x 161.85469pt>
+<billeder/HWdesign/HP_MV.png, id=805, 306.39468pt x 161.85469pt>
 File: billeder/HWdesign/HP_MV.png Graphic file (type png)
 
 <use billeder/HWdesign/HP_MV.png>
 Package pdftex.def Info: billeder/HWdesign/HP_MV.png used on input line 58.
 (pdftex.def)             Requested size: 213.0pt x 112.51953pt.
- [67 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [69 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWdesign/HP_MV.png>]
-<billeder/HWdesign/ZC_UV.png, id=840, 383.93437pt x 153.57375pt>
+<billeder/HWdesign/ZC_UV.png, id=819, 383.93437pt x 153.57375pt>
 File: billeder/HWdesign/ZC_UV.png Graphic file (type png)
 
 <use billeder/HWdesign/ZC_UV.png>
@@ -3163,7 +3032,7 @@ Underfull \hbox (badness 3525) in paragraph at lines 70--70
 [][]\T1/cmr/m/n/10 Zero cros-sing de-tector uden
  []
 
-<billeder/HWTest/Encoder/Encoder_zerocross.png, id=841, 321.2pt x 240.9pt>
+<billeder/HWTest/Encoder/Encoder_zerocross.png, id=820, 321.2pt x 240.9pt>
 File: billeder/HWTest/Encoder/Encoder_zerocross.png Graphic file (type png)
 
 <use billeder/HWTest/Encoder/Encoder_zerocross.png>
@@ -3175,35 +3044,25 @@ Overfull \hbox (4.84323pt too wide) in paragraph at lines 67--80
 []$[]$   $[]$ 
  []
 
-
-LaTeX Warning: Reference `fig:ZC_UV' on page 68 undefined on input line 82.
-
-
-LaTeX Warning: Reference `fig:Encoder_Zerocross' on page 68 undefined on input 
-line 82.
-
-
-LaTeX Warning: Reference `fig:ZC_MV' on page 68 undefined on input line 100.
-
-<billeder/HWdesign/ZC_MV.png, id=842, 383.93437pt x 150.5625pt>
+<billeder/HWdesign/ZC_MV.png, id=824, 383.93437pt x 150.5625pt>
 File: billeder/HWdesign/ZC_MV.png Graphic file (type png)
 
 <use billeder/HWdesign/ZC_MV.png>
 Package pdftex.def Info: billeder/HWdesign/ZC_MV.png used on input line 104.
 (pdftex.def)             Requested size: 298.1987pt x 116.94891pt.
- [68 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [70 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWdesign/ZC_UV.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokume
 ntation/billeder/HWTest/Encoder/Encoder_zerocross.png>] <billeder/HWdesign/Deco
-der.png, id=853, 722.7pt x 529.22719pt>
+der.png, id=836, 722.7pt x 529.22719pt>
 File: billeder/HWdesign/Decoder.png Graphic file (type png)
 
 <use billeder/HWdesign/Decoder.png>
 Package pdftex.def Info: billeder/HWdesign/Decoder.png used on input line 116.
 (pdftex.def)             Requested size: 298.1987pt x 218.36543pt.
- [69 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [71 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWdesign/ZC_MV.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokume
 ntation/billeder/HWdesign/Decoder.png>]
-<billeder/HWdesign/BAANDPAS_UV.png, id=862, 639.13782pt x 283.81032pt>
+<billeder/HWdesign/BAANDPAS_UV.png, id=844, 639.13782pt x 283.81032pt>
 File: billeder/HWdesign/BAANDPAS_UV.png Graphic file (type png)
 
 <use billeder/HWdesign/BAANDPAS_UV.png>
@@ -3211,7 +3070,7 @@ Package pdftex.def Info: billeder/HWdesign/BAANDPAS_UV.png used on input line 1
 30.
 (pdftex.def)             Requested size: 191.6987pt x 85.12209pt.
 
-<billeder/HWdesign/BAANDPAS_KURVE.png, id=863, 593.21625pt x 593.21625pt>
+<billeder/HWdesign/BAANDPAS_KURVE.png, id=845, 593.21625pt x 593.21625pt>
 File: billeder/HWdesign/BAANDPAS_KURVE.png Graphic file (type png)
 
 <use billeder/HWdesign/BAANDPAS_KURVE.png>
@@ -3223,52 +3082,36 @@ Overfull \hbox (4.84323pt too wide) in paragraph at lines 128--141
 []$[]$   $[]$ 
  []
 
-
-LaTeX Warning: Reference `fig:BAANDPAS_UV' on page 70 undefined on input line 1
-43.
-
-
-LaTeX Warning: Reference `fig:BAANDPAS_KURVE' on page 70 undefined on input lin
-e 143.
-
-[70 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
+[72 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
 HWdesign/BAANDPAS_UV.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektd
 okumentation/billeder/HWdesign/BAANDPAS_KURVE.png>]
-
-LaTeX Warning: Reference `fig:BAANDPAS_MV' on page 71 undefined on input line 1
-84.
-
-<billeder/HWdesign/BAANDPAS_MV.png, id=876, 652.68843pt x 277.78781pt>
+<billeder/HWdesign/BAANDPAS_MV.png, id=861, 652.68843pt x 277.78781pt>
 File: billeder/HWdesign/BAANDPAS_MV.png Graphic file (type png)
 
 <use billeder/HWdesign/BAANDPAS_MV.png>
 Package pdftex.def Info: billeder/HWdesign/BAANDPAS_MV.png used on input line 1
 88.
 (pdftex.def)             Requested size: 298.1987pt x 126.91924pt.
- [71 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [73 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWdesign/BAANDPAS_MV.png>]
-<billeder/HWdesign/ED_MV.png, id=884, 551.81157pt x 269.50688pt>
+<billeder/HWdesign/ED_MV.png, id=870, 551.81157pt x 269.50688pt>
 File: billeder/HWdesign/ED_MV.png Graphic file (type png)
 
 <use billeder/HWdesign/ED_MV.png>
 Package pdftex.def Info: billeder/HWdesign/ED_MV.png used on input line 200.
 (pdftex.def)             Requested size: 298.1987pt x 145.64668pt.
- [72 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [74 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWdesign/ED_MV.png>]
-
-LaTeX Warning: Reference `fig:DIPSWITCH' on page 73 undefined on input line 232
-.
-
-<billeder/HWdesign/DIPSWITCH.png, id=894, 443.40656pt x 348.55219pt>
+<billeder/HWdesign/DIPSWITCH.png, id=881, 443.40656pt x 348.55219pt>
 File: billeder/HWdesign/DIPSWITCH.png Graphic file (type png)
 
 <use billeder/HWdesign/DIPSWITCH.png>
 Package pdftex.def Info: billeder/HWdesign/DIPSWITCH.png used on input line 238
 .
 (pdftex.def)             Requested size: 298.1987pt x 234.42224pt.
- [73 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
-/HWdesign/DIPSWITCH.png>] [74]
-<billeder/HWdesign/code_lock_counter.png, id=914, 346.29375pt x 98.3675pt>
+ [75 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+/HWdesign/DIPSWITCH.png>] [76]
+<billeder/HWdesign/code_lock_counter.png, id=900, 346.29375pt x 98.3675pt>
 File: billeder/HWdesign/code_lock_counter.png Graphic file (type png)
 
 <use billeder/HWdesign/code_lock_counter.png>
@@ -3276,12 +3119,7 @@ Package pdftex.def Info: billeder/HWdesign/code_lock_counter.png used on input
 line 311.
 (pdftex.def)             Requested size: 298.1987pt x 84.70845pt.
 
-
-LaTeX Warning: Reference `code:code_lock' on page 75 undefined on input line 31
-6.
-
-
-<billeder/HWdesign/code_lock_s_unlocked_state.png, id=915, 441.65pt x 133.49875
+<billeder/HWdesign/code_lock_s_unlocked_state.png, id=902, 441.65pt x 133.49875
 pt>
 File: billeder/HWdesign/code_lock_s_unlocked_state.png Graphic file (type png)
  <use billeder/HWdesign/code_lock_s_unlocked_state.png>
@@ -3289,143 +3127,102 @@ Package pdftex.def Info: billeder/HWdesign/code_lock_s_unlocked_state.png used
 on input line 320.
 (pdftex.def)             Requested size: 298.1987pt x 90.14034pt.
 
-
-LaTeX Warning: Reference `code:s_unlocked' on page 75 undefined on input line 3
-25.
-
-
-LaTeX Warning: Reference `code:code_lock_pinout' on page 75 undefined on input 
-line 327.
-
-<billeder/HWdesign/code_lock_pinout.png, id=916, 803.0pt x 694.595pt>
+<billeder/HWdesign/code_lock_pinout.png, id=905, 803.0pt x 694.595pt>
 File: billeder/HWdesign/code_lock_pinout.png Graphic file (type png)
 
 <use billeder/HWdesign/code_lock_pinout.png>
 Package pdftex.def Info: billeder/HWdesign/code_lock_pinout.png used on input l
 ine 331.
 (pdftex.def)             Requested size: 170.3974pt x 147.39546pt.
- [75 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [77 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWdesign/code_lock_counter.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/P
 rojektdokumentation/billeder/HWdesign/code_lock_s_unlocked_state.png> <C:/Users
 /Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/HWdesign/code
 _lock_pinout.png>])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/SWdesig
-n.tex [76
+n.tex [78
 
 
 
 ]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/SWBeskr
 ivelse/LogicalView.tex
-<billeder/uml/state_machine_main.png, id=931, 600.8046pt x 435.0654pt>
+<billeder/uml/state_machine_main.png, id=920, 600.8046pt x 435.0654pt>
 File: billeder/uml/state_machine_main.png Graphic file (type png)
 
 <use billeder/uml/state_machine_main.png>
 Package pdftex.def Info: billeder/uml/state_machine_main.png used on input line
  6.
 (pdftex.def)             Requested size: 426.0pt x 308.49362pt.
-
-
-LaTeX Warning: Reference `fig:State_machine_pc' on page 77 undefined on input l
-ine 11.
-
-[77] [78 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/bill
-eder/uml/state_machine_main.png>]
-<billeder/uml/logical_view_pc.png, id=941, 560.8152pt x 405.6756pt>
+ [79] [80 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/bil
+leder/uml/state_machine_main.png>]
+<billeder/uml/logical_view_pc.png, id=932, 560.8152pt x 405.6756pt>
 File: billeder/uml/logical_view_pc.png Graphic file (type png)
 
 <use billeder/uml/logical_view_pc.png>
 Package pdftex.def Info: billeder/uml/logical_view_pc.png used on input line 23
 .
 (pdftex.def)             Requested size: 426.0pt x 308.14952pt.
- [79
+ [81
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
 /logical_view_pc.png>]
-<billeder/uml/logical_view_CSS_Hovedenhed.png, id=950, 578.8827pt x 523.2348pt>
+<billeder/uml/logical_view_CSS_Hovedenhed.png, id=938, 578.8827pt x 523.2348pt>
 File: billeder/uml/logical_view_CSS_Hovedenhed.png Graphic file (type png)
 <use billeder/uml/logical_view_CSS_Hovedenhed.png>
 Package pdftex.def Info: billeder/uml/logical_view_CSS_Hovedenhed.png used on i
 nput line 33.
 (pdftex.def)             Requested size: 426.0pt x 385.048pt.
-
-
-LaTeX Warning: Reference `fig:CSS_Hovedenhed_package' on page 80 undefined on i
-nput line 38.
-
-[80
+ [82
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
 /logical_view_CSS_Hovedenhed.png>]
-<billeder/uml/logical_view_CSS_Udtag.png, id=956, 578.8827pt x 401.3394pt>
+<billeder/uml/logical_view_CSS_Udtag.png, id=945, 578.8827pt x 401.3394pt>
 File: billeder/uml/logical_view_CSS_Udtag.png Graphic file (type png)
 
 <use billeder/uml/logical_view_CSS_Udtag.png>
 Package pdftex.def Info: billeder/uml/logical_view_CSS_Udtag.png used on input 
 line 43.
 (pdftex.def)             Requested size: 426.0pt x 295.34528pt.
-
-
-LaTeX Warning: Reference `fig:CSS_Udtag_package' on page 81 undefined on input 
-line 48.
-
-[81
+ [83
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
 /logical_view_CSS_Udtag.png>]
-
-LaTeX Warning: Reference `table:X10_sendKommando_format' on page 82 undefined o
-n input line 65.
-
-
-LaTeX Warning: Reference `fig:X10_sendKommando_sd' on page 82 undefined on inpu
-t line 80.
-
-<billeder/uml/CSS_X10IF_sendKommando_SD.png, id=962, 425.4294pt x 235.6002pt>
+<billeder/uml/CSS_X10IF_sendKommando_SD.png, id=954, 425.4294pt x 235.6002pt>
 File: billeder/uml/CSS_X10IF_sendKommando_SD.png Graphic file (type png)
 
 <use billeder/uml/CSS_X10IF_sendKommando_SD.png>
 Package pdftex.def Info: billeder/uml/CSS_X10IF_sendKommando_SD.png used on inp
 ut line 83.
 (pdftex.def)             Requested size: 426.0pt x 235.92674pt.
-
-
-LaTeX Warning: Reference `fig:ZeroCrossISR' on page 82 undefined on input line 
-90.
-
-[82
+ [84
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
-/CSS_X10IF_sendKommando_SD.png>]
-<billeder/uml/CSS_ZeroCrossInt_SD.png, id=969, 425.4294pt x 362.0727pt>
+/CSS_X10IF_sendKommando_SD.png>] <billeder/uml/CSS_ZeroCrossInt_SD.png, id=962,
+ 425.4294pt x 362.0727pt>
 File: billeder/uml/CSS_ZeroCrossInt_SD.png Graphic file (type png)
 
 <use billeder/uml/CSS_ZeroCrossInt_SD.png>
 Package pdftex.def Info: billeder/uml/CSS_ZeroCrossInt_SD.png used on input lin
 e 94.
 (pdftex.def)             Requested size: 426.0pt x 362.57455pt.
-
-
-LaTeX Warning: Reference `fig:X10-Udtag_unwrapX10Array_SD' on page 83 undefined
- on input line 108.
-
-[83 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
-uml/CSS_ZeroCrossInt_SD.png>]
-<billeder/uml/X10-Udtag_unwrapX10Array_SD.png, id=980, 443.4969pt x 660.3069pt>
+ [85 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+/uml/CSS_ZeroCrossInt_SD.png>]
+<billeder/uml/X10-Udtag_unwrapX10Array_SD.png, id=975, 443.4969pt x 660.3069pt>
 File: billeder/uml/X10-Udtag_unwrapX10Array_SD.png Graphic file (type png)
 <use billeder/uml/X10-Udtag_unwrapX10Array_SD.png>
 Package pdftex.def Info: billeder/uml/X10-Udtag_unwrapX10Array_SD.png used on i
 nput line 111.
 (pdftex.def)             Requested size: 426.0pt x 634.29044pt.
-) [84]
+) [86]
 
-LaTeX Warning: Text page 85 contains only floats.
+LaTeX Warning: Text page 87 contains only floats.
 
-[85 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
+[87 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
 uml/X10-Udtag_unwrapX10Array_SD.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/SWBeskr
 ivelse/DeploymentView.tex
-<billeder/uml/deployment_model.png, id=991, 592.3731pt x 345.4506pt>
+<billeder/uml/deployment_model.png, id=985, 592.3731pt x 345.4506pt>
 File: billeder/uml/deployment_model.png Graphic file (type png)
 
 <use billeder/uml/deployment_model.png>
@@ -3433,12 +3230,7 @@ Package pdftex.def Info: billeder/uml/deployment_model.png used on input line 3
 .
 (pdftex.def)             Requested size: 426.0pt x 248.43433pt.
 
-
-LaTeX Warning: Reference `fig:Deployment model' on page 86 undefined on input l
-ine 8.
-
-
-<billeder/uml/CSS_Hovedenhed_modtager_deployment.png, id=992, 673.7973pt x 359.
+<billeder/uml/CSS_Hovedenhed_modtager_deployment.png, id=987, 673.7973pt x 359.
 9046pt>
 File: billeder/uml/CSS_Hovedenhed_modtager_deployment.png Graphic file (type pn
 g)
@@ -3446,52 +3238,38 @@ g)
 Package pdftex.def Info: billeder/uml/CSS_Hovedenhed_modtager_deployment.png us
 ed on input line 11.
 (pdftex.def)             Requested size: 426.0pt x 227.54837pt.
-
-
-LaTeX Warning: Reference `fig:IBD Deployment model' on page 86 undefined on inp
-ut line 16.
-
 )
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/SWBeskr
-ivelse/ImplementationView.tex [86 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/
+ivelse/ImplementationView.tex [88 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/
 Projektdokumentation/billeder/uml/deployment_model.png> <C:/Users/Jesper/Docume
 nts/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml/CSS_Hovedenhed_modtager
 _deployment.png>]
-
-LaTeX Warning: Reference `fig:filstruktur1' on page 87 undefined on input line 
-4.
-
-<billeder/Filstruktur1.png, id=999, 262.9825pt x 253.94875pt>
+<billeder/Filstruktur1.png, id=996, 262.9825pt x 253.94875pt>
 File: billeder/Filstruktur1.png Graphic file (type png)
 
 <use billeder/Filstruktur1.png>
 Package pdftex.def Info: billeder/Filstruktur1.png used on input line 9.
 (pdftex.def)             Requested size: 262.98184pt x 253.94812pt.
-
-
-LaTeX Warning: Reference `table:Udviklingsprogrammer' on page 87 undefined on i
-nput line 15.
-
-[87 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
-Filstruktur1.png>]) [88]
+ [89 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+/Filstruktur1.png>]) [90]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/SWBeskr
 ivelse/DataView.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<billeder/uml/PC_dataview.png, id=1013, 513.41812pt x 182.93344pt>
+<billeder/uml/PC_dataview.png, id=1011, 513.41812pt x 182.93344pt>
 File: billeder/uml/PC_dataview.png Graphic file (type png)
 
 <use billeder/uml/PC_dataview.png>
 Package pdftex.def Info: billeder/uml/PC_dataview.png used on input line 10.
 (pdftex.def)             Requested size: 426.0pt x 151.78725pt.
-)) [89
+)) [91
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/uml
 /PC_dataview.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/test/Mo
-dultest.tex [90
+dultest.tex [92
 
 
 
@@ -3504,7 +3282,7 @@ Package pdftex.def Info: billeder/HWTest/Encoder/Encoder_zerocross.png used on
 input line 13.
 (pdftex.def)             Requested size: 191.6987pt x 143.77654pt.
 
-<billeder/HWTest/Encoder/Encoder_zerocross_burst.png, id=1024, 321.2pt x 240.9p
+<billeder/HWTest/Encoder/Encoder_zerocross_burst.png, id=1023, 321.2pt x 240.9p
 t>
 File: billeder/HWTest/Encoder/Encoder_zerocross_burst.png Graphic file (type pn
 g)
@@ -3518,26 +3296,16 @@ Overfull \hbox (4.84323pt too wide) in paragraph at lines 11--24
  []
 
 
-LaTeX Warning: Reference `fig:ZC_UB' on page 91 undefined on input line 27.
-
-
-LaTeX Warning: Reference `fig:ZC_MB' on page 91 undefined on input line 28.
-
-
-<billeder/HWTest/Encoder/Encoder_hojpasfilter.png, id=1025, 321.2pt x 240.9pt>
+<billeder/HWTest/Encoder/Encoder_hojpasfilter.png, id=1026, 321.2pt x 240.9pt>
 File: billeder/HWTest/Encoder/Encoder_hojpasfilter.png Graphic file (type png)
 
 <use billeder/HWTest/Encoder/Encoder_hojpasfilter.png>
 Package pdftex.def Info: billeder/HWTest/Encoder/Encoder_hojpasfilter.png used 
 on input line 38.
 (pdftex.def)             Requested size: 213.0pt x 159.75537pt.
- [91 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [93 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWTest/Encoder/Encoder_zerocross_burst.png>]
-
-LaTeX Warning: Reference `fig:HP_SCOP' on page 92 undefined on input line 43.
-
-
-<billeder/HWTest/Encoder/Encoder_50Hz_burst_120kHz.png, id=1035, 321.2pt x 240.
+<billeder/HWTest/Encoder/Encoder_50Hz_burst_120kHz.png, id=1036, 321.2pt x 240.
 9pt>
 File: billeder/HWTest/Encoder/Encoder_50Hz_burst_120kHz.png Graphic file (type 
 png)
@@ -3546,7 +3314,7 @@ Package pdftex.def Info: billeder/HWTest/Encoder/Encoder_50Hz_burst_120kHz.png
 used on input line 52.
 (pdftex.def)             Requested size: 191.6987pt x 143.77654pt.
 
-<billeder/HWTest/Encoder/Encoder_burst_1ms.png, id=1036, 321.2pt x 240.9pt>
+<billeder/HWTest/Encoder/Encoder_burst_1ms.png, id=1037, 321.2pt x 240.9pt>
 File: billeder/HWTest/Encoder/Encoder_burst_1ms.png Graphic file (type png)
 
 <use billeder/HWTest/Encoder/Encoder_burst_1ms.png>
@@ -3554,45 +3322,23 @@ Package pdftex.def Info: billeder/HWTest/Encoder/Encoder_burst_1ms.png used on
 input line 59.
 (pdftex.def)             Requested size: 191.6987pt x 143.77654pt.
 
-
-LaTeX Warning: Reference `fig:Encoder_output' on page 92 undefined on input lin
-e 60.
-
-
-LaTeX Warning: Reference `fig:Encoder_output' on page 92 undefined on input lin
-e 60.
-
-
 Overfull \hbox (4.84323pt too wide) in paragraph at lines 50--63
 []$[]$   $[]$ 
  []
 
-
-LaTeX Warning: Reference `fig:Encoder_output' on page 92 undefined on input lin
-e 65.
-
-
-LaTeX Warning: Reference `fig:Encoder_burst_1ms' on page 92 undefined on input 
-line 67.
-
-<billeder/HWTest/Decoder/Decoder_zerocross.png, id=1037, 321.2pt x 240.9pt>
+<billeder/HWTest/Decoder/Decoder_zerocross.png, id=1042, 321.2pt x 240.9pt>
 File: billeder/HWTest/Decoder/Decoder_zerocross.png Graphic file (type png)
 
 <use billeder/HWTest/Decoder/Decoder_zerocross.png>
 Package pdftex.def Info: billeder/HWTest/Decoder/Decoder_zerocross.png used on 
 input line 78.
 (pdftex.def)             Requested size: 213.0pt x 159.75537pt.
- [92 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [94 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWTest/Encoder/Encoder_hojpasfilter.png> <C:/Users/Jesper/Documents/GitHub/E2P
 RJ2GRP1/Projektdokumentation/billeder/HWTest/Encoder/Encoder_50Hz_burst_120kHz.
 png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWTest/Encoder/Encoder_burst_1ms.png>]
-
-LaTeX Warning: Reference `fig:Decoder_ZC' on page 93 undefined on input line 83
-.
-
-
-<billeder/HWTest/Decoder/Decoder_hojpasfilter.png, id=1050, 321.2pt x 240.9pt>
+<billeder/HWTest/Decoder/Decoder_hojpasfilter.png, id=1056, 321.2pt x 240.9pt>
 File: billeder/HWTest/Decoder/Decoder_hojpasfilter.png Graphic file (type png)
 
 <use billeder/HWTest/Decoder/Decoder_hojpasfilter.png>
@@ -3600,7 +3346,7 @@ Package pdftex.def Info: billeder/HWTest/Decoder/Decoder_hojpasfilter.png used
 on input line 91.
 (pdftex.def)             Requested size: 191.6987pt x 143.77654pt.
 
-<billeder/HWTest/Decoder/Decoder_forstaerkning_baandpas.png, id=1051, 321.2pt x
+<billeder/HWTest/Decoder/Decoder_forstaerkning_baandpas.png, id=1057, 321.2pt x
  240.9pt>
 File: billeder/HWTest/Decoder/Decoder_forstaerkning_baandpas.png Graphic file (
 type png)
@@ -3614,28 +3360,12 @@ Overfull \hbox (4.84323pt too wide) in paragraph at lines 89--102
  []
 
 
-LaTeX Warning: Reference `fig:Decoder_HP' on page 93 undefined on input line 10
-5.
-
-
-LaTeX Warning: Reference `fig:Decoder_Gain' on page 93 undefined on input line 
-107.
-
-
-LaTeX Warning: Reference `B\IeC {\r a}ndpasfilter' on page 93 undefined on inpu
-t line 107.
-
-
-Underfull \hbox (badness 1297) in paragraph at lines 107--108
-[]\T1/cmr/m/n/10.95 Figur [] viser forstærkningen i båndpasfilteret. Teoretisk[
-][][][][] skal der være dobbelt
+Underfull \hbox (badness 1117) in paragraph at lines 107--108
+[]\T1/cmr/m/n/10.95 Figur [][]7.8[][] viser forstærkningen i båndpasfilteret. T
+eoretisk[][][][][] skal der være dobbelt
  []
 
-
-LaTeX Warning: Reference `fig:Decoder_diode' on page 93 undefined on input line
- 109.
-
-<billeder/HWTest/Decoder/Decoder_ensretning.png, id=1053, 321.2pt x 240.9pt>
+<billeder/HWTest/Decoder/Decoder_ensretning.png, id=1063, 321.2pt x 240.9pt>
 File: billeder/HWTest/Decoder/Decoder_ensretning.png Graphic file (type png)
 
 <use billeder/HWTest/Decoder/Decoder_ensretning.png>
@@ -3643,7 +3373,7 @@ Package pdftex.def Info: billeder/HWTest/Decoder/Decoder_ensretning.png used on
  input line 118.
 (pdftex.def)             Requested size: 191.6987pt x 143.77654pt.
 
-<billeder/HWTest/Decoder/Decoder_envelope.png, id=1054, 321.2pt x 240.9pt>
+<billeder/HWTest/Decoder/Decoder_envelope.png, id=1064, 321.2pt x 240.9pt>
 File: billeder/HWTest/Decoder/Decoder_envelope.png Graphic file (type png)
 
 <use billeder/HWTest/Decoder/Decoder_envelope.png>
@@ -3655,20 +3385,12 @@ Overfull \hbox (4.84323pt too wide) in paragraph at lines 116--129
 []$[]$   $[]$ 
  []
 
-[93 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
+[95 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/
 HWTest/Decoder/Decoder_zerocross.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2G
 RP1/Projektdokumentation/billeder/HWTest/Decoder/Decoder_hojpasfilter.png> <C:/
 Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/HWTest/D
 ecoder/Decoder_forstaerkning_baandpas.png>]
-
-LaTeX Warning: Reference `fig:Decoder_diode' on page 94 undefined on input line
- 131.
-
-
-LaTeX Warning: Reference `fig:Decoder_envelope' on page 94 undefined on input l
-ine 131.
-
-<billeder/HWTest/Decoder/Decoder_relay_open.png, id=1069, 321.2pt x 240.9pt>
+<billeder/HWTest/Decoder/Decoder_relay_open.png, id=1081, 321.2pt x 240.9pt>
 File: billeder/HWTest/Decoder/Decoder_relay_open.png Graphic file (type png)
 
 <use billeder/HWTest/Decoder/Decoder_relay_open.png>
@@ -3676,7 +3398,7 @@ Package pdftex.def Info: billeder/HWTest/Decoder/Decoder_relay_open.png used on
  input line 141.
 (pdftex.def)             Requested size: 191.6987pt x 143.77654pt.
 
-<billeder/HWTest/Decoder/Decoder_relay_closed.png, id=1070, 321.2pt x 240.9pt>
+<billeder/HWTest/Decoder/Decoder_relay_closed.png, id=1082, 321.2pt x 240.9pt>
 File: billeder/HWTest/Decoder/Decoder_relay_closed.png Graphic file (type png)
 
 <use billeder/HWTest/Decoder/Decoder_relay_closed.png>
@@ -3688,58 +3410,40 @@ Overfull \hbox (4.84323pt too wide) in paragraph at lines 139--152
 []$[]$   $[]$ 
  []
 
-
-LaTeX Warning: Reference `fig:relay_open' on page 94 undefined on input line 15
-4.
-
-
-LaTeX Warning: Reference `fig:relay_closed' on page 94 undefined on input line 
-154.
-
-<billeder/HWTest/DE2/DE2_1ms_pulse.png, id=1071, 876.27374pt x 621.32124pt>
+<billeder/HWTest/DE2/DE2_1ms_pulse.png, id=1085, 876.27374pt x 621.32124pt>
 File: billeder/HWTest/DE2/DE2_1ms_pulse.png Graphic file (type png)
 
 <use billeder/HWTest/DE2/DE2_1ms_pulse.png>
 Package pdftex.def Info: billeder/HWTest/DE2/DE2_1ms_pulse.png used on input li
 ne 162.
 (pdftex.def)             Requested size: 213.0pt x 151.02574pt.
- [94 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
+ [96 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
 /HWTest/Decoder/Decoder_ensretning.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ
 2GRP1/Projektdokumentation/billeder/HWTest/Decoder/Decoder_envelope.png> <C:/Us
 ers/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/HWTest/Dec
 oder/Decoder_relay_open.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Proje
-ktdokumentation/billeder/HWTest/Decoder/Decoder_relay_closed.png>] [95 <C:/User
+ktdokumentation/billeder/HWTest/Decoder/Decoder_relay_closed.png>] [97 <C:/User
 s/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/HWTest/DE2/D
 E2_1ms_pulse.png>])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/test/SW
 modultest.tex
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/test/Mo
 dultest_PC.tex
-<billeder/SWTest/RS232IF_pc_test.png, id=1092, 501.37312pt x 252.19218pt>
+<billeder/SWTest/RS232IF_pc_test.png, id=1106, 501.37312pt x 252.19218pt>
 File: billeder/SWTest/RS232IF_pc_test.png Graphic file (type png)
 
 <use billeder/SWTest/RS232IF_pc_test.png>
 Package pdftex.def Info: billeder/SWTest/RS232IF_pc_test.png used on input line
  16.
 (pdftex.def)             Requested size: 426.0pt x 214.29124pt.
-) [96
+) [98
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/SWT
 est/RS232IF_pc_test.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/test/Mo
-dultest_CSS.tex
-
-LaTeX Warning: Reference `fig:CSS_hovedenhed_Class_Static' on page 97 undefined
- on input line 2.
-
-[97
+dultest_CSS.tex [99
 
 ]
-
-LaTeX Warning: Reference `table:Test_RS232IF_kommandoer' on page 98 undefined o
-n input line 73.
-
-
 Underfull \hbox (badness 1342) in paragraph at lines 70--74
 \T1/cmr/m/n/10.95 advisering om babyalarm og svar på loginstatus. Forventet mod
 tages ''SB9999\r'',
@@ -3751,25 +3455,8 @@ Underfull \hbox (badness 1005) in paragraph at lines 110--111
 .cpp'' som ligger i
  []
 
-[98]
-
-LaTeX Warning: Reference `fig:Test_CSS_ZeroCross_sender1' on page 99 undefined 
-on input line 120.
-
-
-LaTeX Warning: Reference `fig:Test_CSS_ZeroCross_sender2' on page 99 undefined 
-on input line 122.
-
-
-LaTeX Warning: Reference `fig:Test_CSS_ZeroCross_Bursts' on page 99 undefined o
-n input line 125.
-
-
-LaTeX Warning: Reference `fig:Test_CSS_ZeroCross_Delay' on page 99 undefined on
- input line 126.
-
-
-<billeder/SWTest/X10IF_Test_Afsend_1_kommando.png, id=1114, 321.2pt x 240.9pt>
+[100]
+<billeder/SWTest/X10IF_Test_Afsend_1_kommando.png, id=1133, 321.2pt x 240.9pt>
 File: billeder/SWTest/X10IF_Test_Afsend_1_kommando.png Graphic file (type png)
 
 <use billeder/SWTest/X10IF_Test_Afsend_1_kommando.png>
@@ -3777,7 +3464,7 @@ Package pdftex.def Info: billeder/SWTest/X10IF_Test_Afsend_1_kommando.png used
 on input line 130.
 (pdftex.def)             Requested size: 340.8013pt x 255.61008pt.
 
-<billeder/SWTest/X10IF_Test_Afsend_2_kommandoer.png, id=1115, 321.2pt x 240.9pt
+<billeder/SWTest/X10IF_Test_Afsend_2_kommandoer.png, id=1134, 321.2pt x 240.9pt
 >
 File: billeder/SWTest/X10IF_Test_Afsend_2_kommandoer.png Graphic file (type png
 )
@@ -3786,7 +3473,7 @@ Package pdftex.def Info: billeder/SWTest/X10IF_Test_Afsend_2_kommandoer.png use
 d on input line 137.
 (pdftex.def)             Requested size: 340.8013pt x 255.61008pt.
 
-<billeder/SWTest/X10IF_Test_Burst.png, id=1116, 321.2pt x 240.9pt>
+<billeder/SWTest/X10IF_Test_Burst.png, id=1135, 321.2pt x 240.9pt>
 File: billeder/SWTest/X10IF_Test_Burst.png Graphic file (type png)
 
 <use billeder/SWTest/X10IF_Test_Burst.png>
@@ -3794,27 +3481,26 @@ Package pdftex.def Info: billeder/SWTest/X10IF_Test_Burst.png used on input lin
 e 144.
 (pdftex.def)             Requested size: 340.8013pt x 255.61008pt.
 
-<billeder/SWTest/X10IF_Test_Delay.png, id=1117, 321.2pt x 240.9pt>
+<billeder/SWTest/X10IF_Test_Delay.png, id=1136, 321.2pt x 240.9pt>
 File: billeder/SWTest/X10IF_Test_Delay.png Graphic file (type png)
 
 <use billeder/SWTest/X10IF_Test_Delay.png>
 Package pdftex.def Info: billeder/SWTest/X10IF_Test_Delay.png used on input lin
 e 151.
 (pdftex.def)             Requested size: 340.8013pt x 255.61008pt.
-))) [99 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/bille
-der/SWTest/X10IF_Test_Afsend_1_kommando.png>] [100 <C:/Users/Jesper/Documents/G
-itHub/E2PRJ2GRP1/Projektdokumentation/billeder/SWTest/X10IF_Test_Afsend_2_komma
-ndoer.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/bi
-lleder/SWTest/X10IF_Test_Burst.png>]
-[101 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
-/SWTest/X10IF_Test_Delay.png>]
+))) [101 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/bill
+eder/SWTest/X10IF_Test_Afsend_1_kommando.png>] [102 <C:/Users/Jesper/Documents/
+GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/SWTest/X10IF_Test_Afsend_2_komm
+andoer.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/b
+illeder/SWTest/X10IF_Test_Burst.png>] [103 <C:/Users/Jesper/Documents/GitHub/E2
+PRJ2GRP1/Projektdokumentation/billeder/SWTest/X10IF_Test_Delay.png>]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/test/in
-tegrationstest.tex [102
+tegrationstest.tex [104
 
 
 
 ]
-<billeder/IntTest/Integration_oversigt.png, id=1143, 452.4102pt x 379.4175pt>
+<billeder/IntTest/Integration_oversigt.png, id=1163, 452.4102pt x 379.4175pt>
 File: billeder/IntTest/Integration_oversigt.png Graphic file (type png)
 
 <use billeder/IntTest/Integration_oversigt.png>
@@ -3827,33 +3513,24 @@ Underfull \hbox (badness 2310) in paragraph at lines 13--14
 gængelige 230Vac
  []
 
-<billeder/IntTest/forsyning.png, id=1144, 3276.24pt x 2457.18pt>
+<billeder/IntTest/forsyning.png, id=1164, 3276.24pt x 2457.18pt>
 File: billeder/IntTest/forsyning.png Graphic file (type png)
 
 <use billeder/IntTest/forsyning.png>
 Package pdftex.def Info: billeder/IntTest/forsyning.png used on input line 20.
 (pdftex.def)             Requested size: 426.0pt x 319.4821pt.
- [103 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
+ [105 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
 r/IntTest/Integration_oversigt.png>]
-<billeder/IntTest/system.png, id=1151, 3276.24pt x 2457.18pt>
+<billeder/IntTest/system.png, id=1170, 3276.24pt x 2457.18pt>
 File: billeder/IntTest/system.png Graphic file (type png)
 
 <use billeder/IntTest/system.png>
 Package pdftex.def Info: billeder/IntTest/system.png used on input line 27.
 (pdftex.def)             Requested size: 340.8013pt x 255.59319pt.
-
-
-LaTeX Warning: Reference `fig:opkobling_forsyning' on page 104 undefined on inp
-ut line 33.
-
-[104 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder
-/IntTest/forsyning.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdok
-umentation/billeder/IntTest/system.png>]
-
-LaTeX Warning: Reference `fig:integration_tabel' on page 105 undefined on input
- line 44.
-
-<billeder/IntTest/Integration_tabel.png, id=1159, 890.32625pt x 549.05125pt>
+ [106 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billede
+r/IntTest/forsyning.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdo
+kumentation/billeder/IntTest/system.png>]
+<billeder/IntTest/Integration_tabel.png, id=1180, 890.32625pt x 549.05125pt>
 File: billeder/IntTest/Integration_tabel.png Graphic file (type png)
 
 <use billeder/IntTest/Integration_tabel.png>
@@ -3861,27 +3538,18 @@ Package pdftex.def Info: billeder/IntTest/Integration_tabel.png used on input l
 ine 48.
 (pdftex.def)             Requested size: 255.6026pt x 157.62062pt.
 
-<billeder/IntTest/Modtager_0101_ON.png, id=1160, 721.69624pt x 240.9pt>
+<billeder/IntTest/Modtager_0101_ON.png, id=1181, 721.69624pt x 240.9pt>
 File: billeder/IntTest/Modtager_0101_ON.png Graphic file (type png)
 
 <use billeder/IntTest/Modtager_0101_ON.png>
 Package pdftex.def Info: billeder/IntTest/Modtager_0101_ON.png used on input li
 ne 57.
 (pdftex.def)             Requested size: 426.0pt x 142.19592pt.
-
-
-LaTeX Warning: Reference `fig:Modtager_0101_ON' on page 105 undefined on input 
-line 62.
-
-) [105 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billed
+) [107 <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billed
 er/IntTest/Integration_tabel.png> <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/
-Projektdokumentation/billeder/IntTest/Modtager_0101_ON.png>] [106]
+Projektdokumentation/billeder/IntTest/Modtager_0101_ON.png>] [108]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
 est/accepttest.tex
-
-LaTeX Warning: Reference `ATUC7' on page 107 undefined on input line 14.
-
-
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
 est/atuc1.tex
 Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
@@ -3923,10 +3591,6 @@ Underfull \hbox (badness 3428) in paragraph at lines 51--52
 \T1/cmr/m/n/10.95 gang og be-der bru-
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.1 on input line 60.
-
 )
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
 est/atuc2.tex
@@ -3944,16 +3608,11 @@ Underfull \hbox (badness 1721) in paragraph at lines 24--25
 []|\T1/cmr/m/n/10.95 Bruger væl-ger ''Ak-ti-
  []
 
-[107
+[109
 
 
 
-]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.2 on input line 61.
-
-)
+])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
 est/atuc3.tex
 Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
@@ -3970,10 +3629,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 []|\T1/cmr/m/n/10.95 UI vi-ser ''De-ak-ti-ver
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.3 on input line 62.
-
 )
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
 est/atuc4.tex
@@ -3986,12 +3641,7 @@ Overfull \hbox (2.33994pt too wide) in paragraph at lines 19--19
 \T1/cmr/bx/n/10.95 Kommentar| 
  []
 
-[108]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.4 on input line 43.
-
-)
+[110])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
 est/atuc5.tex
 Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
@@ -4022,10 +3672,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--39
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 []|\T1/cmr/m/n/10.95 Systemet af-sen-der
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.5 on input line 45.
 
 )
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
@@ -4058,10 +3704,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--33
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
 \T1/cmr/m/n/10.95 SMS-modtagerens
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.6 on input line 40.
 
 )
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
@@ -4120,15 +3762,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 []|\T1/cmr/m/n/10.95 Visueltest: Pro-gram-
  []
 
-
-LaTeX Warning: Reference `uc7sms' on page 109 undefined on input line 54.
-
-[109]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.7 on input line 61.
-
-)
+[111])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
 est/atuc8.tex
 Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
@@ -4255,11 +3889,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
 []|\T1/cmr/m/n/10.95 Visueltest: Pro-gram-
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.8 on input line 110.
-
-[110])
+[112])
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/acceptt
 est/atikkefunktionellekrav.tex
 Overfull \hbox (2.33994pt too wide) in paragraph at lines 11--11
@@ -4337,10 +3967,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
  []
 
 
-LaTeX Warning: Reference `sectionBegraensninger' on page 111 undefined on input
- line 127.
-
-
 Underfull \hbox (badness 2452) in paragraph at lines 148--149
 \T1/cmr/m/n/10.95 Der måles med dB-
  []
@@ -4350,41 +3976,24 @@ Underfull \hbox (badness 2326) in paragraph at lines 148--149
 \T1/cmr/m/n/10.95 meter, samtidig med
  []
 
-
-LaTeX Warning: Reference `sectionBegraensninger' on page 111 undefined on input
- line 164.
-
-[111]
-
-LaTeX Warning: Reference `sectionBegraensninger' on page 112 undefined on input
- line 171.
-
-[112] [113]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9.9 on input line 178.
-
-)) [114]
+[113] [114] [115])) [116]
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/cdindho
-ld.tex <billeder/CD-filstruktur.png, id=1214, 324.21124pt x 615.29875pt>
+ld.tex <billeder/CD-filstruktur.png, id=1242, 324.21124pt x 615.29875pt>
 File: billeder/CD-filstruktur.png Graphic file (type png)
 
 <use billeder/CD-filstruktur.png>
 Package pdftex.def Info: billeder/CD-filstruktur.png used on input line 6.
 (pdftex.def)             Requested size: 254.87247pt x 483.69809pt.
-) [115
+) [117
 
 
 
  <C:/Users/Jesper/Documents/GitHub/E2PRJ2GRP1/Projektdokumentation/billeder/CD-
 filstruktur.png>]
 \tf@toc=\write5
-
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
+
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\Master.aux
 (C:\Users\Jesper\Documents\GitHub\E2PRJ2GRP1\Projektdokumentation\filer/undersk
 rifter.aux)
@@ -4417,53 +4026,48 @@ Package rerunfilecheck Warning: File `Master.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Master.out':
-(rerunfilecheck)             Before: 270B42BBE7A183A1D3B25253F769A057;5914
-(rerunfilecheck)             After:  C6751CBA9168339DD02C77434324A781;2068.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: C6751CBA9168339DD02C77434324A781;2068
+(rerunfilecheck)             After:  FD2A2D41BB0276BE309E3E66E8E9074D;5993.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 25414 strings out of 493921
- 460112 string characters out of 3144873
+ 25398 strings out of 493921
+ 461520 string characters out of 3144873
  793024 words of memory out of 3000000
- 27650 multiletter control sequences out of 15000+200000
- 29518 words of font info for 85 fonts, out of 3000000 for 9000
+ 27610 multiletter control sequences out of 15000+200000
+ 28742 words of font info for 84 fonts, out of 3000000 for 9000
  843 hyphenation exceptions out of 8191
  44i,14n,78p,10458b,907s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecbx0900.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecbx1000.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\Jesper\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Jesper\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\
-Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk>
- <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbi1000.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\tcrm1095.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk>{C:/Program Files (x86)/MiKTeX 2.9/
-fonts/enc/dvips/fontname/8r.enc} <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookma
-n/ubkd8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.
-pfb>
-Output written on Master.pdf (115 pages, 25640584 bytes).
+\ecbx1000.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecrm0900.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Jesper\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Jesper\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\
+Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1000.pk>
+ <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
+crm1095.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecbx1440.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontna
+me/8r.enc} <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecbx1095.pk> <C:\Users\Jesper\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecrm1095.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/
+msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkd8a.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb>
+Output written on Master.pdf (117 pages, 25645340 bytes).
 PDF statistics:
- 1884 PDF objects out of 2073 (max. 8388607)
- 441 named destinations out of 1000 (max. 500000)
- 1108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1907 PDF objects out of 2073 (max. 8388607)
+ 442 named destinations out of 1000 (max. 500000)
+ 708 words of extra memory for PDF output out of 10000 (max. 10000000)
 
