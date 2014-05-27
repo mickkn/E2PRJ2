@@ -1,7 +1,7 @@
 \section{Hardwaredesign}
 
 % HW design
-Generelt kan det overordnede hardwaredesign beskrives som noget elektronik der sender information ud på el-nettet og og modtages og analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som encoder og decoder\footnote{For yderlige beregninger se projektdokumentation afsnit HW-design}.  
+Generelt kan det overordnede hardwaredesign beskrives som noget elektronik der sender information ud på el-nettet og modtages samt analyseres af noget elektronik i den anden ende. Disse vil blive beskrevet herunder som encoder og decoder\footnote{For yderlige beregninger se projektdokumentation side 67-75}.  
 
 
 \section{Encoder (JS)}
@@ -68,7 +68,7 @@ Kondensatoren forudbestemmes via beregningerne til en værdi på 0,1 nF.
   \end{minipage}
 \end{figure}
 
-Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en zero crossing detector både på encoderen og decoderen, da begge disse består af et STK500 der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_MV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
+Zero crossing detectoren har til opgave at detektere nulgennemgang, det er et krav for at X10 protokollen kan virke. Der er placeret en zero crossing detector både på encoderen og decoderen, da begge disse består af et STK500-kit der kræver information om nulgennemgang. Opbygning kan ses på overstående figur \ref{fig:ZC_MV}, der er anvendt en operationsforstærker af typen LM358N, som toggler udgangssignalet ved hver nulgennemgang se figur \ref{fig:Encoder_Zerocross}. Operationsforstærkerens positive ben er koblet til stel for at lave et triggerniveau til 0 V.
 
 Modstanden $R_7$ sidder der bl.a. for at beskytte zero crossing detectoren mod 18 Vac nettet, men sammen med kondensatoren udgør den også et lavpasfilter. Under implementeringen kunne det konstateres at der kom støj ind på zero crossing detectoren, og dette problem løste lavpasfilteret. 
 
