@@ -68,7 +68,7 @@ Til højre for, ses figur \ref{fig:Encoder_burst_1ms}. Dette oscilloscop billede
 
 \subsection{X10-udtag}
 % Generelt om Decoderens funktion 
-X10-udtaget er testet uden STK500-kittet. Det vil sige der er testet uden software på modtagerdelen. Testprogrammet på hovedenheden er det samme som modultesten for X10-encoderen. Et burst på 120kHz sendes ud for hvert zero cross. 
+X10-udtaget er testet uden STK500-kittet. Det vil sige der er testet uden software på udtagsdelen. Testprogrammet på hovedenheden er det samme som modultesten for X10-encoderen. Et burst på 120kHz sendes ud for hvert zero cross. 
 
 \subsubsection{Zero Crossing}
 % Scop billede - forklaring
@@ -128,12 +128,12 @@ Det efterfølgende lavpasfilter vil igen formindste signalet. Dette ses i figur 
   \end{minipage}
 \end{figure}
 
-Diodens opgave er at ensrette signalet. Figur \ref{fig:Decoder_diode} viser signalet før (CH1) og efter (CH2) dioden. Toppene af 120kHz signalet samles herved og giver første billede af den ønskede firkant puls. Denne firkant puls har et max på 3,4V. Figur \ref{fig:Decoder_envelope} viser hvordan dette signal, signalet efter dioden (CH1), bliver rettet til et pænt firkantet TTL signal, som STK-500 kittet kan arbejde med, igennem envelope kredsløbet. 
+Diodens opgave er at ensrette signalet. Figur \ref{fig:Decoder_diode} viser signalet før (CH1) og efter (CH2) dioden. Toppene af 120kHz signalet samles herved og giver første billede af den ønskede firkant puls. Denne firkant puls har et max på 3,4V. Figur \ref{fig:Decoder_envelope} viser hvordan dette signal, signalet efter dioden (CH1), bliver rettet til et pænt firkantet TTL signal, som STK500-kittet kan arbejde med, igennem envelope kredsløbet. 
   
 
 \subsubsection{Output}
 % Scop billede - forklaring - hvad sendes ud 
-% Relæ, det aktiverer/deaktiverer udgangen via STK-500 signal 
+% Relæ, det aktiverer/deaktiverer udgangen via STK500 signal 
 
 \begin{figure}[H]
   \begin{minipage}{0.45\textwidth}
@@ -151,7 +151,7 @@ Diodens opgave er at ensrette signalet. Figur \ref{fig:Decoder_diode} viser sign
   \end{minipage}
 \end{figure}
 
-Outputtet af modtageren er et 18Vac/50Hz udtag. Dette udtag er enten aktiveret eller deaktiveret. Hvis udtaget ønskes aktivt skal softwaren fungerer således at PD7 på modtager STK500 kittet sættes høj, herved aktiveres relæet og der skabes gennemgang for de 18Vac/50Hz fra forsyningsnettet. Figurene herover \ref{fig:relay_open} og \ref{fig:relay_closed} viser at udtaget enten er aktiveret eller deaktiveret. Denne test er udført ved at aktivere relæet blot fra 5V forsyningen.
+Outputtet fra X10-udtaget er et 18Vac/50Hz udtag. Dette udtag er enten aktiveret eller deaktiveret. Hvis udtaget ønskes aktivt skal softwaren fungerer således at PD7 på X10-udtagets STK500-kit sættes høj, herved aktiveres relæet og der skabes gennemgang for de 18Vac/50Hz fra forsyningsnettet. Figurene herover \ref{fig:relay_open} og \ref{fig:relay_closed} viser at udtaget enten er aktiveret eller deaktiveret. Denne test er udført ved at aktivere relæet blot fra 5V forsyningen.
 
 \subsection{DE2-kodelås}
 

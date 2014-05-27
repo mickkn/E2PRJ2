@@ -24,7 +24,7 @@ Når brugeren så trykker på en tast og trykker enter vil han blive sendt til e
      \caption{Logical view: PC package}
 \end{figure}
 
-Figuren ovenfor viser de forskellige pakker man kan indlede PC klasserne i. Alle controllers som har UI pointers er smidt i UI pakken sammen med BrugerUI. STK Connector pakken indeholder RS232IF og så har den et CSerial \footnote{CSerial klassen findes på http://tinyurl.com/mvzmcep. Kildekode og URL genvej findes på CD'en i Reference mappen. Tom Archer and Rick Leinecker, år 1999. [27.05.2014] } objekt som er en klasse der har de 5 mest basale metoder til at sende og læse på en seriel port.
+Figuren ovenfor viser de forskellige pakker man kan indlede PC klasserne i. Alle controllers som har UI pointers er smidt i UI pakken sammen med BrugerUI. STK500-connector pakken indeholder RS232IF og så har den et CSerial \footnote{CSerial klassen findes på http://tinyurl.com/mvzmcep. Kildekode og URL genvej findes på CD'en i Reference mappen. Tom Archer and Rick Leinecker, år 1999. [27.05.2014] } objekt som er en klasse der har de 5 mest basale metoder til at sende og læse på en seriel port.
 
 
 \clearpage
@@ -41,11 +41,11 @@ Figuren ovenfor viser de forskellige pakker man kan inddele CSS hovedenheds klas
 
 \begin{figure}[!htb]
      {\includegraphics[width=\textwidth]{billeder/uml/logical_view_CSS_Udtag}}
-     \caption{Logical view: CSS Udtag package}
+     \caption{Logical view: X10-udtag package}
      \label{fig:CSS_Udtag_package}
 \end{figure}
 
-Figuren ovenfor viser de forskellige pakker man kan inddele CSS udtagets klasser i. 
+Figuren ovenfor viser de forskellige pakker man kan inddele CSS-udtagets klasser i. 
 
 \clearpage
 
@@ -60,7 +60,7 @@ Alle kommandoer termineres med '\textbackslash 0' karakteren.
 
 % X10IF klasse design
 \subsection{Klasse X10IF (BS)}
-En af de kritiske og avancerede klasser er X10IF klasserne på hhv. CSS-hovedenheden og X10 Udtaget. I designfasen er der udviklet sekvensdiagrammer som beskriver nogle af metoderne og sammenspillet til andre klasser.
+En af de kritiske og avancerede klasser er X10IF klasserne på hhv. CSS-hovedenheden og X10-udtaget. I designfasen er der udviklet sekvensdiagrammer som beskriver nogle af metoderne og sammenspillet til andre klasser.
 
 Funktionaliteten for metoden sendKommando() i X10IF klassen, på CSS-hovedenheden, har som ansvar at afsende en fuld X10-kommando, iht. protokollen, ud fra en parameter formateret som vist i tabel \ref{table:X10_sendKommando_format}.
 
@@ -92,7 +92,7 @@ Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den d
 
 \begin{figure}[!htb]
      {\includegraphics[width=\textwidth]{billeder/uml/CSS_ZeroCrossInt_SD}}
-     \caption{Sekvensdiagram for INT0 ISR på CSS hovedenheden}
+     \caption{Sekvensdiagram for INT0 ISR på CSS-hovedenheden}
      \label{fig:ZeroCrossISR}
 \end{figure}
 
