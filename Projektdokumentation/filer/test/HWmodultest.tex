@@ -105,7 +105,7 @@ Herover ses figur \ref{fig:Decoder_ZC}. CH1 viser zero crossing detektorens firk
 Båndpasfilteret består af et højpasfilter, en operationsforstærker samt et lavpasfilter. 
 Oscilloscope billede på figur \ref{fig:Decoder_HP} viser på CH1 viser højpasfilterets funktion. Højpasfilteret filtrerer de 18Vac/50Hz fra og lader kun 120kHz signalet passere. CH2 viser inputtet fra forsyningsnettet 18Vac/50Hz med 120kHZ burst ved hvert zero cross.
 
-Figur \ref{fig:Decoder_Gain} viser forstærkningen i båndpasfilteret. Teoretisk (XXXX Henvisning) skal der være dobbelt forstærkning. I praksis ses der at signalet (CH1) forstærkes fra 8V til 18,4V (CH2) vha. den inverterende operationsforstærker.
+Figur \ref{fig:Decoder_Gain} viser forstærkningen i båndpasfilteret. Teoretisk\footnote{Se beregninger under Båndpasfilteret \ref{Båndpasfilter}} skal der være dobbelt forstærkning. I praksis ses der at signalet (CH1) forstærkes fra 8V til 18,4V (CH2) vha. den inverterende operationsforstærker.
 
 Det efterfølgende lavpasfilter vil igen formindste signalet. Dette ses i figur \ref{fig:Decoder_diode} på CH1 
 
@@ -152,9 +152,7 @@ Diodens opgave er at ensrette signalet. Figur \ref{fig:Decoder_diode} viser sign
   \end{minipage}
 \end{figure}
 
-Outputtet af modtageren er et 18Vac/50Hz udtag. Dette udtag er enten aktiveret eller deaktiveret. Hvis udtaget ønskes aktivt skal softwaren fungerer således at PD7 på modtager STK500 kittet sættes høj, herved aktiveres relæet og der er gennemgang for de 18Vac/50Hz fra forsyningsnettet. Figurene herover \ref{fig:relay_open} og \ref{fig:relay_closed} viser at udtaget enten er aktiveret eller deaktiveret. Denne test er udført ved at aktivere relæet blot fra 5V forsyningen.
-
-SKAL OMSKRIVES HVIS MODTAGER SW KOMMER PÅ!
+Outputtet af modtageren er et 18Vac/50Hz udtag. Dette udtag er enten aktiveret eller deaktiveret. Hvis udtaget ønskes aktivt skal softwaren fungerer således at PD7 på modtager STK500 kittet sættes høj, herved aktiveres relæet og der skabes gennemgang for de 18Vac/50Hz fra forsyningsnettet. Figurene herover \ref{fig:relay_open} og \ref{fig:relay_closed} viser at udtaget enten er aktiveret eller deaktiveret. Denne test er udført ved at aktivere relæet blot fra 5V forsyningen.
 
 \section{DE2-kodelås}
 
