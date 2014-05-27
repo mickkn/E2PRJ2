@@ -9,13 +9,17 @@ Herunder er de forskellige dele af softwaren kort beskrevet.
 
 Softwaren til PC'en, er brugerens grænseflade til at kontrollere systemet. Her kan han manurære rundt i de forskellige menuer og udføre de forskellige ting som er beskrevet i UC beskrivelserne.
 
-Nedenfor er der illustreret hvordan man kommer frem og tilbage i brugerinterfacet. Udover bruger input så kan CSS-hovedenheden give PC'en besked om at der ikke længere er logget ind hvilket vil sende brugeren fra main menu og tilbage til pre-login menuen. Der kan kun sendes babyalarm så længe brugeren står i main menuen og ikke har trykket på keyboardet endnu.
+Nedenfor er der illustreret hvordan man kommer frem og tilbage i brugerinterfacet. Udover bruger input så kan CSS-hovedenheden give PC'en besked om at der ikke længere er logget ind hvilket vil sende brugeren fra main menu og tilbage til pre-login menuen. Kun så længe brugeren står i main menu og ikke har trykket på keyboardet, er det muligt for programmet at afsende en sms eller sende brugeren til pre-login menu pga. udløbet login.
 
 \begin{figure}[htbp] \centering
 {\includegraphics[width=\textwidth]{billeder/uml/state_machine_main}}
 \caption{State machine diagram over brugerflade}
 \label{fig:State machine diagram over brugerflade}
 \end{figure}
+
+
+
+\clearpage
 
 En vigtig del af PC software er at vi kunne gemme alle de enheder brugeren har og hvilket telefonnummer brugeren har. Dette håndtere Hukommelse klassen som gemmer alt i en text fil og henter dataen ind under opstart. Således kan brugeren lukke programmet, åbne det igen og stadig have de samme enheder samt deres status og adresse. \ref{fig:Hukommelses header og udklip af text filen} Illustrere hvordan enhederne og telefonnummeret er gemt i text filen.
 
