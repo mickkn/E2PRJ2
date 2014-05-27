@@ -84,3 +84,14 @@ Først kontrollerer den om der er nogle kommandoer i kø. Der efter henter den d
 For at kunne afsende SMSer i tilfælde af babyalarm bruges en API som kan afsende beskeder via internettet.
 ClickATell\textsuperscript{\circledR}\footnote{Online SMS service: http://www.clickatell.com/} er en online service som kan afsende SMSer til et valgfrit telefonnummer ved at kalde en URL adresse.
 Ved at bruge Microsoft Windows Shell API\footnote{Microsoft MSDN: http://tinyurl.com/d99m9dz} er det muligt at starte applikationer fra Windows miljøet. Dette bruges til at starte et Internet Explorer-browservindue med en predefineret URL adresse som skaber forbindelse til ClickATell\textsuperscript{\circledR} APIen. 
+
+% Klasse X10IF (udtag)
+\subsection{Klasse X10IF (udtag)}
+Metoden dekoder den modtaget X10 formateret kommando og adresse. Herefter sendes adressen via en aktiver eller deaktiver.
+Sekvensen kan ses i figur \ref{fig:X10-Udtag_unwrapX10Array_SD}.
+
+\begin{figure}[!htb]
+     {\includegraphics[width=\textwidth]{billeder/uml/X10-Udtag_unwrapX10Array_SD}}
+     \caption{Sekvensdiagram for metoden unwrapX10Array() i X10IF klassen på X10-udtaget}
+     \label{fig:X10-Udtag_unwrapX10Array_SD}
+\end{figure}
