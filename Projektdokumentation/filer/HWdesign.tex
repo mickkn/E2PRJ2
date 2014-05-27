@@ -12,7 +12,7 @@ X10-encoderen, er en del af CSS-hovedenheden. CSS-hovedenheden genererer X10-bit
 	\label{fig:X10_BURST}
 \end{figure}
 
-Ideen med at sende burst ud på nettet ved zero crossing kan ses illustreret på figur \ref{fig:X10_BURST}
+Ideen med at sende burst ud på nettet ved zero crossing kan ses illustreret på figur \ref{fig:X10_BURST}\footnote{billede fundet på http://circuit-diagram.hqew.net/}
 
 \begin{figure}[H]
 	\centering
@@ -202,7 +202,7 @@ Med alle de beregnede komponentværdier kan det endelige schematic designes. Det
 	\label{fig:ED_MV}
 \end{figure}
 
-Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL (0-5V) signal som STK-kittet kan aflæse.
+Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL (0-5V) signal som STK500-kittet kan aflæse.
 
 Den er opbygget af en diode, et RC-led og en schmitt-trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og undgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. RC-leddet udglatter signalet da det ikke kan nå at aflade på en periode.
 

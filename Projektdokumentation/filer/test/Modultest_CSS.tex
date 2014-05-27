@@ -8,7 +8,7 @@ Programmet opretter et objekt af Timer typen og starter et endeløst loop som t�
 
 \textbf{Opstilling}
 
-En oscilloscope probe sættes på PD5 på et STK500 kit som har programmet kørende.
+En oscilloscope probe sættes på PD5 på et STK500-kit som har programmet kørende.
 
 
 %På figur \ref{fig:Test_CSS_Timer_scope} vises et oscilloscope billede målt på udgangen af timeren PD5.
@@ -27,13 +27,13 @@ Programmet starter med at sende en streng over RS232 interfacet. Her efter afven
 
 \textbf{Opstilling}
 
-Testprogrammet ligges på et STK500 kit.
-En computer forbindes med STK500 kittet over RS232 Spare porten (Sub-D).
+Testprogrammet lægges på et STK500-kit.
+En computer forbindes med STK500-kittet over RS232 Spare porten (Sub-D).
 En jumper forbinder headeren RXD med PD0 og TXD med PD1.
 Start et terminalprogram op indstillet til 9600 buad, 8 databit, 1 stopbit og ingen paritet.
 Reset STK500 og programmet starter.
 
-Først modtages strengen ''CSS hovedenhed\textbackslash r\textbackslash n''.
+Først modtages strengen ''CSS-hovedenhed\textbackslash r\textbackslash n''.
 Send igennem terminal her efter, én karakter af gangen: ''A0101\textbackslash r''. Dette modtages igen som svar.
 Send igen, én karakter af gange: ''D0011\textbackslash r''. Dette modtages igen som svar.
 
@@ -61,8 +61,8 @@ RS232IF klassen er testet med programmet ''RS232IF Test.cpp'' som ligger i kilde
 
 \textbf{Opstilling}
 
-Test programmet ligges på et STK500 kit.
-En computer forbindes med STK500 kittet over RS232 Spare porten (Sub-D).
+Test programmet ligges på et STK500-kit.
+En computer forbindes med STK500-kittet over RS232 Spare porten (Sub-D).
 En jumper forbinder headeren RXD med PD0 og TXD med PD1. Et 8-ledet fladkabel sættes mellem LEDS og PORTB på STK500-kittet.
 Start et terminalprogram op indstillet til 9600 buad, 8 databit, 1 stopbit og ingen paritet.
 Reset STK500 og programmet starter.
@@ -95,9 +95,9 @@ X10IF klassen er testet med programmet ''X10IF Test.cpp'' som ligger i kildekode
 
 \textbf{Opstilling}
 
-Test programmet ligges på et STK500 kit.
+Test programmet ligges på et STK500-kit.
 En PC forbindes med STK500-kittet over RS232 Spare porten (Sub-D).
-En jumper forbinder headeren RXD med PD0 og TXD med PD1. Et 8-ledet fladkabel sættes mellem LEDS og PORTB på STK500 kittet. Jumper forbinder SW0 med PD2.
+En jumper forbinder headeren RXD med PD0 og TXD med PD1. Et 8-ledet fladkabel sættes mellem LEDS og PORTB på STK500-kittet. Jumper forbinder SW0 med PD2.
 Start et terminalprogram op indstillet til 9600 buad, 8 databit, 1 stopbit og ingen paritet.
 Reset STK500 og programmet starter.
 
@@ -111,13 +111,13 @@ ZeroCrossInt ISR er testet med programmet ''ZeroCrossInt Test.cpp'' som ligger i
 
 \textbf{Opstilling}
 
-Test programmet ligges på et STK500 kit.
+Test programmet ligges på et STK500-kit.
 Jumper forbinder PD2 og PB0. Et oscilliscope forbindes med to prober til PB2 og PD5.
 Reset STK500 og programmet starter.
 
 Først lægges to kommandoer i kø, hhv. aktiver og deaktiver. Her efter genereres et firkantsignal på 250 Hz som føres ind på INT0 benet for at starte ISR funktionen.
 
-Med scopet kan så måles de rette bursts ud fra kommandoerne. På figur \ref{fig:Test_CSS_ZeroCross_sender1} kan man se de to kommandoer afsendt. Det gule signal er 120 kHz bursts svarende til X10 formaterede bits. Det grønne signal er det simulerede ZeroCross signal. I den øverste del kan man se aktiver kommandoen sendt to gange og i den nederste del er der zoomet ind på den sidste del. Dette stemmer overnes med protokol beskrivelsen.
+Med scopet kan så måles de rette bursts ud fra kommandoerne. På figur \ref{fig:Test_CSS_ZeroCross_sender1} kan man se de to kommandoer afsendt. Det gule signal er 120 kHz bursts svarende til X10 formaterede bits. Det grønne signal er det simulerede ZeroCross signal. I den øverste del kan man se aktiver kommandoen sendt to gange og i den nederste del er der zoomet ind på den sidste del. Dette stemmer overens med protokol beskrivelsen.
 
 På figur \ref{fig:Test_CSS_ZeroCross_sender2} kan man se både aktiver og deaktiver kommandoen.
 Bursts signalet skal være på 120 kHz. 
