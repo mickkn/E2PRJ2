@@ -119,7 +119,7 @@ Da vi ønsker at forstærke 120 kHz signalet, designes højpasfilteret således 
 
 Envelope detectorens opgave er at udglatte burstsignalet fra båndpasfilteret og lave det om til et TTL signal som STK500 kan aflæse.
 
-Den er opbygget af en diode, et RC-led og en schmitt-trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder, og undgå at belaste det foranliggende kredsløb ved at aflade de negative halvperioder. Kondensatoren er med til at udglatte signalet da den ikke kan nå at aflades på en periode.
+Den er opbygget af en diode, et RC-led og en schmitt-trigger. Dioden har til opgave at sortere alle de negative halvperioder fra og kun sende de positive halvperioder til RC-leddet. Kondensatoren vil derfor kun opfange de positive halvperioder. Kondensatoren er med til at udglatte signalet da den ikke kan nå at aflades på en periode.
 
 Modstanden $R_8$ er en afladnings modstand, og den bestemmer hvor hurtigt kredsløbet skal aflades, jo højere modstand jo langsommere går det med at aflade.
 
