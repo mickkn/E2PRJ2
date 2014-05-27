@@ -1,8 +1,8 @@
 \chapter{Resultater}
 Resultatet af denne opgave er endt ud i en prototype af Child Security Systemet, dokumentationen af dette system, samt denne rapport omhandlende systemet.  
 
-Igennem en velstruktureret arkitektur er det lykkedes at udarbejde et system som kan udføre de ønskede opgaver. Disse opgaver udføres af systemet dels gennem RS232 kommunikation mellem PC og STK500 og dels med X10-kommunikation mellem CSS-hovedenhed og X10-udtag. User-interfacet har opnået flow som specificeret i arkitekturen. 
-Prototypen er opbygget på veroboards, disse ses på nedenstående figure \ref{fig:encoder_vero} og \ref{fig:decoder_vero}. Først er det udarbejdet printudlæg for hhv. encoder og decoder, disse er herefter produceret i loddelab. 
+Igennem en velstruktureret arkitektur er det lykkedes at udarbejde et system som kan udføre de ønskede opgaver. Disse opgaver udføres af systemet dels gennem RS232 kommunikation mellem PC og CSS-hovedenhed og dels med X10 kommunikation mellem CSS-hovedenhed og X10-udtag. User-interfacet har opnået et flow som specificeret i arkitekturen. 
+Prototypen er opbygget på veroboards, disse ses på nedenstående figure \ref{fig:encoder_vero} og \ref{fig:decoder_vero}. Først er der udarbejdet printudlæg for hhv. encoder og decoder, disse er herefter produceret i loddelab. 
 
 \begin{figure}[htb]
   \begin{minipage}{0.5\textwidth}
@@ -31,7 +31,7 @@ Det er ikke lykkedes at få X10-udtag softwaren til at modtage X10-bitstrømmen,
 
  
  
-Babyalarmens advarsels SMS, kommer som en flash SMS. Dvs. SMSen vises direkte på skærmen for brugeren, herved kan det ikke undgås at brugeren ser beskeden, når mobilen tages i brug. SMSen som SMS-modtageren, på en iPhone, vil modtager ses herunder på figur \ref{fig:flashSMS}
+Babyalarmens advarsels-SMS, kommer som en flash SMS. Dvs. SMSen vises direkte på skærmen for brugeren, herved kan det ikke undgås at brugeren ser beskeden, når mobilen tages i brug. Skærmbilledet som møder SMS-modtageren, på en iPhone, vil se ud som på figur \ref{fig:flashSMS}
  
 \begin{figure}[htbp]
   \centering
@@ -40,5 +40,5 @@ Babyalarmens advarsels SMS, kommer som en flash SMS. Dvs. SMSen vises direkte p�
     \label{fig:flashSMS}
 \end{figure}
  
-RS232 kommunikationen virkede rigtig godt efter der blev gennemført modul test både på RS232IF klassen på PC og CSS-hovedenhed. Modultest kan ses i rapport dokumentationen.
+RS232 kommunikationen virkede rigtig godt efter der blev gennemført modul test både på RS232IF klassen på PC og CSS-hovedenhed. Modultest kan ses i rapport dokumentationen\footnote{Hhv. side 98 og 100 i projektdokumentationen}.
 
