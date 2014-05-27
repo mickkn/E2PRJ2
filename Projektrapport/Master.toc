@@ -1,0 +1,78 @@
+\changetocdepth {2}
+\select@language {danish}
+\contentsline {chapter}{\chapternumberline {1}Indledning (BS, JS)}{7}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}Opgaveformulering (PO)}{9}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Projektafgr\IeC {\ae }nsning (JS)}{11}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Systembeskrivelse (MK)}{13}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Krav (JS)}{15}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Kravspecifikation (SK)}{17}{chapter.6}
+\contentsline {section}{\numberline {6.1}Usecases}{17}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Bruger}{18}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Eksterne enheder}{18}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Barn}{18}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}SMS modtager}{18}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}DE2 Board}{18}{subsection.6.1.5}
+\contentsline {chapter}{\chapternumberline {7}Arbejdsproces}{21}{chapter.7}
+\contentsline {section}{\numberline {7.1}Udviklingsmodeller (JS, PO)}{21}{section.7.1}
+\contentsline {section}{\numberline {7.2}M\IeC {\o }der, tidsplan, logbog og referater (PO)}{22}{section.7.2}
+\contentsline {section}{\numberline {7.3}HW/SW teams}{23}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Hardware teamet (PO)}{23}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Software teamet (BS)}{23}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Arbejdsfordeling}{23}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Hardware}{23}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Software}{23}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Andet}{23}{subsection.7.4.3}
+\contentsline {chapter}{\chapternumberline {8}Udviklingsv\IeC {\ae }rkt\IeC {\o }jer}{25}{chapter.8}
+\contentsline {section}{\numberline {8.1}LaTex og Texmaker (JS, PO)}{25}{section.8.1}
+\contentsline {section}{\numberline {8.2}Microsoft Visual Studio (BS)}{25}{section.8.2}
+\contentsline {section}{\numberline {8.3}Atmel Studio (BS)}{25}{section.8.3}
+\contentsline {section}{\numberline {8.4}National Instruments Multisim (PO)}{25}{section.8.4}
+\contentsline {section}{\numberline {8.5}Microsoft Visio (JS)}{26}{section.8.5}
+\contentsline {section}{\numberline {8.6}Altera Quartus II (PO)}{26}{section.8.6}
+\contentsline {section}{\numberline {8.7}Electronic ToolBox App (JS)}{26}{section.8.7}
+\contentsline {section}{\numberline {8.8}Filh\IeC {\r a}ndtering (JS, PO)}{26}{section.8.8}
+\contentsline {subsection}{\numberline {8.8.1}GitHub}{26}{subsection.8.8.1}
+\contentsline {subsection}{\numberline {8.8.2}Dropbox}{26}{subsection.8.8.2}
+\contentsline {subsection}{\numberline {8.8.3}Google Drev}{26}{subsection.8.8.3}
+\contentsline {chapter}{\chapternumberline {9}Systemarkitektur}{27}{chapter.9}
+\contentsline {section}{\numberline {9.1}Hardware arkitektur}{27}{section.9.1}
+\contentsline {section}{\numberline {9.2}Dom\IeC {\ae }nemodel}{27}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}BDD Hardware}{28}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Plantegning over HW}{28}{subsection.9.2.2}
+\contentsline {section}{\numberline {9.3}Software arkitektur}{29}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Applikationsmodel for PC (JC)}{29}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Applikationsmodel for CSS-hovedenhed (BS)}{30}{subsection.9.3.2}
+\contentsline {subsection}{\numberline {9.3.3}Applikationsmodel for X10-udtag (BS)}{31}{subsection.9.3.3}
+\contentsline {chapter}{\chapternumberline {10}Design}{35}{chapter.10}
+\contentsline {section}{\numberline {10.1}Hardware design}{35}{section.10.1}
+\contentsline {section}{\numberline {10.2}Encoder}{35}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}H\IeC {\o }jpasfilter}{36}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Zero Crossing Detector (SK)}{37}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Decoder}{37}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}B\IeC {\r a}ndpasfilter}{38}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Envelope Detector (SK)}{39}{subsection.10.3.2}
+\contentsline {subsection}{\numberline {10.3.3}Dipswitch}{39}{subsection.10.3.3}
+\contentsline {section}{\numberline {10.4}Software design}{41}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}PC delen (JC)}{41}{subsection.10.4.1}
+\contentsline {chapter}{\chapternumberline {11}Implementering}{43}{chapter.11}
+\contentsline {section}{\numberline {11.1}Hardware implementering}{43}{section.11.1}
+\contentsline {section}{\numberline {11.2}Software implementering}{43}{section.11.2}
+\contentsline {chapter}{\chapternumberline {12}Resultater}{45}{chapter.12}
+\contentsline {section}{\numberline {12.1}Software}{45}{section.12.1}
+\contentsline {section}{\numberline {12.2}Hardware}{45}{section.12.2}
+\contentsline {chapter}{\chapternumberline {13}Opn\IeC {\r a}ede erfaringer (JS)}{47}{chapter.13}
+\contentsline {chapter}{\chapternumberline {14}Fremtidigt arbejde (SK)}{49}{chapter.14}
+\contentsline {chapter}{\chapternumberline {15}Konklusion (PO, SK)}{51}{chapter.15}
+\contentsline {chapter}{\chapternumberline {16}Individuel konklusion}{53}{chapter.16}
+\contentsline {section}{\numberline {16.1}Bj\IeC {\o }rn S\IeC {\o }rensen}{53}{section.16.1}
+\contentsline {section}{\numberline {16.2}Jakob Schmidt}{53}{section.16.2}
+\contentsline {section}{\numberline {16.3}Jeppe St\IeC {\ae }rk}{54}{section.16.3}
+\contentsline {section}{\numberline {16.4}Jesper Christensen}{54}{section.16.4}
+\contentsline {section}{\numberline {16.5}Mick Kirkegaard}{54}{section.16.5}
+\contentsline {section}{\numberline {16.6}Poul Overgaard}{54}{section.16.6}
+\contentsline {section}{\numberline {16.7}Simon Kirchheiner}{55}{section.16.7}
+\contentsline {chapter}{\chapternumberline {17}Underskifter}{57}{chapter.17}
+\contentsline {chapter}{\chapternumberline {18}Litteraturliste}{59}{chapter.18}
+\contentsline {section}{\numberline {18.1}B\IeC {\o }ger}{59}{section.18.1}
+\contentsline {section}{\numberline {18.2}Hjemmesider}{59}{section.18.2}
+\contentsline {subsection}{\numberline {18.2.1}Opslagsv\IeC {\ae }rker}{59}{subsection.18.2.1}

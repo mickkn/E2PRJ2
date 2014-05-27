@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "SensorIF", "SensorIF\SensorIF.cppproj", "{695AFFA6-6540-446F-A793-B578B7555263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{695AFFA6-6540-446F-A793-B578B7555263}.Debug|AVR.ActiveCfg = Debug|AVR
+		{695AFFA6-6540-446F-A793-B578B7555263}.Debug|AVR.Build.0 = Debug|AVR
+		{695AFFA6-6540-446F-A793-B578B7555263}.Release|AVR.ActiveCfg = Release|AVR
+		{695AFFA6-6540-446F-A793-B578B7555263}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
