@@ -3,7 +3,7 @@ Generelt kan det overordnede hardware design beskrives som noget elektronik der 
 
 
 \section{X10-encoder}
-X10-encoderen, er en del af CSS hovedenheden. CSS hovedenheden genererer X10-bitstrømmen og sender den ud på det eksisterende el-net. Encoderen består af et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, og en zero crossing detector der detekterer nulgennemgang.
+X10-encoderen, er en del af CSS-hovedenheden. CSS-hovedenheden genererer X10-bitstrømmen og sender den ud på det eksisterende el-net. Encoderen består af et højpasfilter der lader 120 kHz burst passere mens det blokerer for nettets 50 Hz signal, og en zero crossing detector der detekterer nulgennemgang.
 
 \begin{figure}[H]
 	\centering
@@ -21,7 +21,7 @@ Ideen med at sende burst ud på nettet ved zero crossing kan ses illustreret på
 	\label{fig:Encoder}
 \end{figure}
 
-\subsection{Højpasfilter}
+\subsection{Højpasfilter (JS)}
 
 \begin{figure}[H]
   \begin{minipage}{0.45\textwidth}
@@ -121,7 +121,7 @@ X10-decoderen, som er den del i systemet der omdanner burst fra encoderen til X1
 
 \newpage
 
-\subsection{Båndpasfilter}
+\subsection{Båndpasfilter (JS)}
 \label{Båndpasfilter}
 
 \begin{figure}[htb]
@@ -227,7 +227,7 @@ Modstanden $R_8$ er rundet op til $100 k\Omega$, dette gør at vi er helt sikre 
 Der er anvendt en schmitt-trigger til at lave signalet om til et firkantet signal som STK500-kittet kan aflæse. Grunden til at der er brugt 2 er fordi de er inverterende. 
 
 \newpage
-\subsection{Dipswitch}
+\subsection{Dipswitch (JS)}
 For at en X10-kommando bliver udført af det korrekte X10-udtag, medsendes en adresse på fire bit.
 Til at simulere adresseringen for et udtag, er der lavet fire dipswitches der er forsynet med 5 V og forbundet til STK-500 modtageren, som det er illustreret på figur \ref{fig:DIPSWITCH}.
 
@@ -302,7 +302,7 @@ De efterfølgende tabeller viser en oversigt over hvilke komponenter der er anve
 \end{table}
 \newpage
 
-\section{DE2-kodelås}
+\section{DE2-kodelås (MK)}
 
 DE2-boardet bliver brugt som kodelås til CSS-hovedenheden. DE2-boardet er programmeret i E2DSD\footnote{2. Semester kursus på IHA - Digital Systemdesign} Exercise 7\footnote{Se code\_lock.vhd i bilag} som en Statemachine. Der er dog blevet ændret i koden fra øvelsen, da der kun er brug for et enkelt bit til CSS-hovedenheden og ikke en konstant høj. 
 
