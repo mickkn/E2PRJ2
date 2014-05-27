@@ -1,13 +1,13 @@
 \section{Hardware Modultest (MK, PO)}
 
-\subsection{X10-encoder}
+\subsection{CSS-hovedenhed}
 % Generelt om Encoderens funktion
-X10-encoderen er testet vha et testprogram (Henvisning til burst.cpp). Testprogrammet sender et 120kHz signal ud i 1 ms, hver gang zero cross signalet toggler. Herunder testes de enkelte blokke i encoderen.    
+CSS-hovedenheden er testet vha et testprogram (Henvisning til burst.cpp). Testprogrammet sender et 120kHz signal ud i 1 ms, hver gang zero cross signalet toggler. Herunder testes de enkelte blokke i encoderen.    
 
 \subsubsection{Zero Crossing}
 % Scop billede - forklaring
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{minipage}{0.45\textwidth}
     \centering
       \includegraphics[width=\textwidth]{billeder/HWTest/Encoder/Encoder_zerocross}
@@ -24,7 +24,7 @@ X10-encoderen er testet vha et testprogram (Henvisning til burst.cpp). Testprogr
 \end{figure}
 
 
-Ud fra figur \ref{fig:ZC_UB} ses at zero Crossing detectoren virker som ønsket. Hver gang 18 Vac/50Hz passerer 0, toggles zero Cross signalet.
+Ud fra figur \ref{fig:ZC_UB} ses at zero crossing detectoren virker som ønsket. Hver gang 18 Vac/50Hz passerer 0, toggles zero Cross signalet.
 På figur \ref{fig:ZC_MB} ses 18Vac/50Hz signalet med burst for hver zero cross. Heraf ses at det er netop ved zero cross at 120kHz bursted placeres på 50Hz signalet. 
 
 
@@ -46,7 +46,7 @@ Figur \ref{fig:HP_SCOP} viser begge sider af højpasfilteret. CH1 viser at 18Vac
 \subsubsection{Output}
 % Scop billede - forklaring - hvad sendes ud
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{minipage}{0.45\textwidth}
     \centering
       \includegraphics[width=\textwidth]{billeder/HWTest/Encoder/Encoder_50Hz_burst_120kHz}
@@ -66,12 +66,11 @@ Herover ses figur \ref{fig:Encoder_output}. CH1 viser 120kHz burstet som sendes 
 
 Til højre for, ses figur \ref{fig:Encoder_burst_1ms}. Dette oscilloscop billede viser at bursted er på præcis 1ms. 
 
-
-\section{X10-decoder}
+\subsection{X10-udtag}
 % Generelt om Decoderens funktion 
-X10-decoderen er testet uden STK500-kittet. Det vil sige der er testet uden software på modtager delen. Testprogrammet på hovedenheden er det samme som modultesten for X10-encoderen. Et burst på 120kHz sendes ud for hvert zero cross. 
+X10-udtaget er testet uden STK500-kittet. Det vil sige der er testet uden software på modtagerdelen. Testprogrammet på hovedenheden er det samme som modultesten for X10-encoderen. Et burst på 120kHz sendes ud for hvert zero cross. 
 
-\subsection{Zero Crossing}
+\subsubsection{Zero Crossing}
 % Scop billede - forklaring
 
 \begin{figure}[H]
@@ -83,7 +82,7 @@ X10-decoderen er testet uden STK500-kittet. Det vil sige der er testet uden soft
 
 Herover ses figur \ref{fig:Decoder_ZC}. CH1 viser zero crossing detektorens firkantsignal der genereres af operationsforstærkeren når 18Vac/50Hz er negativ laver operationsforstærkeren en positiv firkant puls. CH2 viser 18Vac/50Hz signalet med 120kHz burst for hvert zero cross.   
 
-\subsection{Båndpasfilter}
+\subsubsection{Båndpasfilter}
 % Scop billede - forklaring
 
 \begin{figure}[htb]
@@ -110,10 +109,10 @@ Figur \ref{fig:Decoder_Gain} viser forstærkningen i båndpasfilteret. Teoretisk
 Det efterfølgende lavpasfilter vil igen formindste signalet. Dette ses i figur \ref{fig:Decoder_diode} på CH1 
 
 
-\subsection{Envelope detector}
+\subsubsection{Envelope detector}
 % Scop billede - forklaring
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{minipage}{0.45\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{billeder/HWTest/Decoder/Decoder_ensretning}
@@ -132,11 +131,11 @@ Det efterfølgende lavpasfilter vil igen formindste signalet. Dette ses i figur 
 Diodens opgave er at ensrette signalet. Figur \ref{fig:Decoder_diode} viser signalet før (CH1) og efter (CH2) dioden. Toppene af 120kHz signalet samles herved og giver første billede af den ønskede firkant puls. Denne firkant puls har et max på 3,4V. Figur \ref{fig:Decoder_envelope} viser hvordan dette signal, signalet efter dioden (CH1), bliver rettet til et pænt firkantet TTL signal, som STK-500 kittet kan arbejde med, igennem envelope kredsløbet. 
   
 
-\subsection{Output}
+\subsubsection{Output}
 % Scop billede - forklaring - hvad sendes ud 
 % Relæ, det aktiverer/deaktiverer udgangen via STK-500 signal 
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{minipage}{0.45\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{billeder/HWTest/Decoder/Decoder_relay_open}
@@ -154,7 +153,7 @@ Diodens opgave er at ensrette signalet. Figur \ref{fig:Decoder_diode} viser sign
 
 Outputtet af modtageren er et 18Vac/50Hz udtag. Dette udtag er enten aktiveret eller deaktiveret. Hvis udtaget ønskes aktivt skal softwaren fungerer således at PD7 på modtager STK500 kittet sættes høj, herved aktiveres relæet og der skabes gennemgang for de 18Vac/50Hz fra forsyningsnettet. Figurene herover \ref{fig:relay_open} og \ref{fig:relay_closed} viser at udtaget enten er aktiveret eller deaktiveret. Denne test er udført ved at aktivere relæet blot fra 5V forsyningen.
 
-\section{DE2-kodelås}
+\subsection{DE2-kodelås}
 
 DE2 1 ms bit målt med oscilloscope på DE2 GPIO1\_D9 ift. stel. Med funktionen Trigger Single Sweep. Målingerne viser et 1 ms signal på 3.3Vpp, som ønsket.
 
